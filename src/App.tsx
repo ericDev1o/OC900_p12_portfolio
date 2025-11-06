@@ -17,6 +17,7 @@ function App() {
   const gtmetrixLogo = path + 'GTMetrix.svg';
   const waveLogo = path + 'WAvE.svg';
   const linkedinLogo = path + 'linkedin.svg';
+  const githubLogo = path + 'github.svg';
 
   return (
     <main>
@@ -57,6 +58,9 @@ function App() {
       </section>
       <section>
         <h3>contact</h3>
+        <a href='https://github.com/ericDev1o' target='_blank'>
+          <img src={githubLogo} className='logo' alt='GitHub logo' />
+        </a>
         <a href='https://linkedin.com/in/ericfaraut' target='_blank'>
           <img src={linkedinLogo} className='logo' alt='LinkedIn logo' />
         </a>

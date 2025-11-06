@@ -11,6 +11,7 @@ import SCSSLogo from './assets/SCSS.svg'
 import JSLogo from './assets/JS.png'
 import TSLogo from './assets/TS.svg'
 import WAvELogo from './assets/WAvE.png'
+import linkedinLogo from './assets/linkedin.png'
 import './App.css'
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
     <main>
       <h1>Bonjour, je suis Eric Faraut</h1>
       <h2>votre intégrateur web React</h2>
+      <section>
+        <h3>À propos de moi</h3>
+        Passionné par l'intégration front-end les interfaces que je développe pour simplifier l'utilisation par tou·te·s font la part belle à l'accessibilité et l'éco-conception.
+      </section>
       <section>
         <h3>compétences</h3>
         <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -50,6 +55,12 @@ function App() {
       </section>
       <section>
         <h3>contact</h3>
+        <form>
+
+        </form>
+        <a href="https://linkedin.com/in/ericfaraut" target="_blank">
+          <img src={linkedinLogo} className='logo' alt='LinkedIn logo' />
+        </a>
       </section>
     </main>
   )

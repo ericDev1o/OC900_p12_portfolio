@@ -1,6 +1,23 @@
 import './App.css';
 
 function App() {
+  const path = `${import.meta.env.BASE_URL}`;
+
+  const viteLogo = path + 'vite.svg';
+  const htmlLogo = path + 'HTML5.svg';
+  const cssLogo = path + 'CSS3.svg';
+  const scssLogo = path + 'SCSS.svg';
+  const jestLogo = path + 'jest.svg';
+  const jsLogo = path + 'JS.svg';
+  const tsLogo = path + 'TS.svg';
+  const reactLogo = path + 'react.svg';
+  const reactRouterLogo = path + 'ReactRouter.svg';
+  const reduxLogo = path + 'redux.svg';
+  const lighthouseLogo = path + 'lighthouse.svg';
+  const gtmetrixLogo = path + 'GTMetrix.svg';
+  const waveLogo = path + 'WAvE.svg';
+  const linkedinLogo = path + 'linkedin.svg';
+
   return (
     <main>
       <h1>Bonjour, je suis Eric Faraut</h1>
@@ -11,19 +28,19 @@ function App() {
       </section>
       <section>
         <h3>compétences</h3>
-        <img src='/vite.svg' className='logo' alt='Vite logo' />
-        <img src='/HTML5.png' className='logo' alt='HTML5 logo' />
-        <img src='/CSS3.svg' className='logo' alt='CSS3 logo' />
-        <img src='/SCSS.svg' className='logo' alt='SCSS logo' />
-        <img src='/jest.svg' className='logo' alt='Jest logo' />
-        <img src='/JS.png' className='logo' alt='JavaScript logo' />
-        <img src='/TS.svg' className='logo' alt='TypeScript logo' />
-        <img src='/react.svg' className= 'logo react' alt='React logo' />
-        <img src='/ReactRouter.png' className='logo' alt='React Router logo' />
-        <img src='/redux.png' className='logo' alt='Redux logo' />
-        <img src='/lighthouse.png' className='logo' alt='Lighthouse logo' />
-        <img src='/GTMetrix.png' className='logo' alt='GTMetrix logo' />
-        <img src='/WAvE.png' className='logo' alt='WAvE logo' />
+        <img src={viteLogo} className='logo' alt='Vite logo' />
+        <img src={htmlLogo} className='logo' alt='HTML5 logo' />
+        <img src={cssLogo} className='logo' alt='CSS3 logo' />
+        <img src={scssLogo} className='logo' alt='SCSS logo' />
+        <img src={jestLogo} className='logo' alt='Jest logo' />
+        <img src={jsLogo} className='logo' alt='JavaScript logo' />
+        <img src={tsLogo} className='logo' alt='TypeScript logo' />
+        <img src={reactLogo} className= 'logo react' alt='React logo' />
+        <img src={reactRouterLogo} className='logo' alt='React Router logo' />
+        <img src={reduxLogo} className='logo' alt='Redux logo' />
+        <img src={lighthouseLogo} className='logo' alt='Lighthouse logo' />
+        <img src={gtmetrixLogo} className='logo' alt='GTMetrix logo' />
+        <img src={waveLogo} className='logo' alt='WAvE logo' />
       </section>
       <section>
         <h3>projets</h3>
@@ -41,7 +58,7 @@ function App() {
       <section>
         <h3>contact</h3>
         <a href='https://linkedin.com/in/ericfaraut' target='_blank'>
-          <img src='/linkedin.png' className='logo' alt='LinkedIn logo' />
+          <img src={linkedinLogo} className='logo' alt='LinkedIn logo' />
         </a>
       </section>
     </main>

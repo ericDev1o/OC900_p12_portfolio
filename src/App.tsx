@@ -137,15 +137,6 @@ function App() {
               animate-[spin_20s_linear_infinite]' 
             alt='React logo' />
           <img 
-            src={reactRouterLogo} 
-            className='
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300' 
-            alt='React Router logo' />
-          <img 
             src={reduxLogo} 
             className='
               p-6 
@@ -155,6 +146,15 @@ function App() {
               duration-300
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
             alt='Redux logo' />
+          <img 
+            src={reactRouterLogo} 
+            className='
+              p-6 
+              h-25 
+              will-change-filter 
+              filter 
+              duration-300' 
+            alt='React Router logo' />
           <img 
             src={lighthouseLogo} 
             className='

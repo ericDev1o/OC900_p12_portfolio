@@ -20,18 +20,13 @@ function App() {
   const githubLogo = path + 'github.svg';
 
   const [value, setValue] = useState('');
-  const [rows, setRows] = useState(1);
-  const lineHeight = 20;
-  const minRows = 1;
-  const maxRows = 20;
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     const textarea = event.target;
     setValue(textarea.value);
 
     textarea.style.height = 'auto';
-    const newRows = Math.floor(textarea.scrollHeight / lineHeight);
-    setRows(Math.max(minRows, Math.min(maxRows, newRows)))
+    textarea.style.height = textarea.scrollHeight + 'px';
   }
 
   return (
@@ -269,11 +264,6 @@ function App() {
           <a 
             href='https://github.com/ericDev1o' 
             target='_blank'
-            className="
-              font-medium
-              text-blue-600
-              decoration-inherit
-              hover: text-blue-700"
           >
             <img 
               src={githubLogo} 
@@ -289,11 +279,6 @@ function App() {
           <a 
             href='https://linkedin.com/in/ericfaraut' 
             target='_blank'
-            className="
-              font-medium
-              text-blue-600
-              decoration-inherit
-              hover: text-blue-700"
           >
             <img 
               src={linkedinLogo} 
@@ -314,371 +299,365 @@ function App() {
             pt-12"
         >
           <div 
-            className="
-              grid 
-              md:grid-cols-2 
-              md:gap-6"
+          className="
+            relative
+            z-0 
+            w-full 
+            mb-5 
+            group"
           >
-            <div 
+            <input 
+              type="email" 
+              name="floating_email" 
+              id="floating_email" 
+              className="
+                block 
+                py-2.5 
+                px-0 
+                w-full 
+                text-sm 
+                text-gray-900 
+                bg-transparent 
+                border-0 
+                border-b-2 
+                border-gray-300 
+                appearance-none 
+                dark:text-white 
+                dark:border-gray-600 
+                dark:focus:border-blue-500 
+                focus:outline-none 
+                focus:ring-0 
+                focus:border-blue-600 
+                peer" 
+                placeholder=" " 
+                required 
+            />
+            <label 
+              htmlFor="floating_email" 
+              className=" 
+                peer-focus:font-medium 
+                absolute 
+                w-full 
+                text-sm 
+                text-gray-500 
+                dark:text-gray-400 
+                duration-300 
+                transform 
+                -translate-y-6 
+                scale-75 
+                top-3 
+                right-47
+                -z-10 
+                origin-left 
+                peer-focus:start-0 
+                rtl:peer-focus:translate-x-1/4 
+                rtl:peer-focus:left-auto 
+                peer-focus:text-blue-600 
+                peer-focus:dark:text-blue-500 
+                peer-placeholder-shown:scale-100 
+                peer-placeholder-shown:translate-y-0 
+                peer-focus:scale-75 
+                peer-focus:-translate-y-6"
+            >
+              courriel
+            </label>
+          </div>
+          <div 
             className="
-              relative
+              relative 
               z-0 
               w-full 
               mb-5 
               group"
-            >
-              <input 
-                type="email" 
-                name="floating_email" 
-                id="floating_email" 
-                className="
-                  block 
-                  py-2.5 
-                  px-0 
-                  w-full 
-                  text-sm 
-                  text-gray-900 
-                  bg-transparent 
-                  border-0 
-                  border-b-2 
-                  border-gray-300 
-                  appearance-none 
-                  dark:text-white 
-                  dark:border-gray-600 
-                  dark:focus:border-blue-500 
-                  focus:outline-none 
-                  focus:ring-0 
-                  focus:border-blue-600 
-                  peer" 
-                  placeholder=" " 
-                  required 
-              />
-              <label 
-                htmlFor="floating_email" 
-                className="
-                  w-full 
-                  peer-focus:font-medium 
-                  absolute 
-                  text-sm 
-                  text-gray-500 
-                  dark:text-gray-400 
-                  duration-300 
-                  transform 
-                  -translate-y-6 
-                  scale-75 
-                  top-3 
-                  right-42.5
-                  -z-10 
-                  origin-left 
-                  peer-focus:start-0 
-                  rtl:peer-focus:translate-x-1/4 
-                  rtl:peer-focus:left-auto 
-                  peer-focus:text-blue-600 
-                  peer-focus:dark:text-blue-500 
-                  peer-placeholder-shown:scale-100 
-                  peer-placeholder-shown:translate-y-0 
-                  peer-focus:scale-75 
-                  peer-focus:-translate-y-6"
-              >
-                courriel
-              </label>
-            </div>
-            <div 
+          >
+            <input 
+              type="text" 
+              name="floating_first_name" 
+              id="floating_first_name" 
               className="
-                relative 
-                z-0 
+                block 
+                py-2.5 
+                px-0 
                 w-full 
-                mb-5 
-                group"
-            >
-              <input 
-                type="text" 
-                name="floating_first_name" 
-                id="floating_first_name" 
-                className="
-                  block 
-                  py-2.5 
-                  px-0 
-                  w-full 
-                  text-sm 
-                  text-gray-900 
-                  bg-transparent 
-                  border-0 
-                  border-b-2 
-                  border-gray-300 
-                  appearance-none 
-                  dark:text-white 
-                  dark:border-gray-600 
-                  dark:focus:border-blue-500 
-                  focus:outline-none
-                  focus:ring-0
-                  focus:border-blue-600
-                  peer" 
-                  placeholder=" " 
-                  required 
-              />
-              <label 
-                htmlFor="floating_first_name" 
-                className="
-                  w-full 
-                  peer-focus:font-medium 
-                  absolute 
-                  text-sm 
-                  text-gray-500 
-                  dark:text-gray-400 
-                  duration-300 
-                  transform 
-                  -translate-y-6 
-                  scale-75 
-                  top-3 
-                  right-16 
-                  -z-10 
-                  origin-left 
-                  peer-focus:start-0 
-                  rtl:peer-focus:translate-x-1/4 
-                  peer-focus:text-blue-600 
-                  peer-focus:dark:text-blue-500 
-                  peer-placeholder-shown:scale-100 
-                  peer-placeholder-shown:translate-y-0 
-                  peer-focus:scale-75 
-                  peer-focus:-translate-y-6"
-              >
-                Prénom
-              </label>
-            </div>
-            <div 
-              className="
-                relative 
-                z-0 
-                w-full 
-                mb-5 
-                group"
-            >
-              <input 
-                type="text" 
-                name="floating_last_name" 
-                id="floating_last_name" 
-                className="
-                  block 
-                  py-2.5 
-                  px-0 
-                  w-full 
-                  text-sm 
-                  text-gray-900 
-                  bg-transparent 
-                  border-0 
-                  border-b-2 
-                  border-gray-300 
-                  appearance-none 
-                  dark:text-white 
-                  dark:border-gray-600 
-                  dark:focus:border-blue-500 
-                  focus:outline-none 
-                  focus:ring-0 
-                  focus:border-blue-600 
-                  peer" 
+                text-sm 
+                text-gray-900 
+                bg-transparent 
+                border-0 
+                border-b-2 
+                border-gray-300 
+                appearance-none 
+                dark:text-white 
+                dark:border-gray-600 
+                dark:focus:border-blue-500 
+                focus:outline-none
+                focus:ring-0
+                focus:border-blue-600
+                peer" 
                 placeholder=" " 
                 required 
+            />
+            <label 
+              htmlFor="floating_first_name" 
+              className="
+                peer-focus:font-medium 
+                absolute 
+                w-full 
+                text-sm 
+                text-gray-500 
+                dark:text-gray-400 
+                duration-300 
+                transform 
+                -translate-y-6 
+                scale-75 
+                top-3 
+                right-49 
+                -z-10 
+                origin-left 
+                peer-focus:start-0 
+                rtl:peer-focus:translate-x-1/4 
+                peer-focus:text-blue-600 
+                peer-focus:dark:text-blue-500 
+                peer-placeholder-shown:scale-100 
+                peer-placeholder-shown:translate-y-0 
+                peer-focus:scale-75 
+                peer-focus:-translate-y-6"
+            >
+              Prénom
+            </label>
+          </div>
+          <div 
+            className="
+              relative 
+              z-0 
+              w-full 
+              mb-5 
+              group"
+          >
+            <input 
+              type="text" 
+              name="floating_last_name" 
+              id="floating_last_name" 
+              className="
+                block 
+                py-2.5 
+                px-0 
+                w-full 
+                text-sm 
+                text-gray-900 
+                bg-transparent 
+                border-0 
+                border-b-2 
+                border-gray-300 
+                appearance-none 
+                dark:text-white 
+                dark:border-gray-600 
+                dark:focus:border-blue-500 
+                focus:outline-none 
+                focus:ring-0 
+                focus:border-blue-600 
+                peer" 
+              placeholder=" " 
+              required 
+            />
+            <label 
+              htmlFor="floating_last_name" 
+              className="
+                peer-focus:font-medium 
+                absolute 
+                w-full 
+                text-sm 
+                text-gray-500 
+                dark:text-gray-400 
+                duration-300 
+                transform 
+                -translate-y-6 
+                scale-75 
+                top-3 
+                right-52 
+                -z-10 
+                origin-left 
+                peer-focus:start-0 
+                rtl:peer-focus:translate-x-1/4 
+                peer-focus:text-blue-600 
+                peer-focus:dark:text-blue-500 
+                peer-placeholder-shown:scale-100 
+                peer-placeholder-shown:translate-y-0 
+                peer-focus:scale-75 
+                peer-focus:-translate-y-6"
+            >
+              Nom
+            </label>
+          </div>
+          <div 
+            className="
+              relative 
+              z-0 
+              w-full 
+              mb-5 
+              group"
+          >
+            <input 
+              type="tel" 
+              pattern="+33 [1-9]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" 
+              name="floating_phone" 
+              id="floating_phone" 
+              className="
+                block 
+                py-2.5 
+                px-0 
+                w-full 
+                text-sm 
+                text-gray-900 
+                bg-transparent 
+                border-0 
+                border-b-2 
+                border-gray-300 
+                appearance-none 
+                dark:text-white 
+                dark:border-gray-600 
+                dark:focus:border-blue-500 
+                focus:outline-none 
+                focus:ring-0 
+                focus:border-blue-600 
+                peer" 
+                placeholder=" " 
               />
-              <label 
-                htmlFor="floating_last_name" 
-                className="
-                  w-full 
-                  peer-focus:font-medium 
-                  absolute 
-                  text-sm 
-                  text-gray-500 
-                  dark:text-gray-400 
-                  duration-300 
-                  transform 
-                  -translate-y-6 
-                  scale-75 
-                  top-3 
-                  right-17 
-                  -z-10 
-                  origin-left 
-                  peer-focus:start-0 
-                  rtl:peer-focus:translate-x-1/4 
-                  peer-focus:text-blue-600 
-                  peer-focus:dark:text-blue-500 
-                  peer-placeholder-shown:scale-100 
-                  peer-placeholder-shown:translate-y-0 
-                  peer-focus:scale-75 
-                  peer-focus:-translate-y-6"
-              >
-                Nom
-              </label>
-            </div>
-            <div 
+            <label 
+              htmlFor="floating_phone" 
               className="
-                relative 
-                z-0 
-                w-full 
-                mb-5 
-                group"
+                peer-focus:font-medium 
+                absolute 
+                text-sm 
+                text-gray-500 
+                dark:text-gray-400 
+                duration-300 
+                transform 
+                -translate-y-6 
+                scale-75 
+                top-3 
+                right-50.5 
+                -z-10 
+                origin-left 
+                peer-focus:start-0 
+                rtl:peer-focus:translate-x-1/4 
+                peer-focus:text-blue-600 
+                peer-focus:dark:text-blue-500 
+                peer-placeholder-shown:scale-100 
+                peer-placeholder-shown:translate-y-0 
+                peer-focus:scale-75 
+                peer-focus:-translate-y-6
+                "
             >
-              <input 
-                type="tel" 
-                pattern="+33 [1-9]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" 
-                name="floating_phone" 
-                id="floating_phone" 
-                className="
-                  block 
-                  py-2.5 
-                  px-0 
-                  w-full 
-                  text-sm 
-                  text-gray-900 
-                  bg-transparent 
-                  border-0 
-                  border-b-2 
-                  border-gray-300 
-                  appearance-none 
-                  dark:text-white 
-                  dark:border-gray-600 
-                  dark:focus:border-blue-500 
-                  focus:outline-none 
-                  focus:ring-0 
-                  focus:border-blue-600 
-                  peer" 
-                  placeholder=" " 
-                />
-              <label 
-                htmlFor="floating_phone" 
-                className="
-                  peer-focus:font-medium 
-                  absolute 
-                  text-sm 
-                  text-gray-500 
-                  dark:text-gray-400 
-                  duration-300 
-                  transform 
-                  -translate-y-6 
-                  scale-75 
-                  top-3 
-                  -z-10 
-                  origin-left 
-                  peer-focus:start-0 
-                  rtl:peer-focus:translate-x-1/4 
-                  peer-focus:text-blue-600 
-                  peer-focus:dark:text-blue-500 
-                  peer-placeholder-shown:scale-100 
-                  peer-placeholder-shown:translate-y-0 
-                  peer-focus:scale-75 
-                  peer-focus:-translate-y-6
-                  "
-              >
-                téléphone (+33 1 23 45 67 89)
-              </label>
-            </div>
-            <div 
+              téléphone (+33 1 23 45 67 89)
+            </label>
+          </div>
+          <div 
+            className="
+              relative 
+              z-0 
+              w-full 
+              mb-5 
+              group"
+          >
+            <input 
+              type="text" 
+              name="floating_company" 
+              id="floating_company" 
               className="
-                relative 
-                z-0 
+                block 
+                py-2.5 
+                px-0 
                 w-full 
-                mb-5 
-                group"
-            >
-              <input 
-                type="text" 
-                name="floating_company" 
-                id="floating_company" 
-                className="
-                  block 
-                  py-2.5 
-                  px-0 
-                  w-full 
-                  text-sm 
-                  text-gray-900 
-                  bg-transparent 
-                  border-0 
-                  border-b-2 
-                  border-gray-300 
-                  appearance-none 
-                  dark:text-white 
-                  dark:border-gray-600 
-                  dark:focus:border-blue-500 
-                  focus:outline-none 
-                  focus:ring-0 
-                  focus:border-blue-600 
-                  peer" 
-                placeholder=" "
-              />
-              <label 
-                htmlFor="floating_company" 
-                className="
-                  w-full 
-                  peer-focus:font-medium 
-                  absolute 
-                  text-sm 
-                  text-gray-500 
-                  dark:text-gray-400 
-                  duration-300 
-                  transform 
-                  -translate-y-6 
-                  scale-75 
-                  top-3 
-                  right-17 
-                  -z-10 
-                  origin-left 
-                  peer-focus:start-0 
-                  rtl:peer-focus:translate-x-1/4 
-                  peer-focus:text-blue-600 
-                  peer-focus:dark:text-blue-500 
-                  peer-placeholder-shown:scale-100 
-                  peer-placeholder-shown:translate-y-0 
-                  peer-focus:scale-75 
-                  peer-focus:-translate-y-6"
-              >
-                Société
-              </label>
-            </div>
-            <div 
+                text-sm 
+                text-gray-900 
+                bg-transparent 
+                border-0 
+                border-b-2 
+                border-gray-300 
+                appearance-none 
+                dark:text-white 
+                dark:border-gray-600 
+                dark:focus:border-blue-500 
+                focus:outline-none 
+                focus:ring-0 
+                focus:border-blue-600 
+                peer" 
+              placeholder=" "
+            />
+            <label 
+              htmlFor="floating_company" 
               className="
-                relative 
-                z-0 
+                peer-focus:font-medium 
+                absolute 
                 w-full 
-                mb-5 
-                group"
+                text-sm 
+                text-gray-500 
+                dark:text-gray-400 
+                duration-300 
+                transform 
+                -translate-y-6 
+                scale-75 
+                top-3 
+                right-48 
+                -z-10 
+                origin-left 
+                peer-focus:start-0 
+                rtl:peer-focus:translate-x-1/4 
+                peer-focus:text-blue-600 
+                peer-focus:dark:text-blue-500 
+                peer-placeholder-shown:scale-100 
+                peer-placeholder-shown:translate-y-0 
+                peer-focus:scale-75 
+                peer-focus:-translate-y-6"
             >
-              <label 
-                htmlFor="message" 
-                className="
-                  block 
-                  mb-2 
-                  text-sm 
-                  font-medium 
-                  text-gray-900 
-                  dark:text-white"
-              >
-                Comment pourrais-je créer ou améliorer votre site internet?
-              </label>
-              <textarea 
-                id="message"
-                value={value}
-                onChange={handleChange} 
-                rows={rows}
-                className="
-                  block 
-                  p-2.5 
-                  w-full 
-                  text-sm 
-                  text-gray-900 
-                  bg-gray-50 
-                  rounded-lg 
-                  border 
-                  border-gray-300 
-                  focus:ring-blue-500 
-                  focus:border-blue-500 
-                  dark:bg-gray-700 
-                  dark:border-gray-600 
-                  dark:placeholder-gray-400 
-                  dark:text-white 
-                  dark:focus:ring-blue-500 
-                  dark:focus:border-blue-500" 
-                placeholder=" ">
-              </textarea>
-            </div>
+              Société
+            </label>
+          </div>
+          <div 
+            className="
+              relative 
+              z-0 
+              w-full 
+              mb-5 
+              group"
+          >
+            <label 
+              htmlFor="message" 
+              className="
+                block 
+                mb-2 
+                text-sm 
+                font-medium 
+                text-gray-900 
+                dark:text-white"
+            >
+              Parlons de votre projet de site web
+            </label>
+            <textarea 
+              id="message"
+              value={value}
+              onChange={handleChange} 
+              className="
+                block 
+                p-2.5 
+                min-h-24 
+                w-full 
+                text-sm 
+                text-gray-900 
+                bg-gray-50 
+                rounded-lg 
+                border 
+                border-gray-300 
+                focus:ring-blue-500 
+                focus:border-blue-500 
+                dark:bg-gray-700 
+                dark:border-gray-600 
+                dark:placeholder-gray-400 
+                dark:text-white 
+                dark:focus:ring-blue-500 
+                dark:focus:border-blue-500" 
+              placeholder=" ">
+            </textarea>
           </div>
           <button 
             type="submit" 

@@ -173,7 +173,7 @@ Error generating stack: `+e.message+`
                 -translate-y-6 
                 scale-75 
                 top-3 
-                right-47
+                right-32
                 -z-10 
                 origin-left 
                 peer-focus:start-0 
@@ -184,7 +184,7 @@ Error generating stack: `+e.message+`
                 peer-placeholder-shown:scale-100 
                 peer-placeholder-shown:translate-y-0 
                 peer-focus:scale-75 
-                peer-focus:-translate-y-6`,children:`courriel`})]}),(0,y.jsxs)(`div`,{className:`
+                peer-focus:-translate-y-6`,children:`courriel (obligatoire)`})]}),(0,y.jsxs)(`div`,{className:`
               relative 
               z-0 
               w-full 
@@ -219,7 +219,7 @@ Error generating stack: `+e.message+`
                 -translate-y-6 
                 scale-75 
                 top-3 
-                right-49 
+                right-34 
                 -z-10 
                 origin-left 
                 peer-focus:start-0 
@@ -229,7 +229,7 @@ Error generating stack: `+e.message+`
                 peer-placeholder-shown:scale-100 
                 peer-placeholder-shown:translate-y-0 
                 peer-focus:scale-75 
-                peer-focus:-translate-y-6`,children:`Prénom`})]}),(0,y.jsxs)(`div`,{className:`
+                peer-focus:-translate-y-6`,children:`Prénom (obligatoire)`})]}),(0,y.jsxs)(`div`,{className:`
               relative 
               z-0 
               w-full 
@@ -264,7 +264,7 @@ Error generating stack: `+e.message+`
                 -translate-y-6 
                 scale-75 
                 top-3 
-                right-52 
+                right-37 
                 -z-10 
                 origin-left 
                 peer-focus:start-0 
@@ -274,7 +274,7 @@ Error generating stack: `+e.message+`
                 peer-placeholder-shown:scale-100 
                 peer-placeholder-shown:translate-y-0 
                 peer-focus:scale-75 
-                peer-focus:-translate-y-6`,children:`Nom`})]}),(0,y.jsxs)(`div`,{className:`
+                peer-focus:-translate-y-6`,children:`Nom (obligatoire)`})]}),(0,y.jsxs)(`div`,{className:`
               relative 
               z-0 
               w-full 
@@ -394,6 +394,8 @@ Error generating stack: `+e.message+`
                 dark:text-white 
                 dark:focus:ring-blue-500 
                 dark:focus:border-blue-500`,placeholder:` `})]}),(0,y.jsx)(`button`,{type:`submit`,className:`
+              disabled: cursor-not-allowed 
+              opacity-50 
               text-white 
               bg-blue-700 
               hover:bg-blue-800 
@@ -410,4 +412,27 @@ Error generating stack: `+e.message+`
               text-center 
               dark:bg-blue-600 
               dark:hover:bg-blue-700 
-              dark:focus:ring-blue-800`,children:`Envoyer`})]})]})]})}var x=b,ee=document.getElementById(`root`);ee&&(0,g.createRoot)(ee).render((0,y.jsx)(_.StrictMode,{children:(0,y.jsx)(x,{})}));
+              dark:focus:ring-blue-800`,children:`Envoyer`})]}),(0,y.jsx)(`h4`,{className:`
+            pt-8 
+            text-2xl
+            leading-loose`,children:`utilisation et protection de vos données personnelles`}),`Selon https://www.cnil.fr/fr/la-cnil-publie-un-nouveau-guide-pour-accompagner-les-associations nous avons compris « que faire en cas de violation des données ». Si « Des données personnelles ont été, de manière accidentelle ou illicite, détruites, perdues, modifiées, divulguées (courriels transmis à des mauvais destinataires, équipement perdu ou volé, publication involontaire de données sur Internet, etc.) Cet incident constitue une « violation de données ». Lorsqu’un tel incident se produit, il est nécessaire de le documenter ». « En cas de contrôle, ce document est vérifié par les services de la CNIL.`,(0,y.jsx)(`h5`,{className:`
+            pt-6
+            text-[1.25rem]
+            leading-loose`,children:`finalité`}),`Vos données sont collectées pour écrire par courriel votre message.`,(0,y.jsx)(`h5`,{className:`
+            pt-6
+            text-[1.25rem]
+            leading-loose`,children:`durée de conservation`}),`Vos données sont conservées 6 mois.`,(0,y.jsx)(`h5`,{className:`
+            pt-6
+            text-[1.25rem]
+            leading-loose`,children:`vos droits`}),`Vous avez le droit d'accès, rectification, effacement, portabilité de vos données. Demandez-le selon https://framasoft.org/fr/cgu en remplissant https://contact.framasoft.org/. C'est dans le cadre de l'art. 34 de la loi "Informatique et Libertés". Vous ne devriez pas avoir besoin de contacter la CNIL après.`,(0,y.jsx)(`h6`,{className:`
+            pt-4
+            leading-loose`,children:`Demande d’effacement et droit à l’oubli RGPD art.17`}),`En tant qu'utilisat·rice·eur du service vous pouvez La suppression des données personnelles vous concernant ne prend pas en compte les données stockées que toute autorité administrative ou judiciaire pourrait avoir demandé avant que vous ayez demandé leur suppression.`,(0,y.jsx)(`h5`,{className:`
+            pt-6
+            text-[1.25rem]
+            leading-loose`,children:`notre charte`}),`Exprimez-vous s'il-vous-plaît selon https://framasoft.org/fr/moderation dans le formulaire mis à votre disposition.`,(0,y.jsx)(`h5`,{className:`
+            pt-6
+            text-[1.25rem]
+            leading-loose`,children:`transfert de vos données`}),`Vos données sont transférées à Framaforms(Framasoft, Paris). Voyez https://framasoft.frama.io/rgpd/services/framaforms/. Framasoft pourrait envoyer des données aux États-Unis via Akismet. Cette information pourrait relever de la liberté d'expression et d'opinion telle qu'exprimée https://framasoft.org/fr/cgu chap. "Version courte", "On est sympathiques" ... "Mais" ... "Clause "La loi est la loi, et on ne veut pas finir en taule": vous devez respecter la loi (que celle-ci soit bien faite ou idiote), sinon votre compte sera supprimé ;" Sentez-vous libre d'aller chercher dans une version plus longue comment on préfèrerait Akismet à Antispam Bee par exemple. J'utilise Framaforms sans compte utilisateur par simplicité de 2 sources web et IA concordantes: Brave Leo et Companion(OpenClassrooms) ChatGPT3.5+. Vous en tant que répondant·e ne devriez pas être concerné·e·s par un transfert de données hors de France.`,(0,y.jsx)(`h5`,{className:`
+            pt-6
+            text-[1.25rem]
+            leading-loose`,children:`cookies et traçage`}),`Ce site https://ericdev1o.github.io/OC900_p12_portfolio/ n'utilise aucun cookie de suivi ni outil de traçage. Aucune donnée de navigation n'est collectée sauf les informations que vous renseignez volontairement dans le formulaire.`]})]})}var x=b,ee=document.getElementById(`root`);ee&&(0,g.createRoot)(ee).render((0,y.jsx)(_.StrictMode,{children:(0,y.jsx)(x,{})}));

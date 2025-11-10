@@ -1,7 +1,5 @@
 import type { Config } from 'tailwindcss';
 export default {
-  important: true,
-  //darkMode: 'class',
   content: [
     "./src/**/*.{ts,tsx}",
     "./node_modules/flowbite-react/**/*.js",

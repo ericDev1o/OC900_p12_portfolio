@@ -300,11 +300,34 @@ function App() {
             text-2xl
             leading-loose"
         >
-          Utilisez provisoirement le formulaire Framasoft ci-dessous pour une meilleure confidentialité des courriels.
+          Utilisez s'il-vous-plaît provisoirement le formulaire Framaform ci-dessous pour une meilleure confidentialité des courriels.
         </h4>
         <a 
           href="https://framaforms.org/contact-eric-faraut-1762791991"
-          target='_blank'>Framaform parlons de votre projet de site web</a>
+          target='_blank'
+        >
+          <button 
+              className="
+                mt-4 
+                text-gray-700 
+                bg-orange-600 
+                hover:bg-orange-700
+                cursor-pointer 
+                focus:ring-4 
+                focus:outline-none 
+                focus:ring-blue-300 
+                font-medium 
+                rounded-lg 
+                text-sm 
+                w-full 
+                sm:w-auto 
+                px-5 
+                py-2.5 
+                text-center"
+            >
+              Parlons de votre projet de site web
+            </button>
+          </a>
         <form 
           className="
             max-w-md 

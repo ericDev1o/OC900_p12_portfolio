@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function App() {
+export default function Home() {
   const path = `${import.meta.env.BASE_URL}`;
 
   const viteLogo = path + 'vite.svg';
@@ -831,5 +831,3 @@ function App() {
     </main>
   );
 }
-
-export default App;

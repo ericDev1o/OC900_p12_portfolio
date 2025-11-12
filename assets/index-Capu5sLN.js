@@ -206,7 +206,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 peer-placeholder-shown:scale-100 
                 peer-placeholder-shown:translate-y-0 
                 peer-focus:scale-75 
-                peer-focus:-translate-y-6`,children:`courriel (obligatoire)`})]}),(0,j.jsxs)(`div`,{className:`
+                peer-focus:-translate-y-6`,children:`courriel (obligatoire)`}),(0,j.jsxs)(`p`,{className:`
+                mt-2 
+                text-sm 
+                text-red-700 
+                dark:text-red-800`,children:[`Veuillez cliquer sur le bouton`,(0,j.jsx)(`span`,{className:`
+                  mx-2 
+                  font-extrabold
+                  text-orange-700`,children:`orange`}),`ci-dessus`,(0,j.jsx)(`span`,{className:`
+                  mx-2 
+                  font-extrabold`,children:`plutôt`}),`que le`,(0,j.jsx)(`span`,{className:`
+                  mx-2 
+                  font-extrabold
+                  text-blue-600`,children:`bleu`}),`ci-dessous s'il vous plaît.`]})]}),(0,j.jsxs)(`div`,{className:`
               relative 
               z-0 
               w-full 
@@ -420,7 +432,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 dark:placeholder-gray-400 
                 dark:text-white 
                 dark:focus:ring-blue-500 
-                dark:focus:border-blue-500`,placeholder:` `})]}),(0,j.jsx)(`button`,{type:`submit`,className:`
+                dark:focus:border-blue-500`,placeholder:`Veuillez s'il-vous-plaît avoir la patience de cliquer sur le bouton orange ci-dessus.`}),(0,j.jsxs)(`p`,{className:`
+                mt-2 
+                text-sm 
+                text-red-600 
+                dark:text-red-500`,children:[(0,j.jsx)(`span`,{className:`font-medium`,children:`Excusez-moi ne remplissez pas encore s'il vous plaît.`}),`Veuillez cliquer sur le bouton orange ci-dessus plutôt que le bleu ci-dessous.`]})]}),(0,j.jsx)(`button`,{type:`submit`,className:`
               disabled: cursor-not-allowed 
               opacity-50 
               text-white 
@@ -492,20 +508,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             flex
             justify-between 
             items-center`,children:[(0,j.jsx)(`img`,{src:`./logo.svg`,className:` 
-                h-6 
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:`GitHub logo`}),(0,j.jsx)(`a`,{href:`/`,className:`
+                    h-6 
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:``}),(0,j.jsx)(`a`,{href:`/`,className:`
+                    disabled: cursor-not-allowed 
+                    opacity-50
                     text-blue-500
                     underline`,children:`accueil`}),(0,j.jsx)(`a`,{href:`/projets`,className:`
-                text-blue-500
-                underline`,children:`projets`}),(0,j.jsx)(`a`,{href:`https://github.com/ericDev1o`,target:`_blank`,children:(0,j.jsx)(`img`,{src:`./github.svg`,className:` 
-                h-6 
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:`GitHub logo`})}),(0,j.jsx)(`a`,{href:`https://linkedin.com/in/ericfaraut`,target:`_blank`,children:(0,j.jsx)(`img`,{src:`./linkedin.svg`,className:`
+                    disabled: cursor-not-allowed 
+                    opacity-50
+                    text-blue-500
+                    underline`,children:`projets`}),(0,j.jsx)(`a`,{href:`https://github.com/ericDev1o`,target:`_blank`,children:(0,j.jsx)(`img`,{src:`./github.svg`,className:` 
+                    h-6 
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:`GitHub logo`})}),(0,j.jsx)(`a`,{href:`https://linkedin.com/in/ericfaraut`,target:`_blank`,children:(0,j.jsx)(`img`,{src:`./linkedin.svg`,className:`
                 h-6 
                 will-change-filter 
                 filter 
@@ -530,4 +550,4 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               will-change-filter 
               filter 
               duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:`LinkedIn logo`})})]})}var kn=({children:e})=>(0,j.jsxs)(j.Fragment,{children:[(0,j.jsx)(Dn,{}),e,(0,j.jsx)(On,{})]});function An(){return(0,j.jsx)(tn,{basename:`/OC900_p12_portfolio`,children:(0,j.jsx)(kn,{children:(0,j.jsxs)(vt,{children:[(0,j.jsx)(gt,{path:`/`,element:(0,j.jsx)(wn,{})}),(0,j.jsx)(gt,{path:`/projets`,element:(0,j.jsx)(Tn,{})}),(0,j.jsx)(gt,{path:`*`,element:(0,j.jsx)(En,{})})]})})})}var jn=document.getElementById(`root`);jn&&(0,g.createRoot)(jn).render((0,j.jsx)(_.StrictMode,{children:(0,j.jsx)(An,{})}));
+              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:`LinkedIn logo`})})]})}var kn=({children:e})=>(0,j.jsxs)(j.Fragment,{children:[(0,j.jsx)(Dn,{}),e,(0,j.jsx)(On,{})]});function An(){return(0,j.jsx)(tn,{children:(0,j.jsx)(kn,{children:(0,j.jsxs)(vt,{children:[(0,j.jsx)(gt,{path:`/`,element:(0,j.jsx)(wn,{})}),(0,j.jsx)(gt,{path:`/projets`,element:(0,j.jsx)(Tn,{})}),(0,j.jsx)(gt,{path:`*`,element:(0,j.jsx)(En,{})})]})})})}var jn=document.getElementById(`root`);jn&&(0,g.createRoot)(jn).render((0,j.jsx)(_.StrictMode,{children:(0,j.jsx)(An,{})}));

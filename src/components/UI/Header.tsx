@@ -14,15 +14,17 @@ export default function Header() {
             <img 
                 src={myLogo} 
                 className=' 
-                h-6 
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='GitHub logo' />
+                    h-6 
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='' />
             <a 
                 href='/'
                 className='
+                    disabled: cursor-not-allowed 
+                    opacity-50
                     text-blue-500
                     underline' 
             >
@@ -31,8 +33,10 @@ export default function Header() {
             <a 
                 href='/projets'
                 className='
-                text-blue-500
-                underline' 
+                    disabled: cursor-not-allowed 
+                    opacity-50
+                    text-blue-500
+                    underline' 
             >
                 projets
             </a>
@@ -43,11 +47,11 @@ export default function Header() {
             <img 
                 src={githubLogo} 
                 className=' 
-                h-6 
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                    h-6 
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
                 alt='GitHub logo' />
             </a>
             <a 

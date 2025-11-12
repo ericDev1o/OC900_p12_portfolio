@@ -366,7 +366,7 @@ export default function Home() {
                 focus:ring-0 
                 focus:border-blue-600 
                 peer" 
-                placeholder=" " 
+                placeholder="Veuillez cliquer sur le bouton orange ci-dessus SVP." 
                 required 
             />
             <label 
@@ -398,6 +398,19 @@ export default function Home() {
             >
               courriel (obligatoire)
             </label>
+            <p 
+              className="
+                mt-2 
+                text-sm 
+                text-red-700 
+                dark:text-red-800"
+            >
+              <span 
+                className="font-medium"
+              >Excusez-moi ne remplissez pas encore s'il vous plaît.
+              </span>
+               Veuillez cliquer sur le bouton orange ci-dessus plutôt que le bleu ci-dessous.
+            </p>
           </div>
           <div 
             className="
@@ -698,8 +711,22 @@ export default function Home() {
                 dark:text-white 
                 dark:focus:ring-blue-500 
                 dark:focus:border-blue-500" 
-              placeholder=" ">
+              placeholder="Veuillez s'il-vous-plaît avoir la patience de cliquer sur le bouton orange ci-dessus."
+            >
             </textarea>
+            <p 
+              className="
+                mt-2 
+                text-sm 
+                text-red-600 
+                dark:text-red-500"
+            >
+              <span 
+                className="font-medium"
+              >Excusez-moi ne remplissez pas encore s'il vous plaît.
+              </span>
+               Veuillez cliquer sur le bouton orange ci-dessus plutôt que le bleu ci-dessous.
+            </p>
           </div>
           <button 
             type="submit" 

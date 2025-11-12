@@ -8,7 +8,7 @@
     "build": "vite build --base=./",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "yarn build",
+    "predeploy": "yarn build && cp public/404.html dist/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -40,6 +40,6 @@
     "vite": "npm:rolldown-vite@7.1.14",
     "vite-tsconfig-paths": "^5.1.4"
   },
-  "packageManager": "yarn@4.10.3",
+  "packageManager": "yarn@4.11.0",
   "homepage": "https://ericdev1o.github.io/OC900_p12_portfolio"
 }

@@ -4,8 +4,13 @@ import Projects from './pages/Projects';
 import Error404 from './pages/Error404';
 import Layout from './components/containers/Layout';
 
-const MyRouting = () => (
-    <BrowserRouter>
+/**
+ * 
+ * @returns <BrowserRouter basename='/OC900_p12_portfolio'>
+ * on gh-pages else build <BrowserRouter>
+ */
+export default function MyRouting() {
+    return <BrowserRouter>
         <Layout>
             <Routes>
                 <Route path='/' element={<Home />} />
@@ -14,6 +19,4 @@ const MyRouting = () => (
             </Routes>
         </Layout>
     </BrowserRouter>
-);
-
-export default MyRouting;
+}

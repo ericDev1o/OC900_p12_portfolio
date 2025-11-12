@@ -366,7 +366,7 @@ export default function Home() {
                 focus:ring-0 
                 focus:border-blue-600 
                 peer" 
-                placeholder="Veuillez cliquer sur le bouton orange ci-dessus SVP." 
+                placeholder=" " 
                 required 
             />
             <label 
@@ -405,11 +405,32 @@ export default function Home() {
                 text-red-700 
                 dark:text-red-800"
             >
-              <span 
-                className="font-medium"
-              >Excusez-moi ne remplissez pas encore s'il vous plaît.
+              Veuillez cliquer sur le bouton 
+               <span 
+                className="
+                  mx-2 
+                  font-extrabold
+                  text-orange-700"
+              >
+                orange 
               </span>
-               Veuillez cliquer sur le bouton orange ci-dessus plutôt que le bleu ci-dessous.
+              ci-dessus
+              <span
+                className="
+                  mx-2 
+                  font-extrabold"
+              >plutôt 
+              </span>
+              que le
+              <span
+                className="
+                  mx-2 
+                  font-extrabold
+                  text-blue-600"
+              >
+                bleu 
+              </span>
+              ci-dessous s'il vous plaît. 
             </p>
           </div>
           <div 

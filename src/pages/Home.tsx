@@ -36,7 +36,7 @@ export default function Home() {
           text-5xl 
           leading-loose"
       >
-        Bonjour, je suis Eric Faraut
+        Bonjour, je suis Eric
       </h1>
       <h2
         className="
@@ -104,6 +104,7 @@ export default function Home() {
           <img 
             src={viteLogo} 
             className='
+              lazy 
               p-6 
               h-25
               will-change-filter 
@@ -114,6 +115,7 @@ export default function Home() {
           <img 
             src={htmlLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -124,6 +126,7 @@ export default function Home() {
           <img 
             src={cssLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -134,6 +137,7 @@ export default function Home() {
           <img 
             src={scssLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -144,6 +148,7 @@ export default function Home() {
           <img 
             src={jestLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -154,6 +159,7 @@ export default function Home() {
           <img 
             src={jsLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -164,6 +170,7 @@ export default function Home() {
           <img 
             src={tsLogo} 
             className=' 
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -174,6 +181,7 @@ export default function Home() {
           <img 
             src={reactLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -185,6 +193,7 @@ export default function Home() {
           <img 
             src={reduxLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -195,6 +204,7 @@ export default function Home() {
           <img 
             src={reactRouterLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -204,6 +214,7 @@ export default function Home() {
           <img 
             src={lighthouseLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -214,6 +225,7 @@ export default function Home() {
           <img 
             src={gtmetrixLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -224,6 +236,7 @@ export default function Home() {
           <img 
             src={waveLogo} 
             className='
+              lazy 
               p-6 
               h-25 
               will-change-filter 
@@ -236,14 +249,14 @@ export default function Home() {
         <section>
           <h3
             className="
-            pt-10
-            text-3xl
-            leading-loose"
+              pt-10
+              text-3xl
+              leading-loose"
           >projets</h3>
           <h4
             className="
-            text-2xl
-            leading-loose"
+              text-2xl
+              leading-loose"
           >Booki, votre agence de voyage</h4>
           <a 
             href="https://ericdev1o.github.io/OC900_p3_Booki/"
@@ -255,8 +268,8 @@ export default function Home() {
           </a>
           <h4
             className="
-            text-2xl
-            leading-loose"
+              text-2xl
+              leading-loose"
           >OhMyFood, vos menus pré-commandables</h4>
           <a 
             href="https://ericdev1o.github.io/OC900_p4_OhMyFood/"
@@ -268,18 +281,18 @@ export default function Home() {
           </a>
           <h4
             className="
-            text-2xl
-            leading-loose"
+              text-2xl
+              leading-loose"
           >Sophie Bluel, votre architecte d'intérieur</h4>
           <h4
             className="
-            text-2xl
-            leading-loose"
+              text-2xl
+              leading-loose"
           >Kasa, votre agence immobilière</h4>
           <h4
             className="
-            text-2xl
-            leading-loose"
+              text-2xl
+              leading-loose"
           >Nina Carducci, votre photographe</h4>
           <a 
             href="https://ericdev1o.github.io/OC900_p8_ninacarducci.github.io/"
@@ -291,35 +304,36 @@ export default function Home() {
           </a>
           <h4
             className="
-            text-2xl
-            leading-loose"
+              text-2xl
+              leading-loose"
           >724Events, vos évènements organisés avec succès</h4>
           <h4
             className="
-            text-2xl
-            leading-loose"
+              text-2xl
+              leading-loose"
           >ArgentBank, votre nouvelle banque</h4>
       </section>
       <section>
         <h3
           className="
-          pt-10 
-          text-3xl
-          leading-loose"
+            pt-10 
+            text-3xl
+            leading-loose"
         >parcours</h3>
       </section>
       <section>
         <h3
           className="
-          pt-10 
-          text-3xl
-          leading-loose"
+            pt-10 
+            text-3xl
+            leading-loose"
         >
           contact
         </h3>
-        <div className="
-          flex
-          justify-center"
+        <div 
+          className="
+            flex
+            justify-center"
         >
           <a 
             href='https://github.com/ericDev1o' 

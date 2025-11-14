@@ -211,11 +211,23 @@ export default function Home() {
             text-2xl
             leading-loose"
           >Booki, votre agence de voyage</h4>
+          <a 
+            href="https://ericdev1o.github.io/OC900_p3_Booki/"
+            target="_blank"
+          >
+            OC900_p3_Booki
+          </a>
           <h4
             className="
             text-2xl
             leading-loose"
           >OhMyFood, vos menus pré-commandables</h4>
+          <a 
+            href="https://ericdev1o.github.io/OC900_p4_OhMyFood/"
+            target="_blank"
+          >
+            OC900_p4_OhMyFood
+          </a>
           <h4
             className="
             text-2xl
@@ -231,6 +243,12 @@ export default function Home() {
             text-2xl
             leading-loose"
           >Nina Carducci, votre photographe</h4>
+          <a 
+            href="https://ericdev1o.github.io/OC900_p8_ninacarducci.github.io/"
+            target="_blank"
+          >
+            p8_ninacarducci
+          </a>
           <h4
             className="
             text-2xl

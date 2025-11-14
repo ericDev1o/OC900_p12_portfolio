@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+@config "../tailwind.config.ts";
+@import "tailwindcss";
+
+@theme {
+  --font-jetbrains: "JetBrains Mono", system-ui, sans-serif;
+}
+
+@layer utilities {
+  .synthesis-none {
+    font-synthesis: none;
+  }
+
+  .rendering-legibility {
+    text-rendering: optimizeLegibility;
+  }
+}

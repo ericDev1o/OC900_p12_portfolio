@@ -21,26 +21,6 @@ export default function Header() {
                     hover:drop-shadow-[0_0_2em_#646cffaa]' 
                 alt='' />
             <a 
-                href='/'
-                className='
-                    disabled: cursor-not-allowed 
-                    opacity-50
-                    text-blue-500
-                    underline' 
-            >
-                accueil
-            </a>
-            <a 
-                href='/projets'
-                className='
-                    disabled: cursor-not-allowed 
-                    opacity-50
-                    text-blue-500
-                    underline' 
-            >
-                projets
-            </a>
-            <a 
                 href='https://github.com/ericDev1o' 
                 target='_blank'
             >

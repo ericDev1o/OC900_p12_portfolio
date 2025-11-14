@@ -53,7 +53,41 @@ export default function Home() {
           text-3xl
           leading-loose"
         >À propos de moi</h3>
-        Passionné par l'intégration front-end les interfaces que je développe pour simplifier l'utilisation par tou·te·s font la part belle à l'accessibilité et l'éco-conception.
+        Développez votre activité en évitant les 
+        <span 
+          className="
+          mx-2 
+          font-extrabold"
+        >
+          frictions.
+        </span> 
+        Améliorez vos 
+        <span
+          className="
+            mx-2 
+            font-extrabold"
+        >
+          chiffres 
+        </span>
+        clés de 
+        <span 
+          className="
+            mx-2 
+            font-extrabold
+            text-violet-600"
+        >
+          performances.
+        </span> 
+        Passionné par les sites web, les interfaces 
+        <span 
+          className="
+            mx-2 
+            font-extrabold 
+            text-green-600"
+        >
+          durables
+        </span>
+        que j'intègre simplifient l'utilisation par tou·te·s. 
       </section>
       <section>
         <h3
@@ -214,8 +248,10 @@ export default function Home() {
           <a 
             href="https://ericdev1o.github.io/OC900_p3_Booki/"
             target="_blank"
+            className="
+              text-orange-600"
           >
-            OC900_p3_Booki
+            p3 Booki
           </a>
           <h4
             className="
@@ -225,8 +261,10 @@ export default function Home() {
           <a 
             href="https://ericdev1o.github.io/OC900_p4_OhMyFood/"
             target="_blank"
+            className="
+              text-orange-600"
           >
-            OC900_p4_OhMyFood
+            p4 OhMyFood
           </a>
           <h4
             className="
@@ -246,8 +284,10 @@ export default function Home() {
           <a 
             href="https://ericdev1o.github.io/OC900_p8_ninacarducci.github.io/"
             target="_blank"
+            className="
+              text-orange-600"
           >
-            p8_ninacarducci
+            p8 Nina Carducci
           </a>
           <h4
             className="
@@ -762,7 +802,7 @@ export default function Home() {
             >
               <span 
                 className="font-medium"
-              >Excusez-moi ne remplissez pas encore s'il vous plaît.
+              >Excusez-moi ne remplissez pas encore cet aperçu s'il vous plaît.
               </span>
                Veuillez cliquer sur le bouton orange ci-dessus plutôt que le bleu ci-dessous.
             </p>

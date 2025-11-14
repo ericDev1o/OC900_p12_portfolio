@@ -4,11 +4,6 @@ import Projects from './pages/Projects';
 import Error404 from './pages/Error404';
 import Layout from './components/containers/Layout';
 
-/**
- * 
- * @returns <BrowserRouter basename='/OC900_p12_portfolio'>
- * on gh-pages else build <BrowserRouter>
- */
 export default function MyRouting() {
     return <BrowserRouter>
         <Layout>

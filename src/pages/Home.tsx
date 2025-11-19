@@ -6,16 +6,9 @@ export default function Home() {
   const viteLogo = path + 'vite.svg';
   const htmlLogo = path + 'HTML5.svg';
   const cssLogo = path + 'CSS3.svg';
-  const scssLogo = path + 'SCSS.svg';
-  const jestLogo = path + 'jest.svg';
   const jsLogo = path + 'JS.svg';
   const tsLogo = path + 'TS.svg';
   const reactLogo = path + 'react.svg';
-  const reactRouterLogo = path + 'ReactRouter.svg';
-  const reduxLogo = path + 'redux.svg';
-  const lighthouseLogo = path + 'lighthouse.svg';
-  const gtmetrixLogo = path + 'GTMetrix.svg';
-  const waveLogo = path + 'WAvE.svg';
   const linkedinLogo = path + 'linkedin.svg';
   const githubLogo = path + 'github.svg';
 
@@ -133,29 +126,7 @@ export default function Home() {
               filter 
               duration-300
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='CSS3 logo' />
-          <img 
-            src={scssLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='SCSS logo' />
-          <img 
-            src={jestLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='Jest logo' />
+            alt='CSS3 logo' />      
           <img 
             src={jsLogo} 
             className='
@@ -190,60 +161,6 @@ export default function Home() {
               hover:drop-shadow-[0_0_2em_#61dafbaa]
               animate-[spin_20s_linear_infinite]' 
             alt='React logo' />
-          <img 
-            src={reduxLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='Redux logo' />
-          <img 
-            src={reactRouterLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300' 
-            alt='React Router logo' />
-          <img 
-            src={lighthouseLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='Lighthouse logo' />
-          <img 
-            src={gtmetrixLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='GTMetrix logo' />
-          <img 
-            src={waveLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='WAvE logo' />
           </div>
         </section>
         <section>
@@ -252,12 +169,30 @@ export default function Home() {
               pt-10
               text-3xl
               leading-loose"
-          >projets</h3>
+          >
+            projets
+          </h3>
           <h4
             className="
               text-2xl
               leading-loose"
-          >Booki, votre agence de voyage</h4>
+          >
+            Riding cities, découvrez le skateboard près de chez vous.
+          </h4>
+          <a
+            href="https://ericdev1o.github.io/OC900_p2_RidingCities/"
+            target="_blank"
+            className="text-orange-600"
+          >
+            p2 Riding Cities
+          </a>
+          <h4
+            className="
+              text-2xl
+              leading-loose"
+          >
+            Booki, votre agence de voyage
+          </h4>
           <a 
             href="https://ericdev1o.github.io/OC900_p3_Booki/"
             target="_blank"
@@ -266,52 +201,6 @@ export default function Home() {
           >
             p3 Booki
           </a>
-          <h4
-            className="
-              text-2xl
-              leading-loose"
-          >OhMyFood, vos menus pré-commandables</h4>
-          <a 
-            href="https://ericdev1o.github.io/OC900_p4_OhMyFood/"
-            target="_blank"
-            className="
-              text-orange-600"
-          >
-            p4 OhMyFood
-          </a>
-          <h4
-            className="
-              text-2xl
-              leading-loose"
-          >Sophie Bluel, votre architecte d'intérieur</h4>
-          <h4
-            className="
-              text-2xl
-              leading-loose"
-          >Kasa, votre agence immobilière</h4>
-          <h4
-            className="
-              text-2xl
-              leading-loose"
-          >Nina Carducci, votre photographe</h4>
-          <a 
-            href="https://ericdev1o.github.io/OC900_p8_ninacarducci.github.io/"
-            target="_blank"
-            className="
-              text-orange-600"
-          >
-            p8 Nina Carducci
-          </a>
-          <h4
-            className="
-              text-2xl
-              leading-loose"
-          >724Events, vos évènements organisés avec succès</h4>
-          <h4
-            className="
-              text-2xl
-              leading-loose"
-          >ArgentBank, votre nouvelle banque</h4>
       </section>
       <section>
         <h3
@@ -320,6 +209,58 @@ export default function Home() {
             text-3xl
             leading-loose"
         >parcours</h3>
+        <p>
+          22 avril 2024 à aujourd'hui : 
+          <span
+            className="
+              mx-2
+              font-extrabold
+              text-violet-600"
+            >
+              intégrateur web 
+          </span>
+          RNCP 38145
+          <a 
+            href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
+            target="_blank"
+            className="
+              mx-2 
+              font-medium 
+              text-fg-brand 
+              hover:underline"
+          >
+            suivez le parcours
+          </a>
+        </p>
+        <p>
+          Contribuons 
+          <span
+            className="
+              mx-2
+              font-extrabold
+              text-green-600"
+          >
+            doucement 
+          </span>
+          à votre 
+          <span
+            className="
+              mx-2
+              font-extrabold
+              text-gray-600"
+          >
+            projet
+          </span> 
+          web avec 
+          <span
+            className="
+              mx-2
+              font-extrabold
+              text-green-600"
+          >
+            impact.
+          </span>
+        </p>
       </section>
       <section>
         <h3

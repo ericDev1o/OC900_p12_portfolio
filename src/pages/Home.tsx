@@ -46,41 +46,47 @@ export default function Home() {
           text-3xl
           leading-loose"
         >À propos de moi</h3>
-        Développez votre activité en évitant les 
-        <span 
+        <p
           className="
-          mx-2 
-          font-extrabold"
+            pt-4
+            text-2xl"
         >
-          frictions.
-        </span> 
-        Améliorez vos 
-        <span
-          className="
+          Développez votre activité en évitant les 
+          <span 
+            className="
             mx-2 
             font-extrabold"
-        >
-          chiffres 
-        </span>
-        clés de 
-        <span 
-          className="
-            mx-2 
-            font-extrabold
-            text-violet-600"
-        >
-          performances.
-        </span> 
-        Passionné par les sites web, les interfaces 
-        <span 
-          className="
-            mx-2 
-            font-extrabold 
-            text-green-600"
-        >
-          durables
-        </span>
-        que j'intègre simplifient l'utilisation par tou·te·s. 
+          >
+            frictions.
+          </span> 
+          Améliorez vos 
+          <span
+            className="
+              mx-2 
+              font-extrabold"
+          >
+            chiffres 
+          </span>
+          clés de 
+          <span 
+            className="
+              mx-2 
+              font-extrabold
+              text-violet-500"
+          >
+            performances.
+          </span> 
+          Passionné par les sites web, les interfaces 
+          <span 
+            className="
+              mx-2 
+              font-extrabold 
+              text-green-600"
+          >
+            durables
+          </span>
+          que j'intègre simplifient l'utilisation par tou·te·s. 
+        </p>
       </section>
       <section>
         <h3
@@ -182,7 +188,9 @@ export default function Home() {
           <a
             href="https://ericdev1o.github.io/OC900_p2_RidingCities/"
             target="_blank"
-            className="text-orange-600"
+            className="
+              text-2xl
+              text-orange-500"
           >
             p2 Riding Cities
           </a>
@@ -197,7 +205,8 @@ export default function Home() {
             href="https://ericdev1o.github.io/OC900_p3_Booki/"
             target="_blank"
             className="
-              text-orange-600"
+              text-2xl
+              text-orange-500"
           >
             p3 Booki
           </a>
@@ -209,13 +218,17 @@ export default function Home() {
             text-3xl
             leading-loose"
         >parcours</h3>
-        <p>
+        <p
+          className="
+            pt-4
+            text-2xl"
+        >
           22 avril 2024 à aujourd'hui : 
           <span
             className="
               mx-2
               font-extrabold
-              text-violet-600"
+              text-violet-500"
             >
               intégrateur web 
           </span>
@@ -232,7 +245,11 @@ export default function Home() {
             suivez le parcours
           </a>
         </p>
-        <p>
+        <p
+          className="
+            pt-4
+            text-2xl"
+        >
           Contribuons 
           <span
             className="
@@ -247,7 +264,7 @@ export default function Home() {
             className="
               mx-2
               font-extrabold
-              text-gray-600"
+              text-gray-500"
           >
             projet
           </span> 
@@ -321,8 +338,10 @@ export default function Home() {
         >
           <button 
               className="
-                mt-4 
-                text-gray-700 
+                mt-8 
+                text-2xl 
+                text-gray-900 
+                font-bold
                 bg-orange-600 
                 hover:bg-orange-700
                 cursor-pointer 
@@ -331,7 +350,6 @@ export default function Home() {
                 focus:ring-blue-300 
                 font-medium 
                 rounded-lg 
-                text-sm 
                 w-full 
                 sm:w-auto 
                 px-5 
@@ -365,7 +383,7 @@ export default function Home() {
                 py-2.5 
                 px-0 
                 w-full 
-                text-sm 
+                text-2xl 
                 text-gray-900 
                 bg-transparent 
                 border-0 
@@ -373,7 +391,7 @@ export default function Home() {
                 border-gray-300 
                 appearance-none 
                 dark:text-white 
-                dark:border-gray-600 
+                dark:border-gray-400 
                 dark:focus:border-blue-500 
                 focus:outline-none 
                 focus:ring-0 
@@ -388,15 +406,15 @@ export default function Home() {
                 peer-focus:font-medium 
                 absolute 
                 w-full 
-                text-sm 
-                text-gray-500 
-                dark:text-gray-400 
+                text-2xl 
+                text-gray-200 
+                dark:text-gray-100 
                 duration-300 
                 transform 
                 -translate-y-6 
                 scale-75 
                 top-3 
-                right-32
+                right-16
                 -z-10 
                 origin-left 
                 peer-focus:start-0 
@@ -414,16 +432,16 @@ export default function Home() {
             <p 
               className="
                 mt-2 
-                text-sm 
-                text-red-700 
-                dark:text-red-800"
+                text-2xl
+                text-red-500 
+                dark:text-red-600"
             >
               Veuillez cliquer sur le bouton 
                <span 
                 className="
                   mx-2 
                   font-extrabold
-                  text-orange-700"
+                  text-orange-600"
               >
                 orange 
               </span>
@@ -439,7 +457,7 @@ export default function Home() {
                 className="
                   mx-2 
                   font-extrabold
-                  text-blue-600"
+                  text-blue-500"
               >
                 bleu 
               </span>
@@ -464,7 +482,7 @@ export default function Home() {
                 py-2.5 
                 px-0 
                 w-full 
-                text-sm 
+                text-2xl 
                 text-gray-900 
                 bg-transparent 
                 border-0 
@@ -472,7 +490,7 @@ export default function Home() {
                 border-gray-300 
                 appearance-none 
                 dark:text-white 
-                dark:border-gray-600 
+                dark:border-gray-400 
                 dark:focus:border-blue-500 
                 focus:outline-none
                 focus:ring-0
@@ -487,15 +505,15 @@ export default function Home() {
                 peer-focus:font-medium 
                 absolute 
                 w-full 
-                text-sm 
-                text-gray-500 
-                dark:text-gray-400 
+                text-2xl
+                text-gray-400 
+                dark:text-gray-300 
                 duration-300 
                 transform 
                 -translate-y-6 
                 scale-75 
                 top-3 
-                right-34 
+                right-19 
                 -z-10 
                 origin-left 
                 peer-focus:start-0 
@@ -528,7 +546,7 @@ export default function Home() {
                 py-2.5 
                 px-0 
                 w-full 
-                text-sm 
+                text-2xl
                 text-gray-900 
                 bg-transparent 
                 border-0 
@@ -536,7 +554,7 @@ export default function Home() {
                 border-gray-300 
                 appearance-none 
                 dark:text-white 
-                dark:border-gray-600 
+                dark:border-gray-400 
                 dark:focus:border-blue-500 
                 focus:outline-none 
                 focus:ring-0 
@@ -551,15 +569,15 @@ export default function Home() {
                 peer-focus:font-medium 
                 absolute 
                 w-full 
-                text-sm 
-                text-gray-500 
-                dark:text-gray-400 
+                text-2xl
+                text-gray-400 
+                dark:text-gray-300 
                 duration-300 
                 transform 
                 -translate-y-6 
                 scale-75 
                 top-3 
-                right-37 
+                right-24 
                 -z-10 
                 origin-left 
                 peer-focus:start-0 
@@ -593,7 +611,7 @@ export default function Home() {
                 py-2.5 
                 px-0 
                 w-full 
-                text-sm 
+                text-2xl
                 text-gray-900 
                 bg-transparent 
                 border-0 
@@ -601,7 +619,7 @@ export default function Home() {
                 border-gray-300 
                 appearance-none 
                 dark:text-white 
-                dark:border-gray-600 
+                dark:border-gray-400 
                 dark:focus:border-blue-500 
                 focus:outline-none 
                 focus:ring-0 
@@ -614,15 +632,16 @@ export default function Home() {
               className="
                 peer-focus:font-medium 
                 absolute 
-                text-sm 
-                text-gray-500 
-                dark:text-gray-400 
+                w-full 
+                text-2xl
+                text-gray-400 
+                dark:text-gray-300 
                 duration-300 
                 transform 
                 -translate-y-6 
                 scale-75 
                 top-3 
-                right-50.5 
+                right-3 
                 -z-10 
                 origin-left 
                 peer-focus:start-0 
@@ -656,7 +675,7 @@ export default function Home() {
                 py-2.5 
                 px-0 
                 w-full 
-                text-sm 
+                text-2xl
                 text-gray-900 
                 bg-transparent 
                 border-0 
@@ -664,7 +683,7 @@ export default function Home() {
                 border-gray-300 
                 appearance-none 
                 dark:text-white 
-                dark:border-gray-600 
+                dark:border-gray-400 
                 dark:focus:border-blue-500 
                 focus:outline-none 
                 focus:ring-0 
@@ -678,15 +697,15 @@ export default function Home() {
                 peer-focus:font-medium 
                 absolute 
                 w-full 
-                text-sm 
-                text-gray-500 
-                dark:text-gray-400 
+                text-2xl
+                text-gray-400 
+                dark:text-gray-300 
                 duration-300 
                 transform 
                 -translate-y-6 
                 scale-75 
                 top-3 
-                right-48 
+                right-43 
                 -z-10 
                 origin-left 
                 peer-focus:start-0 
@@ -713,11 +732,12 @@ export default function Home() {
               htmlFor="message" 
               className="
                 block 
+                py-2.5 
                 mb-2 
-                text-sm 
+                text-2xl 
                 font-medium 
                 text-gray-900 
-                dark:text-white"
+                dark:text-gray-200"
             >
               Parlons de votre projet de site web
             </label>
@@ -729,19 +749,18 @@ export default function Home() {
                 disabled: cursor-not-allowed
                 block 
                 p-2.5 
-                min-h-24 
+                min-h-38 
                 w-full 
-                text-sm 
-                text-gray-900 
-                bg-gray-50 
+                text-2xl 
+                text-gray-100 
+                bg-transparent 
                 rounded-lg 
                 border 
                 border-gray-300 
                 focus:ring-blue-500 
                 focus:border-blue-500 
-                dark:bg-gray-700 
-                dark:border-gray-600 
-                dark:placeholder-gray-400 
+                dark:border-gray-500 
+                dark:placeholder-gray-200 
                 dark:text-white 
                 dark:focus:ring-blue-500 
                 dark:focus:border-blue-500" 
@@ -751,8 +770,9 @@ export default function Home() {
             <p 
               className="
                 mt-2 
-                text-sm 
-                text-red-600 
+                py-2.5 
+                text-2xl 
+                text-red-500 
                 dark:text-red-500"
             >
               <span 
@@ -767,15 +787,15 @@ export default function Home() {
             className="
               disabled: cursor-not-allowed 
               opacity-50 
+              text-2xl
               text-white 
-              bg-blue-700 
-              hover:bg-blue-800 
+              bg-blue-600 
+              hover:bg-blue-700 
               focus:ring-4 
               focus:outline-none 
               focus:ring-blue-300 
               font-medium 
-              rounded-lg 
-              text-sm 
+              rounded-lg  
               w-full 
               sm:w-auto 
               px-5 

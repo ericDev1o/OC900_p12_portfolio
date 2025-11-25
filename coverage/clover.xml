@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1764037432725" clover="3.2.0">
+  <project timestamp="1764037432725" name="All files">
+    <metrics statements="16" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1" elements="18" coveredelements="13" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+    <file name="Home.tsx" path="/home/eric/source/repos/OC/OC900_p12_portfolio/src/pages/Home.tsx">
+      <metrics statements="16" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

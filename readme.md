@@ -1,0 +1,76 @@
+# clone & install using yarn, be welcome
+git clone https://github.com/ericDev1o/OC900_p12_portfolio.git
+yarn install
+## detail: default branch is gh-pages
+## you should, as often as possible, to meet portfolio's peer requirements, run
+yarn upgrade-interactive
+
+# preview package.json script build & then preview
+yarn build
+yarn preview
+## details
+vite build --base=./
+vite preview
+## detail: package.json script is from now on written PJS
+
+# deploy
+## run PJS predeploy & then deploy script
+yarn predeploy
+yarn deploy
+## details
+yarn build
+gh-pages -d dist
+
+# validate please
+## you should keep the following in mind for a future script
+### HTML
+#### W3C 
+##### check online; please kindly signal if I oversaw the offline same 
+[text](https://validator.w3.org/nu/)
+#### html-validate
+##### prefer check offline ./.html-validate.json & then run in your CLI 
+./node_modules/html-validate/bin/html-validate.mjs ./index.html
+### CSS
+#### W3C
+[text](https://jigsaw.w3.org/css-validator/)
+
+
+
+# do you need help for markdown reading or preferred yarn install only?
+## reading markdown
+### titles as 2nd color for all non CLI is preferred for multi-line platform & mobile inclusion rather than
+[text](https://github.com/orgs/community/discussions/31570)
+### please kindly signal if I oversaw the current
+[text](https://code.visualstudio.com/docs/languages/markdown)
+## yarn install
+### upgrade yarn
+#### minor version
+##### the following answer finally given by brave's leo AI might do it for you; it once did for last peer node version by eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p12_portfolio$ 
+which yarn
+###### /home/eric/.nvs/node/24.10.0/x64/bin/yarn
+corepack yarn -v
+###### 4.11.0
+corepack prepare yarn@4.12.0 --activate
+###### Preparing yarn@4.12.0 for immediate activation...
+corepack yarn -v
+###### 4.11.0
+yarn set version stable
+###### ➤ YN0000: Downloading https://repo.yarnpkg.com/4.12.0/packages/yarnpkg-cli/bin/yarn.js
+###### ➤ YN0000: Saving the new release in .yarn/releases/yarn-4.12.0.cjs
+###### ➤ YN0000: Done in 0s 189ms
+yarn install
+###### ➤ YN0000: · Yarn 4.12.0
+###### ➤ YN0000: ┌ Resolution step
+###### ➤ YN0000: └ Completed in 0s 357ms
+###### ➤ YN0000: ┌ Post-resolution validation
+###### ➤ YN0002: │ portfolio@workspace:. doesn't provide @testing-library/dom (p6657f8), requested by @testing-library/react.
+###### ➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+###### ➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+###### ➤ YN0000: └ Completed
+###### ➤ YN0000: ┌ Fetch step
+###### ➤ YN0000: └ Completed in 1s 186ms
+###### ➤ YN0000: ┌ Link step
+###### ➤ YN0000: └ Completed in 0s 447ms
+###### ➤ YN0000: · Done with warnings in 2s 186ms
+yarn -v
+###### 4.12.0

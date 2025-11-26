@@ -1,16 +1,23 @@
 import { useState } from "react";
 
+import Project from "@/components/UI/Project";
+
 export default function Home() {
   const path = `${import.meta.env.BASE_URL}`;
+  const logosPath = 'logos/';
+  const projectsPath = 'projects/';
 
-  const viteLogo = path + 'vite.webp';
-  const htmlLogo = path + 'HTML5.webp';
-  const cssLogo = path + 'CSS3.webp';
-  const jsLogo = path + 'JS.webp';
-  const tsLogo = path + 'TS.webp';
-  const reactLogo = path + 'react.webp';
-  const linkedinLogo = path + 'linkedin.webp';
-  const githubLogo = path + 'github.webp';
+  const viteLogo = path + logosPath + 'vite.webp';
+  const htmlLogo = path + logosPath + 'HTML5.webp';
+  const cssLogo = path + logosPath + 'CSS3.webp';
+  const jsLogo = path + logosPath + 'JS.webp';
+  const tsLogo = path + logosPath + 'TS.webp';
+  const reactLogo = path + logosPath + 'react.webp';
+  const linkedinLogo = path + logosPath + 'linkedin.webp';
+  const githubLogo = path + logosPath + 'github.webp';
+
+  const p2ridingCitiesImage = path + projectsPath + 'riding+cities.webp';
+  const p3bookiImage = path + projectsPath + 'booki.webp';
 
   const [value, setValue] = useState('');
 
@@ -94,7 +101,9 @@ export default function Home() {
           pt-10 
           text-3xl
           leading-loose"
-        >compétences</h3>
+        >
+          compétences
+        </h3>
         <div className="
           flex
           justify-center
@@ -110,7 +119,8 @@ export default function Home() {
               filter 
               duration-300
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='Vite logo' />
+            alt='Vite logo' 
+          />
           <img 
             src={htmlLogo} 
             className='
@@ -121,7 +131,8 @@ export default function Home() {
               filter 
               duration-300
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='HTML5 logo' />
+            alt='HTML5 logo' 
+          />
           <img 
             src={cssLogo} 
             className='
@@ -132,7 +143,8 @@ export default function Home() {
               filter 
               duration-300
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='CSS3 logo' />      
+            alt='CSS3 logo' 
+          />      
           <img 
             src={jsLogo} 
             className='
@@ -143,7 +155,8 @@ export default function Home() {
               filter 
               duration-300
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='JavaScript logo' />
+            alt='JavaScript logo' 
+          />
           <img 
             src={tsLogo} 
             className=' 
@@ -154,7 +167,8 @@ export default function Home() {
               filter 
               duration-300
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='TypeScript logo' />
+            alt='TypeScript logo' 
+          />
           <img 
             src={reactLogo} 
             className='
@@ -166,50 +180,69 @@ export default function Home() {
               duration-300
               hover:drop-shadow-[0_0_2em_#61dafbaa]
               animate-[spin_20s_linear_infinite]' 
-            alt='React logo' />
-          </div>
-        </section>
-        <section>
-          <h3
-            className="
-              pt-10
-              text-3xl
-              leading-loose"
-          >
-            projets
-          </h3>
-          <h4
-            className="
-              text-2xl
-              leading-loose"
-          >
-            Riding cities, découvrez le skateboard près de chez vous.
-          </h4>
-          <a
-            href="https://ericdev1o.github.io/OC900_p2_RidingCities/"
-            target="_blank"
-            className="
-              text-2xl
-              text-orange-500"
-          >
-            p2 Riding Cities
-          </a>
-          <h4
-            className="
-              text-2xl
-              leading-loose"
-          >
-            Booki, votre agence de voyage
-          </h4>
-          <a 
-            href="https://ericdev1o.github.io/OC900_p3_Booki/"
-            target="_blank"
-            className="
-              text-2xl
-              text-orange-500"
-          >
-            p3 Booki
-          </a>
+            alt='React logo' 
+          />
+        </div>
+      </section>
+      <section
+        className="
+          flex
+          flex-col"
+      >
+        <h3
+          className="
+            pt-10
+            text-3xl
+            leading-loose"
+        >
+          projets
+        </h3>
+        <h4
+          className="
+            text-2xl
+            leading-loose"
+        >
+          Riding cities, découvrez le skateboard près de chez vous.
+        </h4>
+        <a 
+          href="https://ericdev1o.github.io/OC900_p2_RidingCities/"
+          target="_blank"
+          className="
+            text-2xl
+            text-orange-500"
+        >
+          p2 Riding cities
+        </a>
+        <Project 
+          URL="https://ericdev1o.github.io/OC900_p2_RidingCities/"
+          label="Riding cities, du skateboard près de chez vous"
+          title='Riding cities'
+          //skill={logoPath: {htmlLogo}, altText: 'HTML5 logo'}
+          projectNumber={2}
+        />
+        <h4
+          className="
+            text-2xl
+            leading-loose"
+        >
+          Booki, votre agence de voyage
+        </h4>
+        <a 
+          href="https://ericdev1o.github.io/OC900_p3_Booki/"
+          target="_blank"
+          className="
+            text-2xl
+            text-orange-500"
+        >
+          p3 Booki
+        </a>
+        <Project 
+          URL="https://ericdev1o.github.io/OC900_p3_Booki/"
+          label="Booki, votre agence de voyage"
+          title='Booki'
+          //skill={logoPath: {htmlLogo}, altText: 'HTML5 logo'}
+          projectNumber={3}
+        />
       </section>
       <section>
         <h3

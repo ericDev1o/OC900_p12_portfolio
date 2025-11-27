@@ -62,11 +62,11 @@ export default function Header() {
             </nav>
         </header>
         <hr 
-            className="
+            className='
                 my-4 
                 h-px
                 border-0
-                bg-gray-600"
+                bg-gray-600'
         />
     </>
 }

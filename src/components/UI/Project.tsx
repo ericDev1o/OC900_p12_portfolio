@@ -15,33 +15,33 @@ export default function Project(
     const alt = label.split(',')[0];
 
     return <article 
-        className="
+        className='
             m-8 
             bg-gray-900  
             block 
             max-w-sm 
             rounded-4xl 
-            shadow-xs"
+            shadow-xs'
         >
             <a 
                 href={URL}
-                target="_blank" 
+                target='_blank' 
                 aria-label={label}
             >
             <h4
-            className="
+            className='
                 text-2xl
-                leading-loose"
+                leading-loose'
             >
                 {projectNumber}
             </h4>
             <div 
-                className="
+                className='
                     p-6 
-                    text-center"
+                    text-center'
             >
                 <span 
-                    className="
+                    className='
                         inline-flex 
                         items-center 
                         bg-brand-softer 
@@ -52,7 +52,7 @@ export default function Project(
                         font-medium 
                         px-1.5 
                         py-0.5 
-                        rounded-sm"
+                        rounded-sm'
                 >
                     <img 
                         src={URI}
@@ -67,14 +67,14 @@ export default function Project(
                     />
                 </span>
                 <p 
-                    className="
+                    className='
                         m-6 
                         text-2xl 
                         leading-loose 
                         text-orange-500 
                         font-semibold 
                         tracking-tight 
-                        text-heading"
+                        text-heading'
                 > 
                     {label}
                 </p>

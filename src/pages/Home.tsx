@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-import Project from "@/components/UI/Project";
+import Project from "../components/UI/Project";
 
 export default function Home() {
   const path = `${import.meta.env.BASE_URL}`;
@@ -18,16 +16,6 @@ export default function Home() {
 
   const p2image = path + projectsPath + 'riding+cities+h320px.webp';
   const p3image = path + projectsPath + 'booki+h320px.webp';
-
-  const [value, setValue] = useState('');
-
-  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const textarea = event.target;
-    setValue(textarea.value);
-
-    textarea.style.height = 'auto';
-    textarea.style.height = textarea.scrollHeight + 'px';
-  }
 
   return (
     <main>
@@ -208,7 +196,7 @@ export default function Home() {
           <Project 
             URL = "https://ericdev1o.github.io/OC900_p3_Booki/"
             URI = {p3image}
-            label = "Booki, votre agence de voyage"
+            label = "Booki, trouvez votre voyage"
             projectNumber = {3}
           />
       </section>

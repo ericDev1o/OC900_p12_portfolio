@@ -12,6 +12,8 @@ export default function Project(
         projectNumber: number
     }
 ){
+    const alt = label.split(',')[0];
+
     return <article 
         className="
             m-8 
@@ -61,10 +63,10 @@ export default function Project(
                             filter 
                             duration-300
                             hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                        alt={label}
+                        alt={alt}
                     />
                 </span>
-                <h5 
+                <p 
                     className="
                         m-6 
                         text-2xl 
@@ -75,7 +77,7 @@ export default function Project(
                         text-heading"
                 > 
                     {label}
-                </h5>
+                </p>
             </div>
         </a>
     </article>

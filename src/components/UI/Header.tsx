@@ -1,9 +1,10 @@
 export default function Header() {
     const path = `${import.meta.env.BASE_URL}`;
+    const logosPath = 'logos/';
 
-    const linkedinLogo = path + 'linkedin.webp';
-    const githubLogo = path + 'github.webp';
-    const myLogo = path + 'logo.webp';
+    const linkedinLogo = path + logosPath + 'linkedin.webp';
+    const githubLogo = path + logosPath + 'github.webp';
+    const myLogo = path + logosPath + 'logo.webp';
 
     return <>
         <header>

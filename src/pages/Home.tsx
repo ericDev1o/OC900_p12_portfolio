@@ -16,8 +16,8 @@ export default function Home() {
   const linkedinLogo = path + logosPath + 'linkedin.webp';
   const githubLogo = path + logosPath + 'github.webp';
 
-  const p2ridingCitiesImage = path + projectsPath + 'riding+cities.webp';
-  const p3bookiImage = path + projectsPath + 'booki.webp';
+  const p2image = path + projectsPath + 'riding+cities+h320px.webp';
+  const p3image = path + projectsPath + 'booki+h320px.webp';
 
   const [value, setValue] = useState('');
 
@@ -184,11 +184,6 @@ export default function Home() {
           />
         </div>
       </section>
-      <section
-        className="
-          flex
-          flex-col"
-      >
         <h3
           className="
             pt-10
@@ -197,52 +192,25 @@ export default function Home() {
         >
           projets
         </h3>
-        <h4
+        <section
           className="
-            text-2xl
-            leading-loose"
+            flex
+            flex-wrap
+            justify-center"
         >
-          Riding cities, découvrez le skateboard près de chez vous.
-        </h4>
-        <a 
-          href="https://ericdev1o.github.io/OC900_p2_RidingCities/"
-          target="_blank"
-          className="
-            text-2xl
-            text-orange-500"
-        >
-          p2 Riding cities
-        </a>
-        <Project 
-          URL="https://ericdev1o.github.io/OC900_p2_RidingCities/"
-          label="Riding cities, du skateboard près de chez vous"
-          title='Riding cities'
-          //skill={logoPath: {htmlLogo}, altText: 'HTML5 logo'}
-          projectNumber={2}
-        />
-        <h4
-          className="
-            text-2xl
-            leading-loose"
-        >
-          Booki, votre agence de voyage
-        </h4>
-        <a 
-          href="https://ericdev1o.github.io/OC900_p3_Booki/"
-          target="_blank"
-          className="
-            text-2xl
-            text-orange-500"
-        >
-          p3 Booki
-        </a>
-        <Project 
-          URL="https://ericdev1o.github.io/OC900_p3_Booki/"
-          label="Booki, votre agence de voyage"
-          title='Booki'
-          //skill={logoPath: {htmlLogo}, altText: 'HTML5 logo'}
-          projectNumber={3}
-        />
+          <Project 
+            URL = "https://ericdev1o.github.io/OC900_p2_RidingCities/"
+            URI = {p2image}
+            label = "Riding cities, découvrez le skateboard près de chez vous"
+            projectNumber = {2}
+          />
+        
+          <Project 
+            URL = "https://ericdev1o.github.io/OC900_p3_Booki/"
+            URI = {p3image}
+            label = "Booki, votre agence de voyage"
+            projectNumber = {3}
+          />
       </section>
       <section>
         <h3

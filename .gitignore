@@ -1,0 +1,21 @@
+# git
+.gitattributes
+.flowbite-react/.gitignore
+
+# yarn
+.yarn
+yarn.lock
+.yarnrc.yml
+
+# vitest until 0.1.0
+coverage
+
+# vite
+dist
+
+# node
+node_modules
+
+# editor directories and files
+.vscode
+.editorconfig

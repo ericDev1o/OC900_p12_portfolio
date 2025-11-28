@@ -1,21 +1,18 @@
-import Project from "../components/UI/Project";
+import Portfolio from "../components/UI/Portfolio";
 
 export default function Home() {
-  const path = `${import.meta.env.BASE_URL}`;
+  const basePath = `${import.meta.env.BASE_URL}`;
   const logosPath = 'logos/';
   const projectsPath = 'projects/';
 
-  const viteLogo = path + logosPath + 'vite.webp';
-  const htmlLogo = path + logosPath + 'HTML5.webp';
-  const cssLogo = path + logosPath + 'CSS3.webp';
-  const jsLogo = path + logosPath + 'JS.webp';
-  const tsLogo = path + logosPath + 'TS.webp';
-  const reactLogo = path + logosPath + 'react.webp';
-  const linkedinLogo = path + logosPath + 'linkedin.webp';
-  const githubLogo = path + logosPath + 'github.webp';
-
-  const p2image = path + projectsPath + 'riding+cities+h320px.webp';
-  const p3image = path + projectsPath + 'booki+h320px.webp';
+  const viteLogo = basePath + logosPath + 'vite.webp';
+  const htmlLogo = basePath + logosPath + 'HTML5.webp';
+  const cssLogo = basePath + logosPath + 'CSS3.webp';
+  const jsLogo = basePath + logosPath + 'JS.webp';
+  const tsLogo = basePath + logosPath + 'TS.webp';
+  const reactLogo = basePath + logosPath + 'react.webp';
+  const linkedinLogo = basePath + logosPath + 'linkedin.webp';
+  const githubLogo = basePath + logosPath + 'github.webp';
 
   return (
     <main>
@@ -180,26 +177,11 @@ export default function Home() {
         >
           projets
         </h3>
-        <section
-          className="
-            flex
-            flex-wrap
-            justify-center"
-        >
-          <Project 
-            URL = "https://ericdev1o.github.io/OC900_p2_RidingCities/"
-            URI = {p2image}
-            label = "Riding cities, découvrez le skateboard près de chez vous"
-            projectNumber = {2}
-          />
-        
-          <Project 
-            URL = "https://ericdev1o.github.io/OC900_p3_Booki/"
-            URI = {p3image}
-            label = "Booki, trouvez votre voyage"
-            projectNumber = {3}
-          />
-      </section>
+        <Portfolio 
+          basePath={basePath}
+          logosPath={logosPath}  
+          projectsPath={projectsPath}
+        />
       <section>
         <h3
           className="

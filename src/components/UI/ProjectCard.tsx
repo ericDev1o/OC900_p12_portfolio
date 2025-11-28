@@ -1,18 +1,30 @@
-export default function Project(
+import { 
+    Accordion, 
+    AccordionContent, 
+    AccordionPanel, 
+    AccordionTitle 
+} from "flowbite-react";
+
+import '../../types/Project';
+
+export default function ProjectCard
+(
     {
-        URL, 
-        URI, 
-        label, 
-        projectNumber
+        project,
+        basePath, 
+        logosPath, 
+        projectsPath
+    }: {
+        project: Project
+        basePath: string,
+        logosPath: string,
+        projectsPath: string
     }
-    :{
-        URL: string,
-        URI: string, 
-        label: string,
-        projectNumber: number
-    }
-){
-    const alt = label.split(',')[0];
+)
+{
+    const alt = project.title.split(',')[0];
+
+    const imgSrc = basePath + projectsPath + project.fileName;
 
     return <article 
         className='
@@ -24,16 +36,16 @@ export default function Project(
             shadow-xs'
         >
             <a 
-                href={URL}
+                href={project.URL}
                 target='_blank' 
-                aria-label={label}
+                aria-label={project.title}
             >
             <h4
             className='
                 text-2xl
                 leading-loose'
             >
-                {projectNumber}
+                {project.number}
             </h4>
             <div 
                 className='
@@ -45,8 +57,6 @@ export default function Project(
                         inline-flex 
                         items-center 
                         bg-brand-softer 
-                        border 
-                        border-brand-subtle 
                         text-fg-brand-strong 
                         text-xs 
                         font-medium 
@@ -55,7 +65,7 @@ export default function Project(
                         rounded-sm'
                 >
                     <img 
-                        src={URI}
+                        src={imgSrc}
                         className='
                             lazy 
                             max-h-80
@@ -76,9 +86,28 @@ export default function Project(
                         tracking-tight 
                         text-heading'
                 > 
-                    {label}
+                    {project.title}
                 </p>
             </div>
         </a>
+        <Accordion collapseAll>
+            <AccordionPanel>
+                <AccordionTitle>Découvrez ce projet</AccordionTitle>
+                <AccordionContent>
+                    <h5>contexte</h5>
+                    <p>{project.contexte}</p>
+                    <h5>objectifs</h5>
+                    <p>{project.objectifs}</p>
+                    <h5>stack technique</h5>
+                    <p>{project.stackTechnique}</p>
+                    <h5>compétences développées</h5>
+                    <p>{project.competencesDeveloppees}</p>
+                    <h5>résultats et impact</h5>
+                    <p>{project.resultatsEtImpact}</p>
+                    <h5>perspectives d'amélioration</h5>
+                    <p>{project.perspectivesAmelioration}</p>
+                </AccordionContent>
+            </AccordionPanel>
+        </Accordion>
     </article>
 }

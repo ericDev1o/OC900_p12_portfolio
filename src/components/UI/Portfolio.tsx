@@ -45,18 +45,12 @@ export default function Portfolio(
                     const fetchData = async () => 
                     { 
                         try { 
-                            console.log("before fetch");
                             const res = await fetch('/data/projects.json'); 
-                            console.log("after fetch res = " + res);
                             if (!res.ok) throw new Error(`HTTP error: ${res.status}`); 
-                            console.log("before json")
                             const data = await res.json(); 
-                            console.log("after json data = " + data);
                             if (active) 
                             { 
-                                console.log("projects.length before set: " + projects.length);
                                 setProjects(data); 
-                                console.log("projects.length after set projects.length: " + projects.length);
                                 setLoading(false); 
                             } 
                         } catch (e: unknown) { 
@@ -82,19 +76,21 @@ export default function Portfolio(
             if(error) return <p>erreur: {error}</p>;
 
             return <section
-                className="
-                    flex
-                    flex-wrap
-                    justify-center"
-            >
-                {projects.map((project, index) => (
-                    <ProjectCard 
-                        key={index} 
-                        project={project}
-                        basePath={basePath}
-                        logosPath={logosPath}
-                        projectsPath={projectsPath}
-                    />
-                ))}
+                    className="
+                        flex
+                        flex-wrap
+                        justify-center
+                        items-start"
+                >
+                    {projects.map((project, index) => (
+                        <ProjectCard 
+                            index={index}
+                            key={index} 
+                            project={project}
+                            basePath={basePath}
+                            logosPath={logosPath}
+                            projectsPath={projectsPath}
+                        />
+                    ))}
             </section>
 }

@@ -41,6 +41,7 @@ gh-pages -d dist
 [text](https://github.com/orgs/community/discussions/31570)
 ### please kindly signal if I oversaw the current
 [text](https://code.visualstudio.com/docs/languages/markdown)
+
 ## yarn install
 ### upgrade yarn
 #### minor version
@@ -103,3 +104,29 @@ corepack yarn -v
 yarn set version stable
 yarn install
 yarn -v
+
+## preinstall a font
+https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&subset=latin&display=swap
+### keep only latin 
+/* latin */ 
+@font-face 
+{ 
+    font-family: 'JetBrains Mono'; 
+    font-style: normal; 
+    font-weight: 400 800; 
+    font-display: swap; 
+    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2'); 
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; 
+}
+
+https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2
+
+Download only 1 file less than 32 kb and  locally fetch it using 1 DRY 
+@font-face 
+{ 
+    font-family: "JetBrains Mono"; 
+    src: url("/fonts/jetbrains-mono-400..800.woff2") format("woff2"); 
+    font-weight: 400 800; 
+    font-style: normal; 
+    font-display: swap; 
+}

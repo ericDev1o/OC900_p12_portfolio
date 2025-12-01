@@ -7,6 +7,13 @@
 yarn.lock
 .yarnrc.yml
 
+# pnp
+.pnp.cjs
+.pnp.loader.mjs
+
+# npm
+package-lock.json
+
 # vitest until 0.1.0
 coverage
 

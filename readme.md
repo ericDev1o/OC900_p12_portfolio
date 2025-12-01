@@ -35,7 +35,6 @@ gh-pages -d dist
 [text](https://jigsaw.w3.org/css-validator/)
 
 
-
 # do you need help for markdown reading or preferred yarn install only?
 ## reading markdown
 ### titles as 2nd color for all non CLI is preferred for multi-line platform & mobile inclusion rather than
@@ -74,3 +73,33 @@ yarn install
 ###### ➤ YN0000: · Done with warnings in 2s 186ms
 yarn -v
 ###### 4.12.0
+
+
+### after you're done, do you still need help?
+#### try follow https://yarnpkg.com/getting-started/install or
+#### fallback on https://classic.yarnpkg.com/en/docs/install#debian-stable and 
+#### https://yarnpkg.com/migration/guide
+##### one or many following (abbreviated to complete ...) commands might help
+which yarn
+###### ...nvs...node/25.../bin/x64
+###### /usr/local/bin...
+sudo apt remove yarn && sudo apt purge yarn
+rm /home/.../.nvs/node/25.2.1/x64/bin/yarn /home/.../.nvs/node/25.2.1/x64/bin/yarnpkg
+find ~/.nvs -name "yarn" -type f -executable -delete
+##### sudo rm -f ... .yarn .yarnpkg
+sudo rm -f usr/local/bin/yarn usr/local/bin/yarnpkg
+exec $SHELL
+##### avoid the following -g as possible
+npm install --g yarn@latest
+yarn exec env
+##### no paths? Try to remove the package.json packageManager line.
+yarn exec env
+##### paths? then don't install/enable
+##### corepack enable
+corepack yarn -v
+##### not latest?
+corepack prepare yarn@latest --activate
+corepack yarn -v
+yarn set version stable
+yarn install
+yarn -v

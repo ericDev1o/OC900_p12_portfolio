@@ -1,14 +1,36 @@
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@0,100..800;1,100..800&subset=latin&display=swap");
-  font-display: swap;
-}
-
 @config "../tailwind.config.ts";
 @import "tailwindcss";
 
-@theme {
-  --font-jetbrains: "JetBrains Mono", system-ui, sans-serif;
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains-mono-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains-mono-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains-mono-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: semibold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains-mono-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: extrabold;
+  font-display: swap;
 }
 
 @layer utilities {

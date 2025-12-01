@@ -8,4 +8,11 @@ export default {
   plugins: [
     await import("./node_modules/flowbite/plugin.js").then(m => m.default)
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['"JetBrains Mono"', 'system-ui', 'sans-serif']
+      }
+    }
+  }
 } satisfies Config;

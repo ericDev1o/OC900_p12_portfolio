@@ -4,8 +4,10 @@ import {
     AccordionPanel, 
     AccordionTitle 
 } from "flowbite-react";
+import { ThemeProvider } from "flowbite-react";
 
 import '../../types/Project';
+import { customAccordionTheme } from "@/themes/customAccordionTheme";
 
 export default function ProjectCard
 (
@@ -92,19 +94,23 @@ export default function ProjectCard
         </a>
         <Accordion collapseAll>
             <AccordionPanel>
-                <AccordionTitle>Découvrez ce projet</AccordionTitle>
+                <ThemeProvider theme={customAccordionTheme}>
+                    <AccordionTitle>
+                        Découvrez ce projet
+                    </AccordionTitle>
+                </ThemeProvider>
                 <AccordionContent>
-                    <h5>contexte</h5>
+                    <h6 className="font-extrabold">contexte</h6>
                     <p>{project.contexte}</p>
-                    <h5>objectifs</h5>
+                    <h6 className="font-extrabold">objectifs</h6>
                     <p>{project.objectifs}</p>
-                    <h5>stack technique</h5>
+                    <h6 className="font-extrabold">stack technique</h6>
                     <p>{project.stackTechnique}</p>
-                    <h5>compétences développées</h5>
+                    <h6 className="font-extrabold">compétences développées</h6>
                     <p>{project.competencesDeveloppees}</p>
-                    <h5>résultats et impact</h5>
+                    <h6 className="font-extrabold">résultats et impact</h6>
                     <p>{project.resultatsEtImpact}</p>
-                    <h5>perspectives d'amélioration</h5>
+                    <h6 className="font-extrabold">perspectives d'amélioration</h6>
                     <p>{project.perspectivesAmelioration}</p>
                 </AccordionContent>
             </AccordionPanel>

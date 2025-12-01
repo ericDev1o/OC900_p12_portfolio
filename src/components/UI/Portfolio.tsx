@@ -8,7 +8,7 @@ import ProjectCard from "./ProjectCard";
  *     2) readability,
  *     3) maintainability,
  *     4) leightweight bundle without dependency overhead,
- *     5) avoid redux overkill.
+ *     5) avoid redux overkill or Zustand or even useContext at least for now.
  * API data URL should ultimately be the single source of truth.
  * @param basePath import.meta.env.BASE_URL
  * @param logosPath /logos
@@ -45,24 +45,35 @@ export default function Portfolio(
                     const fetchData = async () => 
                     { 
                         try { 
+                            console.log("before fetch");
                             const res = await fetch('/data/projects.json'); 
+                            console.log("after fetch res = " + res);
                             if (!res.ok) throw new Error(`HTTP error: ${res.status}`); 
+                            console.log("before json")
                             const data = await res.json(); 
+                            console.log("after json data = " + data);
                             if (active) 
-                                { 
-                                    setProjects(data); 
-                                    setLoading(false); 
-                                } 
-                        } catch (e) { 
+                            { 
+                                console.log("projects.length before set: " + projects.length);
+                                setProjects(data); 
+                                console.log("projects.length after set projects.length: " + projects.length);
+                                setLoading(false); 
+                            } 
+                        } catch (e: unknown) { 
                             if (active) { 
-                                // gérer l’erreur 
+                                if( e instanceof SyntaxError ||
+                                    e instanceof ReferenceError || 
+                                    e instanceof TypeError || 
+                                    e instanceof Error
+                                )
+                                console.log("error: " + e.message) 
                             } 
                         } 
                     }; 
                     fetchData(); 
                     // cleanup
                     return () => { 
-                        active = false; 
+                       active = false; 
                     }; 
                 }, []
             ); 

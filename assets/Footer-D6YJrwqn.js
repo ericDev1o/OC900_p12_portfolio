@@ -1,4 +1,4 @@
-import{j as t}from"./index-DfIdW2-K.js";function r(){const e="logos/",n="./"+e+"linkedin.webp",o="./"+e+"github.webp",a="./"+e+"logo.webp";return t.jsxs("footer",{className:`
+import{j as t}from"./index-DInDjSJ_.js";function r(){const e="logos/",n="./"+e+"linkedin.webp",o="./"+e+"github.webp",a="./"+e+"logo.webp";return t.jsxs("footer",{className:`
           flex 
           justify-center`,children:[t.jsx("img",{src:a,className:` 
             m-10 

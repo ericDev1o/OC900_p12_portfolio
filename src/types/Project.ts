@@ -9,5 +9,6 @@ type Project = {
     "stackTechnique": string,
     "competencesDeveloppees": string,
     "resultatsEtImpact": string,
-    "perspectivesAmelioration": string
+    "perspectivesAmelioration": string,
+    "logos": string[]
 }

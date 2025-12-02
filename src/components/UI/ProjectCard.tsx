@@ -1,15 +1,15 @@
+import { basePath } from '@/config/logoPaths';
 import '../../types/Project';
 import AnimatedDetails from "./AnimatedDetails";
+import SkillLogos from '../containers/SkillLogos';
 
 export default function ProjectCard
 (
     {
         project,
-        basePath, 
         projectsPath
     }: {
         project: Project
-        basePath: string,
         projectsPath: string
     }
 )
@@ -17,6 +17,8 @@ export default function ProjectCard
     const alt = project.title.split(',')[0];
 
     const imgSrc = basePath + projectsPath + project.fileName;
+
+
 
     return <article 
         className='
@@ -80,6 +82,7 @@ export default function ProjectCard
                 > 
                     {project.title}
                 </p>
+                <SkillLogos />
             </div>
         </a>
         <div className="space-y-4">

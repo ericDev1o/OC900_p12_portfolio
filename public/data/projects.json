@@ -9,7 +9,8 @@
         "stackTechnique": "HTML5 pour la structure, CSS existant pour le style, Visual Studio Code comme environnement de développement, et Figma pour le design.",
         "competencesDeveloppees": "Maîtrise de la structuration HTML sémantique, adaptation de styles CSS en se basant sur un design existant, et lecture attentive de maquettes pour une correspondance précise.",
         "resultatsEtImpact": "Mise en ligne d’une nouvelle section visuellement cohérente intégrée au site, avec boutons fonctionnels pour le téléchargement des plannings, améliorant l’information disponible pour les membres. Le rendu respecte fidèlement la charte graphique.",
-        "perspectivesAmelioration": "Rendre le site web responsive pour l’adapter aux petits écrans. Ajout d’éléments pour améliorer l’expérience utilisateur, notamment en termes d’accessibilité."
+        "perspectivesAmelioration": "Rendre le site web responsive pour l’adapter aux petits écrans. Ajout d’éléments pour améliorer l’expérience utilisateur, notamment en termes d’accessibilité.",
+        "logos": ["HTML"]
     },
     {
         "URL": "https://ericdev1o.github.io/OC900_p3_Booki/",
@@ -21,6 +22,7 @@
         "stackTechnique": "Le projet a été réalisé avec HTML et CSS, en mettant particulièrement l’accent sur Flexbox pour gérer la mise en page. Ces technologies ont permis de respecter précisément la structure visuelle et d’assurer un rendu responsive.",
         "competencesDeveloppees": "Ce projet m’a permis de renforcer mes compétences en intégration HTML/CSS, notamment dans l’utilisation avancée de Flexbox. J’ai aussi appris à relever le défi d’adapter un design statique de maquette en un site web fonctionnel fidèle à l’original.",
         "resultatsEtImpact": "Le site Booki a été livré conforme à la maquette, avec une mise en page responsive assurant une bonne expérience sur différents appareils. Ce projet a validé mes capacités à créer un site esthétique et fonctionnel fidèle aux attentes du client fictif.",
-        "perspectivesAmelioration": "À l’avenir, j’envisage d’ajouter des interactions dynamiques pour enrichir l’expérience utilisateur et d’améliorer l’accessibilité du site afin de le rendre utilisable par un plus large public. Ces optimisations renforceront la qualité globale du projet."
+        "perspectivesAmelioration": "À l’avenir, j’envisage d’ajouter des interactions dynamiques pour enrichir l’expérience utilisateur et d’améliorer l’accessibilité du site afin de le rendre utilisable par un plus large public. Ces optimisations renforceront la qualité globale du projet.",
+        "logos": ["HTML", "CSS"]
     }
 ]

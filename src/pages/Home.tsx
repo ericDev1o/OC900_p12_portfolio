@@ -1,18 +1,19 @@
+import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
 import Portfolio from "../components/UI/Portfolio";
 
 export default function Home() {
-  const basePath = `${import.meta.env.BASE_URL}`;
-  const logosPath = 'logos/';
   const projectsPath = 'projects/';
+  const { getLogoURI } = useSkillsLogo();
 
-  const viteLogo = basePath + logosPath + 'vite.webp';
-  const htmlLogo = basePath + logosPath + 'HTML5.webp';
-  const cssLogo = basePath + logosPath + 'CSS3.webp';
-  const jsLogo = basePath + logosPath + 'JS.webp';
-  const tsLogo = basePath + logosPath + 'TS.webp';
-  const reactLogo = basePath + logosPath + 'react.webp';
-  const linkedinLogo = basePath + logosPath + 'linkedin.webp';
-  const githubLogo = basePath + logosPath + 'github.webp';
+  const htmlLogo = getLogoURI('HTML');
+  const cssLogo = getLogoURI('CSS');
+  
+  const viteLogo = getLogoURI('vite');
+  const jsLogo = getLogoURI('JS');
+  const tsLogo = getLogoURI('TS');
+  const reactLogo = getLogoURI('react');
+  const linkedinLogo = getLogoURI('linkedIn');
+  const githubLogo = getLogoURI('gitHub');
 
   return (
     <main>
@@ -33,6 +34,7 @@ export default function Home() {
       </h2>
       <section>
         <h3
+          id='moi&vous=nous'
           className="
           pt-10
           text-3xl
@@ -82,6 +84,7 @@ export default function Home() {
       </section>
       <section>
         <h3
+          id='competences'
           className="
           pt-10 
           text-3xl
@@ -170,6 +173,7 @@ export default function Home() {
         </div>
       </section>
         <h3
+          id='projets'
           className="
             pt-10
             text-3xl
@@ -178,12 +182,11 @@ export default function Home() {
           projets
         </h3>
         <Portfolio 
-          basePath={basePath}
-          logosPath={logosPath}  
           projectsPath={projectsPath}
         />
       <section>
         <h3
+          id='parcours'
           className="
             pt-10 
             text-3xl
@@ -252,6 +255,7 @@ export default function Home() {
       </section>
       <section>
         <h3
+          id='contact'
           className="
             pt-10 
             text-3xl
@@ -311,7 +315,7 @@ export default function Home() {
               className="
                 mt-8 
                 text-2xl 
-                font-bold
+                font-medium 
                 cursor-pointer 
                 text-gray-200  
                 bg-blue-600 
@@ -319,7 +323,6 @@ export default function Home() {
                 focus:ring-4 
                 focus:outline-none 
                 focus:ring-blue-300 
-                font-medium 
                 rounded-lg  
                 w-full 
                 sm:w-auto 

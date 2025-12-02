@@ -1,7 +1,12 @@
 import { basePath } from '@/config/logoPaths';
-import '../../types/Project';
-import AnimatedDetails from "./AnimatedDetails";
 import SkillLogos from '../containers/SkillLogos';
+
+import '../../types/Project';
+
+import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
+
+import AnimatedDetails from "./AnimatedDetails";
+import { LogoKey } from '@/types/LogoKey';
 
 export default function ProjectCard
 (
@@ -18,7 +23,12 @@ export default function ProjectCard
 
     const imgSrc = basePath + projectsPath + project.fileName;
 
-
+    const logoURIs = new Set<string>();
+    const { getLogoURI } = useSkillsLogo();
+    project.logos.forEach(logoName => {
+        const logoPath = getLogoURI(logoName as LogoKey);
+        logoURIs.add(logoPath as string);
+    });
 
     return <article 
         className='
@@ -82,7 +92,7 @@ export default function ProjectCard
                 > 
                     {project.title}
                 </p>
-                <SkillLogos />
+                <SkillLogos paths={logoURIs} />
             </div>
         </a>
         <div className="space-y-4">

@@ -3,17 +3,18 @@ import HeadFootLogos from "../containers/HeadFootLogos";
 export default function Header() {
     return <>
         <header className='
-            p-8 
+            
             flex 
             justify-between
             items-center'
         >
             <HeadFootLogos />
             <nav className='
-                p-8 
-                h-6 
+               
                 mx-5 
                 flex
+                flex-col 
+                lg:flex-row 
                 justify-between 
                 items-center'
             >
@@ -25,7 +26,7 @@ export default function Header() {
                         text-blue-300 
                         hover:text-blue-600'
                 >
-                    moi & vous = nous
+                    nous
                 </a>
                 <a 
                     href='#competences'

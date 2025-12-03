@@ -7,12 +7,13 @@ export default function HeadFootLogos() {
     const linkedinLogo = getLogoURI('linkedIn');
     const githubLogo = getLogoURI('gitHub');
     
-    return  <>
+    return  <div className="
+        flex gap-4">
         <img 
             src={myLogo} 
             className=' 
                 cursor-not-allowed
-                h-6 
+    
                 will-change-filter 
                 filter 
                 duration-300
@@ -28,7 +29,7 @@ export default function HeadFootLogos() {
         <img 
             src={githubLogo} 
             className=' 
-                h-6 
+                
                 will-change-filter 
                 filter 
                 duration-300
@@ -44,7 +45,7 @@ export default function HeadFootLogos() {
         <img 
             src={linkedinLogo} 
             className='
-                h-6 
+                
                 will-change-filter 
                 filter 
                 duration-300
@@ -54,5 +55,5 @@ export default function HeadFootLogos() {
             height={24}
         />
         </a>
-    </>
+    </div>
 }

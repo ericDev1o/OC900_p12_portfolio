@@ -101,6 +101,7 @@ export default function AccessibleAnimatedDetails(
             inline-block 
             transition-transform 
             duration-600 
+            motion-reduce:duration-3000
             ease-in-out 
             transform ${
             isOpen ? 'rotate-180' : ''
@@ -113,8 +114,14 @@ export default function AccessibleAnimatedDetails(
         id={contentId}
         ref={contentRef}
         tabIndex={-1}
-        style={{ maxHeight, overflow: 'hidden', transition: 'max-height 0.6s ease-in-out' }}
-        className="relative"
+        style={{ maxHeight }}
+        className="
+          relative
+          overflow-hidden
+          transition-[max-height]
+          duration-600
+          motion-reduce:duration-3000
+          ease-in-out"
       >
         {shouldRender && <div className="px-4 py-3">{children}</div>}
       </div>

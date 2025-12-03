@@ -5,6 +5,36 @@ yarn install
 ## you should, as often as possible, to meet portfolio's peer requirements, run
 yarn upgrade-interactive
 
+# dev taking advantage of HotModuleReload HMR
+yarn dev
+
+# validate please
+## you should keep the following in mind for a future script
+### HyperTextMarkupLanguage HTML
+#### WorldWideWebConsortium W3C 
+##### check online; please kindly signal if I oversaw the offline same 
+[text](https://validator.w3.org/nu/)
+#### html-validate
+##### prefer offline; first check ./.html-validate.json & then run in your CommandLineInterface CLI 
+./node_modules/html-validate/bin/html-validate.mjs ./index.html
+### CascadingStyleSheets CSS
+#### W3C
+[text](https://jigsaw.w3.org/css-validator/)
+#### stylelint pre-validate by linting
+yarn add -D stylelint stylelint-config-standard stylelint-config-tailwindcss
+##### stylelint.config.mjs
+/** @type {import('stylelint').Config} */
+export default {
+    extends: [
+        'stylelint-config-standard',
+        'stylelint-config-tailwindcss'    
+    ]
+}
+### accessibility a11y
+#### Tailwind motion-reduce
+##### chromium browser manual test
+F12 dev tools -> 3 vertical ... -> More tools > -> Rendering -> Emulate CSS media feature prefers-reduced-motion -> prefers-reduced-motion: reduce -> you open your project details in 3s. instead of 0.6s
+
 # preview package.json script build & then preview
 yarn build
 yarn preview
@@ -21,18 +51,7 @@ yarn deploy
 yarn build
 gh-pages -d dist
 
-# validate please
-## you should keep the following in mind for a future script
-### HTML
-#### W3C 
-##### check online; please kindly signal if I oversaw the offline same 
-[text](https://validator.w3.org/nu/)
-#### html-validate
-##### prefer check offline ./.html-validate.json & then run in your CLI 
-./node_modules/html-validate/bin/html-validate.mjs ./index.html
-### CSS
-#### W3C
-[text](https://jigsaw.w3.org/css-validator/)
+
 
 
 # do you need help for markdown reading or preferred yarn install only?

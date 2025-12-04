@@ -10,19 +10,17 @@ export default function Header() {
         >
             <HeadFootLogos />
             <nav className='
-               
-                mx-5 
-                flex
-                flex-col 
-                lg:flex-row 
+                flex 
+                flex-col
+                md:flex-row 
                 justify-between 
-                items-center'
+                py-8
+                '
             >
                 <a 
                     href='#moi&vous=nous' 
                     className='
-                        mx-4 
-                        text-2xl
+                        mx-2
                         text-blue-300 
                         hover:text-blue-600'
                 >
@@ -31,8 +29,7 @@ export default function Header() {
                 <a 
                     href='#competences'
                     className='
-                        mx-4
-                        text-2xl
+                        mx-2
                         text-blue-300
                         hover:text-blue-600'
                 >
@@ -41,8 +38,7 @@ export default function Header() {
                 <a 
                     href='#projets'
                     className='
-                        mx-4
-                        text-2xl
+                        mx-2
                         text-blue-300
                         hover:text-blue-600'
                 >
@@ -51,8 +47,7 @@ export default function Header() {
                 <a 
                     href='#parcours'
                     className='
-                        mx-4
-                        text-2xl
+                        mx-2
                         text-blue-300
                         hover:text-blue-600'
                 >
@@ -61,8 +56,7 @@ export default function Header() {
                 <a 
                     href='#contact'
                     className='
-                        mx-4
-                        text-2xl
+                        mx-2
                         text-blue-300
                         hover:text-blue-600'
                 >

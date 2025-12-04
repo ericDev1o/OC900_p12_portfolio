@@ -1,4 +1,6 @@
 import type { Config } from 'tailwindcss';
+import flowbitePlugin from 'flowbite/plugin';
+
 export default {
   content: [
     "./src/**/*.{ts,tsx}",
@@ -6,6 +8,13 @@ export default {
     "./node_modules/flowbite/**/*.js"
   ],
   plugins: [
-    await import("./node_modules/flowbite/plugin.js").then(m => m.default)
+    flowbitePlugin
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['"JetBrains Mono"', 'system-ui', 'sans-serif']
+      }
+    }
+  }
 } satisfies Config;

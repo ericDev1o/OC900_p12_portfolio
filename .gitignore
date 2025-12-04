@@ -2,23 +2,29 @@
 .gitattributes
 .flowbite-react/.gitignore
 
-# yarn
-.yarn
-yarn.lock
-.yarnrc.yml
+# npm
+package-lock.json
+
+# node
+node_modules
 
 # pnp
 .pnp.cjs
 .pnp.loader.mjs
 
-# vitest until 0.1.0
-coverage
+# yarn
+.yarn
+yarn.lock
+.yarnrc.yml
 
 # vite
 dist
 
-# node
-node_modules
+# vitest until 0.1.0
+coverage
+
+# flowbite-react
+.flowbite-react/class-list.json
 
 # editor directories and files
 .vscode

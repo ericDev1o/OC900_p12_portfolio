@@ -26,5 +26,19 @@
         "resultatsEtImpact": "Le site Booki a été livré conforme à la maquette, avec une mise en page responsive assurant une bonne expérience sur différents appareils. Ce projet a validé mes capacités à créer un site esthétique et fonctionnel fidèle aux attentes du client fictif.",
         "perspectivesAmelioration": "À l’avenir, j’envisage d’ajouter des interactions dynamiques pour enrichir l’expérience utilisateur et d’améliorer l’accessibilité du site afin de le rendre utilisable par un plus large public. Ces optimisations renforceront la qualité globale du projet.",
         "logos": ["HTML", "CSS", "gitHub"]
+    },
+    {
+        "URL": "https://ericdev1o.github.io/OC900_p4_OhMyFood/",
+        "repository": "https://github.com/ericDev1o/OC900_p4_OhMyFood",
+        "fileName": "oh+my+food.webp",
+        "number": 4,
+        "title": "OhMyFood, précommandez vos menus",
+        "contexte": "Ce projet de formation consiste à créer un site web responsive présentant les menus de quatre restaurants. L’objectif était de concevoir une interface attractive avec des animations pour valoriser les plats proposés.",
+        "objectifs": "Réaliser un site dynamique et fluide, intégrant des animations pour enrichir l’expérience utilisateur tout en assurant une bonne adaptabilité sur différents supports.",
+        "stackTechnique": "Le site a été développé en HTML, CSS et SCSS, permettant une meilleure organisation et maintenance du code grâce à la puissance du préprocesseur Sass.",
+        "competencesDeveloppees": "J’ai approfondi mes connaissances en structuration CSS avec Sass et renforcé mes capacités de résolution des défis liés aux animations et à la responsivité.",
+        "resultatsEtImpact": "Le site final offre une présentation dynamique et attrayante des menus, accessible sur divers appareils. Cette réalisation témoigne de ma capacité à créer des interfaces fonctionnelles et visuellement engageantes.",
+        "perspectivesAmelioration": "L’accessibilité du site peut encore être optimisée pour garantir une meilleure expérience à tous les utilisateurs, notamment via le clavier et les lecteurs d’écran.",
+        "logos": ["HTML", "CSS", "SCSS", "gitHub"]
     }
 ]

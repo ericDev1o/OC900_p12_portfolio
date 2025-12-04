@@ -7,6 +7,7 @@ const fullPath = basePath + logosPaths;
 export const logos: Record<LogoKey, string> = {
     HTML: fullPath + 'HTML5.webp',
     CSS: fullPath + 'CSS3.webp',
+    SCSS: fullPath + 'SCSS.webp',
     vite: fullPath + 'vite.webp',
     JS: fullPath + 'JS.webp',
     TS: fullPath + 'TS.webp',

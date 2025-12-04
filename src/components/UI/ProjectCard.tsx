@@ -33,9 +33,9 @@ export default function ProjectCard
     return <article 
         className='
             m-8 
-            bg-gray-900  
-            block 
-            max-w-sm 
+            bg-gray-900 
+            w-full 
+            max-w-lg   
             rounded-4xl 
             shadow-xs'
         >
@@ -72,7 +72,8 @@ export default function ProjectCard
                         src={imgSrc}
                         className='
                             lazy 
-                            max-h-80
+                            w-full 
+                            h-max 
                             will-change-filter 
                             filter 
                             duration-300
@@ -92,7 +93,7 @@ export default function ProjectCard
                 > 
                     {project.title}
                 </p>
-                <SkillLogos paths={logoURIs} />
+                <SkillLogos paths={logoURIs} repo={project.repository} />
             </div>
         </a>
         <div className="space-y-4">

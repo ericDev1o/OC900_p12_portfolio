@@ -39,7 +39,7 @@ export default function Portfolio(
                     const fetchData = async () => 
                     { 
                         try { 
-                            const res = await fetch('/data/projects.json'); 
+                            const res = await fetch(`${import.meta.env.BASE_URL}data/projects.json`); 
                             if (!res.ok) throw new Error(`HTTP error: ${res.status}`); 
                             const data = await res.json(); 
                             if (active) 

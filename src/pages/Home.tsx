@@ -1,21 +1,19 @@
-import Project from "../components/UI/Project";
+import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
+import Portfolio from "../components/UI/Portfolio";
 
 export default function Home() {
-  const path = `${import.meta.env.BASE_URL}`;
-  const logosPath = 'logos/';
   const projectsPath = 'projects/';
+  const { getLogoURI } = useSkillsLogo();
 
-  const viteLogo = path + logosPath + 'vite.webp';
-  const htmlLogo = path + logosPath + 'HTML5.webp';
-  const cssLogo = path + logosPath + 'CSS3.webp';
-  const jsLogo = path + logosPath + 'JS.webp';
-  const tsLogo = path + logosPath + 'TS.webp';
-  const reactLogo = path + logosPath + 'react.webp';
-  const linkedinLogo = path + logosPath + 'linkedin.webp';
-  const githubLogo = path + logosPath + 'github.webp';
-
-  const p2image = path + projectsPath + 'riding+cities+h320px.webp';
-  const p3image = path + projectsPath + 'booki+h320px.webp';
+  const htmlLogo = getLogoURI('HTML');
+  const cssLogo = getLogoURI('CSS');
+  
+  const viteLogo = getLogoURI('vite');
+  const jsLogo = getLogoURI('JS');
+  const tsLogo = getLogoURI('TS');
+  const reactLogo = getLogoURI('react');
+  const linkedinLogo = getLogoURI('linkedIn');
+  const githubLogo = getLogoURI('gitHub');
 
   return (
     <main>
@@ -36,6 +34,7 @@ export default function Home() {
       </h2>
       <section>
         <h3
+          id='moi&vous=nous'
           className="
           pt-10
           text-3xl
@@ -85,6 +84,7 @@ export default function Home() {
       </section>
       <section>
         <h3
+          id='competences'
           className="
           pt-10 
           text-3xl
@@ -173,6 +173,7 @@ export default function Home() {
         </div>
       </section>
         <h3
+          id='projets'
           className="
             pt-10
             text-3xl
@@ -180,28 +181,12 @@ export default function Home() {
         >
           projets
         </h3>
-        <section
-          className="
-            flex
-            flex-wrap
-            justify-center"
-        >
-          <Project 
-            URL = "https://ericdev1o.github.io/OC900_p2_RidingCities/"
-            URI = {p2image}
-            label = "Riding cities, découvrez le skateboard près de chez vous"
-            projectNumber = {2}
-          />
-        
-          <Project 
-            URL = "https://ericdev1o.github.io/OC900_p3_Booki/"
-            URI = {p3image}
-            label = "Booki, trouvez votre voyage"
-            projectNumber = {3}
-          />
-      </section>
+        <Portfolio 
+          projectsPath={projectsPath}
+        />
       <section>
         <h3
+          id='parcours'
           className="
             pt-10 
             text-3xl
@@ -270,6 +255,7 @@ export default function Home() {
       </section>
       <section>
         <h3
+          id='contact'
           className="
             pt-10 
             text-3xl
@@ -329,7 +315,7 @@ export default function Home() {
               className="
                 mt-8 
                 text-2xl 
-                font-bold
+                font-medium 
                 cursor-pointer 
                 text-gray-200  
                 bg-blue-600 
@@ -337,7 +323,6 @@ export default function Home() {
                 focus:ring-4 
                 focus:outline-none 
                 focus:ring-blue-300 
-                font-medium 
                 rounded-lg  
                 w-full 
                 sm:w-auto 

@@ -1,17 +1,21 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import 'flowbite';
 
 import './index.css';
 import Home from './pages/Home';
 import Layout from './components/containers/Layout';
+import { SkillsLogoProvider } from './contexts/SkillsLogoContext';
 
 const root = document.getElementById('root');
 if(root) {
   createRoot(root).render(
     <StrictMode>
-      <Layout>
-        <Home />
-      </Layout>
+      <SkillsLogoProvider>
+        <Layout>
+          <Home />
+        </Layout>
+       </SkillsLogoProvider>
     </StrictMode>
   );
 }

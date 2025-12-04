@@ -93,7 +93,7 @@ export default function ProjectCard
                 > 
                     {project.title}
                 </p>
-                <SkillLogos paths={logoURIs} />
+                <SkillLogos paths={logoURIs} repo={project.repository} />
             </div>
         </a>
         <div className="space-y-4">

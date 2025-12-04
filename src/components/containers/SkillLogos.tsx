@@ -1,10 +1,10 @@
 import { ReactNode } from 'react';
 import SkillLogo from '../UI/SkillLogo';
 
-export default function SkillLogos({paths}: {paths: Set<string>}) {
+export default function SkillLogos({paths, repo}: {paths: Set<string>, repo: string}) {
     let nodes: Set<ReactNode> = new Set<ReactNode>;
     paths.forEach(path => {
-        nodes.add(<SkillLogo logoPath={path} key={path} />);
+        nodes.add(<SkillLogo logoPath={path} repo={repo} key={path} />);
         });
     if(nodes.size > 1)
         return <div 

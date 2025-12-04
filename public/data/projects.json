@@ -1,7 +1,7 @@
 [
     {
         "URL": "https://ericdev1o.github.io/OC900_p2_RidingCities/",
-        "fileName": "riding+cities+h320px.webp",
+        "fileName": "riding+cities.webp",
         "number": 2,
         "title": "Riding cities, découvrez le skateboard près de chez vous",
         "contexte": "Dans le cadre de la mise à jour du contenu du site web de l’association sportive Riding Cities, il s’agissait d’enrichir le contenu tout en respectant l’identité visuelle existante. Le défi principal était de rester fidèle à la maquette Figma proposée, tout en assurant une bonne expérience utilisateur.",
@@ -14,9 +14,9 @@
     },
     {
         "URL": "https://ericdev1o.github.io/OC900_p3_Booki/",
-        "fileName": "booki+h320px.webp",
+        "fileName": "booki.webp",
         "number": 3,
-        "title": "Booki, trouvez votre hébergement et vos activités pour des vacances de rêve",
+        "title": "Booki, trouvez votre hébergement vacancier de rêve",
         "contexte": "Ce projet de formation simule une situation professionnelle visant à créer un site web pour une agence de voyages. L’enjeu principal était de présenter clairement logements et activités touristiques afin d’inciter les visiteurs à effectuer une réservation. Le design devait rester simple et efficace pour une bonne lisibilité.",
         "objectifs": "L’objectif principal était de reproduire fidèlement la maquette visuelle du site afin de garantir une expérience utilisateur conforme aux attentes. Il s’agissait aussi d’assurer une mise en page responsive et fluide pour une navigation agréable sur tous les écrans.",
         "stackTechnique": "Le projet a été réalisé avec HTML et CSS, en mettant particulièrement l’accent sur Flexbox pour gérer la mise en page. Ces technologies ont permis de respecter précisément la structure visuelle et d’assurer un rendu responsive.",

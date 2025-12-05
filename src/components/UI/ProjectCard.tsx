@@ -39,11 +39,6 @@ export default function ProjectCard
             rounded-4xl 
             shadow-xs'
         >
-            <a 
-                href={project.URL}
-                target='_blank' 
-                aria-label={project.title}
-            >
             <h4
             className='
                 text-2xl
@@ -68,18 +63,24 @@ export default function ProjectCard
                         py-0.5 
                         rounded-sm'
                 >
-                    <img 
-                        src={imgSrc}
-                        className='
-                            lazy 
-                            w-full 
-                            h-max 
-                            will-change-filter 
-                            filter 
-                            duration-300
-                            hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                        alt={alt}
-                    />
+                     <a 
+                        href={project.URL}
+                        target='_blank' 
+                        aria-label={project.title}
+                    >
+                        <img 
+                            src={imgSrc}
+                            className='
+                                lazy 
+                                w-full 
+                                h-max 
+                                will-change-filter 
+                                filter 
+                                duration-300
+                                hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                            alt={alt}
+                        />
+                    </a>
                 </span>
                 <p 
                     className='
@@ -95,7 +96,6 @@ export default function ProjectCard
                 </p>
                 <SkillLogos paths={logoURIs} repo={project.repository} />
             </div>
-        </a>
         <div className="space-y-4">
             <AnimatedDetails summary="Découvrez ce projet">
                 <h6 className="font-extrabold mt-2">contexte</h6>

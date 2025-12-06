@@ -80,7 +80,7 @@ export default function Home() {
             className="
               mx-2 
               font-extrabold
-              text-violet-500"
+              text-violet-400"
           >
             performances.
           </span> 
@@ -111,7 +111,7 @@ export default function Home() {
             className="
               mx-2 
               font-extrabold
-              text-violet-500"
+              text-violet-400"
           >
             audit Google Lighthouse supérieur à 95/100 
           </span>
@@ -164,7 +164,7 @@ export default function Home() {
             className="
               mx-2 
               font-extrabold
-              text-violet-500"
+              text-violet-400"
           >
             100/100 au SEO 
           </span>

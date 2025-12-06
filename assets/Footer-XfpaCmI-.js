@@ -1,4 +1,4 @@
-import{j as e,H as t}from"./index-D2Y0Mj9s.js";function s(){return e.jsx("footer",{className:`
+import{j as e,H as t}from"./index-DKLSaNYF.js";function s(){return e.jsx("footer",{className:`
             p-8
             flex 
             justify-between

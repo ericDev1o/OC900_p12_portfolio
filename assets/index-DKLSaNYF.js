@@ -121,12 +121,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         flex
                         flex-wrap
                         justify-center
-                        items-start`,children:i.map((p,m)=>O.jsx(r_,{project:p,projectsPath:l},m))})}function o_(){const l="projects/",{getLogoURI:i}=Zc(),u=i("HTML"),s=i("CSS"),c=i("vite"),d=i("JS"),p=i("TS"),m=i("react"),v=i("linkedIn"),g=i("gitHub");return O.jsxs("main",{children:[O.jsx("h1",{className:`
+                        items-start`,children:i.map((p,m)=>O.jsx(r_,{project:p,projectsPath:l},m))})}function o_(){const u="./"+"CV/photoCV_w100px.webp",s="projects/",{getLogoURI:c}=Zc(),d=c("HTML"),p=c("CSS"),m=c("vite"),v=c("JS"),g=c("TS"),b=c("react"),A=c("linkedIn"),H=c("gitHub");return O.jsxs("main",{children:[O.jsx("h1",{className:`
           text-5xl 
           leading-loose`,children:"Bonjour, je suis Eric"}),O.jsx("div",{className:`
           mt-8 
           flex
-          justify-center`,children:O.jsx("img",{src:"/CV/photoCV_w100px.webp",alt:"ma photo"})}),O.jsx("h2",{className:`
+          justify-center`,children:O.jsx("img",{src:u,alt:"ma photo"})}),O.jsx("h2",{className:`
         pt-12
         text-4xl
         leading-loose`,children:"votre intégrateur web react en Île-de-France"}),O.jsxs("section",{children:[O.jsx("h3",{id:"moi&vous=nous",className:`
@@ -182,42 +182,42 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           leading-loose`,children:"compétences"}),O.jsxs("div",{className:`
           flex
           justify-center
-          flex-wrap`,children:[O.jsx("img",{src:c,className:`
+          flex-wrap`,children:[O.jsx("img",{src:m,className:`
               lazy 
               p-6 
               h-25
               will-change-filter 
               filter 
               duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"Vite logo"}),O.jsx("img",{src:u,className:`
+              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"Vite logo"}),O.jsx("img",{src:d,className:`
               lazy 
               p-6 
               h-25 
               will-change-filter 
               filter 
               duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"HTML5 logo"}),O.jsx("img",{src:s,className:`
+              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"HTML5 logo"}),O.jsx("img",{src:p,className:`
               lazy 
               p-6 
               h-25 
               will-change-filter 
               filter 
               duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"CSS3 logo"}),O.jsx("img",{src:d,className:`
+              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"CSS3 logo"}),O.jsx("img",{src:v,className:`
               lazy 
               p-6 
               h-25 
               will-change-filter 
               filter 
               duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"JavaScript logo"}),O.jsx("img",{src:p,className:` 
+              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"JavaScript logo"}),O.jsx("img",{src:g,className:` 
               lazy 
               p-6 
               h-25 
               will-change-filter 
               filter 
               duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"TypeScript logo"}),O.jsx("img",{src:m,className:`
+              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"TypeScript logo"}),O.jsx("img",{src:b,className:`
               lazy 
               p-6 
               h-25 
@@ -228,7 +228,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               animate-[spin_20s_linear_infinite]`,alt:"React logo"})]})]}),O.jsx("h3",{id:"projets",className:`
             pt-10
             text-3xl
-            leading-loose`,children:"projets"}),O.jsx(s_,{projectsPath:l}),O.jsxs("section",{children:[O.jsx("h3",{id:"parcours",className:`
+            leading-loose`,children:"projets"}),O.jsx(s_,{projectsPath:s}),O.jsxs("section",{children:[O.jsx("h3",{id:"parcours",className:`
             pt-10 
             text-3xl
             leading-loose`,children:"parcours"}),O.jsxs("p",{className:`
@@ -256,13 +256,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             text-3xl
             leading-loose`,children:"contact"}),O.jsxs("div",{className:`
             flex
-            justify-center`,children:[O.jsx("a",{href:"https://github.com/ericDev1o",target:"_blank",children:O.jsx("img",{src:g,className:`
+            justify-center`,children:[O.jsx("a",{href:"https://github.com/ericDev1o",target:"_blank",children:O.jsx("img",{src:H,className:`
                 p-6 
                 h-25 
                 will-change-filter 
                 filter 
                 duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"GitHub logo"})}),O.jsx("a",{href:"https://linkedin.com/in/ericfaraut",target:"_blank",children:O.jsx("img",{src:v,className:`
+                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"GitHub logo"})}),O.jsx("a",{href:"https://linkedin.com/in/ericfaraut",target:"_blank",children:O.jsx("img",{src:A,className:`
                 p-6 
                 h-25 
                 will-change-filter 
@@ -493,4 +493,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 my-4 
                 h-px
                 border-0
-                bg-gray-600`})]})}const p_=Xt.lazy(()=>d_(()=>import("./Footer-Cr-KApuu.js"),[],import.meta.url)),m_=({children:l})=>O.jsxs(O.Fragment,{children:[O.jsx(v_,{}),l,O.jsx(p_,{})]}),Mp=document.getElementById("root");Mp&&Zy.createRoot(Mp).render(O.jsx(Xt.StrictMode,{children:O.jsx(a_,{children:O.jsx(m_,{children:O.jsx(o_,{})})})}));export{h_ as H,O as j};
+                bg-gray-600`})]})}const p_=Xt.lazy(()=>d_(()=>import("./Footer-XfpaCmI-.js"),[],import.meta.url)),m_=({children:l})=>O.jsxs(O.Fragment,{children:[O.jsx(v_,{}),l,O.jsx(p_,{})]}),Mp=document.getElementById("root");Mp&&Zy.createRoot(Mp).render(O.jsx(Xt.StrictMode,{children:O.jsx(a_,{children:O.jsx(m_,{children:O.jsx(o_,{})})})}));export{h_ as H,O as j};

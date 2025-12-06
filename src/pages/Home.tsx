@@ -24,13 +24,24 @@ export default function Home() {
       >
         Bonjour, je suis Eric
       </h1>
+      <div
+        className="
+          mt-8 
+          flex
+          justify-center"
+      >
+        <img
+          src='/CV/photoCV_w100px.webp'
+          alt='ma photo'
+        />
+      </div>
       <h2
         className="
         pt-12
         text-4xl
         leading-loose"
       >
-        votre intégrateur web React en Île-de-France
+        votre intégrateur web react en Île-de-France
       </h2>
       <section>
         <h3
@@ -42,10 +53,9 @@ export default function Home() {
         >À propos de moi</h3>
         <p
           className="
-            pt-4
-            text-2xl"
+            pt-4"
         >
-          Développez votre activité en évitant les 
+          Développons votre activité en évitant les 
           <span 
             className="
             mx-2 
@@ -53,7 +63,7 @@ export default function Home() {
           >
             frictions.
           </span> 
-          Améliorez vos 
+          Améliorons vos 
           <span
             className="
               mx-2 
@@ -80,6 +90,112 @@ export default function Home() {
             durables
           </span>
           que j'intègre simplifient l'utilisation par tou·te·s. 
+        </p>
+        <p 
+          className="
+            pt-4">
+          <span
+            className="
+              mx-2 
+              text-2xl 
+              font-extrabold"
+          >
+            Qui suis-je? 
+          </span>
+          Intégrateur web React passionné par l’optimisation de la visibilité et de la performance des sites, je veille à maintenir un 
+          <span 
+            className="
+              mx-2 
+              font-extrabold
+              text-violet-500"
+          >
+            audit Google Lighthouse supérieur à 95/100 
+          </span>
+            pour garantir un référencement efficace et une expérience utilisateur optimale.
+        </p>
+        <p 
+          className="
+            pt-4">
+          <span
+            className="
+              mx-2 
+              text-2xl 
+              font-extrabold"
+          >
+            Pour quoi faire? 
+          </span>
+          Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
+          <span 
+            className="
+              mx-2 
+              font-extrabold 
+              text-green-600"
+          >
+            refactorisation de code back-end, tests unitaires, documentation technique et enrichissement fonctionnel. 
+          </span>
+          Mon ambition est d’évoluer vers un poste d’intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France, telle que Veolia, 3F, Aoled ou une administration publique.
+        </p>
+        <p
+          className="
+            pt-4">
+          <span
+            className="
+              mx-2 
+              text-2xl 
+              font-extrabold"
+          >
+            Quel est mon apport? 
+          </span>
+          Ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
+          <span 
+            className="
+              mx-2 
+              font-extrabold 
+              text-green-600"
+          >
+            outils hors-ligne comme html-validate et stylelint
+          </span>
+          me permettent de concevoir des sites accessibles, performants et éco-conçus. Mon audit Lighthouse affiche régulièrement 
+           <span 
+            className="
+              mx-2 
+              font-extrabold
+              text-violet-500"
+          >
+            100/100 au SEO 
+          </span>
+          et à l’
+        <span 
+            className="
+              mx-2 
+              font-extrabold 
+              text-green-600"
+          >
+            accessibilité,
+        </span>
+        avec 99/100 en performance. J’aide ainsi les organisations à renforcer leur présence digitale tout en 
+        <span 
+            className="
+              mx-2 
+              font-extrabold 
+              text-green-600"
+          >
+            limitant les coûts de maintenance. Un design visuel et technique simple, 
+          </span>
+          fiable, et sécurisé, limite les risques tels que les fuites de données ou des contenus extérieurs risqués (Cross Origin Resource Sharing). 
+        </p>
+        <p
+          className="
+            pt-4">
+          J'adhère à « 
+          <span 
+            className="
+              mx-2 
+              font-extrabold "
+          >
+            Focus on serving your users, and all else will follow. 
+          </span>
+          » – Matt Cutts ancien responsable webspam de Google
         </p>
       </section>
       <section>

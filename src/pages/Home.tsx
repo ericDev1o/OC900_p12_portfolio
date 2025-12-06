@@ -2,6 +2,10 @@ import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
 import Portfolio from "../components/UI/Portfolio";
 
 export default function Home() {
+  const basePath = import.meta.env.BASE_URL || '/';
+  const photo = 'CV/photoCV_w100px.webp';
+  const photoPath = basePath + photo;
+
   const projectsPath = 'projects/';
   const { getLogoURI } = useSkillsLogo();
 
@@ -31,7 +35,7 @@ export default function Home() {
           justify-center"
       >
         <img
-          src='/CV/photoCV_w100px.webp'
+          src={photoPath}
           alt='ma photo'
         />
       </div>

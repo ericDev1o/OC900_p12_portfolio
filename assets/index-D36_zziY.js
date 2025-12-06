@@ -140,7 +140,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               font-extrabold`,children:"chiffres"}),"clés de",O.jsx("span",{className:`
               mx-2 
               font-extrabold
-              text-violet-500`,children:"performances."}),"Passionné par les sites web, les interfaces",O.jsx("span",{className:`
+              text-violet-400`,children:"performances."}),"Passionné par les sites web, les interfaces",O.jsx("span",{className:`
               mx-2 
               font-extrabold 
               text-green-600`,children:"durables"}),"que j'intègre simplifient l'utilisation par tou·te·s."]}),O.jsxs("p",{className:`
@@ -150,7 +150,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               font-extrabold`,children:"Qui suis-je?"}),"Intégrateur web React passionné par l’optimisation de la visibilité et de la performance des sites, je veille à maintenir un",O.jsx("span",{className:`
               mx-2 
               font-extrabold
-              text-violet-500`,children:"audit Google Lighthouse supérieur à 95/100"}),"pour garantir un référencement efficace et une expérience utilisateur optimale."]}),O.jsxs("p",{className:`
+              text-violet-400`,children:"audit Google Lighthouse supérieur à 95/100"}),"pour garantir un référencement efficace et une expérience utilisateur optimale."]}),O.jsxs("p",{className:`
             pt-4`,children:[O.jsx("span",{className:`
               mx-2 
               text-2xl 
@@ -167,7 +167,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               text-green-600`,children:"outils hors-ligne comme html-validate et stylelint"}),"me permettent de concevoir des sites accessibles, performants et éco-conçus. Mon audit Lighthouse affiche régulièrement",O.jsx("span",{className:`
               mx-2 
               font-extrabold
-              text-violet-500`,children:"100/100 au SEO"}),"et à l’",O.jsx("span",{className:`
+              text-violet-400`,children:"100/100 au SEO"}),"et à l’",O.jsx("span",{className:`
               mx-2 
               font-extrabold 
               text-green-600`,children:"accessibilité,"}),"avec 99/100 en performance. J’aide ainsi les organisations à renforcer leur présence digitale tout en",O.jsx("span",{className:`
@@ -493,4 +493,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 my-4 
                 h-px
                 border-0
-                bg-gray-600`})]})}const p_=Xt.lazy(()=>d_(()=>import("./Footer-XfpaCmI-.js"),[],import.meta.url)),m_=({children:l})=>O.jsxs(O.Fragment,{children:[O.jsx(v_,{}),l,O.jsx(p_,{})]}),Mp=document.getElementById("root");Mp&&Zy.createRoot(Mp).render(O.jsx(Xt.StrictMode,{children:O.jsx(a_,{children:O.jsx(m_,{children:O.jsx(o_,{})})})}));export{h_ as H,O as j};
+                bg-gray-600`})]})}const p_=Xt.lazy(()=>d_(()=>import("./Footer-BnckJT3n.js"),[],import.meta.url)),m_=({children:l})=>O.jsxs(O.Fragment,{children:[O.jsx(v_,{}),l,O.jsx(p_,{})]}),Mp=document.getElementById("root");Mp&&Zy.createRoot(Mp).render(O.jsx(Xt.StrictMode,{children:O.jsx(a_,{children:O.jsx(m_,{children:O.jsx(o_,{})})})}));export{h_ as H,O as j};

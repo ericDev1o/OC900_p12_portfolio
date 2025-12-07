@@ -340,7 +340,18 @@ export default function Home() {
             suivez le parcours
           </a>
         </p>
-        <p
+      </section>
+      <section>
+        <h3
+          id='contact'
+          className="
+            pt-10 
+            text-3xl
+            leading-loose"
+        >
+          contact
+        </h3>
+         <p
           className="
             pt-4
             text-2xl"
@@ -373,17 +384,6 @@ export default function Home() {
             impact.
           </span>
         </p>
-      </section>
-      <section>
-        <h3
-          id='contact'
-          className="
-            pt-10 
-            text-3xl
-            leading-loose"
-        >
-          contact
-        </h3>
         <div 
           className="
             flex

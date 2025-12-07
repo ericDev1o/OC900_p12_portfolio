@@ -326,7 +326,7 @@ export default function Home() {
             >
               intégrateur web 
           </span>
-          RNCP 38145
+          RNCP 38145 à votre service 
           <a 
             href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
             target="_blank"
@@ -334,6 +334,7 @@ export default function Home() {
               mx-2 
               font-medium 
               text-fg-brand 
+              text-blue-500  
               hover:underline"
           >
             suivez le parcours

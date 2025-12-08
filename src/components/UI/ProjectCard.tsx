@@ -53,6 +53,8 @@ export default function ProjectCard
             >
                 <span 
                     className='
+                        group 
+                        relative 
                         inline-flex 
                         items-center 
                         bg-brand-softer 
@@ -63,10 +65,16 @@ export default function ProjectCard
                         py-0.5 
                         rounded-sm'
                 >
-                     <a 
+                    <a 
                         href={project.URL}
                         target='_blank' 
                         aria-label={project.title}
+                        className='
+                            hover:scale-110 
+                            transition 
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out'
                     >
                         <img 
                             src={imgSrc}
@@ -81,6 +89,26 @@ export default function ProjectCard
                             alt={alt}
                         />
                     </a>
+                    <span className="
+                        absolute 
+                        bottom-full 
+                        mb-2 
+                        left-1/2 
+                        -translate-x-1/2 
+                        z-40 
+                        bg-white 
+                        text-gray-900 
+                        text-xs 
+                        rounded 
+                        py-1 
+                        px-3 
+                        opacity-0 
+                        group-hover:opacity-100 
+                        transition-opacity
+                        text-nowrap"
+                    >
+                        🔒 Check always the URL before clicking!
+                    </span>
                 </span>
                 <p 
                     className='

@@ -26,10 +26,7 @@ export default function Header() {
                 ">
                     <li className="
                         group 
-                        relative 
-                        w-full 
-                        md:w-auto 
-                        text-center"
+                        relative "
                     >   
                         <a 
                             href='#moi&vous=nous' 
@@ -45,7 +42,6 @@ export default function Header() {
                                 motion-reduce:duration-3000 
                                 ease-in-out 
                                 '
-                            aria-describedby='tooltip-contact'
                         >
                             nous
                         </a>
@@ -70,7 +66,7 @@ export default function Header() {
                             🔒 Check always the URL before clicking!
                         </span>
                     </li>
-                     <li className="
+                    <li className="
                         group
                         relative"
                     >   
@@ -86,7 +82,6 @@ export default function Header() {
                                 motion-reduce:duration-3000 
                                 ease-in-out 
                                 hover:scale-110'
-                            aria-describedby='tooltip-contact'
                         >
                             compétences
                         </a>
@@ -111,7 +106,7 @@ export default function Header() {
                             🔒 Check always the URL before clicking!
                         </span>
                     </li>
-                     <li className="
+                    <li className="
                         group
                         relative"
                     >   
@@ -127,7 +122,6 @@ export default function Header() {
                                 motion-reduce:duration-3000 
                                 ease-in-out 
                                 hover:scale-110'
-                            aria-describedby='tooltip-contact'
                         >
                             projets
                         </a>
@@ -152,7 +146,7 @@ export default function Header() {
                             🔒 Check always the URL before clicking!
                         </span>
                     </li>
-                     <li className="
+                    <li className="
                         group
                         relative"
                     >   
@@ -168,7 +162,6 @@ export default function Header() {
                                 motion-reduce:duration-3000 
                                 ease-in-out 
                                 hover:scale-110'
-                            aria-describedby='tooltip-contact'
                         >
                             parcours
                         </a>
@@ -193,7 +186,7 @@ export default function Header() {
                             🔒 Check always the URL before clicking!
                         </span>
                     </li>
-                     <li className="
+                    <li className="
                         group
                         relative"
                     >   
@@ -209,7 +202,6 @@ export default function Header() {
                                 motion-reduce:duration-3000 
                                 ease-in-out 
                                 hover:scale-110'
-                            aria-describedby='tooltip-contact'
                         >
                             contact
                         </a>

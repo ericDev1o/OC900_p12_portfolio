@@ -69,7 +69,7 @@ export default function Portfolio(
             if(loading) return <p>chargement des projets</p>;
             if(error) return <p>erreur: {error}</p>;
 
-            return <section
+            return <div
                     className="
                         flex
                         flex-wrap
@@ -83,5 +83,5 @@ export default function Portfolio(
                             projectsPath={projectsPath}
                         />
                     ))}
-            </section>
+            </div>
 }

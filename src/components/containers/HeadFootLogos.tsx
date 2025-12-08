@@ -11,53 +11,53 @@ export default function HeadFootLogos() {
         className="
             flex 
             flex-col
-            md:flex-row
-            gap-4"
+            sm:flex-row
+            gap-8"
         >
-        <img 
-            src={myLogo} 
-            className=' 
-                cursor-not-allowed
-    
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='Eric logo'
-            width={15}
-            height={24}
-        />
+            <img 
+                src={myLogo} 
+                className=' 
+                    cursor-not-allowed
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='Eric logo'
+                width={15}
+                height={24}
+            />
         <a 
             href='https://github.com/ericDev1o' 
             target='_blank'
         >
-        <img 
-            src={githubLogo} 
-            className=' 
-                
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='GitHub logo'
-            width={25}
-            height={24} />
+            <img 
+                src={githubLogo} 
+                className=' 
+                    
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='GitHub logo'
+                width={25}
+                height={24} 
+            />
         </a>
         <a 
             href='https://linkedin.com/in/ericfaraut' 
             target='_blank'
         >
-        <img 
-            src={linkedinLogo} 
-            className='
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='LinkedIn logo' 
-            width={29}
-            height={24}
-        />
+            <img 
+                src={linkedinLogo} 
+                className='
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='LinkedIn logo' 
+                width={29}
+                height={24}
+            />
         </a>
     </div>
 }

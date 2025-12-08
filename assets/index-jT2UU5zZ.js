@@ -117,198 +117,222 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         text-orange-500 
                         font-semibold 
                         tracking-tight 
-                        text-heading`,children:l.title}),A.jsx(l_,{paths:c,repo:l.repository})]}),A.jsx("div",{className:"space-y-4",children:A.jsxs(u_,{summary:"Découvrez ce projet",children:[A.jsx("h6",{className:"font-extrabold mt-2",children:"contexte"}),A.jsx("p",{children:l.contexte}),A.jsx("h6",{className:"font-extrabold mt-2",children:"objectifs"}),A.jsx("p",{children:l.objectifs}),A.jsx("h6",{className:"font-extrabold mt-2",children:"stack technique"}),A.jsx("p",{children:l.stackTechnique}),A.jsx("h6",{className:"font-extrabold mt-2",children:"compétences développées"}),A.jsx("p",{children:l.competencesDeveloppees}),A.jsx("h6",{className:"font-extrabold mt-2",children:"résultats et impact"}),A.jsx("p",{children:l.resultatsEtImpact}),A.jsx("h6",{className:"font-extrabold mt-2",children:"perspectives d'amélioration"}),A.jsx("p",{children:l.perspectivesAmelioration})]})})]})}function s_({projectsPath:l}){const[i,u]=Xt.useState([]),[s,c]=Xt.useState(!0),[d]=Xt.useState(null);return Xt.useEffect(()=>{let p=!0;return(async()=>{try{const v=await fetch("./data/projects.json");if(!v.ok)throw new Error(`HTTP error: ${v.status}`);const g=await v.json();p&&(u(g),c(!1))}catch(v){p&&(v instanceof SyntaxError||v instanceof ReferenceError||v instanceof TypeError||v instanceof Error)&&console.log("error: "+v.message)}})(),()=>{p=!1}},[]),s?A.jsx("p",{children:"chargement des projets"}):d?A.jsxs("p",{children:["erreur: ",d]}):A.jsx("section",{className:`
+                        text-heading`,children:l.title}),A.jsx(l_,{paths:c,repo:l.repository})]}),A.jsx("div",{className:"space-y-4",children:A.jsxs(u_,{summary:"Découvrez ce projet",children:[A.jsx("h6",{className:"font-extrabold mt-2",children:"contexte"}),A.jsx("p",{children:l.contexte}),A.jsx("h6",{className:"font-extrabold mt-2",children:"objectifs"}),A.jsx("p",{children:l.objectifs}),A.jsx("h6",{className:"font-extrabold mt-2",children:"stack technique"}),A.jsx("p",{children:l.stackTechnique}),A.jsx("h6",{className:"font-extrabold mt-2",children:"compétences développées"}),A.jsx("p",{children:l.competencesDeveloppees}),A.jsx("h6",{className:"font-extrabold mt-2",children:"résultats et impact"}),A.jsx("p",{children:l.resultatsEtImpact}),A.jsx("h6",{className:"font-extrabold mt-2",children:"perspectives d'amélioration"}),A.jsx("p",{children:l.perspectivesAmelioration})]})})]})}function s_({projectsPath:l}){const[i,u]=Xt.useState([]),[s,c]=Xt.useState(!0),[d]=Xt.useState(null);return Xt.useEffect(()=>{let p=!0;return(async()=>{try{const v=await fetch("./data/projects.json");if(!v.ok)throw new Error(`HTTP error: ${v.status}`);const g=await v.json();p&&(u(g),c(!1))}catch(v){p&&(v instanceof SyntaxError||v instanceof ReferenceError||v instanceof TypeError||v instanceof Error)&&console.log("error: "+v.message)}})(),()=>{p=!1}},[]),s?A.jsx("p",{children:"chargement des projets"}):d?A.jsxs("p",{children:["erreur: ",d]}):A.jsx("div",{className:`
                         flex
                         flex-wrap
                         justify-center
-                        items-start`,children:i.map((p,m)=>A.jsx(r_,{project:p,projectsPath:l},m))})}function o_(){const u="./"+"CV/photoCV_w100px.webp",s="projects/",{getLogoURI:c}=Zc(),d=c("HTML"),p=c("CSS"),m=c("vite"),v=c("JS"),g=c("TS"),b=c("react"),O=c("linkedIn"),N=c("gitHub");return A.jsxs("main",{children:[A.jsx("h1",{className:`
-          text-5xl 
-          leading-loose`,children:"Bonjour, je suis Eric"}),A.jsx("div",{className:`
-          mt-8 
-          flex
-          justify-center`,children:A.jsx("img",{src:u,alt:"ma photo"})}),A.jsx("h2",{className:`
-        pt-12
-        text-4xl
-        leading-loose`,children:"votre intégrateur web react en Île-de-France"}),A.jsxs("section",{children:[A.jsx("h3",{id:"moi&vous=nous",className:`
-          pt-10
-          text-3xl
-          leading-loose`,children:"À propos de moi"}),A.jsxs("p",{className:`
-            pt-4`,children:["Développons votre activité en évitant les",A.jsx("span",{className:`
-            mx-2 
-            font-extrabold`,children:"frictions."}),"Améliorons vos",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold`,children:"chiffres"}),"clés de",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold
-              text-violet-400`,children:"performances."}),"Passionné par les sites web, les interfaces",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold 
-              text-green-600`,children:"durables"}),"que j'intègre simplifient l'utilisation par tou·te·s."]}),A.jsxs("p",{className:`
-            pt-4`,children:[A.jsx("span",{className:`
-              mx-2 
-              text-2xl 
-              font-extrabold`,children:"Qui suis-je?"}),"Intégrateur web React passionné par l’optimisation de la visibilité et de la performance des sites, je veille à maintenir un",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold
-              text-violet-400`,children:"audit Google Lighthouse supérieur à 95/100"}),"pour garantir un référencement efficace et une expérience utilisateur optimale."]}),A.jsxs("p",{className:`
-            pt-4`,children:[A.jsx("span",{className:`
-              mx-2 
-              text-2xl 
-              font-extrabold`,children:"Pour quoi faire?"}),"Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold 
-              text-green-600`,children:"refactorisation de code back-end, tests unitaires, documentation technique et enrichissement fonctionnel."}),"Mon ambition est d’évoluer vers un poste d’intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France, telle que Veolia, 3F, Aoled ou une administration publique."]}),A.jsxs("p",{className:`
-            pt-4`,children:[A.jsx("span",{className:`
-              mx-2 
-              text-2xl 
-              font-extrabold`,children:"Quel est mon apport?"}),"Ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold 
-              text-green-600`,children:"outils hors-ligne comme html-validate et stylelint"}),"me permettent de concevoir des sites accessibles, performants et éco-conçus. Mon audit Lighthouse affiche régulièrement",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold
-              text-violet-400`,children:"100/100 au SEO"}),"et à l’",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold 
-              text-green-600`,children:"accessibilité,"}),"avec 99/100 en performance. J’aide ainsi les organisations à renforcer leur présence digitale tout en",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold 
-              text-green-600`,children:"limitant les coûts de maintenance. Un design visuel et technique simple,"}),"fiable, et sécurisé, limite les risques tels que les fuites de données ou des contenus extérieurs risqués (Cross Origin Resource Sharing)."]}),A.jsxs("p",{className:`
-            pt-4`,children:["J'adhère à «",A.jsx("span",{className:`
-              mx-2 
-              font-extrabold `,children:"Focus on serving your users, and all else will follow."}),"» – Matt Cutts ancien responsable webspam de Google"]})]}),A.jsxs("section",{children:[A.jsx("h3",{id:"competences",className:`
-          pt-10 
-          text-3xl
-          leading-loose`,children:"compétences"}),A.jsxs("div",{className:`
-          flex
-          justify-center
-          flex-wrap`,children:[A.jsx("img",{src:m,className:`
-              lazy 
-              p-6 
-              h-25
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"Vite logo"}),A.jsx("img",{src:d,className:`
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"HTML5 logo"}),A.jsx("img",{src:p,className:`
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"CSS3 logo"}),A.jsx("img",{src:v,className:`
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"JavaScript logo"}),A.jsx("img",{src:g,className:` 
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"TypeScript logo"}),A.jsx("img",{src:b,className:`
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#61dafbaa]
-              animate-[spin_20s_linear_infinite]`,alt:"React logo"})]})]}),A.jsx("h3",{id:"projets",className:`
+                        items-start`,children:i.map((p,m)=>A.jsx(r_,{project:p,projectsPath:l},m))})}function o_(){const u="./"+"CV/photoCV_w100px.webp",s="projects/",{getLogoURI:c}=Zc(),d=c("HTML"),p=c("CSS"),m=c("vite"),v=c("JS"),g=c("TS"),b=c("react"),O=c("linkedIn"),N=c("gitHub");return A.jsxs("main",{children:[A.jsxs("article",{children:[A.jsxs("section",{className:`
+              odd:bg-gray-950 
+              even:bg-gray-800 
+              pt-6 
+              pb-12
+              px-20`,children:[A.jsx("h1",{className:`
+                text-5xl 
+                leading-loose`,children:"Bonjour, je suis Eric"}),A.jsx("div",{className:`
+                mt-8 
+                flex
+                justify-center`,children:A.jsx("img",{src:u,alt:"ma photo"})}),A.jsx("h2",{className:`
+              pt-12
+              text-4xl
+              leading-loose`,children:"votre intégrateur web react en Île-de-France"})]}),A.jsxs("section",{className:`
+            odd:bg-gray-950 
+            even:bg-gray-800
+            pb-12
+            px-20
+            `,children:[A.jsx("h3",{id:"moi&vous=nous",className:`
             pt-10
             text-3xl
-            leading-loose`,children:"projets"}),A.jsx(s_,{projectsPath:s}),A.jsxs("section",{children:[A.jsx("h3",{id:"parcours",className:`
-            pt-10 
-            text-3xl
-            leading-loose`,children:"parcours"}),A.jsx("h4",{className:`
-            pt-2
-            pb-8 
-            text-2xl
-            leading-loose`,children:"22 avril 2024 à aujourd'hui"}),A.jsxs("p",{className:"text-2xl",children:[A.jsx("span",{className:`
-              mx-2
-              font-extrabold
-              text-violet-500`,children:"intégrateur web"}),"RNCP 38145 à votre service",A.jsx("a",{href:"https://openclassrooms.com/fr/paths/900-integrateur-web#projects",target:"_blank",className:`
+            leading-loose`,children:"À propos de moi"}),A.jsxs("p",{className:`
+              pt-4`,children:["Développons votre activité en évitant les",A.jsx("span",{className:`
               mx-2 
-              font-medium 
-              text-fg-brand 
-              text-blue-500  
-              hover:underline`,children:"suivez le parcours"})]}),A.jsx("h4",{className:`
-            pt-8
-            pb-8 
-            text-2xl
-            leading-loose`,children:"avant"}),A.jsx("p",{className:"text-2xl",children:A.jsxs("a",{href:"/CV/CV+integrateur+web+react+Eric+F.pdf",target:"_blank",rel:"noopener noreferrer",className:`
-              inline-flex 
-              items-center 
-              text-blue-500  
-              no-underline
-              transition 
-              transform 
-              hover:scale-110 
-              hover:brightness-110 
-              hover:shadow-lg`,children:[A.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 640 640",width:48,height:48,fill:"currentcolor",children:A.jsx("path",{d:"M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"})}),A.jsx("span",{className:`
-                text-blue-500
-                hover:underline`,children:"Téléchargez mon CV"})]})})]}),A.jsxs("section",{children:[A.jsx("h3",{id:"contact",className:`
+              font-extrabold`,children:"frictions."}),"Améliorons vos",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold`,children:"chiffres"}),"clés de",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold
+                text-violet-400`,children:"performances."}),"Passionné par les sites web, les interfaces",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold 
+                text-green-600`,children:"durables"}),"que j'intègre simplifient l'utilisation par tou·te·s."]}),A.jsxs("p",{className:`
+              pt-4`,children:[A.jsx("span",{className:`
+                mx-2 
+                text-2xl 
+                font-extrabold`,children:"Qui suis-je?"}),"Intégrateur web React passionné par l’optimisation de la visibilité et de la performance des sites, je veille à maintenir un",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold
+                text-violet-400`,children:"audit Google Lighthouse supérieur à 95/100"}),"pour garantir un référencement efficace et une expérience utilisateur optimale."]}),A.jsxs("p",{className:`
+              pt-4`,children:[A.jsx("span",{className:`
+                mx-2 
+                text-2xl 
+                font-extrabold`,children:"Pour quoi faire?"}),"Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold 
+                text-green-600`,children:"refactorisation de code back-end, tests unitaires, documentation technique et enrichissement fonctionnel."}),"Mon ambition est d’évoluer vers un poste d’intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France, telle que Veolia, 3F, Aoled ou une administration publique."]}),A.jsxs("p",{className:`
+              pt-4`,children:[A.jsx("span",{className:`
+                mx-2 
+                text-2xl 
+                font-extrabold`,children:"Quel est mon apport?"}),"Ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold 
+                text-green-600`,children:"outils hors-ligne comme html-validate et stylelint"}),"me permettent de concevoir des sites accessibles, performants et éco-conçus. Mon audit Lighthouse affiche régulièrement",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold
+                text-violet-400`,children:"100/100 au SEO"}),"et à l’",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold 
+                text-green-600`,children:"accessibilité,"}),"avec 99/100 en performance. J’aide ainsi les organisations à renforcer leur présence digitale tout en",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold 
+                text-green-600`,children:"limitant les coûts de maintenance. Un design visuel et technique simple,"}),"fiable, et sécurisé, limite les risques tels que les fuites de données ou des contenus extérieurs risqués (Cross Origin Resource Sharing)."]}),A.jsxs("p",{className:`
+              pt-4`,children:["J'adhère à «",A.jsx("span",{className:`
+                mx-2 
+                font-extrabold `,children:"Focus on serving your users, and all else will follow."}),"» – Matt Cutts ancien responsable webspam de Google"]})]}),A.jsxs("section",{className:`
+            odd:bg-gray-950 
+            even:bg-gray-800
+            pb-12
+            px-20`,children:[A.jsx("h3",{id:"competences",className:`
             pt-10 
             text-3xl
-            leading-loose`,children:"contact"}),A.jsxs("p",{className:`
-            pt-4
-            text-2xl`,children:["Contribuons",A.jsx("span",{className:`
-              mx-2
-              font-extrabold
-              text-green-600`,children:"doucement"}),"à votre",A.jsx("span",{className:`
-              mx-2
-              font-extrabold
-              text-gray-500`,children:"projet"}),"web avec",A.jsx("span",{className:`
-              mx-2
-              font-extrabold
-              text-green-600`,children:"impact."})]}),A.jsxs("div",{className:`
+            leading-loose`,children:"compétences"}),A.jsxs("div",{className:`
             flex
-            justify-center`,children:[A.jsx("a",{href:"https://github.com/ericDev1o",target:"_blank",children:A.jsx("img",{src:N,className:`
+            justify-center
+            flex-wrap`,children:[A.jsx("img",{src:m,className:`
+                lazy 
+                p-6 
+                h-25
+                will-change-filter 
+                filter 
+                duration-300
+                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"Vite logo"}),A.jsx("img",{src:d,className:`
+                lazy 
                 p-6 
                 h-25 
                 will-change-filter 
                 filter 
                 duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"GitHub logo"})}),A.jsx("a",{href:"https://linkedin.com/in/ericfaraut",target:"_blank",children:A.jsx("img",{src:O,className:`
+                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"HTML5 logo"}),A.jsx("img",{src:p,className:`
+                lazy 
                 p-6 
                 h-25 
                 will-change-filter 
                 filter 
                 duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"LinkedIn logo"})})]}),A.jsx("h4",{className:`
-            pt-8 
-            text-2xl
-            leading-loose`,children:"Utilisez s'il-vous-plaît provisoirement le formulaire Framaform ci-dessous pour une meilleure confidentialité des courriels."}),A.jsx("a",{href:"https://framaforms.org/contact-eric-faraut-1762791991",target:"_blank",children:A.jsx("button",{className:`
-                mt-8 
-                text-2xl 
+                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"CSS3 logo"}),A.jsx("img",{src:v,className:`
+                lazy 
+                p-6 
+                h-25 
+                will-change-filter 
+                filter 
+                duration-300
+                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"JavaScript logo"}),A.jsx("img",{src:g,className:` 
+                lazy 
+                p-6 
+                h-25 
+                will-change-filter 
+                filter 
+                duration-300
+                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"TypeScript logo"}),A.jsx("img",{src:b,className:`
+                lazy 
+                p-6 
+                h-25 
+                will-change-filter 
+                filter 
+                duration-300
+                hover:drop-shadow-[0_0_2em_#61dafbaa]
+                animate-[spin_20s_linear_infinite]`,alt:"React logo"})]})]}),A.jsxs("section",{className:`
+            odd:bg-gray-950 
+            even:bg-gray-800
+            px-20`,children:[A.jsx("h3",{id:"projets",className:`
+              pt-10
+              text-3xl
+              leading-loose`,children:"projets"}),A.jsx(s_,{projectsPath:s})]}),A.jsxs("section",{className:`
+          odd:bg-gray-950 
+          even:bg-gray-800 
+          pb-12
+          px-20`,children:[A.jsx("h3",{id:"parcours",className:`
+              pt-10 
+              text-3xl
+              leading-loose`,children:"parcours"}),A.jsx("h4",{className:`
+              pt-2
+              pb-8 
+              text-2xl
+              leading-loose`,children:"22 avril 2024 à aujourd'hui"}),A.jsxs("p",{className:"text-2xl",children:[A.jsx("span",{className:`
+                mx-2
+                font-extrabold
+                text-violet-500`,children:"intégrateur web"}),"RNCP 38145 à votre service",A.jsx("a",{href:"https://openclassrooms.com/fr/paths/900-integrateur-web#projects",target:"_blank",className:`
+                mx-2 
                 font-medium 
-                cursor-pointer 
-                text-gray-200  
-                bg-blue-600 
-                hover:bg-blue-700 
-                focus:ring-4 
-                focus:outline-none 
-                focus:ring-blue-300 
-                rounded-lg  
-                w-full 
-                sm:w-auto 
-                px-5 
-                py-2.5 
-                text-center 
-                dark:bg-blue-600 
-                dark:hover:bg-blue-700 
-                dark:focus:ring-blue-800`,children:"Parlons de votre projet de site web"})})]}),A.jsx("hr",{className:`
+                text-fg-brand 
+                text-blue-500  
+                hover:underline`,children:"suivez le parcours"})]}),A.jsx("h4",{className:`
+              pt-8
+              pb-8 
+              text-2xl
+              leading-loose`,children:"avant"}),A.jsx("p",{className:"text-2xl",children:A.jsxs("a",{href:"/CV/CV+integrateur+web+react+Eric+F.pdf",target:"_blank",rel:"noopener noreferrer",className:`
+                inline-flex 
+                items-center 
+                text-blue-500  
+                no-underline
+                transition 
+                transform 
+                hover:scale-110 
+                hover:brightness-110 
+                hover:shadow-lg`,children:[A.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 640 640",width:48,height:48,fill:"currentcolor",children:A.jsx("path",{d:"M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"})}),A.jsx("span",{className:`
+                  text-blue-500
+                  hover:underline`,children:"Téléchargez mon CV"})]})})]}),A.jsxs("section",{className:`
+            odd:bg-gray-950 
+            even:bg-gray-800
+            px-20`,children:[A.jsx("h3",{id:"contact",className:`
+              pt-10 
+              text-3xl
+              leading-loose`,children:"contact"}),A.jsxs("p",{className:`
+              pt-4
+              text-2xl`,children:["Contribuons",A.jsx("span",{className:`
+                mx-2
+                font-extrabold
+                text-green-600`,children:"doucement"}),"à votre",A.jsx("span",{className:`
+                mx-2
+                font-extrabold
+                text-gray-500`,children:"projet"}),"web avec",A.jsx("span",{className:`
+                mx-2
+                font-extrabold
+                text-green-600`,children:"impact."})]}),A.jsxs("div",{className:`
+              flex
+              justify-center`,children:[A.jsx("a",{href:"https://github.com/ericDev1o",target:"_blank",children:A.jsx("img",{src:N,className:`
+                  p-6 
+                  h-25 
+                  will-change-filter 
+                  filter 
+                  duration-300
+                  hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"GitHub logo"})}),A.jsx("a",{href:"https://linkedin.com/in/ericfaraut",target:"_blank",children:A.jsx("img",{src:O,className:`
+                  p-6 
+                  h-25 
+                  will-change-filter 
+                  filter 
+                  duration-300
+                  hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"LinkedIn logo"})})]}),A.jsx("h4",{className:`
+              pt-8 
+              text-2xl
+              leading-loose`,children:"Utilisez s'il-vous-plaît provisoirement le formulaire Framaform ci-dessous pour une meilleure confidentialité des courriels."}),A.jsx("a",{href:"https://framaforms.org/contact-eric-faraut-1762791991",target:"_blank",children:A.jsx("button",{className:`
+                  mt-8 
+                  text-2xl 
+                  font-medium 
+                  cursor-pointer 
+                  text-gray-200  
+                  bg-blue-600 
+                  hover:bg-blue-700 
+                  focus:ring-4 
+                  focus:outline-none 
+                  focus:ring-blue-300 
+                  rounded-lg  
+                  w-full 
+                  sm:w-auto 
+                  px-5 
+                  py-2.5 
+                  text-center 
+                  dark:bg-blue-600 
+                  dark:hover:bg-blue-700 
+                  dark:focus:ring-blue-800`,children:"Parlons de votre projet de site web"})})]})]}),A.jsx("hr",{className:`
           my-16 
           h-px 
           border-0 
@@ -338,177 +362,172 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             leading-loose`,children:"cookies et traçage"}),"Ce site https://ericdev1o.github.io/OC900_p12_portfolio/ n'utilise aucun cookie de suivi ni outil de traçage. Aucune donnée de navigation n'est collectée sauf les informations que vous renseignez volontairement dans le formulaire."]})]})}const c_="modulepreload",f_=function(l,i){return new URL(l,i).href},Cp={},d_=function(i,u,s){let c=Promise.resolve();if(u&&u.length>0){let g=function(b){return Promise.all(b.map(O=>Promise.resolve(O).then(N=>({status:"fulfilled",value:N}),N=>({status:"rejected",reason:N}))))};const p=document.getElementsByTagName("link"),m=document.querySelector("meta[property=csp-nonce]"),v=m?.nonce||m?.getAttribute("nonce");c=g(u.map(b=>{if(b=f_(b,s),b in Cp)return;Cp[b]=!0;const O=b.endsWith(".css"),N=O?'[rel="stylesheet"]':"";if(s)for(let V=p.length-1;V>=0;V--){const R=p[V];if(R.href===b&&(!O||R.rel==="stylesheet"))return}else if(document.querySelector(`link[href="${b}"]${N}`))return;const k=document.createElement("link");if(k.rel=O?"stylesheet":c_,O||(k.as="script"),k.crossOrigin="",k.href=b,v&&k.setAttribute("nonce",v),document.head.appendChild(k),O)return new Promise((V,R)=>{k.addEventListener("load",V),k.addEventListener("error",()=>R(new Error(`Unable to preload CSS for ${b}`)))})}))}function d(p){const m=new Event("vite:preloadError",{cancelable:!0});if(m.payload=p,window.dispatchEvent(m),!m.defaultPrevented)throw p}return c.then(p=>{for(const m of p||[])m.status==="rejected"&&d(m.reason);return i().catch(d)})};function h_(){const{getLogoURI:l}=Zc(),i=l("E"),u=l("linkedIn"),s=l("gitHub");return A.jsxs("div",{className:`
             flex 
             flex-col
-            md:flex-row
-            gap-4`,children:[A.jsx("img",{src:i,className:` 
-                cursor-not-allowed
-    
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"Eric logo",width:15,height:24}),A.jsx("a",{href:"https://github.com/ericDev1o",target:"_blank",children:A.jsx("img",{src:s,className:` 
-                
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"GitHub logo",width:25,height:24})}),A.jsx("a",{href:"https://linkedin.com/in/ericfaraut",target:"_blank",children:A.jsx("img",{src:u,className:`
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"LinkedIn logo",width:29,height:24})})]})}function v_(){return A.jsxs(A.Fragment,{children:[A.jsxs("header",{className:`
-            
-            flex 
-            justify-between
-            items-center`,children:[A.jsx(h_,{}),A.jsx("nav",{className:`
-                py-8
-                sticky 
-                top-0 
-                z-50 
-                bg-slate-800 
-                shadow-sm
-                `,children:A.jsxs("ul",{className:`
-                    flex
-                    flex-col
-                    md:flex-row 
-                    justify-between
-                `,children:[A.jsxs("li",{className:`
-                        group 
-                        relative `,children:[A.jsx("a",{href:"#moi&vous=nous",className:`
-                                block 
-                                px-4 
-                                py-2 
-                                text-blue-300 
-                                hover:text-blue-600 
-                                hover:scale-110 
-                                transition 
-                                duration-600 
-                                motion-reduce:duration-3000 
-                                ease-in-out 
-                                `,children:"nous"}),A.jsx("span",{className:`
-                            absolute 
-                            bottom-full 
-                            mb-2 
-                            left-1/2 
-                            -translate-x-1/2 
-                            z-40 
-                            bg-white 
-                            text-gray-900 
-                            text-xs 
-                            rounded 
-                            py-1 
-                            px-3 
-                            opacity-0 
-                            group-hover:opacity-100 
-                            transition-opacity
-                            text-nowrap`,children:"🔒 Check always the URL before clicking!"})]}),A.jsxs("li",{className:`
-                        group
-                        relative`,children:[A.jsx("a",{href:"#competences",className:`
-                                block 
-                                px-4 
-                                py-2 
-                                text-blue-300
-                                hover:text-blue-600
-                                duration-600 
-                                motion-reduce:duration-3000 
-                                ease-in-out 
-                                hover:scale-110`,children:"compétences"}),A.jsx("span",{className:`
-                            absolute 
-                            bottom-full 
-                            mb-2 
-                            left-1/2 
-                            -translate-x-1/2 
-                            z-40 
-                            bg-white 
-                            text-gray-900 
-                            text-xs 
-                            rounded 
-                            py-1 
-                            px-3 
-                            opacity-0 
-                            group-hover:opacity-100 
-                            transition-opacity
-                            text-nowrap`,children:"🔒 Check always the URL before clicking!"})]}),A.jsxs("li",{className:`
-                        group
-                        relative`,children:[A.jsx("a",{href:"#projets",className:`
-                                block 
-                                px-4 
-                                py-2 
-                                text-blue-300
-                                hover:text-blue-600
-                                duration-600 
-                                motion-reduce:duration-3000 
-                                ease-in-out 
-                                hover:scale-110`,children:"projets"}),A.jsx("span",{className:`
-                            absolute 
-                            bottom-full 
-                            mb-2 
-                            left-1/2 
-                            -translate-x-1/2 
-                            z-40 
-                            bg-white 
-                            text-gray-900 
-                            text-xs 
-                            rounded 
-                            py-1 
-                            px-3 
-                            opacity-0 
-                            group-hover:opacity-100 
-                            transition-opacity
-                            text-nowrap`,children:"🔒 Check always the URL before clicking!"})]}),A.jsxs("li",{className:`
-                        group
-                        relative`,children:[A.jsx("a",{href:"#parcours",className:`
-                                block 
-                                px-4 
-                                py-2 
-                                text-blue-300
-                                hover:text-blue-600
-                                duration-600 
-                                motion-reduce:duration-3000 
-                                ease-in-out 
-                                hover:scale-110`,children:"parcours"}),A.jsx("span",{className:`
-                            absolute 
-                            bottom-full 
-                            mb-2 
-                            left-1/2 
-                            -translate-x-1/2 
-                            z-40 
-                            bg-white 
-                            text-gray-900 
-                            text-xs 
-                            rounded 
-                            py-1 
-                            px-3 
-                            opacity-0 
-                            group-hover:opacity-100 
-                            transition-opacity
-                            text-nowrap`,children:"🔒 Check always the URL before clicking!"})]}),A.jsxs("li",{className:`
-                        group
-                        relative`,children:[A.jsx("a",{href:"#contact",className:`
-                                block 
-                                px-4 
-                                py-2 
-                                text-blue-300
-                                hover:text-blue-600
-                                duration-600 
-                                motion-reduce:duration-3000 
-                                ease-in-out 
-                                hover:scale-110`,children:"contact"}),A.jsx("span",{className:`
-                            absolute 
-                            bottom-full 
-                            mb-2 
-                            left-1/2 
-                            -translate-x-1/2 
-                            z-40 
-                            bg-white 
-                            text-gray-900 
-                            text-xs 
-                            rounded 
-                            py-1 
-                            px-3 
-                            opacity-0 
-                            group-hover:opacity-100 
-                            transition-opacity
-                            text-nowrap`,children:"🔒 Check always the URL before clicking!"})]})]})})]}),A.jsx("hr",{className:`
-                my-4 
-                h-px
-                border-0
-                bg-gray-600`})]})}const p_=Xt.lazy(()=>d_(()=>import("./Footer-Hw1tdqDv.js"),[],import.meta.url)),m_=({children:l})=>A.jsxs(A.Fragment,{children:[A.jsx(v_,{}),l,A.jsx(p_,{})]}),Mp=document.getElementById("root");Mp&&Zy.createRoot(Mp).render(A.jsx(Xt.StrictMode,{children:A.jsx(a_,{children:A.jsx(m_,{children:A.jsx(o_,{})})})}));export{h_ as H,A as j};
+            sm:flex-row
+            gap-8`,children:[A.jsx("img",{src:i,className:` 
+                    cursor-not-allowed
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"Eric logo",width:15,height:24}),A.jsx("a",{href:"https://github.com/ericDev1o",target:"_blank",children:A.jsx("img",{src:s,className:` 
+                    
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"GitHub logo",width:25,height:24})}),A.jsx("a",{href:"https://linkedin.com/in/ericfaraut",target:"_blank",children:A.jsx("img",{src:u,className:`
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:"LinkedIn logo",width:29,height:24})})]})}function v_(){return A.jsxs("header",{className:`
+        px-10 
+        flex 
+        justify-between
+        items-center`,children:[A.jsx(h_,{}),A.jsx("nav",{className:`
+            py-8
+            sticky 
+            top-0 
+            z-50 
+            bg-slate-800 
+            shadow-sm
+            `,children:A.jsxs("ul",{className:`
+                flex
+                flex-col
+                md:flex-row 
+                justify-between
+            `,children:[A.jsxs("li",{className:`
+                    group 
+                    relative `,children:[A.jsx("a",{href:"#moi&vous=nous",className:`
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300 
+                            hover:text-blue-600 
+                            hover:scale-110 
+                            transition 
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            `,children:"nous"}),A.jsx("span",{className:`
+                        absolute 
+                        bottom-full 
+                        mb-2 
+                        left-1/2 
+                        -translate-x-1/2 
+                        z-40 
+                        bg-white 
+                        text-gray-900 
+                        text-xs 
+                        rounded 
+                        py-1 
+                        px-3 
+                        opacity-0 
+                        group-hover:opacity-100 
+                        transition-opacity
+                        text-nowrap`,children:"🔒 Check always the URL before clicking!"})]}),A.jsxs("li",{className:`
+                    group
+                    relative`,children:[A.jsx("a",{href:"#competences",className:`
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300
+                            hover:text-blue-600
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            hover:scale-110`,children:"compétences"}),A.jsx("span",{className:`
+                        absolute 
+                        bottom-full 
+                        mb-2 
+                        left-1/2 
+                        -translate-x-1/2 
+                        z-40 
+                        bg-white 
+                        text-gray-900 
+                        text-xs 
+                        rounded 
+                        py-1 
+                        px-3 
+                        opacity-0 
+                        group-hover:opacity-100 
+                        transition-opacity
+                        text-nowrap`,children:"🔒 Check always the URL before clicking!"})]}),A.jsxs("li",{className:`
+                    group
+                    relative`,children:[A.jsx("a",{href:"#projets",className:`
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300
+                            hover:text-blue-600
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            hover:scale-110`,children:"projets"}),A.jsx("span",{className:`
+                        absolute 
+                        bottom-full 
+                        mb-2 
+                        left-1/2 
+                        -translate-x-1/2 
+                        z-40 
+                        bg-white 
+                        text-gray-900 
+                        text-xs 
+                        rounded 
+                        py-1 
+                        px-3 
+                        opacity-0 
+                        group-hover:opacity-100 
+                        transition-opacity
+                        text-nowrap`,children:"🔒 Check always the URL before clicking!"})]}),A.jsxs("li",{className:`
+                    group
+                    relative`,children:[A.jsx("a",{href:"#parcours",className:`
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300
+                            hover:text-blue-600
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            hover:scale-110`,children:"parcours"}),A.jsx("span",{className:`
+                        absolute 
+                        bottom-full 
+                        mb-2 
+                        left-1/2 
+                        -translate-x-1/2 
+                        z-40 
+                        bg-white 
+                        text-gray-900 
+                        text-xs 
+                        rounded 
+                        py-1 
+                        px-3 
+                        opacity-0 
+                        group-hover:opacity-100 
+                        transition-opacity
+                        text-nowrap`,children:"🔒 Check always the URL before clicking!"})]}),A.jsxs("li",{className:`
+                    group
+                    relative`,children:[A.jsx("a",{href:"#contact",className:`
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300
+                            hover:text-blue-600
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            hover:scale-110`,children:"contact"}),A.jsx("span",{className:`
+                        absolute 
+                        bottom-full 
+                        mb-2 
+                        left-1/2 
+                        -translate-x-1/2 
+                        z-40 
+                        bg-white 
+                        text-gray-900 
+                        text-xs 
+                        rounded 
+                        py-1 
+                        px-3 
+                        opacity-0 
+                        group-hover:opacity-100 
+                        transition-opacity
+                        text-nowrap`,children:"🔒 Check always the URL before clicking!"})]})]})})]})}const p_=Xt.lazy(()=>d_(()=>import("./Footer-BwcvmC78.js"),[],import.meta.url)),m_=({children:l})=>A.jsxs(A.Fragment,{children:[A.jsx(v_,{}),l,A.jsx(p_,{})]}),Mp=document.getElementById("root");Mp&&Zy.createRoot(Mp).render(A.jsx(Xt.StrictMode,{children:A.jsx(a_,{children:A.jsx(m_,{children:A.jsx(o_,{})})})}));export{h_ as H,A as j};

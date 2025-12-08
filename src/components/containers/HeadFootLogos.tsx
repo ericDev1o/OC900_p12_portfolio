@@ -11,6 +11,7 @@ export default function HeadFootLogos() {
         className="
             flex 
             flex-col
+            items-center 
             sm:flex-row
             gap-8"
         >

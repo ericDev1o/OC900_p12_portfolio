@@ -1,5 +1,6 @@
 import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
 import Portfolio from "../components/UI/Portfolio";
+import Form from "@/components/UI/Form";
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -561,6 +562,7 @@ export default function Home() {
                 🔒 Check always the URL before clicking!
             </span>
           </div>
+          <Form />
       </section>
   </article>
   <hr 

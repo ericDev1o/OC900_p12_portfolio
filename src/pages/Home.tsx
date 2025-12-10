@@ -556,7 +556,7 @@ export default function Home() {
                 transition-opacity
                 text-nowrap"
             >
-                🔒 Check always the URL before clicking!
+                🔒 Vérifiez toujours l'URL avant de cliquer!
             </span>
           </div>
           <Form />

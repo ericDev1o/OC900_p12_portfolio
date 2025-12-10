@@ -61,7 +61,7 @@ export default function Footer() {
                 transition-opacity
                 text-nowrap"
             >
-                🔒 Check always the URL before clicking!
+                🔒 Vérifiez toujours l'URL avant de cliquer!
             </span>
             <Modal
                 isOpen={modalIsOpen}

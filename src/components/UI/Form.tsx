@@ -29,24 +29,19 @@ export default function Form() {
             name="floating_email" 
             id="floating_email" 
             className="
-              disabled: cursor-not-allowed
               block 
               py-2.5 
               px-0 
               w-full 
-              text-sm 
-              text-gray-900 
+              text-xl 
               bg-transparent 
               border-0 
               border-b-2 
-              border-gray-300 
-              appearance-none 
-              dark:text-white 
-              dark:border-gray-600 
-              dark:focus:border-blue-500 
+              border-gray-600 
+              text-white 
+              focus:border-blue-500 
               focus:outline-none 
               focus:ring-0 
-              focus:border-blue-600 
               peer" 
               placeholder=" " 
               required 
@@ -54,20 +49,19 @@ export default function Form() {
           <label 
             htmlFor="floating_email" 
             className=" 
-              peer-focus:font-medium 
               absolute 
+              top-3 
+              right-14
+              -z-10 
+              origin-left 
               w-full 
-              text-sm 
-              text-gray-500 
-              dark:text-gray-400 
+              text-xl 
+              text-gray-300 
               duration-300 
               transform 
               -translate-y-6 
               scale-75 
-              top-3 
-              right-32
-              -z-10 
-              origin-left 
+              peer-focus:font-medium 
               peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 
               rtl:peer-focus:left-auto 
@@ -78,21 +72,20 @@ export default function Form() {
               peer-focus:scale-75 
               peer-focus:-translate-y-6"
           >
-            courriel (obligatoire)
+            courriel (a@b.c obligatoire)
           </label>
           <p 
             className="
               mt-2 
               text-sm 
-              text-red-700 
-              dark:text-red-800"
+              text-red-400"
           >
             Veuillez cliquer sur le bouton 
               <span 
               className="
                 mx-2 
                 font-extrabold
-                text-blue-500"
+                text-blue-400"
             >
               bleu 
             </span>
@@ -108,7 +101,7 @@ export default function Form() {
               className="
                 mx-2 
                 font-extrabold
-                text-blue-600"
+                text-blue-400"
             >
               bleu 
             </span>
@@ -128,24 +121,19 @@ export default function Form() {
             name="floating_first_name" 
             id="floating_first_name" 
             className="
-              disabled: cursor-not-allowed
               block 
               py-2.5 
               px-0 
               w-full 
-              text-sm 
-              text-gray-900 
+              text-xl  
               bg-transparent 
               border-0 
               border-b-2 
-              border-gray-300 
-              appearance-none 
-              dark:text-white 
-              dark:border-gray-600 
-              dark:focus:border-blue-500 
+              border-gray-600 
+              text-white 
+              focus:border-blue-500 
               focus:outline-none
               focus:ring-0
-              focus:border-blue-600
               peer" 
               placeholder=" " 
               required 
@@ -155,18 +143,17 @@ export default function Form() {
             className="
               peer-focus:font-medium 
               absolute 
+              top-3 
+              right-23 
+              -z-10 
+              origin-left 
               w-full 
-              text-sm 
-              text-gray-500 
-              dark:text-gray-400 
+              text-xl not-[]:
+              text-gray-300 
               duration-300 
               transform 
               -translate-y-6 
               scale-75 
-              top-3 
-              right-34 
-              -z-10 
-              origin-left 
               peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 
               peer-focus:text-blue-600 
@@ -176,7 +163,7 @@ export default function Form() {
               peer-focus:scale-75 
               peer-focus:-translate-y-6"
           >
-            Prénom (obligatoire)
+            Prénom (a obligatoire)
           </label>
         </div>
         <div 
@@ -192,24 +179,19 @@ export default function Form() {
             name="floating_last_name" 
             id="floating_last_name" 
             className="
-              disabled: cursor-not-allowed
               block 
               py-2.5 
               px-0 
               w-full 
-              text-sm 
-              text-gray-900 
+              text-xl 
               bg-transparent 
               border-0 
               border-b-2 
-              border-gray-300 
-              appearance-none 
-              dark:text-white 
-              dark:border-gray-600 
-              dark:focus:border-blue-500 
+              border-gray-600 
+              text-white 
+              focus:border-blue-500 
               focus:outline-none 
               focus:ring-0 
-              focus:border-blue-600 
               peer" 
             placeholder=" " 
             required 
@@ -219,18 +201,17 @@ export default function Form() {
             className="
               peer-focus:font-medium 
               absolute 
+              top-3 
+              right-27 
+              -z-10 
+              origin-left 
               w-full 
-              text-sm 
-              text-gray-500 
-              dark:text-gray-400 
+              text-xl 
+              text-gray-300 
               duration-300 
               transform 
               -translate-y-6 
               scale-75 
-              top-3 
-              right-37 
-              -z-10 
-              origin-left 
               peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 
               peer-focus:text-blue-600 
@@ -240,7 +221,7 @@ export default function Form() {
               peer-focus:scale-75 
               peer-focus:-translate-y-6"
           >
-            Nom (obligatoire)
+            Nom (a obligatoire)
           </label>
         </div>
         <div 
@@ -257,24 +238,19 @@ export default function Form() {
             name="floating_phone" 
             id="floating_phone" 
             className="
-              disabled: cursor-not-allowed
               block 
               py-2.5 
               px-0 
               w-full 
-              text-sm 
-              text-gray-900 
+              text-xl 
               bg-transparent 
               border-0 
               border-b-2 
-              border-gray-300 
-              appearance-none 
-              dark:text-white 
-              dark:border-gray-600 
-              dark:focus:border-blue-500 
+              border-gray-600 
+              text-white 
+              focus:border-blue-500 
               focus:outline-none 
               focus:ring-0 
-              focus:border-blue-600 
               peer" 
               placeholder=" " 
             />
@@ -283,17 +259,17 @@ export default function Form() {
             className="
               peer-focus:font-medium 
               absolute 
-              text-sm 
-              text-gray-500 
-              dark:text-gray-400 
+              top-3 
+              right-12
+              -z-10 
+              origin-left 
+              w-full 
+              text-xl 
+              text-gray-300 
               duration-300 
               transform 
               -translate-y-6 
               scale-75 
-              top-3 
-              right-50.5 
-              -z-10 
-              origin-left 
               peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 
               peer-focus:text-blue-600 
@@ -320,24 +296,19 @@ export default function Form() {
             name="floating_company" 
             id="floating_company" 
             className="
-              disabled: cursor-not-allowed
               block 
               py-2.5 
               px-0 
               w-full 
-              text-sm 
-              text-gray-900 
+              text-xl 
               bg-transparent 
               border-0 
               border-b-2 
-              border-gray-300 
-              appearance-none 
-              dark:text-white 
-              dark:border-gray-600 
-              dark:focus:border-blue-500 
+              border-gray-600 
+              text-white 
+              focus:border-blue-500 
               focus:outline-none 
               focus:ring-0 
-              focus:border-blue-600 
               peer" 
             placeholder=" "
           />
@@ -346,18 +317,17 @@ export default function Form() {
             className="
               peer-focus:font-medium 
               absolute 
+              top-3 
+              right-45 
+              -z-10 
+              origin-left 
               w-full 
-              text-sm 
-              text-gray-500 
-              dark:text-gray-400 
+              text-xl 
+              text-gray-300 
               duration-300 
               transform 
               -translate-y-6 
               scale-75 
-              top-3 
-              right-48 
-              -z-10 
-              origin-left 
               peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 
               peer-focus:text-blue-600 
@@ -383,46 +353,38 @@ export default function Form() {
             className="
               block 
               mb-2 
-              text-sm 
-              font-medium 
-              text-gray-900 
-              dark:text-white"
+              text-xl 
+              text-gray-300 
+              font-medium"
           >
-            Parlons de votre projet de site web
+            Précisez votre besoin de site web s'il vous plaît
           </label>
           <textarea 
             id="message"
             value={value}
             onChange={handleChange} 
             className="
-              disabled: cursor-not-allowed
               block 
               p-2.5 
               min-h-24 
               w-full 
-              text-sm 
-              text-gray-900 
-              bg-gray-50 
+              text-xl 
+              text-white 
+              bg-gray-700 
               rounded-lg 
               border 
-              border-gray-300 
+              border-gray-600 
               focus:ring-blue-500 
               focus:border-blue-500 
-              dark:bg-gray-700 
-              dark:border-gray-600 
-              dark:placeholder-gray-400 
-              dark:text-white 
-              dark:focus:ring-blue-500 
-              dark:focus:border-blue-500" 
-            placeholder="Veuillez s'il-vous-plaît avoir la patience de cliquer sur le bouton orange ci-dessus."
+              placeholder-gray-400" 
+              placeholder="contexte, public visé, fonctionnalités attendues..."
           >
           </textarea>
           <p 
             className="
               mt-2 
               text-sm 
-              text-red-600 
-              dark:text-red-500"
+              dark:text-red-400"
           >
             <span 
               className="font-medium"
@@ -434,25 +396,22 @@ export default function Form() {
         <button 
           type="submit" 
           className="
-            disabled: cursor-not-allowed 
-            opacity-50 
-            text-white 
-            bg-blue-700 
-            hover:bg-blue-800 
-            focus:ring-4 
-            focus:outline-none 
-            focus:ring-blue-300 
-            font-medium 
-            rounded-lg 
-            text-sm 
-            w-full 
-            sm:w-auto 
+            mt-2 
             px-5 
             py-2.5 
-            text-center 
-            dark:bg-blue-600 
-            dark:hover:bg-blue-700 
-            dark:focus:ring-blue-800"
+            w-full 
+            text-2xl 
+            text-center
+            font-medium 
+            text-gray-200
+            bg-blue-600 
+            hover:bg-blue-700 
+            cursor-pointer 
+            focus:ring-4 
+            focus:outline-none 
+            focus:ring-blue-800 
+            rounded-lg 
+            sm:w-auto"
         >
           Envoyer
         </button>

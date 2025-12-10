@@ -518,7 +518,11 @@ export default function Home() {
           >
             <button 
                 className="
-                  mt-2
+                  mt-2 
+                  px-5 
+                  py-2.5 
+                  w-full 
+                  text-center 
                   text-2xl 
                   font-medium 
                   cursor-pointer 
@@ -527,16 +531,9 @@ export default function Home() {
                   hover:bg-blue-700 
                   focus:ring-4 
                   focus:outline-none 
-                  focus:ring-blue-300 
+                  focus:ring-blue-800 
                   rounded-lg  
-                  w-full 
-                  sm:w-auto 
-                  px-5 
-                  py-2.5 
-                  text-center 
-                  dark:bg-blue-600 
-                  dark:hover:bg-blue-700 
-                  dark:focus:ring-blue-800"
+                  sm:w-auto"
               >
                 Parlons de votre projet de site web
               </button>

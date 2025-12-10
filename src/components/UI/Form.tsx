@@ -1,113 +1,27 @@
 import { useState } from "react";
 
+import FormPhoneInput from "./FormPhoneInput";
+import FormEmailInput from "./FormEmailnput";
+
 export default function Form() {
   const [value, setValue] = useState('');
 
-    const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => 
+  {
     const textarea = event.target;
     setValue(textarea.value);
 
     textarea.style.height = 'auto';
     textarea.style.height = textarea.scrollHeight + 'px';
   }
+
   return <form 
         className="
           max-w-md 
           mx-auto
           pt-12"
       >
-        <div 
-        className="
-          relative
-          z-0 
-          w-full 
-          mb-5 
-          group"
-        >
-          <input 
-            type="email" 
-            name="floating_email" 
-            id="floating_email" 
-            className="
-              block 
-              py-2.5 
-              px-0 
-              w-full 
-              text-xl 
-              bg-transparent 
-              border-0 
-              border-b-2 
-              border-gray-600 
-              text-white 
-              focus:border-blue-500 
-              focus:outline-none 
-              focus:ring-0 
-              peer" 
-              placeholder=" " 
-              required 
-          />
-          <label 
-            htmlFor="floating_email" 
-            className=" 
-              absolute 
-              top-3 
-              right-14
-              -z-10 
-              origin-left 
-              w-full 
-              text-xl 
-              text-gray-300 
-              duration-300 
-              transform 
-              -translate-y-6 
-              scale-75 
-              peer-focus:font-medium 
-              peer-focus:start-0 
-              rtl:peer-focus:translate-x-1/4 
-              rtl:peer-focus:left-auto 
-              peer-focus:text-blue-600 
-              peer-focus:dark:text-blue-500 
-              peer-placeholder-shown:scale-100 
-              peer-placeholder-shown:translate-y-0 
-              peer-focus:scale-75 
-              peer-focus:-translate-y-6"
-          >
-            courriel (a@b.c obligatoire)
-          </label>
-          <p 
-            className="
-              mt-2 
-              text-sm 
-              text-red-400"
-          >
-            Veuillez cliquer sur le bouton 
-              <span 
-              className="
-                mx-2 
-                font-extrabold
-                text-blue-400"
-            >
-              bleu 
-            </span>
-            ci-dessus
-            <span
-              className="
-                mx-2 
-                font-extrabold"
-            >plutôt 
-            </span>
-            que le
-            <span
-              className="
-                mx-2 
-                font-extrabold
-                text-blue-400"
-            >
-              bleu 
-            </span>
-            ci-dessous s'il vous plaît. 
-          </p>
-        </div>
+        <FormEmailInput />
         <div 
           className="
             relative 
@@ -143,7 +57,7 @@ export default function Form() {
             className="
               peer-focus:font-medium 
               absolute 
-              top-3 
+              top-5 
               right-23 
               -z-10 
               origin-left 
@@ -201,7 +115,7 @@ export default function Form() {
             className="
               peer-focus:font-medium 
               absolute 
-              top-3 
+              top-5 
               right-27 
               -z-10 
               origin-left 
@@ -224,65 +138,7 @@ export default function Form() {
             Nom (a obligatoire)
           </label>
         </div>
-        <div 
-          className="
-            relative 
-            z-0 
-            w-full 
-            mb-5 
-            group"
-        >
-          <input 
-            type="tel" 
-            pattern="+33 [1-9]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" 
-            name="floating_phone" 
-            id="floating_phone" 
-            className="
-              block 
-              py-2.5 
-              px-0 
-              w-full 
-              text-xl 
-              bg-transparent 
-              border-0 
-              border-b-2 
-              border-gray-600 
-              text-white 
-              focus:border-blue-500 
-              focus:outline-none 
-              focus:ring-0 
-              peer" 
-              placeholder=" " 
-            />
-          <label 
-            htmlFor="floating_phone" 
-            className="
-              peer-focus:font-medium 
-              absolute 
-              top-3 
-              right-12
-              -z-10 
-              origin-left 
-              w-full 
-              text-xl 
-              text-gray-300 
-              duration-300 
-              transform 
-              -translate-y-6 
-              scale-75 
-              peer-focus:start-0 
-              rtl:peer-focus:translate-x-1/4 
-              peer-focus:text-blue-600 
-              peer-focus:dark:text-blue-500 
-              peer-placeholder-shown:scale-100 
-              peer-placeholder-shown:translate-y-0 
-              peer-focus:scale-75 
-              peer-focus:-translate-y-6
-              "
-          >
-            téléphone (+33 1 23 45 67 89)
-          </label>
-        </div>
+        <FormPhoneInput />
         <div 
           className="
             relative 
@@ -317,7 +173,7 @@ export default function Form() {
             className="
               peer-focus:font-medium 
               absolute 
-              top-3 
+              top-5 
               right-45 
               -z-10 
               origin-left 
@@ -380,18 +236,6 @@ export default function Form() {
               placeholder="contexte, public visé, fonctionnalités attendues..."
           >
           </textarea>
-          <p 
-            className="
-              mt-2 
-              text-sm 
-              dark:text-red-400"
-          >
-            <span 
-              className="font-medium"
-            >Excusez-moi ne remplissez pas encore s'il vous plaît.
-            </span>
-              Veuillez cliquer sur le bouton orange ci-dessus plutôt que le bleu ci-dessous.
-          </p>
         </div>
         <button 
           type="submit" 

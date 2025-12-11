@@ -20,8 +20,6 @@ export default function Home() {
   const linkedinLogo = getLogoURI('linkedIn');
   const githubLogo = getLogoURI('gitHub');
 
-
-
   return <main>
       <article>
         <section 
@@ -126,7 +124,7 @@ export default function Home() {
           >
             Qui suis-je? 
           </h4>
-          Intégrateur web React passionné par l’optimisation de la visibilité et de la performance des sites, je veille à maintenir un 
+          Intégrateur web React passionné par l’accessibilité des sites web, je veille à atteindre un 
           <span 
             className="
               mx-2 
@@ -135,7 +133,7 @@ export default function Home() {
           >
             audit Google Lighthouse supérieur à 95/100 
           </span>
-            pour garantir un référencement efficace et une expérience utilisateur optimale.
+            pour garantir un référencement efficace et une expérience utilisat·rice·eur fluide.
         </p>
         <p 
           className="
@@ -156,9 +154,9 @@ export default function Home() {
               font-extrabold 
               text-green-600"
           >
-            refactorisation de code back-end, tests unitaires, documentation technique et enrichissement fonctionnel. 
+            clarification fonctionnelle, documentation technico-fonctionnelle, tests unitaires et refactorisation de code back-end. 
           </span>
-          Mon ambition est d’évoluer vers un poste d’intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France, telle que Veolia, 3F, Aoled ou une administration publique.
+          Mon ambition est d’évoluer vers un poste d’intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France. De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
         </p>
         <p
           className="
@@ -172,7 +170,7 @@ export default function Home() {
           >
             Quel est mon apport? 
           </h4>
-          Ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
+          Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
           <span 
             className="
               mx-2 
@@ -181,7 +179,7 @@ export default function Home() {
           >
             outils hors-ligne comme html-validate et stylelint
           </span>
-          me permettent de concevoir des sites accessibles, performants et éco-conçus. Mon audit Lighthouse affiche régulièrement 
+          font de vos projets des sites accessibles et éco-conçus. Mon audit Lighthouse affiche régulièrement 
           <span 
             className="
               mx-2 
@@ -197,9 +195,9 @@ export default function Home() {
               font-extrabold 
               text-green-600"
           >
-            accessibilité,
+            accessibilité.
         </span>
-        avec 99/100 en performance. J’aide ainsi les organisations à renforcer leur présence digitale tout en 
+        J’aide ainsi les organisations à renforcer leur présence digitale tout en 
         <span 
             className="
               mx-2 

@@ -112,19 +112,16 @@ export default function Home() {
           </span>
           que j'intègre simplifient l'utilisation par tou·te·s. 
         </p>
-        <p 
-          className="
-            pt-4"
+        <h4
+          className='
+            pt-6
+            pb-4 
+            text-2xl
+            leading-loose'
         >
-          <h4
-            className='
-              pt-6
-              pb-4 
-              text-2xl
-              leading-loose'
-          >
-            Qui suis-je? 
-          </h4>
+          Qui suis-je? 
+        </h4>
+        <p>
           Intégrateur web React passionné par l’accessibilité des sites web, je veille à atteindre un 
           <span 
             className="
@@ -136,140 +133,132 @@ export default function Home() {
           </span>
             pour garantir un référencement efficace et une expérience utilisat·rice·eur fluide.
         </p>
-        <p 
-          className="
-            pt-4">
-          <h4
-            className='
-              pt-6 
-              pb-2 
-              text-2xl
-              leading-loose'
+        <h4
+          className='
+            pt-6 
+            pb-2 
+            text-2xl
+            leading-loose'
+        >
+          Pour quoi faire? 
+        </h4>
+        <h5
+          className='
+            pt-2
+            pb-4 
+            text-xl
+            leading-loose'
+        >
+          Le fruit de mes expériences passées
+        </h5>
+        <p>
+          Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
+          <span 
+            className="
+              mx-2 
+              font-extrabold 
+              text-green-600"
           >
-            Pour quoi faire? 
-          </h4>
-          <h5
-            className='
-              pt-2
-              pb-4 
-              text-xl
-              leading-loose'
-          >
-            Le fruit de mes expériences passées
-          </h5>
-          <p>
-            Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
-            <span 
-              className="
-                mx-2 
-                font-extrabold 
-                text-green-600"
-            >
-              clarification fonctionnelle, documentation, tests unitaires et refactorisation de code back-end. 
-            </span>
-          </p>
-          <h5
-            className='
-              pt-6 
-              pb-4 
-              text-xl
-              leading-loose'
-          >
-            Notre objectif aujourd'hui
-          </h5>
-          <p>
-            Je suis prêt pour être votre intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France. 
-          </p>
-          <h5
-            className='
-              pt-6 
-              pb-4 
-              text-xl
-              leading-loose'
-          >
-            Pour un projet numérique plus inclusif et éco-responsable demain
-          </h5>
-          <p>
-            De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
-          </p>
+            clarification fonctionnelle, documentation, tests unitaires et refactorisation de code back-end. 
+          </span>
         </p>
-        <p
-          className="
-            pt-4">
-          <h4
-            className='
-              pt-6
-              pb-2 
-              text-2xl
-              leading-loose'
-          >
-            Quel est mon apport? 
-          </h4>
-           <h5
-            className='
-              pt-4
-              pb-4 
-              text-xl
-              leading-loose'
-          >
-            Qualitatif
-          </h5>
-          Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
-          <span 
-            className="
-              mx-2 
-              font-extrabold 
-              text-green-600"
-          >
-            outils hors-ligne comme html-validate et stylelint
-          </span>
-          font de vos projets des sites accessibles et éco-conçus. 
-           <h5
-            className='
-              pt-4
-              pb-4 
-              text-xl
-              leading-loose'
-          >
-            Quantitatif
-          </h5>
-          Mon audit Lighthouse affiche régulièrement 
-          <span 
-            className="
-              mx-2 
-              font-extrabold
-              text-violet-400"
-          >
-            100/100 au SEO 
-          </span>
-          et à l’
+        <h5
+          className='
+            pt-6 
+            pb-4 
+            text-xl
+            leading-loose'
+        >
+          Notre objectif aujourd'hui
+        </h5>
+        <p>
+          Je suis prêt pour être votre intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France. 
+        </p>
+        <h5
+          className='
+            pt-6 
+            pb-4 
+            text-xl
+            leading-loose'
+        >
+          Pour un projet numérique plus inclusif et éco-responsable demain
+        </h5>
+        <p>
+          De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
+        </p>
+        <h4
+          className='
+            pt-6
+            pb-2 
+            text-2xl
+            leading-loose'
+        >
+          Quel est mon apport? 
+        </h4>
+        <h5
+        className='
+          pt-4
+          pb-4 
+          text-xl
+          leading-loose'
+        >
+          Qualitatif
+        </h5>
+        Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
         <span 
-            className="
-              mx-2 
-              font-extrabold 
-              text-green-600"
-          >
-            accessibilité.
+          className="
+            mx-2 
+            font-extrabold 
+            text-green-600"
+        >
+          outils hors-ligne comme html-validate et stylelint
         </span>
-         <h5
-            className='
-              pt-4
-              pb-4 
-              text-xl
-              leading-loose'
-          >
-            Précepte
-          </h5>
+        font de vos projets des sites accessibles et éco-conçus. 
+        <h5
+        className='
+          pt-4
+          pb-4 
+          text-xl
+          leading-loose'
+        >
+          Quantitatif
+        </h5>
+        Mon audit Lighthouse affiche régulièrement 
+        <span 
+          className="
+            mx-2 
+            font-extrabold
+            text-violet-400"
+        >
+          100/100 au SEO 
+        </span>
+        et à l’
+        <span 
+          className="
+            mx-2 
+            font-extrabold 
+            text-green-600"
+        >
+          accessibilité.
+        </span>
+        <h5
+          className='
+            pt-4
+            pb-4 
+            text-xl
+            leading-loose'
+        >
+          Précepte
+        </h5>
         J’aide ainsi les organisations à renforcer leur présence digitale tout en 
         <span 
-            className="
-              mx-2 
-              font-extrabold 
-              text-green-600"
-          >
-            limitant les coûts de maintenance.
-          </span> 
-        </p>
+          className="
+            mx-2 
+            font-extrabold 
+            text-green-600"
+        >
+          limitant les coûts de maintenance.
+        </span> 
         <p
           className="
             pt-4">
@@ -380,6 +369,8 @@ export default function Home() {
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
             alt='TypeScript logo' 
           />
+          <i className="fa-brands fa-react"></i>
+        
           <img 
             src={reactLogo} 
             className='
@@ -415,12 +406,12 @@ export default function Home() {
         />
       </section>
       <section 
-      className="
-        odd:bg-gray-950 
-        even:bg-gray-800 
-        pb-12
-        px-20"
-    >
+        className="
+          odd:bg-gray-950 
+          even:bg-gray-800 
+          pb-12
+          px-20"
+      >
         <h3
           id='parcours'
           className="
@@ -442,43 +433,14 @@ export default function Home() {
             text-2xl
             mx-2'
         >
-            <div 
-              className="
-                group
-                relative"
-            >
-              <a 
-                href='https://www.francecompetences.fr/recherche/rncp/38145/'
-                target='_blank'
-                className='
-                  block 
-                  px-4 
-                  py-2 
-                  text-blue-500 
-                  hover:text-blue-600 
-                  hover:scale-110 
-                  transition 
-                  duration-600 
-                  motion-reduce:duration-3000 
-                  ease-in-out'
-              >
-                RNCP 38145
-              </a>
-              <LinkClickWarning />
-            </div>
-        </h5>
-        <p>
-          à votre  service
-        </p>
-        <p>
           <div 
             className="
               group
               relative"
           >
             <a 
-              href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
-              target="_blank"
+              href='https://www.francecompetences.fr/recherche/rncp/38145/'
+              target='_blank'
               className='
                 block 
                 px-4 
@@ -486,16 +448,43 @@ export default function Home() {
                 text-blue-500 
                 hover:text-blue-600 
                 hover:scale-110 
-                transition
+                transition 
                 duration-600 
                 motion-reduce:duration-3000 
                 ease-in-out'
             >
-              Suivez le parcours.
+              RNCP 38145
             </a>
             <LinkClickWarning />
           </div>
+        </h5>
+        <p>
+          à votre  service
         </p>
+        <div 
+          className="
+            group
+            relative"
+        >
+          <a 
+            href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
+            target="_blank"
+            className='
+              block 
+              px-4 
+              py-2 
+              text-blue-500 
+              hover:text-blue-600 
+              hover:scale-110 
+              transition
+              duration-600 
+              motion-reduce:duration-3000 
+              ease-in-out'
+          >
+            Suivez le parcours.
+          </a>
+          <LinkClickWarning />
+        </div>
         <h6>
           22 avril 2024 à aujourd'hui
         </h6>
@@ -508,46 +497,44 @@ export default function Home() {
         >
           sachez-en plus sur ce que nous avons co-construit avant
         </h4>
-        <p className="text-2xl">
-          <div 
+        <div 
+          className="
+            group
+            relative"
+        >
+          <a
+            href="/CV/CV+integrateur+web+react+Eric+F.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              group
-              relative"
+              inline-flex 
+              items-center 
+              text-blue-500  
+              no-underline
+              transition 
+              transform 
+              hover:scale-110 
+              hover:brightness-110 
+              hover:shadow-lg"
           >
-            <a
-              href="/CV/CV+integrateur+web+react+Eric+F.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 640 640"
+              width={48}
+              height={48}
+              fill="currentcolor">
+                <path 
+                  d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"/>
+            </svg>
+            <span
               className="
-                inline-flex 
-                items-center 
-                text-blue-500  
-                no-underline
-                transition 
-                transform 
-                hover:scale-110 
-                hover:brightness-110 
-                hover:shadow-lg"
-            >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 640 640"
-                width={48}
-                height={48}
-                fill="currentcolor">
-                  <path 
-                    d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"/>
-              </svg>
-              <span
-                className="
-                  text-blue-500
-                  hover:text-blue-600">
-                  Téléchargez mon CV
-              </span>
-            </a>
-            <LinkClickWarning />
-          </div>
-        </p>
+                text-blue-500
+                hover:text-blue-600">
+                Téléchargez mon CV
+            </span>
+          </a>
+          <LinkClickWarning />
+        </div>
       </section>
       <section 
         className="

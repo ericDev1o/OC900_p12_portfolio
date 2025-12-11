@@ -435,18 +435,42 @@ export default function Home() {
             text-2xl
             leading-loose"
         >
-          22 avril 2024 à aujourd'hui
+          intégrateur web
         </h4>
-        <p className="text-2xl">
-          <span
-            className="
-              mx-2
-              font-extrabold
-              text-violet-500"
+        <h5 
+          className='
+            text-2xl
+            mx-2'
+        >
+            <div 
+              className="
+                group
+                relative"
             >
-              intégrateur web 
-          </span>
-          RNCP 38145 à votre service
+              <a 
+                href='https://www.francecompetences.fr/recherche/rncp/38145/'
+                target='_blank'
+                className='
+                  block 
+                  px-4 
+                  py-2 
+                  text-blue-500 
+                  hover:text-blue-600 
+                  hover:scale-110 
+                  transition 
+                  duration-600 
+                  motion-reduce:duration-3000 
+                  ease-in-out'
+              >
+                RNCP 38145
+              </a>
+              <LinkClickWarning />
+            </div>
+        </h5>
+        <p>
+          à votre  service
+        </p>
+        <p>
           <div 
             className="
               group
@@ -455,18 +479,26 @@ export default function Home() {
             <a 
               href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
               target="_blank"
-              className="
-                mx-2 
-                font-medium 
-                text-fg-brand 
-                text-blue-500  
-                hover:underline"
+              className='
+                block 
+                px-4 
+                py-2 
+                text-blue-500 
+                hover:text-blue-600 
+                hover:scale-110 
+                transition
+                duration-600 
+                motion-reduce:duration-3000 
+                ease-in-out'
             >
-              suivez le parcours
+              Suivez le parcours.
             </a>
             <LinkClickWarning />
           </div>
         </p>
+        <h6>
+          22 avril 2024 à aujourd'hui
+        </h6>
         <h4 
           className="
             pt-8
@@ -474,7 +506,7 @@ export default function Home() {
             text-2xl
             leading-loose"
         >
-          avant
+          sachez-en plus sur ce que nous avons co-construit avant
         </h4>
         <p className="text-2xl">
           <div 
@@ -509,7 +541,7 @@ export default function Home() {
               <span
                 className="
                   text-blue-500
-                  hover:underline">
+                  hover:text-blue-600">
                   Téléchargez mon CV
               </span>
             </a>

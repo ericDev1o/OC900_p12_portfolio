@@ -1,4 +1,4 @@
-import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
+import { useSkillsLogo } from '@/contexts/SkillsLogoContext';
 
 export default function HeadFootLogos() {
     const { getLogoURI } = useSkillsLogo();
@@ -7,58 +7,119 @@ export default function HeadFootLogos() {
     const linkedinLogo = getLogoURI('linkedIn');
     const githubLogo = getLogoURI('gitHub');
     
-    return  <div 
-        className="
+    return  <ul 
+        className='
             flex 
             flex-col
             items-center 
             sm:flex-row
-            gap-8"
+            gap-8'
         >
-            <img 
-                src={myLogo} 
-                className=' 
-                    cursor-not-allowed
-                    will-change-filter 
-                    filter 
-                    duration-300
-                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='Eric logo'
-                width={15}
-                height={24}
-            />
-        <a 
-            href='https://github.com/ericDev1o' 
-            target='_blank'
-        >
-            <img 
-                src={githubLogo} 
-                className=' 
-                    
-                    will-change-filter 
-                    filter 
-                    duration-300
-                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='GitHub logo'
-                width={25}
-                height={24} 
-            />
-        </a>
-        <a 
-            href='https://linkedin.com/in/ericfaraut' 
-            target='_blank'
-        >
-            <img 
-                src={linkedinLogo} 
-                className='
-                    will-change-filter 
-                    filter 
-                    duration-300
-                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='LinkedIn logo' 
-                width={29}
-                height={24}
-            />
-        </a>
-    </div>
+            <li>
+                <img 
+                    src={myLogo} 
+                    className=' 
+                        cursor-not-allowed
+                        will-change-filter 
+                        filter 
+                        duration-300
+                        hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                    alt='Eric logo'
+                    width={15}
+                    height={24}
+                />
+            </li>
+            <li className='
+                group
+                relative'
+            >   
+                <a 
+                    href='https://github.com/ericDev1o' 
+                    target='_blank'
+                    className='
+                        duration-600 
+                        motion-reduce:duration-3000 
+                        ease-in-out 
+                        hover:scale-110'
+                >
+                    <img 
+                        src={githubLogo} 
+                        className=' 
+                            will-change-filter 
+                            filter 
+                            duration-300
+                            hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                        alt='GitHub logo'
+                        width={25}
+                        height={24} 
+                    />
+                </a>
+                    <span className='
+                    absolute 
+                    bottom-full 
+                    mb-2 
+                    left-1/2 
+                    -translate-x-1/2 
+                    z-40 
+                    bg-white 
+                    text-gray-900 
+                    text-xs 
+                    rounded 
+                    py-1 
+                    px-3 
+                    opacity-0 
+                    group-hover:opacity-100 
+                    transition-opacity
+                    text-nowrap'
+                >
+                    🔒 Vérifiez toujours l'URL avant de cliquer!
+                </span>
+            </li>
+            <li className='
+                group
+                relative'
+            >   
+                <a 
+                    href='https://linkedin.com/in/ericfaraut' 
+                    target='_blank'
+                    className='
+                        duration-600 
+                        motion-reduce:duration-3000 
+                        ease-in-out 
+                        hover:scale-110'
+                >
+                    <img 
+                        src={linkedinLogo} 
+                        className='
+                            will-change-filter 
+                            filter 
+                            duration-300
+                            hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                        alt='LinkedIn logo' 
+                        width={29}
+                        height={24}
+                    />
+                </a>
+                    <span className='
+                    absolute 
+                    bottom-full 
+                    mb-2 
+                    left-1/2 
+                    -translate-x-1/2 
+                    z-40 
+                    bg-white 
+                    text-gray-900 
+                    text-xs 
+                    rounded 
+                    py-1 
+                    px-3 
+                    opacity-0 
+                    group-hover:opacity-100 
+                    transition-opacity
+                    text-nowrap'
+                >
+                    🔒 Vérifiez toujours l'URL avant de cliquer!
+                </span>
+            </li>
+    </ul>
 }

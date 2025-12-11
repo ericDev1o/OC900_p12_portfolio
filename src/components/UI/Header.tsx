@@ -2,7 +2,7 @@ import HeadFootLogos from "../containers/HeadFootLogos";
 
 export default function Header() {
     return <header className='
-        px-10 
+        px-20 
         flex 
         justify-between
         items-center'

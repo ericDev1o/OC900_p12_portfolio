@@ -67,7 +67,8 @@ export default function Home() {
         <h3
           id='moi&vous=nous'
           className="
-          pt-10
+          pt-14
+          pb-2 
           text-3xl
           leading-loose"
         >À propos de moi</h3>
@@ -117,8 +118,8 @@ export default function Home() {
         >
           <h4
             className='
-              pt-2
-              pb-2 
+              pt-6
+              pb-4 
               text-2xl
               leading-loose'
           >
@@ -140,36 +141,79 @@ export default function Home() {
             pt-4">
           <h4
             className='
-              pt-2
+              pt-6 
               pb-2 
               text-2xl
               leading-loose'
           >
             Pour quoi faire? 
           </h4>
-          Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
-          <span 
-            className="
-              mx-2 
-              font-extrabold 
-              text-green-600"
+          <h5
+            className='
+              pt-2
+              pb-4 
+              text-xl
+              leading-loose'
           >
-            clarification fonctionnelle, documentation technico-fonctionnelle, tests unitaires et refactorisation de code back-end. 
-          </span>
-          Mon ambition est d’évoluer vers un poste d’intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France. De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
+            Le fruit de mes expériences passées
+          </h5>
+          <p>
+            Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
+            <span 
+              className="
+                mx-2 
+                font-extrabold 
+                text-green-600"
+            >
+              clarification fonctionnelle, documentation, tests unitaires et refactorisation de code back-end. 
+            </span>
+          </p>
+          <h5
+            className='
+              pt-6 
+              pb-4 
+              text-xl
+              leading-loose'
+          >
+            Notre objectif aujourd'hui
+          </h5>
+          <p>
+            Je suis prêt pour être votre intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France. 
+          </p>
+          <h5
+            className='
+              pt-6 
+              pb-4 
+              text-xl
+              leading-loose'
+          >
+            Pour un projet numérique plus inclusif et éco-responsable demain
+          </h5>
+          <p>
+            De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
+          </p>
         </p>
         <p
           className="
             pt-4">
           <h4
             className='
-              pt-2
+              pt-6
               pb-2 
               text-2xl
               leading-loose'
           >
             Quel est mon apport? 
           </h4>
+           <h5
+            className='
+              pt-4
+              pb-4 
+              text-xl
+              leading-loose'
+          >
+            Qualitatif
+          </h5>
           Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
           <span 
             className="
@@ -179,7 +223,17 @@ export default function Home() {
           >
             outils hors-ligne comme html-validate et stylelint
           </span>
-          font de vos projets des sites accessibles et éco-conçus. Mon audit Lighthouse affiche régulièrement 
+          font de vos projets des sites accessibles et éco-conçus. 
+           <h5
+            className='
+              pt-4
+              pb-4 
+              text-xl
+              leading-loose'
+          >
+            Quantitatif
+          </h5>
+          Mon audit Lighthouse affiche régulièrement 
           <span 
             className="
               mx-2 
@@ -197,6 +251,15 @@ export default function Home() {
           >
             accessibilité.
         </span>
+         <h5
+            className='
+              pt-4
+              pb-4 
+              text-xl
+              leading-loose'
+          >
+            Précepte
+          </h5>
         J’aide ainsi les organisations à renforcer leur présence digitale tout en 
         <span 
             className="
@@ -204,9 +267,8 @@ export default function Home() {
               font-extrabold 
               text-green-600"
           >
-            limitant les coûts de maintenance. Un design visuel et technique simple, 
-          </span>
-          fiable, et sécurisé, limite les risques tels que les fuites de données ou des contenus extérieurs risqués (Cross Origin Resource Sharing). 
+            limitant les coûts de maintenance.
+          </span> 
         </p>
         <p
           className="

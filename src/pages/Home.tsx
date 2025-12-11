@@ -1,6 +1,8 @@
 import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
 import Portfolio from "../components/containers/Portfolio";
 import LinkClickWarning from "@/components/UI/LinkClickWarning";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -307,7 +309,8 @@ export default function Home() {
         <div className="
           flex
           justify-center
-          flex-wrap"
+          flex-wrap
+          items-center"
         >
           <img 
             src={viteLogo} 
@@ -369,21 +372,9 @@ export default function Home() {
               hover:drop-shadow-[0_0_2em_#646cffaa]' 
             alt='TypeScript logo' 
           />
-          <i className="fa-brands fa-react"></i>
-        
-          <img 
-            src={reactLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#61dafbaa]
-              animate-[spin_20s_linear_infinite]' 
-            alt='React logo' 
-          />
+          <FontAwesomeIcon 
+            icon={faReact}
+            className="text-[50px]" />
         </div>
       </section>
       <section 

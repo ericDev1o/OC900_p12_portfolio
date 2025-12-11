@@ -1,8 +1,7 @@
 import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
 import Portfolio from "../components/containers/Portfolio";
 import LinkClickWarning from "@/components/UI/LinkClickWarning";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import Skills from "@/components/UI/Skills";
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -12,13 +11,6 @@ export default function Home() {
   const projectsPath = 'projects/';
   const { getLogoURI } = useSkillsLogo();
 
-  const htmlLogo = getLogoURI('HTML');
-  const cssLogo = getLogoURI('CSS');
-  
-  const viteLogo = getLogoURI('vite');
-  const jsLogo = getLogoURI('JS');
-  const tsLogo = getLogoURI('TS');
-  const reactLogo = getLogoURI('react');
   const linkedinLogo = getLogoURI('linkedIn');
   const githubLogo = getLogoURI('gitHub');
 
@@ -306,76 +298,7 @@ export default function Home() {
         <p>
           Je transforme un "brief" en écrans propres, "responsives" et sobres.
         </p>
-        <div className="
-          flex
-          justify-center
-          flex-wrap
-          items-center"
-        >
-          <img 
-            src={viteLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='Vite logo' 
-          />
-          <img 
-            src={htmlLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='HTML5 logo' 
-          />
-          <img 
-            src={cssLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='CSS3 logo' 
-          />      
-          <img 
-            src={jsLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='JavaScript logo' 
-          />
-          <img 
-            src={tsLogo} 
-            className=' 
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='TypeScript logo' 
-          />
-          <FontAwesomeIcon 
-            icon={faReact}
-            className="text-[50px]" />
-        </div>
+        <Skills />
       </section>
       <section 
         className="

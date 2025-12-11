@@ -36,19 +36,9 @@ export default function HeadFootLogos() {
                 <a 
                     href='https://github.com/ericDev1o' 
                     target='_blank'
-                    className='
-                        duration-600 
-                        motion-reduce:duration-3000 
-                        ease-in-out 
-                        hover:scale-110'
                 >
                     <img 
                         src={githubLogo} 
-                        className=' 
-                            will-change-filter 
-                            filter 
-                            duration-300
-                            hover:drop-shadow-[0_0_2em_#646cffaa]' 
                         alt='GitHub logo'
                         width={25}
                         height={24} 
@@ -82,11 +72,6 @@ export default function HeadFootLogos() {
                 <a 
                     href='https://linkedin.com/in/ericfaraut' 
                     target='_blank'
-                    className='
-                        duration-600 
-                        motion-reduce:duration-3000 
-                        ease-in-out 
-                        hover:scale-110'
                 >
                     <img 
                         src={linkedinLogo} 

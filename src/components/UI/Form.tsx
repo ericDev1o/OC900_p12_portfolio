@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import emailjs from 'emailjs-com';
 
 import FormPhoneInput from "./FormPhoneInput";
 import FormEmailInput from "./FormEmailnput";
 
 export default function Form() {
   const [value, setValue] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const [consent, setConsent] = useState(false);
+  const [email, setEmail] = useState('');
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => 
   {
@@ -15,13 +20,38 @@ export default function Form() {
     textarea.style.height = textarea.scrollHeight + 'px';
   }
 
+  useEffect(() => {
+    emailjs.init('wG_rFHDu2lGjUzGmU');
+  }, []);
+
+  async function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    const form = e.target as HTMLFormElement;
+
+    try{
+      const result = await emailjs.sendForm('service_berhm4r', 'template_pw30xmq', form);
+      console.log('Courriel envoyé: ', result.text);
+      alert('Message bien envoyé');
+      form.reset();
+      setPhone('');
+      setEmail('');
+      setMessage('');
+      setConsent(false);
+    } catch(error: any) {
+        console.error('Erreur: ', error.text);
+        alert("Erreur à l'envoi du courriel");
+    }
+  }
+
   return <form 
         className="
           max-w-md 
           mx-auto
           pt-12"
+        onSubmit={sendEmail}
       >
-        <FormEmailInput />
+        <FormEmailInput email={email} setEmail={setEmail}  />
         <div 
           className="
             relative 
@@ -138,7 +168,7 @@ export default function Form() {
             Nom (a obligatoire)
           </label>
         </div>
-        <FormPhoneInput />
+        <FormPhoneInput phone={phone} setPhone={setPhone} />
         <div 
           className="
             relative 
@@ -217,8 +247,9 @@ export default function Form() {
           </label>
           <textarea 
             id="message"
-            value={value}
-            onChange={handleChange} 
+            name="message"
+            value={message}
+            onChange={e => setMessage(e.target.value)}
             className="
               block 
               p-2.5 
@@ -237,6 +268,85 @@ export default function Form() {
           >
           </textarea>
         </div>
+         <div 
+          className="
+            relative 
+            z-0 
+            w-full 
+            mb-5 
+            group 
+            flex 
+            items-center 
+            space-x-2"
+        >
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            className="sr-only"
+            checked={consent}
+            onChange={e => setConsent(e.target.checked)}
+          />
+          <span
+            onClick={() => setConsent(!consent)}
+            className=
+              {`
+                w-5 
+                h-5 
+                inline-flex 
+                items-center 
+                justify-center 
+                border-2 
+                rounded-sm 
+                cursor-pointer 
+                select-none 
+                ${
+                  consent ? 
+                  'border-blue-600 bg-blue-600 text-white' : 
+                  'border-gray-600'
+                }`
+              }
+          >
+            {consent && (
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  d="M5 13l4 4L19 7" 
+                />
+              </svg>
+            )}
+          </span>
+          <label
+            htmlFor="consent"
+            className="
+              cursor-pointer 
+              select-none 
+              text-xl 
+              text-gray-300"
+          >
+            J’accepte la politique de confidentialité.
+          </label>
+        </div>
+        <input 
+          type="text" 
+          name="sujet" 
+          className="hidden" 
+          autoComplete="off" 
+          tabIndex={-1}
+        />  
+        <div 
+          className="cf-turnstile" 
+          data-sitekey="0x4AAAAAACF5yTHgjpa90foy"
+        >
+          </div>
         <button 
           type="submit" 
           className="

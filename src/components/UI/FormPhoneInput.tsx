@@ -1,9 +1,12 @@
  import { useState } from "react";
  
- export default function FormPhoneInput() {
-    const [phone, setPhone] = useState<string>('');
-
-    const phoneRegexp = /^(?:(?:\+|00)33|0)[1-9]{1}\d{2}\d{2}\d{2}\d{2}$/;
+ export default function FormPhoneInput({phone, setPhone} : 
+    {
+        phone: string, 
+        setPhone: React.Dispatch<React.SetStateAction<string>>
+    }
+) {
+    const phoneRegexp = /^(?:(?:\+|00)33|0)[1-9](?:[ .-]?\d{2}){4}$/;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -15,7 +18,7 @@
     setPhone(formatted);
     };
 
-    const isValid = phoneRegexp.test(phone.replace(/\s/g, ''));
+    const isValid = phoneRegexp.test(phone);
 
     return <div 
         className="
@@ -29,7 +32,7 @@
             type="tel" 
             value={phone} 
             onChange={handleChange} 
-            pattern={phoneRegexp.source} 
+            pattern="^(?:(?:\+|00)33|0)[1-9](?:[ .\-]?\d{2}){4}$" 
             name="floating_phone" 
             id="floating_phone" 
             title='Entrez un numéro de téléphone valide par exemple +33 1 23 45 67 89 ou 01 23 45 67 89' 

@@ -1,8 +1,10 @@
  import { useState } from "react";
  
- export default function FormEmailInput() {
-    const [email, setEmail] = useState<string>('');
-
+ export default function FormEmailInput({email, setEmail} : 
+    {
+        email: string, 
+        setEmail: React.Dispatch<React.SetStateAction<string>>
+    }) {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
     };

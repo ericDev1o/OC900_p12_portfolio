@@ -1,5 +1,6 @@
 import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
 import Portfolio from "../components/UI/Portfolio";
+import LinkClickWarning from "@/components/UI/LinkClickWarning";
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -366,19 +367,26 @@ export default function Home() {
             >
               intégrateur web 
           </span>
-          RNCP 38145 à votre service 
-          <a 
-            href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
-            target="_blank"
+          RNCP 38145 à votre service
+          <div 
             className="
-              mx-2 
-              font-medium 
-              text-fg-brand 
-              text-blue-500  
-              hover:underline"
+              group
+              relative"
           >
-            suivez le parcours
-          </a>
+            <a 
+              href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
+              target="_blank"
+              className="
+                mx-2 
+                font-medium 
+                text-fg-brand 
+                text-blue-500  
+                hover:underline"
+            >
+              suivez le parcours
+            </a>
+            <LinkClickWarning />
+          </div>
         </p>
         <h4 
           className="
@@ -390,37 +398,44 @@ export default function Home() {
           avant
         </h4>
         <p className="text-2xl">
-          <a
-            href="/CV/CV+integrateur+web+react+Eric+F.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div 
             className="
-              inline-flex 
-              items-center 
-              text-blue-500  
-              no-underline
-              transition 
-              transform 
-              hover:scale-110 
-              hover:brightness-110 
-              hover:shadow-lg"
+              group
+              relative"
           >
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              viewBox="0 0 640 640"
-              width={48}
-              height={48}
-              fill="currentcolor">
-                <path 
-                  d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"/>
-            </svg>
-            <span
+            <a
+              href="/CV/CV+integrateur+web+react+Eric+F.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
-                text-blue-500
-                hover:underline">
-                Téléchargez mon CV
-            </span>
-          </a>
+                inline-flex 
+                items-center 
+                text-blue-500  
+                no-underline
+                transition 
+                transform 
+                hover:scale-110 
+                hover:brightness-110 
+                hover:shadow-lg"
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 640 640"
+                width={48}
+                height={48}
+                fill="currentcolor">
+                  <path 
+                    d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"/>
+              </svg>
+              <span
+                className="
+                  text-blue-500
+                  hover:underline">
+                  Téléchargez mon CV
+              </span>
+            </a>
+            <LinkClickWarning />
+          </div>
         </p>
       </section>
       <section 
@@ -476,36 +491,50 @@ export default function Home() {
             flex
             justify-center"
         >
-          <a 
-            href='https://github.com/ericDev1o' 
-            target='_blank'
+          <div
+            className="
+              group
+              relative"
           >
-            <img 
-              src={githubLogo} 
-              className='
-                p-6 
-                h-25 
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
-              alt='GitHub logo' />
-          </a>
-          <a 
-            href='https://linkedin.com/in/ericfaraut' 
-            target='_blank'
+            <a 
+              href='https://github.com/ericDev1o' 
+              target='_blank'
+            >
+              <img 
+                src={githubLogo} 
+                className='
+                  p-6 
+                  h-25 
+                  will-change-filter 
+                  filter 
+                  duration-300
+                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='GitHub logo' />
+            </a>
+            <LinkClickWarning />
+          </div>
+          <div 
+            className="
+              group
+              relative"
           >
-            <img 
-              src={linkedinLogo} 
-              className='
-                p-6 
-                h-25 
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
-              alt='LinkedIn logo' />
-          </a>
+            <a 
+              href='https://linkedin.com/in/ericfaraut' 
+              target='_blank'
+            >
+              <img 
+                src={linkedinLogo} 
+                className='
+                  p-6 
+                  h-25 
+                  will-change-filter 
+                  filter 
+                  duration-300
+                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='LinkedIn logo' />
+            </a>
+            <LinkClickWarning />
+          </div>
         </div>
         <div
           className="
@@ -540,26 +569,7 @@ export default function Home() {
                 Parlons de votre projet de site web
               </button>
             </a>
-             <span className="
-                absolute 
-                bottom-full 
-                mb-2 
-                left-1/2 
-                -translate-x-1/2 
-                z-40 
-                bg-white 
-                text-gray-900 
-                text-xs 
-                rounded 
-                py-1 
-                px-3 
-                opacity-0 
-                group-hover:opacity-100 
-                transition-opacity
-                text-nowrap"
-            >
-                🔒 Vérifiez toujours l'URL avant de cliquer!
-            </span>
+            <LinkClickWarning />
           </div>
       </section>
   </article>

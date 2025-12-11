@@ -1,12 +1,12 @@
-import { basePath } from '@/config/logoPaths';
-import SkillLogos from '../containers/SkillLogos';
-
 import '../../types/Project';
 
-import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
+import { basePath } from '@/config/logoPaths';
 
+import SkillLogos from '../containers/SkillLogos';
+import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 import AnimatedDetails from "./AnimatedDetails";
 import { LogoKey } from '@/types/LogoKey';
+import LinkClickWarning from './LinkClickWarning';
 
 export default function ProjectCard
 (
@@ -89,26 +89,7 @@ export default function ProjectCard
                             alt={alt}
                         />
                     </a>
-                    <span className="
-                        absolute 
-                        bottom-full 
-                        mb-2 
-                        left-1/2 
-                        -translate-x-1/2 
-                        z-40 
-                        bg-white 
-                        text-gray-900 
-                        text-xs 
-                        rounded 
-                        py-1 
-                        px-3 
-                        opacity-0 
-                        group-hover:opacity-100 
-                        transition-opacity
-                        text-nowrap"
-                    >
-                        🔒 Vérifiez toujours l'URL avant de cliquer!
-                    </span>
+                    <LinkClickWarning />
                 </span>
                 <p 
                     className='

@@ -1,5 +1,5 @@
 import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
-import Portfolio from "../components/UI/Portfolio";
+import Portfolio from "../components/containers/Portfolio";
 import LinkClickWarning from "@/components/UI/LinkClickWarning";
 
 export default function Home() {

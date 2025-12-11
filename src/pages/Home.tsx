@@ -300,6 +300,21 @@ export default function Home() {
         >
           compétences
         </h3>
+        <h4
+            className='
+              pt-6
+              pb-2 
+              text-2xl
+              leading-loose'
+          >
+            clés
+        </h4>
+        <p>
+          Vous avez besoin d'un site web à votre image?
+        </p>
+        <p>
+          Je transforme un "brief" en écrans propres, "responsives" et sobres.
+        </p>
         <div className="
           flex
           justify-center

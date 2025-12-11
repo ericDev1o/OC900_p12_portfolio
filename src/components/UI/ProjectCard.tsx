@@ -107,7 +107,7 @@ export default function ProjectCard
                         transition-opacity
                         text-nowrap"
                     >
-                        🔒 Check always the URL before clicking!
+                        🔒 Vérifiez toujours l'URL avant de cliquer!
                     </span>
                 </span>
                 <p 

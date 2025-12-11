@@ -62,7 +62,7 @@ export default function Header() {
                         transition-opacity
                         text-nowrap"
                     >
-                        🔒 Check always the URL before clicking!
+                        🔒 Vérifiez toujours l'URL avant de cliquer!
                     </span>
                 </li>
                 <li className="
@@ -102,7 +102,7 @@ export default function Header() {
                         transition-opacity
                         text-nowrap"
                     >
-                        🔒 Check always the URL before clicking!
+                        🔒 Vérifiez toujours l'URL avant de cliquer!
                     </span>
                 </li>
                 <li className="
@@ -142,7 +142,7 @@ export default function Header() {
                         transition-opacity
                         text-nowrap"
                     >
-                        🔒 Check always the URL before clicking!
+                        🔒 Vérifiez toujours l'URL avant de cliquer!
                     </span>
                 </li>
                 <li className="
@@ -182,7 +182,7 @@ export default function Header() {
                         transition-opacity
                         text-nowrap"
                     >
-                        🔒 Check always the URL before clicking!
+                        🔒 Vérifiez toujours l'URL avant de cliquer!
                     </span>
                 </li>
                 <li className="
@@ -222,7 +222,7 @@ export default function Header() {
                         transition-opacity
                         text-nowrap"
                     >
-                        🔒 Check always the URL before clicking!
+                        🔒 Vérifiez toujours l'URL avant de cliquer!
                     </span>
                 </li>
             </ul>

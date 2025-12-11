@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import SkillLogo from '../UI/SkillLogo';
+import SkillLogo from '../UI/ProjectCardSkillLogo';
 
 export default function SkillLogos({paths, repo}: {paths: Set<string>, repo: string}) {
     let nodes: Set<ReactNode> = new Set<ReactNode>;
@@ -11,7 +11,9 @@ export default function SkillLogos({paths, repo}: {paths: Set<string>, repo: str
             className='
                 flex 
                 justify-between 
-                items-center'>{nodes}</div>;
+                items-center'>
+                    {nodes}
+        </div>;
     else if (nodes.size === 1)
         return nodes
     else return <></>;

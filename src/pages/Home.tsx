@@ -26,7 +26,7 @@ export default function Home() {
           className="
             odd:bg-gray-950 
             even:bg-gray-800 
-            pt-6 
+            pt-16 
             pb-12
             px-20">
           <h1
@@ -294,7 +294,7 @@ export default function Home() {
         <h3
           id='competences'
           className="
-          pt-10 
+          pt-16 
           text-3xl
           leading-loose"
         >
@@ -404,7 +404,7 @@ export default function Home() {
         <h3
           id='projets'
           className="
-            pt-10
+            pt-16
             text-3xl
             leading-loose"
         >
@@ -424,7 +424,7 @@ export default function Home() {
         <h3
           id='parcours'
           className="
-            pt-10 
+            pt-16 
             text-3xl
             leading-loose"
         >parcours</h3>
@@ -558,7 +558,7 @@ export default function Home() {
         <h3
           id='contact'
           className="
-            pt-10 
+            pt-16 
             text-3xl
             leading-loose"
         >

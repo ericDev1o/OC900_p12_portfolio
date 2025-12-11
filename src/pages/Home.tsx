@@ -115,15 +115,17 @@ export default function Home() {
         </p>
         <p 
           className="
-            pt-4">
-          <span
-            className="
-              mx-2 
-              text-2xl 
-              font-extrabold"
+            pt-4"
+        >
+          <h4
+            className='
+              pt-2
+              pb-2 
+              text-2xl
+              leading-loose'
           >
             Qui suis-je? 
-          </span>
+          </h4>
           Intégrateur web React passionné par l’optimisation de la visibilité et de la performance des sites, je veille à maintenir un 
           <span 
             className="
@@ -138,14 +140,15 @@ export default function Home() {
         <p 
           className="
             pt-4">
-          <span
-            className="
-              mx-2 
-              text-2xl 
-              font-extrabold"
+          <h4
+            className='
+              pt-2
+              pb-2 
+              text-2xl
+              leading-loose'
           >
             Pour quoi faire? 
-          </span>
+          </h4>
           Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
           <span 
             className="
@@ -160,14 +163,15 @@ export default function Home() {
         <p
           className="
             pt-4">
-          <span
-            className="
-              mx-2 
-              text-2xl 
-              font-extrabold"
+          <h4
+            className='
+              pt-2
+              pb-2 
+              text-2xl
+              leading-loose'
           >
             Quel est mon apport? 
-          </span>
+          </h4>
           Ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
           <span 
             className="

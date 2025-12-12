@@ -1,6 +1,6 @@
 import LinkClickWarning from "./LinkClickWarning";
 
-export default function SkillLogo({ logoPath, repo}: {logoPath: string, repo: string}) {
+export default function ProjectCardSkillLogo({ logoPath, repo}: {logoPath: string, repo: string}) {
     const pathSplit = logoPath.split('/');
     const fileName = pathSplit[pathSplit.length - 1];
     const altName = fileName.split('.')[0];
@@ -15,7 +15,10 @@ export default function SkillLogo({ logoPath, repo}: {logoPath: string, repo: st
                 target='_blank' 
                 aria-label={repo}
             >
-                <img src={logoPath} alt={altName}></img>
+                <img 
+                    src={logoPath} 
+                    alt={altName}
+                    className='m-2'></img>
             </a>
             <LinkClickWarning />
         </section>

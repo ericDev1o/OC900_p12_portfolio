@@ -20,8 +20,8 @@ export default function Home() {
           className="
             odd:bg-gray-950 
             even:bg-gray-800 
-            pt-16 
-            pb-12
+            pt-20 
+            pb-22 
             px-20">
           <h1
             className="
@@ -54,7 +54,8 @@ export default function Home() {
         className="
           odd:bg-gray-950 
           even:bg-gray-800
-          pb-12
+          pt-6 
+          pb-24
           px-20
           "
         >
@@ -62,7 +63,7 @@ export default function Home() {
           id='moi&vous=nous'
           className="
           pt-14
-          pb-2 
+          pb-4 
           text-3xl
           leading-loose"
         >À propos de moi</h3>
@@ -108,7 +109,7 @@ export default function Home() {
         </p>
         <h4
           className='
-            pt-6
+            pt-12
             pb-4 
             text-2xl
             leading-loose'
@@ -129,7 +130,7 @@ export default function Home() {
         </p>
         <h4
           className='
-            pt-6 
+            pt-12 
             pb-2 
             text-2xl
             leading-loose'
@@ -138,7 +139,7 @@ export default function Home() {
         </h4>
         <h5
           className='
-            pt-2
+            pt-4 
             pb-4 
             text-xl
             leading-loose'
@@ -158,7 +159,7 @@ export default function Home() {
         </p>
         <h5
           className='
-            pt-6 
+            pt-10 
             pb-4 
             text-xl
             leading-loose'
@@ -170,7 +171,7 @@ export default function Home() {
         </p>
         <h5
           className='
-            pt-6 
+            pt-10 
             pb-4 
             text-xl
             leading-loose'
@@ -182,7 +183,7 @@ export default function Home() {
         </p>
         <h4
           className='
-            pt-6
+            pt-12 
             pb-2 
             text-2xl
             leading-loose'
@@ -210,7 +211,7 @@ export default function Home() {
         font de vos projets des sites accessibles et éco-conçus. 
         <h5
         className='
-          pt-4
+          pt-6 
           pb-4 
           text-xl
           leading-loose'
@@ -237,7 +238,7 @@ export default function Home() {
         </span>
         <h5
           className='
-            pt-4
+            pt-8
             pb-4 
             text-xl
             leading-loose'
@@ -271,13 +272,13 @@ export default function Home() {
         className="
           odd:bg-gray-950 
           even:bg-gray-800
-          pb-12
+          pb-22 
           px-20"
       >
         <h3
           id='competences'
           className="
-          pt-16 
+          pt-22 
           text-3xl
           leading-loose"
         >
@@ -285,17 +286,22 @@ export default function Home() {
         </h3>
         <h4
             className='
-              pt-6
-              pb-2 
+              pt-10
+              pb-8 
               text-2xl
               leading-loose'
           >
             clés
         </h4>
-        <p>
+        <p
+          className='text-xl'>
           Vous avez besoin d'un site web à votre image?
         </p>
-        <p>
+        <p
+           className='
+            pt-10 
+            pb-10 
+            text-xl'>
           Je transforme un "brief" en écrans propres, "responsives" et sobres.
         </p>
         <Skills />
@@ -323,13 +329,14 @@ export default function Home() {
         className="
           odd:bg-gray-950 
           even:bg-gray-800 
-          pb-12
+          pb-22
           px-20"
       >
         <h3
           id='parcours'
           className="
-            pt-16 
+            pt-22 
+            pb-6 
             text-3xl
             leading-loose"
         >parcours</h3>
@@ -357,8 +364,10 @@ export default function Home() {
               target='_blank'
               className='
                 block 
+                pt-4 
                 px-4 
                 py-2 
+                pb-4 
                 text-blue-500 
                 hover:text-blue-600 
                 hover:scale-110 
@@ -372,7 +381,10 @@ export default function Home() {
             <LinkClickWarning />
           </div>
         </h5>
-        <p>
+        <p 
+          className='
+            pt-4
+            pb-4'>
           à votre  service
         </p>
         <div 
@@ -399,13 +411,14 @@ export default function Home() {
           </a>
           <LinkClickWarning />
         </div>
-        <h6>
+        <h6
+          className='pt-6'>
           22 avril 2024 à aujourd'hui
         </h6>
         <h4 
           className="
-            pt-8
-            pb-8 
+            pt-10
+            pb-12 
             text-2xl
             leading-loose"
         >
@@ -459,7 +472,8 @@ export default function Home() {
         <h3
           id='contact'
           className="
-            pt-16 
+            pt-22 
+            pb-6 
             text-3xl
             leading-loose"
         >
@@ -467,7 +481,8 @@ export default function Home() {
         </h3>
         <p
           className="
-            pt-4
+            pt-8 
+            pb-16 
             text-2xl"
         >
           Contribuons 
@@ -558,10 +573,16 @@ export default function Home() {
           >
             <button 
                 className="
-                  mt-2
+                  mt-18 
+                  mb-10 
+                  w-full 
+                  sm:w-auto 
+                  px-5 
+                  py-2.5 
                   text-2xl 
-                  font-medium 
                   cursor-pointer 
+                  font-medium 
+                  text-center 
                   text-gray-200  
                   bg-blue-600 
                   hover:bg-blue-700 
@@ -569,11 +590,6 @@ export default function Home() {
                   focus:outline-none 
                   focus:ring-blue-300 
                   rounded-lg  
-                  w-full 
-                  sm:w-auto 
-                  px-5 
-                  py-2.5 
-                  text-center 
                   dark:bg-blue-600 
                   dark:hover:bg-blue-700 
                   dark:focus:ring-blue-800"

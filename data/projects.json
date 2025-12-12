@@ -40,5 +40,19 @@
         "resultatsEtImpact": "Le site final offre une présentation dynamique et attrayante des menus, accessible sur divers appareils. Cette réalisation témoigne de ma capacité à créer des interfaces fonctionnelles et visuellement engageantes.",
         "perspectivesAmelioration": "L’accessibilité du site peut encore être optimisée pour garantir une meilleure expérience à tous les utilisateurs, notamment via le clavier et les lecteurs d’écran.",
         "logos": ["HTML", "CSS", "SCSS", "gitHub"]
+    },
+    {
+        "URL": "https://ericdev1o.github.io/OC900_p5_Print-it-JS/",
+        "repository": "https://github.com/ericDev1o/OC900_p5_Print-it-JS",
+        "fileName": "print+it.webp",
+        "number": 5,
+        "title": "Print it! Vos impressions de qualité",
+        "contexte": "Développement du site web d’une petite imprimerie familiale souhaitant moderniser sa présence en ligne. Le défi principal était de passer d’un site statique à une interface plus interactive tout en respectant la charte graphique rigoureuse de la maquette.",
+        "objectifs": "Créer un carrousel d’images dynamique pour présenter les services, tout en assurant une navigation fluide et intuitive. Garantir la fidélité visuelle par rapport à la maquette originale et une expérience utilisateur optimisée.",
+        "stackTechnique": "HTML et CSS pour la structure et le design, JavaScript pour l’interactivité via la gestion des événements. Visual Studio Code utilisé comme environnement de développement, avec GitHub pour le versionnage.",
+        "competencesDeveloppees": "Maîtrise de la manipulation du DOM en JavaScript, mise en place d’écouteurs d’événements, gestion rigoureuse des différentes situations de navigation dans le carrousel. Apprentissage de la coordination entre code statique et dynamique.",
+        "resultatsEtImpact": "Un carrousel fonctionnel, conforme à la maquette, qui améliore l’attractivité du site. Le projet a renforcé la réactivité du site tout en offrant une meilleure expérience utilisateur sur les différentes plateformes.",
+        "perspectivesAmelioration": "Automatisation des tests pour couvrir tous les cas d’utilisation possibles, amélioration de la performance en optimisant le chargement des images, et intégration de fonctionnalités supplémentaires comme le défilement automatique.",
+        "logos": ["HTML", "CSS", "JS", "gitHub"]
     }
 ]

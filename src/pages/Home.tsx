@@ -100,7 +100,7 @@ export default function Home() {
             className="
               mx-2 
               font-extrabold 
-              text-green-600"
+              text-green-400"
           >
             durables
           </span>
@@ -151,7 +151,7 @@ export default function Home() {
             className="
               mx-2 
               font-extrabold 
-              text-green-600"
+              text-green-400"
           >
             clarification fonctionnelle, documentation, tests unitaires et refactorisation de code back-end. 
           </span>
@@ -203,7 +203,7 @@ export default function Home() {
           className="
             mx-2 
             font-extrabold 
-            text-green-600"
+            text-green-400"
         >
           outils hors-ligne comme html-validate et stylelint
         </span>
@@ -231,7 +231,7 @@ export default function Home() {
           className="
             mx-2 
             font-extrabold 
-            text-green-600"
+            text-green-400"
         >
           accessibilité.
         </span>
@@ -249,7 +249,7 @@ export default function Home() {
           className="
             mx-2 
             font-extrabold 
-            text-green-600"
+            text-green-400"
         >
           limitant les coûts de maintenance.
         </span> 
@@ -475,7 +475,7 @@ export default function Home() {
             className="
               mx-2
               font-extrabold
-              text-green-600"
+              text-green-400"
           >
             doucement 
           </span>
@@ -493,7 +493,7 @@ export default function Home() {
             className="
               mx-2
               font-extrabold
-              text-green-600"
+              text-green-400"
           >
             impact.
           </span>

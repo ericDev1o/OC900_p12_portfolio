@@ -8,6 +8,7 @@ export default function() {
 
     const htmlLogo = getLogoURI('HTML');
     const cssLogo = getLogoURI('CSS');
+    const scssLogo = getLogoURI('SCSS');
     const viteLogo = getLogoURI('vite');
     const jsLogo = getLogoURI('JS');
     const tsLogo = getLogoURI('TS');
@@ -54,7 +55,19 @@ export default function() {
                 duration-300
                 hover:drop-shadow-[0_0_2em_#646cffaa]' 
             alt='CSS3 logo' 
-        />      
+        />
+        <img 
+            src={scssLogo} 
+            className='
+                lazy 
+                p-6 
+                h-25 
+                will-change-filter 
+                filter 
+                duration-300
+                hover:drop-shadow-[0_0_2em_#646cffaa]' 
+            alt='Sass logo' 
+        />            
         <img 
             src={jsLogo} 
             className='

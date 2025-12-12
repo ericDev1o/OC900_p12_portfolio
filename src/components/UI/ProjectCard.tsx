@@ -39,13 +39,6 @@ export default function ProjectCard
             rounded-4xl 
             shadow-xs'
         >
-            <h4
-            className='
-                text-2xl
-                leading-loose'
-            >
-                {project.number}
-            </h4>
             <div 
                 className='
                     p-6 
@@ -91,7 +84,7 @@ export default function ProjectCard
                     </a>
                     <LinkClickWarning />
                 </span>
-                <p 
+                <h4 
                     className='
                         m-6 
                         text-2xl 
@@ -102,7 +95,7 @@ export default function ProjectCard
                         text-heading'
                 > 
                     {project.title}
-                </p>
+                </h4>
                 <SkillLogos paths={logoURIs} repo={project.repository} />
             </div>
         <div className="space-y-4">

@@ -9,6 +9,7 @@
 export type LogoKey = 
     'HTML' |
     'CSS' |
+    'SCSS' |
     'vite' |
     'JS' |
     'TS' |

@@ -15,7 +15,10 @@ export type LogoKey =
     'vite' |
     'JS' |
     'TS' |
+    'jest' |
     'react' |
+    'reactRouter' |
+    'redux' |
     'lighthouse' |
     'GTmetrix' |
     'WAvE' |

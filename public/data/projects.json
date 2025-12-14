@@ -55,6 +55,20 @@
         "perspectivesAmelioration": "Automatisation des tests pour couvrir tous les cas d’utilisation possibles, amélioration de la performance en optimisant le chargement des images, et intégration de fonctionnalités supplémentaires comme le défilement automatique.",
         "logos": ["HTML", "CSS", "JS", "gitHub"]
     },
+     {
+        "URL": "https://ericdev1o-oc900-p7-kasa.netlify.app/",
+        "repository": "https://github.com/ericDev1o/OC900_p7_kasa",
+        "fileName": "kasa.webp",
+        "number": 7,
+        "title": "Kasa, votre agence immobilière ",
+        "contexte": "Le site Kasa est une plateforme web professionnelle pour une agence immobilière, où la présentation visuelle des logements est cruciale pour inciter à la réservation. Il devait s’adapter à un contenu variable en nombre de photos et en longueur de texte.",
+        "objectifs": "Créer un site web responsive, accessible, capable de gérer efficacement différents contenus variés tout en offrant une expérience fluide et engageante.",
+        "stackTechnique": "Le projet a été développé avec HTML, CSS, TypeScript, Vite, React et React Router, assurant une architecture moderne et performante.",
+        "competencesDeveloppees": "Ce projet m’a permis de développer ma rigueur en testant divers cas d’usage sur les logements et ma créativité pour structurer un projet React from scratch selon les bonnes pratiques.",
+        "resultatsEtImpact": "Le site responsive affiche parfaitement tous les logements, avec une animation attrayante lors du changement de photo dans le carrousel, améliorant l’expérience utilisateur.",
+        "perspectivesAmelioration": "L’accessibilité du site reste un axe de progression pour garantir une expérience inclusive à tous les utilisateurs.",
+        "logos": ["HTML", "CSS", "TS", "react", "reactRouter", "vite", "gitHub"]
+    },
     {
         "URL": "https://ericdev1o.github.io/OC900_p8_ninacarducci.github.io/",
         "repository": "https://github.com/ericDev1o/OC900_p8_ninacarducci.github.io",
@@ -68,6 +82,20 @@
         "resultatsEtImpact": "Le site affiche un bon score Lighthouse, se charge rapidement et bénéficie d’une visibilité améliorée sur Google Maps et X, favorisant un bon référencement.",
         "perspectivesAmelioration": "Des améliorations en matière d’accessibilité sont envisageables pour garantir une meilleur expérience à tous les utilisateurs.",
         "logos": ["HTML", "CSS", "lighthouse", "GTmetrix", "WAvE", "gitHub"]
+    },
+    {
+        "URL": "https://ericdev1o-oc900-p10-argent-bank-front.netlify.app/",
+        "repository": "https://github.com/ericDev1o/OC900_p10_ArgentBank-Frontend",
+        "fileName": "argent+bank.webp",
+        "number": 10,
+        "title": "ArgentBank, votre nouvelle banque",
+        "contexte": "ArgentBank est une nouvelle banque en ligne proposant une interface ergonomique et sécurisée pour ses utilisateurs.",
+        "objectifs": "Concevoir une application web modulaire et évolutive, offrant une expérience utilisateur fluide tout en garantissant la sécurité des données.",
+        "stackTechnique": "Le projet utilise HTML, CSS, TypeScript, React, React Router, Redux, Vite, ainsi que Jest pour les tests et Lighthouse et Wave pour l’analyse des performances et de l’accessibilité.",
+        "competencesDeveloppees": "J’ai approfondi mes compétences en architecture logicielle, en structurant un code modulaire avec un store Redux centralisé pour une gestion d’état efficace.",
+        "resultatsEtImpact": "Le site propose un intranet performant grâce à Redux, facilitant la gestion des connexions utilisateurs et offrant une navigation fluide.",
+        "perspectivesAmelioration": "Des optimisations des performances restent envisageables pour améliorer encore la rapidité et la réactivité de l’application.",
+        "logos": ["HTML", "CSS", "TS", "react", "reactRouter", "redux", "vite", "jest", "lighthouse", "WAvE", "gitHub"]
     },
     {
         "URL": "https://www.notion.so/2771378a02f28087addbeed4e8a449d4?v=2771378a02f281a08ff6000c17a46212&source=copy_link",

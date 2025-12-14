@@ -1,12 +1,12 @@
-import { basePath } from '@/config/logoPaths';
-import SkillLogos from '../containers/SkillLogos';
-
 import '../../types/Project';
 
-import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
+import { basePath } from '../../config/logoPaths';
 
+import SkillLogos from '../containers/ProjectCardSkillLogos';
+import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 import AnimatedDetails from "./AnimatedDetails";
-import { LogoKey } from '@/types/LogoKey';
+import { LogoKey } from '../../types/LogoKey';
+import LinkClickWarning from './LinkClickWarning';
 
 export default function ProjectCard
 (
@@ -39,13 +39,6 @@ export default function ProjectCard
             rounded-4xl 
             shadow-xs'
         >
-            <h4
-            className='
-                text-2xl
-                leading-loose'
-            >
-                {project.number}
-            </h4>
             <div 
                 className='
                     p-6 
@@ -89,28 +82,9 @@ export default function ProjectCard
                             alt={alt}
                         />
                     </a>
-                    <span className="
-                        absolute 
-                        bottom-full 
-                        mb-2 
-                        left-1/2 
-                        -translate-x-1/2 
-                        z-40 
-                        bg-white 
-                        text-gray-900 
-                        text-xs 
-                        rounded 
-                        py-1 
-                        px-3 
-                        opacity-0 
-                        group-hover:opacity-100 
-                        transition-opacity
-                        text-nowrap"
-                    >
-                        🔒 Check always the URL before clicking!
-                    </span>
+                    <LinkClickWarning />
                 </span>
-                <p 
+                <h4 
                     className='
                         m-6 
                         text-2xl 
@@ -121,7 +95,7 @@ export default function ProjectCard
                         text-heading'
                 > 
                     {project.title}
-                </p>
+                </h4>
                 <SkillLogos paths={logoURIs} repo={project.repository} />
             </div>
         <div className="space-y-4">

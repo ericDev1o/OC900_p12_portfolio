@@ -1,5 +1,7 @@
-import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
-import Portfolio from "../components/UI/Portfolio";
+import { useSkillsLogo } from '../contexts/SkillsLogoContext';
+import Portfolio from "../components/containers/Portfolio";
+import LinkClickWarning from "../components/UI/LinkClickWarning";
+import Skills from "../components/UI/Skills";
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -9,17 +11,8 @@ export default function Home() {
   const projectsPath = 'projects/';
   const { getLogoURI } = useSkillsLogo();
 
-  const htmlLogo = getLogoURI('HTML');
-  const cssLogo = getLogoURI('CSS');
-  
-  const viteLogo = getLogoURI('vite');
-  const jsLogo = getLogoURI('JS');
-  const tsLogo = getLogoURI('TS');
-  const reactLogo = getLogoURI('react');
   const linkedinLogo = getLogoURI('linkedIn');
   const githubLogo = getLogoURI('gitHub');
-
-
 
   return <main>
       <article>
@@ -27,8 +20,8 @@ export default function Home() {
           className="
             odd:bg-gray-950 
             even:bg-gray-800 
-            pt-6 
-            pb-12
+            pt-20 
+            pb-22 
             px-20">
           <h1
             className="
@@ -61,14 +54,16 @@ export default function Home() {
         className="
           odd:bg-gray-950 
           even:bg-gray-800
-          pb-12
+          pt-6 
+          pb-24
           px-20
           "
         >
         <h3
           id='moi&vous=nous'
           className="
-          pt-10
+          pt-14
+          pb-4 
           text-3xl
           leading-loose"
         >À propos de moi</h3>
@@ -106,24 +101,23 @@ export default function Home() {
             className="
               mx-2 
               font-extrabold 
-              text-green-600"
+              text-green-400"
           >
             durables
           </span>
           que j'intègre simplifient l'utilisation par tou·te·s. 
         </p>
-        <p 
-          className="
-            pt-4">
-          <span
-            className="
-              mx-2 
-              text-2xl 
-              font-extrabold"
-          >
-            Qui suis-je? 
-          </span>
-          Intégrateur web React passionné par l’optimisation de la visibilité et de la performance des sites, je veille à maintenir un 
+        <h4
+          className='
+            pt-12
+            pb-4 
+            text-2xl
+            leading-loose'
+        >
+          Qui suis-je? 
+        </h4>
+        <p>
+          Intégrateur web React passionné par l’accessibilité des sites web, je veille à atteindre un 
           <span 
             className="
               mx-2 
@@ -132,79 +126,134 @@ export default function Home() {
           >
             audit Google Lighthouse supérieur à 95/100 
           </span>
-            pour garantir un référencement efficace et une expérience utilisateur optimale.
+            pour garantir un référencement efficace et une expérience utilisat·rice·eur fluide.
         </p>
-        <p 
-          className="
-            pt-4">
-          <span
-            className="
-              mx-2 
-              text-2xl 
-              font-extrabold"
-          >
-            Pour quoi faire? 
-          </span>
+        <h4
+          className='
+            pt-12 
+            pb-2 
+            text-2xl
+            leading-loose'
+        >
+          Pour quoi faire? 
+        </h4>
+        <h5
+          className='
+            pt-4 
+            pb-4 
+            text-xl
+            leading-loose'
+        >
+          Le fruit de mes expériences passées
+        </h5>
+        <p>
           Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
           <span 
             className="
               mx-2 
               font-extrabold 
-              text-green-600"
+              text-green-400"
           >
-            refactorisation de code back-end, tests unitaires, documentation technique et enrichissement fonctionnel. 
+            clarification fonctionnelle, documentation, tests unitaires et refactorisation de code back-end. 
           </span>
-          Mon ambition est d’évoluer vers un poste d’intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France, telle que Veolia, 3F, Aoled ou une administration publique.
         </p>
-        <p
+        <h5
+          className='
+            pt-10 
+            pb-4 
+            text-xl
+            leading-loose'
+        >
+          Notre objectif aujourd'hui
+        </h5>
+        <p>
+          Je suis prêt pour être votre intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France. 
+        </p>
+        <h5
+          className='
+            pt-10 
+            pb-4 
+            text-xl
+            leading-loose'
+        >
+          Pour un projet numérique plus inclusif et éco-responsable demain
+        </h5>
+        <p>
+          De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
+        </p>
+        <h4
+          className='
+            pt-12 
+            pb-2 
+            text-2xl
+            leading-loose'
+        >
+          Quel est mon apport? 
+        </h4>
+        <h5
+        className='
+          pt-4
+          pb-4 
+          text-xl
+          leading-loose'
+        >
+          Qualitatif
+        </h5>
+        Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
+        <span 
           className="
-            pt-4">
-          <span
-            className="
-              mx-2 
-              text-2xl 
-              font-extrabold"
-          >
-            Quel est mon apport? 
-          </span>
-          Ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
-          <span 
-            className="
-              mx-2 
-              font-extrabold 
-              text-green-600"
-          >
-            outils hors-ligne comme html-validate et stylelint
-          </span>
-          me permettent de concevoir des sites accessibles, performants et éco-conçus. Mon audit Lighthouse affiche régulièrement 
-          <span 
-            className="
-              mx-2 
-              font-extrabold
-              text-violet-400"
-          >
-            100/100 au SEO 
-          </span>
-          et à l’
-        <span 
-            className="
-              mx-2 
-              font-extrabold 
-              text-green-600"
-          >
-            accessibilité,
+            mx-2 
+            font-extrabold 
+            text-green-400"
+        >
+          outils hors-ligne comme html-validate et stylelint
         </span>
-        avec 99/100 en performance. J’aide ainsi les organisations à renforcer leur présence digitale tout en 
+        font de vos projets des sites accessibles et éco-conçus. 
+        <h5
+        className='
+          pt-6 
+          pb-4 
+          text-xl
+          leading-loose'
+        >
+          Quantitatif
+        </h5>
+        Mon audit Lighthouse affiche régulièrement 
         <span 
-            className="
-              mx-2 
-              font-extrabold 
-              text-green-600"
-          >
-            limitant les coûts de maintenance. Un design visuel et technique simple, 
-          </span>
-          fiable, et sécurisé, limite les risques tels que les fuites de données ou des contenus extérieurs risqués (Cross Origin Resource Sharing). 
-        </p>
+          className="
+            mx-2 
+            font-extrabold
+            text-violet-400"
+        >
+          100/100 au SEO 
+        </span>
+        et à l’
+        <span 
+          className="
+            mx-2 
+            font-extrabold 
+            text-green-400"
+        >
+          accessibilité.
+        </span>
+        <h5
+          className='
+            pt-8
+            pb-4 
+            text-xl
+            leading-loose'
+        >
+          Précepte
+        </h5>
+        J’aide ainsi les organisations à renforcer leur présence digitale tout en 
+        <span 
+          className="
+            mx-2 
+            font-extrabold 
+            text-green-400"
+        >
+          limitant les coûts de maintenance.
+        </span> 
         <p
           className="
             pt-4">
@@ -223,97 +272,39 @@ export default function Home() {
         className="
           odd:bg-gray-950 
           even:bg-gray-800
-          pb-12
+          pb-22 
           px-20"
       >
         <h3
           id='competences'
           className="
-          pt-10 
+          pt-22 
           text-3xl
           leading-loose"
         >
           compétences
         </h3>
-        <div className="
-          flex
-          justify-center
-          flex-wrap"
-        >
-          <img 
-            src={viteLogo} 
+        <h4
             className='
-              lazy 
-              p-6 
-              h-25
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='Vite logo' 
-          />
-          <img 
-            src={htmlLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='HTML5 logo' 
-          />
-          <img 
-            src={cssLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='CSS3 logo' 
-          />      
-          <img 
-            src={jsLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='JavaScript logo' 
-          />
-          <img 
-            src={tsLogo} 
-            className=' 
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt='TypeScript logo' 
-          />
-          <img 
-            src={reactLogo} 
-            className='
-              lazy 
-              p-6 
-              h-25 
-              will-change-filter 
-              filter 
-              duration-300
-              hover:drop-shadow-[0_0_2em_#61dafbaa]
-              animate-[spin_20s_linear_infinite]' 
-            alt='React logo' 
-          />
-        </div>
+              pt-10
+              pb-8 
+              text-2xl
+              leading-loose'
+          >
+            clés
+        </h4>
+        <p
+          className='text-xl'>
+          Vous avez besoin d'un site web à votre image?
+        </p>
+        <p
+           className='
+            pt-10 
+            pb-10 
+            text-xl'>
+          Je transforme un "brief" en écrans propres, "responsives" et sobres.
+        </p>
+        <Skills />
       </section>
       <section 
         className="
@@ -324,7 +315,7 @@ export default function Home() {
         <h3
           id='projets'
           className="
-            pt-10
+            pt-16
             text-3xl
             leading-loose"
         >
@@ -335,16 +326,17 @@ export default function Home() {
         />
       </section>
       <section 
-      className="
-        odd:bg-gray-950 
-        even:bg-gray-800 
-        pb-12
-        px-20"
-    >
+        className="
+          odd:bg-gray-950 
+          even:bg-gray-800 
+          pb-22
+          px-20"
+      >
         <h3
           id='parcours'
           className="
-            pt-10 
+            pt-22 
+            pb-6 
             text-3xl
             leading-loose"
         >parcours</h3>
@@ -355,41 +347,88 @@ export default function Home() {
             text-2xl
             leading-loose"
         >
-          22 avril 2024 à aujourd'hui
+          intégrateur web
         </h4>
-        <p className="text-2xl">
-          <span
+        <h5 
+          className='
+            text-2xl
+            mx-2'
+        >
+          <div 
             className="
-              mx-2
-              font-extrabold
-              text-violet-500"
+              group
+              relative"
+          >
+            <a 
+              href='https://www.francecompetences.fr/recherche/rncp/38145/'
+              target='_blank'
+              className='
+                block 
+                pt-4 
+                px-4 
+                py-2 
+                pb-4 
+                text-blue-500 
+                hover:text-blue-600 
+                hover:scale-110 
+                transition 
+                duration-600 
+                motion-reduce:duration-3000 
+                ease-in-out'
             >
-              intégrateur web 
-          </span>
-          RNCP 38145 à votre service 
+              RNCP 38145
+            </a>
+            <LinkClickWarning />
+          </div>
+        </h5>
+        <p 
+          className='
+            pt-4
+            pb-4'>
+          à votre  service
+        </p>
+        <div 
+          className="
+            group
+            relative"
+        >
           <a 
             href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
             target="_blank"
-            className="
-              mx-2 
-              font-medium 
-              text-fg-brand 
-              text-blue-500  
-              hover:underline"
+            className='
+              block 
+              px-4 
+              py-2 
+              text-blue-500 
+              hover:text-blue-600 
+              hover:scale-110 
+              transition
+              duration-600 
+              motion-reduce:duration-3000 
+              ease-in-out'
           >
-            suivez le parcours
+            Suivez le parcours.
           </a>
-        </p>
+          <LinkClickWarning />
+        </div>
+        <h6
+          className='pt-6'>
+          22 avril 2024 à aujourd'hui
+        </h6>
         <h4 
           className="
-            pt-8
-            pb-8 
+            pt-10
+            pb-12 
             text-2xl
             leading-loose"
         >
-          avant
+          sachez-en plus sur ce que nous avons co-construit avant
         </h4>
-        <p className="text-2xl">
+        <div 
+          className="
+            group
+            relative"
+        >
           <a
             href="/CV/CV+integrateur+web+react+Eric+F.pdf"
             target="_blank"
@@ -417,11 +456,12 @@ export default function Home() {
             <span
               className="
                 text-blue-500
-                hover:underline">
+                hover:text-blue-600">
                 Téléchargez mon CV
             </span>
           </a>
-        </p>
+          <LinkClickWarning />
+        </div>
       </section>
       <section 
         className="
@@ -432,7 +472,8 @@ export default function Home() {
         <h3
           id='contact'
           className="
-            pt-10 
+            pt-22 
+            pb-6 
             text-3xl
             leading-loose"
         >
@@ -440,7 +481,8 @@ export default function Home() {
         </h3>
         <p
           className="
-            pt-4
+            pt-8 
+            pb-16 
             text-2xl"
         >
           Contribuons 
@@ -448,7 +490,7 @@ export default function Home() {
             className="
               mx-2
               font-extrabold
-              text-green-600"
+              text-green-400"
           >
             doucement 
           </span>
@@ -466,7 +508,7 @@ export default function Home() {
             className="
               mx-2
               font-extrabold
-              text-green-600"
+              text-green-400"
           >
             impact.
           </span>
@@ -476,36 +518,50 @@ export default function Home() {
             flex
             justify-center"
         >
-          <a 
-            href='https://github.com/ericDev1o' 
-            target='_blank'
+          <div
+            className="
+              group
+              relative"
           >
-            <img 
-              src={githubLogo} 
-              className='
-                p-6 
-                h-25 
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
-              alt='GitHub logo' />
-          </a>
-          <a 
-            href='https://linkedin.com/in/ericfaraut' 
-            target='_blank'
+            <a 
+              href='https://github.com/ericDev1o' 
+              target='_blank'
+            >
+              <img 
+                src={githubLogo} 
+                className='
+                  p-6 
+                  h-25 
+                  will-change-filter 
+                  filter 
+                  duration-300
+                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='GitHub logo' />
+            </a>
+            <LinkClickWarning />
+          </div>
+          <div 
+            className="
+              group
+              relative"
           >
-            <img 
-              src={linkedinLogo} 
-              className='
-                p-6 
-                h-25 
-                will-change-filter 
-                filter 
-                duration-300
-                hover:drop-shadow-[0_0_2em_#646cffaa]' 
-              alt='LinkedIn logo' />
-          </a>
+            <a 
+              href='https://linkedin.com/in/ericfaraut' 
+              target='_blank'
+            >
+              <img 
+                src={linkedinLogo} 
+                className='
+                  p-6 
+                  h-25 
+                  will-change-filter 
+                  filter 
+                  duration-300
+                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='LinkedIn logo' />
+            </a>
+            <LinkClickWarning />
+          </div>
         </div>
         <div
           className="
@@ -517,10 +573,16 @@ export default function Home() {
           >
             <button 
                 className="
-                  mt-2
+                  mt-18 
+                  mb-10 
+                  w-full 
+                  sm:w-auto 
+                  px-5 
+                  py-2.5 
                   text-2xl 
-                  font-medium 
                   cursor-pointer 
+                  font-medium 
+                  text-center 
                   text-gray-200  
                   bg-blue-600 
                   hover:bg-blue-700 
@@ -528,11 +590,6 @@ export default function Home() {
                   focus:outline-none 
                   focus:ring-blue-300 
                   rounded-lg  
-                  w-full 
-                  sm:w-auto 
-                  px-5 
-                  py-2.5 
-                  text-center 
                   dark:bg-blue-600 
                   dark:hover:bg-blue-700 
                   dark:focus:ring-blue-800"
@@ -540,26 +597,7 @@ export default function Home() {
                 Parlons de votre projet de site web
               </button>
             </a>
-             <span className="
-                absolute 
-                bottom-full 
-                mb-2 
-                left-1/2 
-                -translate-x-1/2 
-                z-40 
-                bg-white 
-                text-gray-900 
-                text-xs 
-                rounded 
-                py-1 
-                px-3 
-                opacity-0 
-                group-hover:opacity-100 
-                transition-opacity
-                text-nowrap"
-            >
-                🔒 Check always the URL before clicking!
-            </span>
+            <LinkClickWarning />
           </div>
       </section>
   </article>

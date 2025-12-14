@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../UI/ProjectCard";
 
 /**
  * One-way tree project URI data flow is done for

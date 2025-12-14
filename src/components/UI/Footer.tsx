@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Modal from 'react-modal';
 
 import HeadFootLogos from "../containers/HeadFootLogos";
+import LinkClickWarning from "./LinkClickWarning";
 
 export default function Footer() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -43,26 +44,7 @@ export default function Footer() {
                     hover:scale-110'
                 onClick={() => setModalIsOpen(true)}>mentions légales
             </button>
-            <span className="
-                absolute 
-                bottom-full 
-                mb-2 
-                left-1/2 
-                -translate-x-1/2 
-                z-40 
-                bg-white 
-                text-gray-900 
-                text-xs 
-                rounded 
-                py-1 
-                px-3 
-                opacity-0 
-                group-hover:opacity-100 
-                transition-opacity
-                text-nowrap"
-            >
-                🔒 Check always the URL before clicking!
-            </span>
+            <LinkClickWarning />
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)}

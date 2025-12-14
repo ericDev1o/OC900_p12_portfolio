@@ -1,7 +1,7 @@
-import { useSkillsLogo } from "@/contexts/SkillsLogoContext";
+import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 import Portfolio from "../components/containers/Portfolio";
-import LinkClickWarning from "@/components/UI/LinkClickWarning";
-import Skills from "@/components/UI/Skills";
+import LinkClickWarning from "../components/UI/LinkClickWarning";
+import Skills from "../components/UI/Skills";
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';

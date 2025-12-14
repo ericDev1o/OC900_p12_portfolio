@@ -1,11 +1,11 @@
 import '../../types/Project';
 
-import { basePath } from '@/config/logoPaths';
+import { basePath } from '../../config/logoPaths';
 
 import SkillLogos from '../containers/ProjectCardSkillLogos';
 import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 import AnimatedDetails from "./AnimatedDetails";
-import { LogoKey } from '@/types/LogoKey';
+import { LogoKey } from '../../types/LogoKey';
 import LinkClickWarning from './LinkClickWarning';
 
 export default function ProjectCard

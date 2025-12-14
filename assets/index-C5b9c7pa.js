@@ -893,7 +893,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
             leading-loose`,children:"Qui suis-je?"}),O.jsxs("p",{children:["Intégrateur web React passionné par l’accessibilité des sites web, je veille à atteindre un",O.jsx("span",{className:`
               mx-2 
               font-extrabold
-              text-violet-400`,children:"audit Google Lighthouse supérieur à 95/100"}),"pour garantir un référencement efficace et une expérience utilisat·rice·eur fluide."]}),O.jsx("h4",{className:`
+              text-violet-400`,children:"audit Google Lighthouse supérieur à 90/100"}),"pour garantir un référencement efficace et une expérience utilisat·rice·eur fluide."]}),O.jsx("h4",{className:`
             pt-12 
             pb-2 
             text-2xl
@@ -904,7 +904,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
             leading-loose`,children:"Le fruit de mes expériences passées"}),O.jsxs("p",{children:["Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en",O.jsx("span",{className:`
               mx-2 
               font-extrabold 
-              text-green-400`,children:"clarification fonctionnelle, documentation, tests unitaires et refactorisation de code back-end."})]}),O.jsx("h5",{className:`
+              text-green-400`,children:"clarification fonctionnelle, documentation, tests unitaires et évolution de code back-end."})]}),O.jsx("h5",{className:`
             pt-10 
             pb-4 
             text-xl
@@ -957,7 +957,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
               leading-loose`,children:"clés"}),O.jsx("p",{className:"text-xl",children:"Vous avez besoin d'un site web à votre image?"}),O.jsx("p",{className:`
             pt-10 
             pb-10 
-            text-xl`,children:'Je transforme un "brief" en écrans propres, "responsives" et sobres.'}),O.jsx(iA,{})]}),O.jsxs("section",{className:`
+            text-xl`,children:'Je transforme un "brief" en écrans propres, "responsives" et frugaux.'}),O.jsx(iA,{})]}),O.jsxs("section",{className:`
           odd:bg-gray-950 
           even:bg-gray-800
           px-20`,children:[O.jsx("h3",{id:"projets",className:`
@@ -1176,4 +1176,4 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
                             duration-600 
                             motion-reduce:duration-3000 
                             ease-in-out 
-                            hover:scale-110`,children:"contact"}),O.jsx(st,{})]})]})})]})}const fA=Xe.lazy(()=>sA(()=>import("./Footer-Dw202vk1.js"),[],import.meta.url)),dA=({children:a})=>O.jsxs(O.Fragment,{children:[O.jsx(cA,{}),a,O.jsx(fA,{})]}),by=document.getElementById("root");by&&(gw.setAppElement("#root"),F_.createRoot(by).render(O.jsx(Xe.StrictMode,{children:O.jsx(_w,{children:O.jsx(dA,{children:O.jsx(lA,{})})})})));export{uA as H,st as L,gw as M,O as j,Xe as r};
+                            hover:scale-110`,children:"contact"}),O.jsx(st,{})]})]})})]})}const fA=Xe.lazy(()=>sA(()=>import("./Footer-CjsGopE6.js"),[],import.meta.url)),dA=({children:a})=>O.jsxs(O.Fragment,{children:[O.jsx(cA,{}),a,O.jsx(fA,{})]}),by=document.getElementById("root");by&&(gw.setAppElement("#root"),F_.createRoot(by).render(O.jsx(Xe.StrictMode,{children:O.jsx(_w,{children:O.jsx(dA,{children:O.jsx(lA,{})})})})));export{uA as H,st as L,gw as M,O as j,Xe as r};

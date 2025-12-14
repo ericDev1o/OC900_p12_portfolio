@@ -1,7 +1,7 @@
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
-import Portfolio from "../components/containers/Portfolio";
-import LinkClickWarning from "../components/UI/LinkClickWarning";
-import Skills from "../components/UI/Skills";
+import Portfolio from '../components/containers/Portfolio';
+import LinkClickWarning from '../components/UI/LinkClickWarning';
+import Skills from '../components/UI/Skills';
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -17,24 +17,24 @@ export default function Home() {
   return <main>
       <article>
         <section 
-          className="
+          className='
             odd:bg-gray-950 
             even:bg-gray-800 
             pt-20 
             pb-22 
-            px-20">
+            px-20'>
           <h1
-            className="
+            className='
               text-5xl 
-              leading-loose"
+              leading-loose'
           >
             Bonjour, je suis Eric
           </h1>
           <div
-            className="
+            className='
               mt-8 
               flex
-              justify-center"
+              justify-center'
           >
             <img
               src={photoPath}
@@ -42,66 +42,66 @@ export default function Home() {
             />
           </div>
           <h2
-            className="
+            className='
             pt-12
             text-4xl
-            leading-loose"
+            leading-loose'
           >
             votre intégrateur web react en Île-de-France
           </h2>
         </section>
       <section 
-        className="
+        className='
           odd:bg-gray-950 
           even:bg-gray-800
           pt-6 
           pb-24
           px-20
-          "
+          '
         >
         <h3
           id='moi&vous=nous'
-          className="
+          className='
           pt-14
           pb-4 
           text-3xl
-          leading-loose"
+          leading-loose'
         >À propos de moi</h3>
         <p
-          className="
-            pt-4"
+          className='
+            pt-4'
         >
           Développons votre activité en évitant les 
           <span 
-            className="
+            className='
             mx-2 
-            font-extrabold"
+            font-extrabold'
           >
             frictions.
           </span> 
           Améliorons vos 
           <span
-            className="
+            className='
               mx-2 
-              font-extrabold"
+              font-extrabold'
           >
             chiffres 
           </span>
           clés de 
           <span 
-            className="
+            className='
               mx-2 
               font-extrabold
-              text-violet-400"
+              text-violet-400'
           >
             performances.
           </span> 
           Passionné par les sites web, les interfaces 
           <span 
-            className="
+            className='
               mx-2 
               font-extrabold 
-              text-green-400"
+              text-green-400'
           >
             durables
           </span>
@@ -119,12 +119,12 @@ export default function Home() {
         <p>
           Intégrateur web React passionné par l’accessibilité des sites web, je veille à atteindre un 
           <span 
-            className="
+            className='
               mx-2 
               font-extrabold
-              text-violet-400"
+              text-violet-400'
           >
-            audit Google Lighthouse supérieur à 95/100 
+            audit Google Lighthouse supérieur à 90/100 
           </span>
             pour garantir un référencement efficace et une expérience utilisat·rice·eur fluide.
         </p>
@@ -149,12 +149,12 @@ export default function Home() {
         <p>
           Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
           <span 
-            className="
+            className='
               mx-2 
               font-extrabold 
-              text-green-400"
+              text-green-400'
           >
-            clarification fonctionnelle, documentation, tests unitaires et refactorisation de code back-end. 
+            clarification fonctionnelle, documentation, tests unitaires et évolution de code back-end. 
           </span>
         </p>
         <h5
@@ -201,10 +201,10 @@ export default function Home() {
         </h5>
         Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
         <span 
-          className="
+          className='
             mx-2 
             font-extrabold 
-            text-green-400"
+            text-green-400'
         >
           outils hors-ligne comme html-validate et stylelint
         </span>
@@ -220,19 +220,19 @@ export default function Home() {
         </h5>
         Mon audit Lighthouse affiche régulièrement 
         <span 
-          className="
+          className='
             mx-2 
             font-extrabold
-            text-violet-400"
+            text-violet-400'
         >
           100/100 au SEO 
         </span>
         et à l’
         <span 
-          className="
+          className='
             mx-2 
             font-extrabold 
-            text-green-400"
+            text-green-400'
         >
           accessibilité.
         </span>
@@ -247,21 +247,21 @@ export default function Home() {
         </h5>
         J’aide ainsi les organisations à renforcer leur présence digitale tout en 
         <span 
-          className="
+          className='
             mx-2 
             font-extrabold 
-            text-green-400"
+            text-green-400'
         >
           limitant les coûts de maintenance.
         </span> 
         <p
-          className="
-            pt-4">
+          className='
+            pt-4'>
           J'adhère à « 
           <span 
-            className="
+            className='
               mx-2 
-              font-extrabold "
+              font-extrabold '
           >
             Focus on serving your users, and all else will follow. 
           </span>
@@ -269,18 +269,18 @@ export default function Home() {
         </p>
       </section>
       <section 
-        className="
+        className='
           odd:bg-gray-950 
           even:bg-gray-800
           pb-22 
-          px-20"
+          px-20'
       >
         <h3
           id='competences'
-          className="
+          className='
           pt-22 
           text-3xl
-          leading-loose"
+          leading-loose'
         >
           compétences
         </h3>
@@ -302,22 +302,22 @@ export default function Home() {
             pt-10 
             pb-10 
             text-xl'>
-          Je transforme un "brief" en écrans propres, "responsives" et sobres.
+          Je transforme un "brief" en écrans propres, "responsives" et frugaux.
         </p>
         <Skills />
       </section>
       <section 
-        className="
+        className='
           odd:bg-gray-950 
           even:bg-gray-800
-          px-20"
+          px-20'
       >
         <h3
           id='projets'
-          className="
+          className='
             pt-16
             text-3xl
-            leading-loose"
+            leading-loose'
         >
           projets
         </h3>
@@ -326,26 +326,26 @@ export default function Home() {
         />
       </section>
       <section 
-        className="
+        className='
           odd:bg-gray-950 
           even:bg-gray-800 
           pb-22
-          px-20"
+          px-20'
       >
         <h3
           id='parcours'
-          className="
+          className='
             pt-22 
             pb-6 
             text-3xl
-            leading-loose"
+            leading-loose'
         >parcours</h3>
         <h4
-          className="
+          className='
             pt-2
             pb-8 
             text-2xl
-            leading-loose"
+            leading-loose'
         >
           intégrateur web
         </h4>
@@ -355,9 +355,9 @@ export default function Home() {
             mx-2'
         >
           <div 
-            className="
+            className='
               group
-              relative"
+              relative'
           >
             <a 
               href='https://www.francecompetences.fr/recherche/rncp/38145/'
@@ -388,13 +388,13 @@ export default function Home() {
           à votre  service
         </p>
         <div 
-          className="
+          className='
             group
-            relative"
+            relative'
         >
           <a 
-            href="https://openclassrooms.com/fr/paths/900-integrateur-web#projects"
-            target="_blank"
+            href='https://openclassrooms.com/fr/paths/900-integrateur-web#projects'
+            target='_blank'
             className='
               block 
               px-4 
@@ -416,24 +416,24 @@ export default function Home() {
           22 avril 2024 à aujourd'hui
         </h6>
         <h4 
-          className="
+          className='
             pt-10
             pb-12 
             text-2xl
-            leading-loose"
+            leading-loose'
         >
           sachez-en plus sur ce que nous avons co-construit avant
         </h4>
         <div 
-          className="
+          className='
             group
-            relative"
+            relative'
         >
           <a
-            href="/CV/CV+integrateur+web+react+Eric+F.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
+            href='/CV/CV+integrateur+web+react+Eric+F.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='
               inline-flex 
               items-center 
               text-blue-500  
@@ -442,21 +442,21 @@ export default function Home() {
               transform 
               hover:scale-110 
               hover:brightness-110 
-              hover:shadow-lg"
+              hover:shadow-lg'
           >
             <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              viewBox="0 0 640 640"
+              xmlns='http://www.w3.org/2000/svg' 
+              viewBox='0 0 640 640'
               width={48}
               height={48}
-              fill="currentcolor">
+              fill='currentcolor'>
                 <path 
-                  d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"/>
+                  d='M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z'/>
             </svg>
             <span
-              className="
+              className='
                 text-blue-500
-                hover:text-blue-600">
+                hover:text-blue-600'>
                 Téléchargez mon CV
             </span>
           </a>
@@ -464,64 +464,64 @@ export default function Home() {
         </div>
       </section>
       <section 
-        className="
+        className='
           odd:bg-gray-950 
           even:bg-gray-800
-          px-20"
+          px-20'
       >
         <h3
           id='contact'
-          className="
+          className='
             pt-22 
             pb-6 
             text-3xl
-            leading-loose"
+            leading-loose'
         >
           contact
         </h3>
         <p
-          className="
+          className='
             pt-8 
             pb-16 
-            text-2xl"
+            text-2xl'
         >
           Contribuons 
           <span
-            className="
+            className='
               mx-2
               font-extrabold
-              text-green-400"
+              text-green-400'
           >
             doucement 
           </span>
           à votre 
           <span
-            className="
+            className='
               mx-2
               font-extrabold
-              text-gray-500"
+              text-gray-500'
           >
             projet
           </span> 
           web avec 
           <span
-            className="
+            className='
               mx-2
               font-extrabold
-              text-green-400"
+              text-green-400'
           >
             impact.
           </span>
         </p>
         <div 
-          className="
+          className='
             flex
-            justify-center"
+            justify-center'
         >
           <div
-            className="
+            className='
               group
-              relative"
+              relative'
           >
             <a 
               href='https://github.com/ericDev1o' 
@@ -541,9 +541,9 @@ export default function Home() {
             <LinkClickWarning />
           </div>
           <div 
-            className="
+            className='
               group
-              relative"
+              relative'
           >
             <a 
               href='https://linkedin.com/in/ericfaraut' 
@@ -564,15 +564,15 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="
+          className='
             group
-            relative">
+            relative'>
           <a 
-            href="https://framaforms.org/contact-eric-faraut-1762791991"
+            href='https://framaforms.org/contact-eric-faraut-1762791991'
             target='_blank'
           >
             <button 
-                className="
+                className='
                   mt-18 
                   mb-10 
                   w-full 
@@ -592,7 +592,7 @@ export default function Home() {
                   rounded-lg  
                   dark:bg-blue-600 
                   dark:hover:bg-blue-700 
-                  dark:focus:ring-blue-800"
+                  dark:focus:ring-blue-800'
               >
                 Parlons de votre projet de site web
               </button>
@@ -602,11 +602,11 @@ export default function Home() {
       </section>
   </article>
   <hr 
-      className="
+      className='
         my-16 
         h-px 
         border-0 
-        bg-gray-600"
+        bg-gray-600'
   />
 </main>
 }

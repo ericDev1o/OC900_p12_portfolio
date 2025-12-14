@@ -1,12 +1,12 @@
-import { basePath } from '@/config/logoPaths';
-import SkillLogos from '../containers/SkillLogos';
-
 import '../../types/Project';
 
-import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
+import { basePath } from '../../config/logoPaths';
 
+import SkillLogos from '../containers/ProjectCardSkillLogos';
+import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 import AnimatedDetails from "./AnimatedDetails";
-import { LogoKey } from '@/types/LogoKey';
+import { LogoKey } from '../../types/LogoKey';
+import LinkClickWarning from './LinkClickWarning';
 
 export default function ProjectCard
 (
@@ -33,24 +33,12 @@ export default function ProjectCard
     return <article 
         className='
             m-8 
-            bg-gray-900  
-            block 
-            max-w-sm 
+            bg-gray-900 
+            w-full 
+            max-w-lg   
             rounded-4xl 
             shadow-xs'
         >
-            <a 
-                href={project.URL}
-                target='_blank' 
-                aria-label={project.title}
-            >
-            <h4
-            className='
-                text-2xl
-                leading-loose'
-            >
-                {project.number}
-            </h4>
             <div 
                 className='
                     p-6 
@@ -58,6 +46,8 @@ export default function ProjectCard
             >
                 <span 
                     className='
+                        group 
+                        relative 
                         inline-flex 
                         items-center 
                         bg-brand-softer 
@@ -68,19 +58,33 @@ export default function ProjectCard
                         py-0.5 
                         rounded-sm'
                 >
-                    <img 
-                        src={imgSrc}
+                    <a 
+                        href={project.URL}
+                        target='_blank' 
+                        aria-label={project.title}
                         className='
-                            lazy 
-                            max-h-80
-                            will-change-filter 
-                            filter 
-                            duration-300
-                            hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                        alt={alt}
-                    />
+                            hover:scale-110 
+                            transition 
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out'
+                    >
+                        <img 
+                            src={imgSrc}
+                            className='
+                                lazy 
+                                w-full 
+                                h-max 
+                                will-change-filter 
+                                filter 
+                                duration-300
+                                hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                            alt={alt}
+                        />
+                    </a>
+                    <LinkClickWarning />
                 </span>
-                <p 
+                <h4 
                     className='
                         m-6 
                         text-2xl 
@@ -91,10 +95,9 @@ export default function ProjectCard
                         text-heading'
                 > 
                     {project.title}
-                </p>
-                <SkillLogos paths={logoURIs} />
+                </h4>
+                <SkillLogos paths={logoURIs} repo={project.repository} />
             </div>
-        </a>
         <div className="space-y-4">
             <AnimatedDetails summary="Découvrez ce projet">
                 <h6 className="font-extrabold mt-2">contexte</h6>

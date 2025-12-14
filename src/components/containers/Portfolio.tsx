@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../UI/ProjectCard";
 
 /**
  * One-way tree project URI data flow is done for
@@ -39,7 +39,7 @@ export default function Portfolio(
                     const fetchData = async () => 
                     { 
                         try { 
-                            const res = await fetch('/data/projects.json'); 
+                            const res = await fetch(`${import.meta.env.BASE_URL}data/projects.json`); 
                             if (!res.ok) throw new Error(`HTTP error: ${res.status}`); 
                             const data = await res.json(); 
                             if (active) 
@@ -69,7 +69,7 @@ export default function Portfolio(
             if(loading) return <p>chargement des projets</p>;
             if(error) return <p>erreur: {error}</p>;
 
-            return <section
+            return <div
                     className="
                         flex
                         flex-wrap
@@ -83,5 +83,5 @@ export default function Portfolio(
                             projectsPath={projectsPath}
                         />
                     ))}
-            </section>
+            </div>
 }

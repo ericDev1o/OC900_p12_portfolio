@@ -1,75 +1,137 @@
 import HeadFootLogos from "../containers/HeadFootLogos";
+import LinkClickWarning from "./LinkClickWarning";
 
 export default function Header() {
-    return <>
-        <header className='
-            
-            flex 
-            justify-between
-            items-center'
+    return <header className='
+        px-20 
+        flex 
+        justify-between
+        items-center'
+    >
+        <HeadFootLogos />
+        <nav className='
+            py-8
+            sticky 
+            top-0 
+            z-50 
+            bg-slate-800 
+            shadow-sm
+            '
         >
-            <HeadFootLogos />
-            <nav className='
-                flex 
+            <ul className="
+                flex
                 flex-col
                 md:flex-row 
-                justify-between 
-                py-8
-                '
-            >
-                <a 
-                    href='#moi&vous=nous' 
-                    className='
-                        mx-2
-                        text-blue-300 
-                        hover:text-blue-600'
-                >
-                    nous
-                </a>
-                <a 
-                    href='#competences'
-                    className='
-                        mx-2
-                        text-blue-300
-                        hover:text-blue-600'
-                >
-                    compétences
-                </a>
-                <a 
-                    href='#projets'
-                    className='
-                        mx-2
-                        text-blue-300
-                        hover:text-blue-600'
-                >
-                    projets
-                </a>
-                <a 
-                    href='#parcours'
-                    className='
-                        mx-2
-                        text-blue-300
-                        hover:text-blue-600'
-                >
-                    parcours
-                </a>
-                <a 
-                    href='#contact'
-                    className='
-                        mx-2
-                        text-blue-300
-                        hover:text-blue-600'
-                >
-                    contact
-                </a>
-            </nav>
-        </header>
-        <hr 
-            className='
-                my-4 
-                h-px
-                border-0
-                bg-gray-600'
-        />
-    </>
+                justify-between
+            ">
+                <li className="
+                    group 
+                    relative "
+                >   
+                    <a 
+                        href='#moi&vous=nous' 
+                        className='
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300 
+                            hover:text-blue-600 
+                            hover:scale-110 
+                            transition 
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            '
+                    >
+                        nous
+                    </a>
+                    <LinkClickWarning />
+                </li>
+                <li className="
+                    group
+                    relative"
+                >   
+                    <a 
+                        href='#competences'
+                        className='
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300
+                            hover:text-blue-600
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            hover:scale-110'
+                    >
+                        compétences
+                    </a>
+                   <LinkClickWarning />
+                </li>
+                <li className="
+                    group
+                    relative"
+                >   
+                    <a 
+                        href='#projets'
+                        className='
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300
+                            hover:text-blue-600
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            hover:scale-110'
+                    >
+                        projets
+                    </a>
+                    <LinkClickWarning />
+                </li>
+                <li className="
+                    group
+                    relative"
+                >   
+                    <a 
+                        href='#parcours'
+                        className='
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300
+                            hover:text-blue-600
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            hover:scale-110'
+                    >
+                        parcours
+                    </a>
+                   <LinkClickWarning />
+                </li>
+                <li className="
+                    group
+                    relative"
+                >   
+                    <a 
+                        href='#contact'
+                        className='
+                            block 
+                            px-4 
+                            py-2 
+                            text-blue-300
+                            hover:text-blue-600
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out 
+                            hover:scale-110'
+                    >
+                        contact
+                    </a>
+                   <LinkClickWarning />
+                </li>
+            </ul>
+        </nav>
+    </header>
 }

@@ -9,10 +9,28 @@
 export type LogoKey = 
     'HTML' |
     'CSS' |
+    'SCSS' |
+    'tailwindCSS' |
+    'flowbiteReact' |
     'vite' |
     'JS' |
     'TS' |
+    'jest' |
     'react' |
+    'reactRouter' |
+    'redux' |
+    'lighthouse' |
+    'GTmetrix' |
+    'WAvE' |
+    'axeDevTool' |
+    'greenITanalysis' |
+    'htmlValidate' |
+    'stylelint' |
+    'pa11y' |
+    'vitestAxe' |
     'linkedIn' |
     'gitHub' |
-    'E'
+    'E' |
+    'feedly' |
+    'notion' |
+    'excalidraw'

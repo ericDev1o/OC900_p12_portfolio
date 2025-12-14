@@ -1,6 +1,7 @@
 type Project = {
     index: number, 
     "URL": string,
+    "repository": string,
     "fileName": string,
     "number": number,
     "title": string,

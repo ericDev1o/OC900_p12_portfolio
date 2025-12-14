@@ -65,11 +65,11 @@ export default function AccessibleAnimatedDetails(
 
   return (
     <div className="
-    max-w-md 
-    rounded 
-    shadow 
-    overflow-hidden 
-    w-full">
+      w-full 
+      overflow-hidden 
+      rounded 
+      shadow "
+    >
       <div
         role="button"
         tabIndex={0}

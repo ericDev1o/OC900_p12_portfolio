@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 
-import HeadFootLogos from "../containers/HeadFootLogos";
-import LinkClickWarning from "./LinkClickWarning";
+import HeadFootLogos from '../containers/HeadFootLogos';
+import LinkClickWarning from './LinkClickWarning';
 
 export default function Footer() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -26,9 +26,9 @@ export default function Footer() {
             justify-between'
     >
         <HeadFootLogos />
-        <div className="
+        <div className='
             group
-            relative"
+            relative'
         >   
             <button 
                 className='

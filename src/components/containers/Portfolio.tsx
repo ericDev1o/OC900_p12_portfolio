@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import ProjectCard from "../UI/ProjectCard";
+import ProjectCard from '../UI/ProjectCard';
 
 /**
  * One-way tree project URI data flow is done for
@@ -54,7 +54,7 @@ export default function Portfolio(
                                     e instanceof TypeError || 
                                     e instanceof Error
                                 )
-                                console.log("error: " + e.message) 
+                                console.log('error: ' + e.message) 
                             } 
                         } 
                     }; 
@@ -70,11 +70,11 @@ export default function Portfolio(
             if(error) return <p>erreur: {error}</p>;
 
             return <div
-                    className="
+                    className='
                         flex
                         flex-wrap
                         justify-center
-                        items-start"
+                        items-start'
                 >
                     {projects.map((project, index) => (
                         <ProjectCard 

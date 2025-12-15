@@ -64,14 +64,14 @@ export default function AccessibleAnimatedDetails(
   }, [isOpen, shouldRender]);
 
   return (
-    <div className="
+    <div className='
       w-full 
       overflow-hidden 
       rounded 
-      shadow "
+      shadow '
     >
       <div
-        role="button"
+        role='button'
         tabIndex={0}
         aria-expanded={isOpen}
         aria-controls={contentId}
@@ -82,7 +82,7 @@ export default function AccessibleAnimatedDetails(
             toggle();
           }
         }}
-        className="
+        className='
         cursor-pointer 
         flex 
         justify-between 
@@ -92,11 +92,11 @@ export default function AccessibleAnimatedDetails(
         font-semibold 
         text-blue-500 
         hover:bg-gray-700 
-        select-none"
+        select-none'
       >
         {summary}
         <span
-          aria-hidden="true"
+          aria-hidden='true'
           className={`
             inline-block 
             transition-transform 
@@ -115,17 +115,17 @@ export default function AccessibleAnimatedDetails(
         ref={contentRef}
         tabIndex={-1}
         style={{ maxHeight }}
-        className="
+        className='
           relative
           overflow-hidden
           transition-[max-height]
           duration-600
           motion-reduce:duration-3000
-          ease-in-out"
+          ease-in-out'
       >
-        {shouldRender && <div className="px-4 py-3">{children}</div>}
+        {shouldRender && <div className='px-4 py-3'>{children}</div>}
       </div>
-      <div aria-live="polite" className="sr-only" aria-atomic="true">
+      <div aria-live='polite' className='sr-only' aria-atomic='true'>
         {ariaMessage}
       </div>
     </div>

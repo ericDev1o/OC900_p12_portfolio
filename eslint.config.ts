@@ -5,6 +5,7 @@ import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
+//import prettierPlugin from 'eslint-plugin-prettier'
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default defineConfig([
@@ -12,11 +13,13 @@ export default defineConfig([
   {
     files: ['**/*.{ts, tsx}'],
     plugins: {
-      '@typescript-eslint': tseslint
+      '@typescript-eslint': tseslint/*,
+      'prettier': prettierPlugin*/
     },
     extends: [
       reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite,
+      reactRefresh.configs.vite/*,
+      'prettier'*/
     ],
     languageOptions: {
       parser: esparser,
@@ -31,6 +34,8 @@ export default defineConfig([
     rules: {
       ...tseslint.configs.recommended.rules,
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'quotes': ['error', 'single', {'avoidEscape': true}]/*,
+      'prettier/prettier': 'error'*/
     },
   } satisfies Linter.Config,
 ])

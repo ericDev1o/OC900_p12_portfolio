@@ -1,5 +1,5 @@
 export default function LinkClickWarning() {
-    return <span className="
+    return <span className='
         absolute 
         bottom-full 
         mb-2 

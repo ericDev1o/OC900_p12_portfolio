@@ -18,7 +18,7 @@ export default function LinkClickWarning() {
         whitespace-nowrap
         max-w-[90vw]
         overflow-hidden
-        text-ellipsis"
+        text-ellipsis'
     >
         🔒 Vérifiez toujours l'URL avant de cliquer!
     </span>

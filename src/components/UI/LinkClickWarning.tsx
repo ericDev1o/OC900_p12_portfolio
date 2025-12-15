@@ -15,7 +15,10 @@ export default function LinkClickWarning() {
         opacity-0 
         group-hover:opacity-100 
         transition-opacity
-        text-nowrap"
+        whitespace-nowrap
+        max-w-[90vw]
+        overflow-hidden
+        text-ellipsis"
     >
         🔒 Vérifiez toujours l'URL avant de cliquer!
     </span>

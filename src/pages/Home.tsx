@@ -589,10 +589,7 @@ export default function Home() {
                   focus:ring-4 
                   focus:outline-none 
                   focus:ring-blue-300 
-                  rounded-lg  
-                  dark:bg-blue-600 
-                  dark:hover:bg-blue-700 
-                  dark:focus:ring-blue-800'
+                  rounded-lg'
               >
                 Parlons de votre projet de site web
               </button>

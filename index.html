@@ -30,28 +30,6 @@
 		<meta name="twitter:description" content="Eric Faraut, votre intégrateur web react en Île-de-France. À propos de moi, mes compétences, mon parcours et comment me contacter.">
 		<meta name="twitter:image" content="https://ericdev1o.github.io/OC900_p12_portfolio/CV/photoCV_w100px.webp">
     <title>Votre intégrateur web react en Île-de-France</title>
-    <script>
-      (function() {
-        try{
-          const savedTheme = localStorage.getItem('theme');
-          if
-          (
-            savedTheme || 
-            (!savedTheme && 
-              (
-                window.matchMedia('prefers-color-scheme: dark)'
-                ).matches
-              )
-            )
-          ){
-            document.documentElement.classList.add('dark');
-          }
-        }
-        catch(e) {
-          console.error('Erreur lors de la récupération du thème : ' + e);
-        }
-      })();
-    </script>
     <script type="module" src="/src/main.tsx"></script>
   </head>
   <body
@@ -69,7 +47,6 @@
         text-center
         leading-7.5
         font-normal
-        scheme-light-dark
         text-gray-300
         bg-gray-800
         synthesis-none

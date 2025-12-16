@@ -1,7 +1,10 @@
-import { useSkillsLogo } from '../contexts/SkillsLogoContext';
-import Portfolio from '../components/containers/Portfolio';
+import { lazy } from 'react';
+
 import LinkClickWarning from '../components/UI/LinkClickWarning';
-import Skills from '../components/UI/Skills';
+import { useSkillsLogo } from '../contexts/SkillsLogoContext';
+
+const Portfolio = lazy(() => import('../components/containers/Portfolio'));
+const Skills = lazy(() => import('../components/UI/Skills'));
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -536,7 +539,8 @@ export default function Home() {
                   filter 
                   duration-300
                   hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='GitHub logo' />
+                alt='GitHub logo'
+                loading='lazy' />
             </a>
             <LinkClickWarning />
           </div>
@@ -558,7 +562,8 @@ export default function Home() {
                   filter 
                   duration-300
                   hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='LinkedIn logo' />
+                alt='LinkedIn logo' 
+                loading='lazy'/>
             </a>
             <LinkClickWarning />
           </div>

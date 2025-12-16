@@ -80,6 +80,7 @@ export default function ProjectCard
                                 duration-300
                                 hover:drop-shadow-[0_0_2em_#646cffaa]' 
                             alt={alt}
+                            loading='lazy'
                         />
                     </a>
                     <LinkClickWarning />

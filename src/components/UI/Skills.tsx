@@ -48,6 +48,7 @@ export default function() {
                 duration-300
                 hover:drop-shadow-[0_0_2em_#646cffaa]' 
             alt='Vite logo' 
+            loading='lazy'
         />
         <img 
             src={htmlLogo} 

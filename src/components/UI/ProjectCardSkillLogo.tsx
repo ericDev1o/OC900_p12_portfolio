@@ -1,4 +1,4 @@
-import LinkClickWarning from "./LinkClickWarning";
+import LinkClickWarning from './LinkClickWarning';
 
 export default function ProjectCardSkillLogo({ logoPath, repo}: {logoPath: string, repo: string}) {
     const pathSplit = logoPath.split('/');
@@ -18,6 +18,7 @@ export default function ProjectCardSkillLogo({ logoPath, repo}: {logoPath: strin
                 <img 
                     src={logoPath} 
                     alt={altName}
+                    loading='lazy'
                     className='m-2'></img>
             </a>
             <LinkClickWarning />

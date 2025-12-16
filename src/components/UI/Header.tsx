@@ -1,5 +1,5 @@
-import HeadFootLogos from "../containers/HeadFootLogos";
-import LinkClickWarning from "./LinkClickWarning";
+import HeadFootLogos from '../containers/HeadFootLogos';
+import LinkClickWarning from './LinkClickWarning';
 
 export default function Header() {
     return <header className='
@@ -18,15 +18,15 @@ export default function Header() {
             shadow-sm
             '
         >
-            <ul className="
+            <ul className='
                 flex
                 flex-col
                 md:flex-row 
                 justify-between
-            ">
-                <li className="
+            '>
+                <li className='
                     group 
-                    relative "
+                    relative '
                 >   
                     <a 
                         href='#moi&vous=nous' 
@@ -47,9 +47,9 @@ export default function Header() {
                     </a>
                     <LinkClickWarning />
                 </li>
-                <li className="
+                <li className='
                     group
-                    relative"
+                    relative'
                 >   
                     <a 
                         href='#competences'
@@ -68,9 +68,9 @@ export default function Header() {
                     </a>
                    <LinkClickWarning />
                 </li>
-                <li className="
+                <li className='
                     group
-                    relative"
+                    relative'
                 >   
                     <a 
                         href='#projets'
@@ -89,9 +89,9 @@ export default function Header() {
                     </a>
                     <LinkClickWarning />
                 </li>
-                <li className="
+                <li className='
                     group
-                    relative"
+                    relative'
                 >   
                     <a 
                         href='#parcours'
@@ -110,9 +110,9 @@ export default function Header() {
                     </a>
                    <LinkClickWarning />
                 </li>
-                <li className="
+                <li className='
                     group
-                    relative"
+                    relative'
                 >   
                     <a 
                         href='#contact'

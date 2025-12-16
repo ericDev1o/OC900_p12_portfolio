@@ -1,5 +1,5 @@
 export default function LinkClickWarning() {
-    return <span className="
+    return <span className='
         absolute 
         bottom-full 
         mb-2 
@@ -18,7 +18,7 @@ export default function LinkClickWarning() {
         whitespace-nowrap
         max-w-[90vw]
         overflow-hidden
-        text-ellipsis"
+        text-ellipsis'
     >
         🔒 Vérifiez toujours l'URL avant de cliquer!
     </span>

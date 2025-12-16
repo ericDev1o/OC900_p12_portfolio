@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
 
-import { useSkillsLogo } from "../../contexts/SkillsLogoContext";
+import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 
 export default function() {
     const { getLogoURI } = useSkillsLogo();
@@ -31,11 +31,11 @@ export default function() {
     const excalidraw = getLogoURI('excalidraw');
 
     return <div 
-        className="
+        className='
             flex
             justify-center
             flex-wrap
-            items-center"
+            items-center'
     >
         <img 
             src={viteLogo} 
@@ -48,6 +48,7 @@ export default function() {
                 duration-300
                 hover:drop-shadow-[0_0_2em_#646cffaa]' 
             alt='Vite logo' 
+            loading='lazy'
         />
         <img 
             src={htmlLogo} 
@@ -147,7 +148,7 @@ export default function() {
         />
         <FontAwesomeIcon 
             icon={faReact}
-            className="text-[50px]" 
+            className='text-[50px]' 
         />
         <img 
             src={reactRouter} 

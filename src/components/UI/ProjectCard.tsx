@@ -1,6 +1,6 @@
 import '../../types/Project';
 
-import { basePath } from '../../config/logoPaths';
+import { basePath } from '../../config/LogoPaths';
 
 import SkillLogos from '../containers/ProjectCardSkillLogos';
 import { useSkillsLogo } from '../../contexts/SkillsLogoContext';

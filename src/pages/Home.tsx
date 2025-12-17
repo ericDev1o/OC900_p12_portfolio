@@ -5,7 +5,7 @@ import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
-const Skills = lazy(() => import('../components/UI/Skills'));
+const Skills = lazy(() => import('../components/containers/Skills'));
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';

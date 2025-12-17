@@ -2,6 +2,7 @@ import { lazy } from 'react';
 
 import LinkClickWarning from '../components/UI/LinkClickWarning';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
+import LazyLoadWrapper from '@/components/containers/LazyLoadWrapper';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/UI/Skills'));
@@ -274,8 +275,8 @@ export default function Home() {
       <section 
         className='
           odd:bg-gray-950 
-          even:bg-gray-800
-          pb-22 
+          even:bg-gray-800 
+          pb-25
           px-20'
       >
         <h3
@@ -307,13 +308,16 @@ export default function Home() {
             text-xl'>
           Je transforme un "brief" en écrans propres, "responsives" et frugaux.
         </p>
-        <Skills />
+        <LazyLoadWrapper>
+          <Skills />
+        </LazyLoadWrapper>
       </section>
       <section 
         className='
           odd:bg-gray-950 
           even:bg-gray-800
-          px-20'
+          px-20
+          min-h-280'
       >
         <h3
           id='projets'
@@ -516,58 +520,60 @@ export default function Home() {
             impact.
           </span>
         </p>
-        <div 
-          className='
-            flex
-            justify-center'
-        >
-          <div
-            className='
-              group
-              relative'
-          >
-            <a 
-              href='https://github.com/ericDev1o' 
-              target='_blank'
-            >
-              <img 
-                src={githubLogo} 
-                className='
-                  p-6 
-                  h-25 
-                  will-change-filter 
-                  filter 
-                  duration-300
-                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='GitHub logo'
-                loading='lazy' />
-            </a>
-            <LinkClickWarning />
-          </div>
+        <LazyLoadWrapper>
           <div 
             className='
-              group
-              relative'
+              flex
+              justify-center'
           >
-            <a 
-              href='https://linkedin.com/in/ericfaraut' 
-              target='_blank'
+            <div
+              className='
+                group
+                relative'
             >
-              <img 
-                src={linkedinLogo} 
-                className='
-                  p-6 
-                  h-25 
-                  will-change-filter 
-                  filter 
-                  duration-300
-                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='LinkedIn logo' 
-                loading='lazy'/>
-            </a>
-            <LinkClickWarning />
+              <a 
+                href='https://github.com/ericDev1o' 
+                target='_blank'
+              >
+                <img 
+                  src={githubLogo} 
+                  className='
+                    p-6 
+                    h-25 
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                  alt='GitHub logo'
+                  loading='lazy' />
+              </a>
+              <LinkClickWarning />
+            </div>
+            <div 
+              className='
+                group
+                relative'
+            >
+              <a 
+                href='https://linkedin.com/in/ericfaraut' 
+                target='_blank'
+              >
+                <img 
+                  src={linkedinLogo} 
+                  className='
+                    p-6 
+                    h-25 
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                  alt='LinkedIn logo' 
+                  loading='lazy'/>
+              </a>
+              <LinkClickWarning />
+            </div>
           </div>
-        </div>
+        </LazyLoadWrapper>
         <div
           className='
             group

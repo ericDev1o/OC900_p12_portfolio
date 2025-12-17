@@ -1,3 +1,6 @@
+/**
+ * This is a type for data in /data/projects.json
+ */
 type Project = {
     index: number, 
     "URL": string,

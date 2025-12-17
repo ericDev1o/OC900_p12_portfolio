@@ -3,8 +3,8 @@ import {
     useEffect, 
     useRef, 
     useState 
-} from "react";
-import debounce from "@/helpers/debounce";
+} from 'react';
+import debounce from '../../helpers/debounce';
 
 type DebouncedFunction = ((visible: boolean) => void) & { cancel: () => void};
 

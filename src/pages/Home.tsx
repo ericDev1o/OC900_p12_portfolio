@@ -2,7 +2,7 @@ import { lazy } from 'react';
 
 import LinkClickWarning from '../components/UI/LinkClickWarning';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
-import LazyLoadWrapper from '@/components/containers/LazyLoadWrapper';
+import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/UI/Skills'));

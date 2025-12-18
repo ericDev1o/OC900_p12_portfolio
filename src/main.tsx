@@ -1,7 +1,10 @@
+import './config/i18next';
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import 'flowbite';
 import Modal from 'react-modal';
+
 
 import './index.css';
 import Home from './pages/Home';

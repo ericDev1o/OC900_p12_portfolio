@@ -1,4 +1,4 @@
-import { logos } from '../config/LogoPaths';
+import { logos } from '../config/logoPathsConfig';
 import { LogoKey } from '../types/LogoKey';
 import { createContext, ReactNode, useContext } from 'react';
 

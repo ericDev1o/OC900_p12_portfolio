@@ -5,6 +5,7 @@ import {
 } from "react";
 
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import { defaultOptions } from "../../config/intersectionObserverConfig";
 
 /**
  * This component is a wrapper for heavy media elements beneath the Hero section.
@@ -35,12 +36,8 @@ export default function LazyLoadWrapper({
     const ref = useRef<HTMLDivElement>(null);
 
     const memoizedOptions = useMemo(
-        () => options || 
-            { 
-                root: null,
-                rootMargin: '0px',
-                threshold: 0
-            }, [options]
+        () => 
+            options ?? defaultOptions , [options]
     );
 
     const isVisible: boolean = useIntersectionObserver(ref, memoizedOptions);

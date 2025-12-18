@@ -64,7 +64,7 @@
         "contexte": "Le site Kasa est une plateforme web professionnelle pour une agence immobilière, où la présentation visuelle des logements est cruciale pour inciter à la réservation. Il devait s’adapter à un contenu variable en nombre de photos et en longueur de texte.",
         "objectifs": "Créer un site web 'responsive', accessible, capable de gérer efficacement différents contenus variés tout en offrant une expérience fluide et engageante.",
         "stackTechnique": "Le projet a été développé avec HTML, CSS, TypeScript, Vite, React et React Router, assurant une architecture moderne et performante.",
-        "competencesDeveloppees": "Ce projet m’a permis de développer ma rigueur en testant les cas d’usage et pour structurer un projet React de zéro selon les bonnes pratiques.",
+        "competencesDeveloppees": "Ce projet m’a permis de développer ma rigueur en structurant un projet React de zéro selon les bonnes pratiques.",
         "resultatsEtImpact": "Le site 'responsive' affiche tous les logements, avec une animation attrayante lors du changement de photo dans le carrousel, améliorant l’expérience utilisateur.",
         "perspectivesAmelioration": "L’accessibilité du site reste un axe de progression pour garantir une expérience inclusive à tous les utilisateurs. Résolution de problèmes et gestion du temps d'apprentissage de React peuvent être améliorés.",
         "logos": ["HTML", "CSS", "TS", "react", "reactRouter", "vite", "gitHub"]

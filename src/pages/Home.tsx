@@ -151,7 +151,7 @@ export default function Home() {
           Le fruit de mes expériences passées
         </h5>
         <p>
-          Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
+          Naturellement rigoureux, fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
           <span 
             className='
               mx-2 

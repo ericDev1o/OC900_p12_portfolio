@@ -1,3 +1,4 @@
+import './src/config/i18next';
 import 'html-validate/vitest';
 import { expect } from 'vitest';
 import * as matchers from 'vitest-axe/matchers';

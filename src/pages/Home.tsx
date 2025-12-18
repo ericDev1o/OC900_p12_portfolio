@@ -121,7 +121,7 @@ export default function Home() {
           Qui suis-je? 
         </h4>
         <p>
-          D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction des leurs données et une solution "backend". Intégrateur "web" react passionné par l’accessibilité, je veille à atteindre un 
+          D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution "backend". Intégrateur "web" react passionné par l’accessibilité, je veille à atteindre un 
           <span 
             className='
               mx-2 
@@ -234,7 +234,6 @@ export default function Home() {
         et à l’
         <span 
           className='
-            mx-2 
             font-extrabold 
             text-green-400'
         >

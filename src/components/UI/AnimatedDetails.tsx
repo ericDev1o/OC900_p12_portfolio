@@ -1,6 +1,19 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
-export default function AccessibleAnimatedDetails(
+/**
+ * This is a custom HTML accordion.
+ * It was done due to realization difficulties 
+ * to customize my animation using Flowbite's 4.0 Accordion.
+ *  
+ * Browser retro-compatibility:
+ *  'onwebkittransitionend' 
+ * is on old Safari and Chrome browsers.
+ * 
+ * @param {string} summary is the label of hidden content
+ * @returns {ReactNode} label of hidden content, arrow to open/close and content.
+ */
+export default function AnimatedDetails(
   { summary, children }: { summary: string; children: React.ReactNode }
 ) {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -13,14 +26,30 @@ export default function AccessibleAnimatedDetails(
 
   const toggle = () => setIsOpen(open => !open);
 
+  const setIsTransitioningCheck = (on: boolean) => {
+    if(isTransitioning !== on)
+      setIsTransitioning(on);
+  };
+
+  const setMaxHeightCheck = (height: string) => {
+    if(maxHeight !== height)
+      setMaxHeight(height);
+  };
+
+  const setShouldRenderCheck = (on: boolean) => {
+    if(shouldRender !== on)
+      setShouldRender(on);
+  };
+
+  const { t } = useTranslation();
+
   useEffect(() => {
+    setIsTransitioningCheck(true);
     if (isOpen) {
-      setShouldRender(true);
-      setIsTransitioning(true);
+      setShouldRenderCheck(true);
     } else {
       if (contentRef.current) {
-        setMaxHeight('0px');
-        setIsTransitioning(true);
+        setMaxHeightCheck('0px');
       }
     }
   }, [isOpen]);
@@ -28,7 +57,8 @@ export default function AccessibleAnimatedDetails(
   useEffect(() => {
     if (shouldRender && isOpen && contentRef.current) {
       const height = contentRef.current.scrollHeight;
-      setMaxHeight(`${height}px`);
+      const heightPxStr = `${height}px`;
+      setMaxHeightCheck(heightPxStr);
     }
   }, [shouldRender, isOpen]);
 
@@ -38,24 +68,76 @@ export default function AccessibleAnimatedDetails(
 
     const onTransitionEnd = (event: TransitionEvent) => {
       if (event.propertyName === 'max-height' && !isOpen) {
-        setShouldRender(false);
-        setIsTransitioning(false);
-        setMaxHeight('0px'); // reset
+        setShouldRenderCheck(false);
+        setIsTransitioningCheck(false);
+        setMaxHeightCheck('0px');
       }
       if (event.propertyName === 'max-height' && isOpen) {
-        setIsTransitioning(false);
+        setIsTransitioningCheck(false);
       }
     };
 
-    content.addEventListener('transitionend', onTransitionEnd);
-    return () => {
-      content.removeEventListener('transitionend', onTransitionEnd);
-    };
+    const isTransitionEndSupported = 
+      'ontransitionend' in window 
+      ||
+      'onwebkittransitionend' in window; // old Safari and Chrome browsers
+    if(isTransitionEndSupported) {
+      content.addEventListener('transitionend', onTransitionEnd);
+      return () => {
+        content.removeEventListener('transitionend', onTransitionEnd);
+      };
+    }
+    else {
+      const transitionDuration = 600;
+
+      if(! isTransitionEndSupported) {
+        const timeoutId = setTimeout(() => {
+          onTransitionEnd({
+            propertyName: 'max-height',
+            elapsedTime: 0,
+            pseudoElement: '',
+            bubbles: false,
+            cancelBubble: false,
+            cancelable: false,
+            composed: false,
+            currentTarget: null,
+            defaultPrevented: false,
+            eventPhase: 0,
+            isTrusted: false,
+            returnValue: false,
+            srcElement: null,
+            target: null,
+            timeStamp: 0,
+            type: '',
+            composedPath: function (): EventTarget[] {
+              throw new Error('Function not implemented.');
+            },
+            initEvent: function (type: string, bubbles?: boolean, cancelable?: boolean): void {
+              throw new Error('Function not implemented.');
+            },
+            preventDefault: function (): void {
+              throw new Error('Function not implemented.');
+            },
+            stopImmediatePropagation: function (): void {
+              throw new Error('Function not implemented.');
+            },
+            stopPropagation: function (): void {
+              throw new Error('Function not implemented.');
+            },
+            NONE: 0,
+            CAPTURING_PHASE: 1,
+            AT_TARGET: 2,
+            BUBBLING_PHASE: 3
+          });
+        }, transitionDuration);
+        return () => clearTimeout(timeoutId);
+      }
+    }
   }, [isOpen]);
 
   useEffect(() => {
-    setAriaMessage(isOpen ? 'Section ouverte' : 'Section fermée');
-  }, [isOpen]);
+    setAriaMessage(isOpen ? t('section.opened') : t('section.closed'));
+  }, [isOpen, t]);
 
   useEffect(() => {
     if (isOpen && shouldRender && contentRef.current) {

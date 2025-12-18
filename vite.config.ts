@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import tailwindcss from '@tailwindcss/vite';
 import flowbiteReact from "flowbite-react/plugin/vite";
+import path from 'path';
 
 export default defineConfig({
   plugins: [
@@ -14,6 +15,9 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: ['./vitest-setup.ts']
+    setupFiles: ['./vitest-setup.ts'],
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
   }
 });

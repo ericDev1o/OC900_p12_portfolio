@@ -8,14 +8,8 @@ export default function Footer() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     useEffect(() => {
-        if (modalIsOpen) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-        return () => {
-            document.body.style.overflow = '';
-        };
+        document.body.style.overflow = modalIsOpen ? 'hidden' : '';
+        return () => {document.body.style.overflow = '';}
         }, [modalIsOpen]);
 
     return <footer 

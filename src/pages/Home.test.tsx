@@ -1,7 +1,8 @@
-import { render } from '@testing-library/react';
+import { render } from '../../test/test-utils';
 import { axe } from 'vitest-axe';
 
 import Home from './Home';
+import { SkillsLogoProvider } from '../contexts/SkillsLogoContext';
 
 describe('Home page', () => {
     it('should have no axe accessibility violations', async () => {

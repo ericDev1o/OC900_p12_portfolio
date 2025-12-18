@@ -1,4 +1,4 @@
-import{j as e,L as j,r,R as N,b as y,u as w,a as E}from"./index-XPP8owI_.js";function S({logoPath:n,repo:o}){const s=n.split("/"),c=s[s.length-1].split(".")[0];return e.jsxs("section",{className:`
+import{j as e,L as j,r,R as N,b as y,u as w,a as E}from"./index-C3yfsjhh.js";function S({logoPath:n,repo:o}){const s=n.split("/"),c=s[s.length-1].split(".")[0];return e.jsxs("section",{className:`
             group 
             relative`,children:[e.jsx("a",{href:o,target:"_blank","aria-label":o,children:e.jsx("img",{src:n,alt:c,loading:"lazy",className:"m-2"})}),e.jsx(j,{})]})}function k({paths:n,repo:o}){let s=new Set;return n.forEach(t=>{s.add(e.jsx(S,{logoPath:t,repo:o},t))}),s.size>1?e.jsx("div",{className:`
                 flex 
@@ -70,10 +70,10 @@ import{j as e,L as j,r,R as N,b as y,u as w,a as E}from"./index-XPP8owI_.js";fun
                         font-semibold 
                         tracking-tight 
                         text-heading`,children:n.title}),e.jsx(k,{paths:c,repo:n.repository})]}),e.jsx("div",{className:"space-y-4",children:e.jsxs(R,{summary:"Découvrez ce projet",children:[e.jsx("h6",{className:"font-extrabold mt-2",children:"contexte"}),e.jsx("p",{children:n.contexte}),e.jsx("h6",{className:"font-extrabold mt-2",children:"objectifs"}),e.jsx("p",{children:n.objectifs}),e.jsx("h6",{className:"font-extrabold mt-2",children:"stack technique"}),e.jsx("p",{children:n.stackTechnique}),e.jsx("h6",{className:"font-extrabold mt-2",children:"compétences développées"}),e.jsx("p",{children:n.competencesDeveloppees}),e.jsx("h6",{className:"font-extrabold mt-2",children:"résultats et impact"}),e.jsx("p",{children:n.resultatsEtImpact}),e.jsx("h6",{className:"font-extrabold mt-2",children:"perspectives d'amélioration"}),e.jsx("p",{children:n.perspectivesAmelioration})]})})]})}function P({projectsPath:n}){const[o,s]=r.useState([]),[t,c]=r.useState(!0),[f]=r.useState(null),d=r.useRef(null);return r.useEffect(()=>{let a=!0;return(async()=>{try{const l=await fetch("./data/projects.json");if(!l.ok)throw new Error(`HTTP error: ${l.status}`);const u=await l.json();a&&(s(u),c(!1))}catch(l){a&&(l instanceof SyntaxError||l instanceof ReferenceError||l instanceof TypeError||l instanceof Error)&&console.log("error: "+l.message)}})(),()=>{a=!1}},[]),t?e.jsx("p",{children:"chargement des projets"}):f?e.jsxs("p",{children:["erreur: ",f]}):e.jsx("div",{ref:d,className:`
-                        flex
-                        flex-wrap
-                        justify-center
-                        items-start 
-                        h-screen 
-                        overflow-y-auto
-                        relative`,children:o.map((a,x)=>e.jsx(E,{options:{root:d.current,rootMargin:"0px",threshold:0},children:e.jsx(L,{project:a,projectsPath:n})},a.number))})}export{P as default};
+                flex
+                flex-wrap
+                justify-center
+                items-start 
+                h-screen 
+                overflow-y-auto
+                relative`,children:o.map((a,x)=>e.jsx(E,{options:{root:d.current,rootMargin:"0px",threshold:0},children:e.jsx(L,{project:a,projectsPath:n})},a.number))})}export{P as default};

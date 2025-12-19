@@ -5,6 +5,7 @@ import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
 import Title3 from '../components/UI/Title3';
 import Title4 from '../components/UI/Title4';
+import Title5 from '../components/UI/Title5';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -126,15 +127,11 @@ export default function Home() {
         <Title4
           title='Pour quoi faire?'
         />
-        <h5
-          className='
-            pb-4 
-            text-xl
-            leading-loose'
-        >
-          Le fruit de mes expériences passées
-        </h5>
-        <p>
+        <Title5
+          title='Le fruit de mes expériences passées'
+        />
+        <p
+        className='pb-10'>
           Naturellement rigoureux, fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
           <span 
             className='
@@ -145,86 +142,68 @@ export default function Home() {
             clarification fonctionnelle, documentation, tests unitaires et évolution de code "backend". 
           </span>
         </p>
-        <h5
-          className='
-            pt-10 
-            pb-4 
-            text-xl
-            leading-loose'
+        <Title5
+          title="Notre objectif aujourd'hui"
+        />
+        <p
+          className='pb-10'
         >
-          Notre objectif aujourd'hui
-        </h5>
-        <p>
           Je suis prêt pour être votre intégrateur "web" dans une agence, ESN ou organisation engagée en Île-de-France. 
         </p>
-        <h5
-          className='
-            pt-10 
-            pb-4 
-            text-xl
-            leading-loose'
-        >
-          Pour un projet numérique plus inclusif et éco-responsable demain
-        </h5>
+        <Title5
+          title='Pour un projet numérique plus inclusif et éco-responsable demain'
+        />
         <p>
           De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
         </p>
         <Title4
           title='Quel est mon apport?'
         />
-        <h5
-        className='
-          pb-4 
-          text-xl
-          leading-loose'
+        <p className='pb-3'></p>
+        <Title5
+            title='Qualitatif'
+        />
+        <p
+          className='pb-6'
         >
-          Qualitatif
-        </h5>
-        Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
-        <span 
-          className='
-            mx-2 
-            font-extrabold 
-            text-green-400'
+          Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
+          <span 
+            className='
+              mx-2 
+              font-extrabold 
+              text-green-400'
+          >
+            outils hors-ligne comme html-validate et stylelint
+          </span>
+          font de vos projets des sites accessibles et éco-conçus. 
+        </p>
+        <Title5
+          title='Quantitatif'
+        />
+        <p
+          className='pb-8'
         >
-          outils hors-ligne comme html-validate et stylelint
-        </span>
-        font de vos projets des sites accessibles et éco-conçus. 
-        <h5
-        className='
-          pt-6 
-          pb-4 
-          text-xl
-          leading-loose'
-        >
-          Quantitatif
-        </h5>
-        Mon audit Lighthouse affiche régulièrement 
-        <span 
-          className='
-            mx-2 
-            font-extrabold
-            text-violet-400'
-        >
-          100/100 au SEO 
-        </span>
-        et à l’
-        <span 
-          className='
-            font-extrabold 
-            text-green-400'
-        >
-          accessibilité.
-        </span>
-        <h5
-          className='
-            pt-8
-            pb-4 
-            text-xl
-            leading-loose'
-        >
-          Précepte
-        </h5>
+          Mon audit Lighthouse affiche régulièrement 
+          <span 
+            className='
+              mx-2 
+              font-extrabold
+              text-violet-400'
+          >
+            100/100 au SEO 
+          </span>
+          et à l’
+          <span 
+            className='
+              font-extrabold 
+              text-green-400'
+          >
+            accessibilité.
+          </span>
+        </p>
+        <Title5
+          title='Précepte'
+        />
         <p>
           Grâce aux projets OpenClassrooms concrets et au mentorat j'ai développé ma capacité à 
           <span

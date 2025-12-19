@@ -248,16 +248,28 @@ export default function Home() {
         >
           Précepte
         </h5>
-        J’aiderais ainsi une organisation à renforcer sa présence digitale tout en 
-        <span 
-          className='
-            mx-2 
-            font-extrabold 
-            text-green-400'
-        >
-          limitant ses coûts de maintenance.
-        </span>
-        Pour ça, je veux continuer à progresser en rendu statique performant côté client, extraction de données via API ReST, "design",	rendu côté serveur, "fullstack", devOps, cloud et	architecture.
+        <p>
+          Grâce aux projets OpenClassrooms concrets et au mentorat j'ai développé ma capacité à 
+          <span
+            className='
+              mx-2 
+              font-extrabold'
+          >
+            résoudre les problèmes et mon autonomie.
+          </span>
+        </p>
+        <p>
+          J’aiderai ainsi une organisation à renforcer sa présence digitale tout en 
+          <span 
+            className='
+              mx-2 
+              font-extrabold 
+              text-green-400'
+          >
+            limitant ses coûts de maintenance
+          </span>
+          par ma progression continue en rendu statique performant côté client puis serveur, extraction de données via API ReST, "design", "fullstack", devOps, cloud et architecture.
+        </p>
         <p
           className='
             pt-4'>

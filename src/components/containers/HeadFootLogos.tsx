@@ -33,6 +33,7 @@ export default function HeadFootLogos() {
             <a 
                 href='https://github.com/ericDev1o' 
                 target='_blank'
+                rel='noopener noreferrer'
             >
                 <img 
                     src={githubLogo} 
@@ -46,6 +47,7 @@ export default function HeadFootLogos() {
             <a 
                 href='https://linkedin.com/in/ericfaraut' 
                 target='_blank'
+                rel='noopener noreferrer'
             >
                 <img 
                     src={linkedinLogo} 

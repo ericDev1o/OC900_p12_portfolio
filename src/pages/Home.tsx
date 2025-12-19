@@ -3,6 +3,14 @@ import { lazy } from 'react';
 import LinkClickWarning from '../components/UI/LinkClickWarning';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
+import Title3 from '../components/UI/Title3';
+import Title4 from '../components/UI/Title4';
+import Title5 from '../components/UI/Title5';
+import Section from '../components/UI/Section';
+import Link from '../components/UI/Link';
+import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
+import SpanGreen from '../components/UI/SpanGreen';
+import SpanViolet from '../components/UI/SpanViolet';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -20,15 +28,10 @@ export default function Home() {
 
   return <main>
       <article>
-        <section 
-          className='
-            odd:bg-gray-950 
-            even:bg-gray-800 
-            pt-20 
-            pb-22 
-            px-20'>
+        <Section>
           <h1
             className='
+              pt-20 
               text-5xl 
               leading-loose'
           >
@@ -53,24 +56,12 @@ export default function Home() {
           >
             votre intégrateur "web" react en Île-de-France
           </h2>
-        </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800
-          pt-6 
-          pb-24
-          px-20
-          '
-        >
-        <h3
+        </Section>
+      <Section>
+        <Title3
+          title='À propos de moi'
           id='moi&vous=nous'
-          className='
-          pt-14
-          pb-4 
-          text-3xl
-          leading-loose'
-        >À propos de moi</h3>
+        />
         <p
           className='
             pt-4'
@@ -92,162 +83,50 @@ export default function Home() {
             chiffres 
           </span>
           clés de 
-          <span 
-            className='
-              mx-2 
-              font-extrabold
-              text-violet-400'
-          >
-            performances.
-          </span> 
+          <SpanViolet
+            text='performances.'
+          /> 
           Passionné par les interfaces "web" 
-          <span 
-            className='
-              mx-2 
-              font-extrabold 
-              text-green-400'
-          >
-            durables
-          </span>
+          <SpanGreen text='durables' />
           j'en simplifie l'utilisation par tou·te·s. 
         </p>
-        <h4
-          className='
-            pt-12
-            pb-4 
-            text-2xl
-            leading-loose'
-        >
-          Qui suis-je? 
-        </h4>
+        <Title4 title='Qui suis-je?' />
         <p>
           D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution "backend". Intégrateur "web" react passionné par l’accessibilité, je veille à atteindre un 
-          <span 
-            className='
-              mx-2 
-              font-extrabold
-              text-violet-400'
-          >
-            audit Google Lighthouse supérieur à 90/100 
-          </span>
+          <SpanViolet text='audit Google Lighthouse supérieur à 90/100' />
             pour un bon référencement et une expérience utilisat·rice·eur fluide.
         </p>
-        <h4
-          className='
-            pt-12 
-            pb-2 
-            text-2xl
-            leading-loose'
-        >
-          Pour quoi faire? 
-        </h4>
-        <h5
-          className='
-            pt-4 
-            pb-4 
-            text-xl
-            leading-loose'
-        >
-          Le fruit de mes expériences passées
-        </h5>
-        <p>
+        <Title4 title='Pour quoi faire?' />
+        <Title5 title='Le fruit de mes expériences passées' />
+        <p
+        className='pb-10'>
           Naturellement rigoureux, fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
-          <span 
-            className='
-              mx-2 
-              font-extrabold 
-              text-green-400'
-          >
-            clarification fonctionnelle, documentation, tests unitaires et évolution de code "backend". 
-          </span>
+          <SpanGreen text='clarification fonctionnelle, documentation, tests unitaires et évolution de code "backend".' />
         </p>
-        <h5
-          className='
-            pt-10 
-            pb-4 
-            text-xl
-            leading-loose'
-        >
-          Notre objectif aujourd'hui
-        </h5>
-        <p>
+        <Title5 title="Notre objectif aujourd'hui" />
+        <p className='pb-10'>
           Je suis prêt pour être votre intégrateur "web" dans une agence, ESN ou organisation engagée en Île-de-France. 
         </p>
-        <h5
-          className='
-            pt-10 
-            pb-4 
-            text-xl
-            leading-loose'
-        >
-          Pour un projet numérique plus inclusif et éco-responsable demain
-        </h5>
+        <Title5 title='Pour un projet numérique plus inclusif et éco-responsable demain' />
         <p>
           De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
         </p>
-        <h4
-          className='
-            pt-12 
-            pb-2 
-            text-2xl
-            leading-loose'
-        >
-          Quel est mon apport? 
-        </h4>
-        <h5
-        className='
-          pt-4
-          pb-4 
-          text-xl
-          leading-loose'
-        >
-          Qualitatif
-        </h5>
-        Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
-        <span 
-          className='
-            mx-2 
-            font-extrabold 
-            text-green-400'
-        >
-          outils hors-ligne comme html-validate et stylelint
-        </span>
-        font de vos projets des sites accessibles et éco-conçus. 
-        <h5
-        className='
-          pt-6 
-          pb-4 
-          text-xl
-          leading-loose'
-        >
-          Quantitatif
-        </h5>
-        Mon audit Lighthouse affiche régulièrement 
-        <span 
-          className='
-            mx-2 
-            font-extrabold
-            text-violet-400'
-        >
-          100/100 au SEO 
-        </span>
-        et à l’
-        <span 
-          className='
-            font-extrabold 
-            text-green-400'
-        >
-          accessibilité.
-        </span>
-        <h5
-          className='
-            pt-8
-            pb-4 
-            text-xl
-            leading-loose'
-        >
-          Précepte
-        </h5>
+        <Title4 title='Quel est mon apport?' />
+        <p className='pb-3'></p>
+        <Title5 title='Qualitatif' />
+        <p className='pb-6'>
+          Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
+          <SpanGreen text='outils hors-ligne comme html-validate et stylelint' />
+          font de vos projets des sites accessibles et éco-conçus. 
+        </p>
+        <Title5 title='Quantitatif' />
+        <p className='pb-8'>
+          Mon audit Lighthouse affiche régulièrement 
+          <SpanViolet text='100/100 au SEO' />
+          et à l’
+          <SpanGreen text='accessibilité.' />
+        </p>
+        <Title5 title='Précepte' />
         <p>
           Grâce aux projets OpenClassrooms concrets et au mentorat j'ai développé ma capacité à 
           <span
@@ -260,19 +139,10 @@ export default function Home() {
         </p>
         <p>
           J’aiderai ainsi une organisation à renforcer sa présence digitale tout en 
-          <span 
-            className='
-              mx-2 
-              font-extrabold 
-              text-green-400'
-          >
-            limitant ses coûts de maintenance
-          </span>
+          <SpanGreen  text='limitant ses coûts de maintenance' />
           par ma progression continue en rendu statique performant côté client puis serveur, extraction de données via API ReST, "design", "fullstack", devOps, cloud et architecture.
         </p>
-        <p
-          className='
-            pt-4'>
+        <p className='pt-4'>
           J'adhère à « 
           <span 
             className='
@@ -283,34 +153,21 @@ export default function Home() {
           </span>
           » – Matt Cutts ancien responsable webspam de Google
         </p>
-      </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800 
-          pb-25
-          px-20'
-      >
-        <h3
+      </Section>
+      <Section>
+        <Title3
+          title='compétences'
           id='competences'
-          className='
-          pt-22 
-          text-3xl
-          leading-loose'
-        >
-          compétences
-        </h3>
+        />
         <h4
             className='
-              pt-10
               pb-8 
               text-2xl
               leading-loose'
           >
             clés
         </h4>
-        <p
-          className='text-xl'>
+        <p className='text-xl'>
           Vous avez besoin d'un site "web" à votre image?
         </p>
         <p
@@ -323,42 +180,20 @@ export default function Home() {
         <LazyLoadWrapper>
           <Skills />
         </LazyLoadWrapper>
-      </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800
-          px-20
-          min-h-280'
-      >
-        <h3
+      </Section>
+      <Section>
+        <Title3
+          title='projets'
           id='projets'
-          className='
-            pt-16
-            text-3xl
-            leading-loose'
-        >
-          projets
-        </h3>
-        <Portfolio 
-          projectsPath={projectsPath}
         />
-      </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800 
-          pb-22
-          px-20'
-      >
-        <h3
+        <Portfolio projectsPath={ projectsPath }
+        />
+      </Section>
+      <Section>
+        <Title3 
+          title='parcours'
           id='parcours'
-          className='
-            pt-22 
-            pb-6 
-            text-3xl
-            leading-loose'
-        >parcours</h3>
+        />
         <h4
           className='
             pt-2
@@ -378,25 +213,10 @@ export default function Home() {
               group
               relative'
           >
-            <a 
+            <Link
               href='https://www.francecompetences.fr/recherche/rncp/38145/'
-              target='_blank'
-              className='
-                block 
-                pt-4 
-                px-4 
-                py-2 
-                pb-4 
-                text-blue-300 
-                hover:text-blue-600 
-                hover:scale-110 
-                transition 
-                duration-600 
-                motion-reduce:duration-3000 
-                ease-in-out'
-            >
-              RNCP 38145
-            </a>
+              text='RNCP 38145'
+            />
             <LinkClickWarning />
           </div>
         </h5>
@@ -411,38 +231,16 @@ export default function Home() {
             group
             relative'
         >
-          <a 
+          <Link
             href='https://openclassrooms.com/fr/paths/900-integrateur-web#projects'
-            target='_blank'
-            className='
-              block 
-              px-4 
-              py-2 
-              text-blue-300 
-              hover:text-blue-600 
-              hover:scale-110 
-              transition
-              duration-600 
-              motion-reduce:duration-3000 
-              ease-in-out'
-          >
-            Suivez le parcours.
-          </a>
+            text='Suivez le parcours.'
+          />
           <LinkClickWarning />
         </div>
-        <h6
-          className='pt-6'>
+        <h6 className='pt-6'>
           22 avril 2024 à aujourd'hui
         </h6>
-        <h4 
-          className='
-            pt-10
-            pb-12 
-            text-2xl
-            leading-loose'
-        >
-          sachez-en plus sur ce que nous avons co-construit avant
-        </h4>
+        <Title4 title='sachez-en plus sur ce que nous avons co-construit avant' />
         <div 
           className='
             group
@@ -453,15 +251,17 @@ export default function Home() {
             target='_blank'
             rel='noopener noreferrer'
             className='
+              pt-8 
               inline-flex 
               items-center 
               text-blue-300  
               no-underline
               transition 
-              transform 
+              transform
               hover:scale-110 
               hover:brightness-110 
-              hover:shadow-lg'
+              hover:shadow-lg
+              ease-in-out'
           >
             <svg 
               xmlns='http://www.w3.org/2000/svg' 
@@ -481,23 +281,12 @@ export default function Home() {
           </a>
           <LinkClickWarning />
         </div>
-      </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800
-          px-20'
-      >
-        <h3
+      </Section>
+      <Section>
+        <Title3
+          title='contact'
           id='contact'
-          className='
-            pt-22 
-            pb-6 
-            text-3xl
-            leading-loose'
-        >
-          contact
-        </h3>
+        />
         <p
           className='
             pt-8 
@@ -505,14 +294,7 @@ export default function Home() {
             text-2xl'
         >
           Contribuons 
-          <span
-            className='
-              mx-2
-              font-extrabold
-              text-green-400'
-          >
-            doucement 
-          </span>
+          <SpanGreen text='doucement' />
           à votre 
           <span
             className='
@@ -523,14 +305,7 @@ export default function Home() {
             projet
           </span> 
           "web" avec 
-          <span
-            className='
-              mx-2
-              font-extrabold
-              text-green-400'
-          >
-            impact.
-          </span>
+          <SpanGreen text='impact.' />
         </p>
         <LazyLoadWrapper>
           <div 
@@ -540,58 +315,25 @@ export default function Home() {
               justify-center
               items-center'
           >
-            <a 
-              href='https://github.com/ericDev1o' 
-              target='_blank'
-            >
-              <img 
-                src={githubLogo} 
-                className='
-                  p-6 
-                  h-25 
-                  will-change-filter 
-                  filter 
-                  duration-300
-                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='GitHub logo'
-                loading='lazy' />
-            </a>
-            <a 
+            <LogoLinkHomeContact
+                href='https://github.com/ericDev1o' 
+                src={ githubLogo } 
+                altText='GitHub logo'
+            />
+            <LogoLinkHomeContact
               href='https://linkedin.com/in/ericfaraut' 
-              target='_blank'
-            >
-              <img 
-                src={linkedinLogo} 
-                className='
-                  p-6 
-                  h-25 
-                  will-change-filter 
-                  filter 
-                  duration-300
-                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                alt='LinkedIn logo' 
-                loading='lazy'/>
-            </a>
+              src={ linkedinLogo } 
+              altText='LinkedIn logo' 
+            />
             <div
               className='
                 group
                 relative'
               >
-                <a 
+                <Link
                   href='https://calendly.com/d/cxcb-3st-m8k/15-minutes'
-                  target='_blank'
-                  className='
-                    px-4 
-                    py-2 
-                    text-blue-300 
-                    hover:text-blue-600 
-                    hover:scale-110 
-                    transition
-                    duration-600 
-                    motion-reduce:duration-3000 
-                    ease-in-out'
-                >https://calendly.com/d/cxcb-3st-m8k/15-minutes
-              </a>
+                  text='https://calendly.com/d/cxcb-3st-m8k/15-minutes'
+                />
               <LinkClickWarning />
             </div>
           </div>
@@ -603,11 +345,11 @@ export default function Home() {
           <a 
             href='https://framaforms.org/contact-eric-faraut-1762791991'
             target='_blank'
+            rel='noopener noreferrer'
           >
             <button 
                 className='
                   mt-18 
-                  mb-10 
                   w-full 
                   sm:w-auto 
                   px-5 
@@ -629,7 +371,7 @@ export default function Home() {
             </a>
             <LinkClickWarning />
           </div>
-      </section>
+      </Section>
   </article>
   <hr 
       className='

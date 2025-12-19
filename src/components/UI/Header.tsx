@@ -1,4 +1,5 @@
 import HeadFootLogos from '../containers/HeadFootLogos';
+import LinkNav from './LinkNav';
 
 export default function Header() {
     return <header className='
@@ -23,92 +24,50 @@ export default function Header() {
                 md:flex-row 
                 justify-between
             '>
-                <li>   
-                    <a 
+                <li className='
+                    group 
+                    relative '
+                >   
+                    <LinkNav
                         href='#moi&vous=nous' 
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300 
-                            hover:text-blue-600 
-                            hover:scale-110 
-                            transition 
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            '
-                    >
-                        nous
-                    </a>
+                        text='nous'
+                    />
                 </li>
-                <li>
-                     <a 
+                <li className='
+                    group
+                    relative'
+                >   
+                    <LinkNav
                         href='#competences'
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300
-                            hover:text-blue-600
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            hover:scale-110'
-                    >
-                        compétences
-                    </a>
+                        text='compétences'
+                    />
                 </li>
-                <li>   
-                    <a 
+                <li className='
+                    group
+                    relative'
+                >   
+                    <LinkNav 
                         href='#projets'
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300
-                            hover:text-blue-600
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            hover:scale-110'
-                    >
-                        projets
-                    </a>
+                        text='projets'
+                    />
                 </li>
-                <li>   
-                    <a 
+                <li className='
+                    group
+                    relative'
+                >   
+                    <LinkNav
                         href='#parcours'
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300
-                            hover:text-blue-600
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            hover:scale-110'
-                    >
-                        parcours
-                    </a>
+                        text='parcours'
+                    />
                 </li>
-                <li>   
-                    <a 
+                <li className='
+                    group
+                    relative'
+                >   
+                    <LinkNav
                         href='#contact'
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300
-                            hover:text-blue-600
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            hover:scale-110'
-                    >
-                        contact
-                    </a>
+                        text='contact'
+                    />
                 </li>
             </ul>
         </nav>

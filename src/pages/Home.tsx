@@ -9,6 +9,8 @@ import Title5 from '../components/UI/Title5';
 import Section from '../components/UI/Section';
 import Link from '../components/UI/Link';
 import LogoLink from '@/components/UI/LogoLinkHomeContact';
+import SpanGreen from '@/components/UI/SpanGreen';
+import SpanViolet from '@/components/UI/SpanViolet';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -81,120 +83,50 @@ export default function Home() {
             chiffres 
           </span>
           clés de 
-          <span 
-            className='
-              mx-2 
-              font-extrabold
-              text-violet-400'
-          >
-            performances.
-          </span> 
+          <SpanViolet
+            text='performances.'
+          /> 
           Passionné par les interfaces "web" 
-          <span 
-            className='
-              mx-2 
-              font-extrabold 
-              text-green-400'
-          >
-            durables
-          </span>
+          <SpanGreen text='durables' />
           j'en simplifie l'utilisation par tou·te·s. 
         </p>
-        <Title4
-          title='Qui suis-je?'
-        />
+        <Title4 title='Qui suis-je?' />
         <p>
           D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution "backend". Intégrateur "web" react passionné par l’accessibilité, je veille à atteindre un 
-          <span 
-            className='
-              mx-2 
-              font-extrabold
-              text-violet-400'
-          >
-            audit Google Lighthouse supérieur à 90/100 
-          </span>
+          <SpanViolet text='audit Google Lighthouse supérieur à 90/100' />
             pour un bon référencement et une expérience utilisat·rice·eur fluide.
         </p>
-        <Title4
-          title='Pour quoi faire?'
-        />
-        <Title5
-          title='Le fruit de mes expériences passées'
-        />
+        <Title4 title='Pour quoi faire?' />
+        <Title5 title='Le fruit de mes expériences passées' />
         <p
         className='pb-10'>
           Naturellement rigoureux, fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
-          <span 
-            className='
-              mx-2 
-              font-extrabold 
-              text-green-400'
-          >
-            clarification fonctionnelle, documentation, tests unitaires et évolution de code "backend". 
-          </span>
+          <SpanGreen text='clarification fonctionnelle, documentation, tests unitaires et évolution de code "backend".' />
         </p>
-        <Title5
-          title="Notre objectif aujourd'hui"
-        />
-        <p
-          className='pb-10'
-        >
+        <Title5 title="Notre objectif aujourd'hui" />
+        <p className='pb-10'>
           Je suis prêt pour être votre intégrateur "web" dans une agence, ESN ou organisation engagée en Île-de-France. 
         </p>
-        <Title5
-          title='Pour un projet numérique plus inclusif et éco-responsable demain'
-        />
+        <Title5 title='Pour un projet numérique plus inclusif et éco-responsable demain' />
         <p>
           De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
         </p>
-        <Title4
-          title='Quel est mon apport?'
-        />
+        <Title4 title='Quel est mon apport?' />
         <p className='pb-3'></p>
-        <Title5
-            title='Qualitatif'
-        />
-        <p
-          className='pb-6'
-        >
+        <Title5 title='Qualitatif' />
+        <p className='pb-6'>
           Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
-          <span 
-            className='
-              mx-2 
-              font-extrabold 
-              text-green-400'
-          >
-            outils hors-ligne comme html-validate et stylelint
-          </span>
+          <SpanGreen text='outils hors-ligne comme html-validate et stylelint' />
           font de vos projets des sites accessibles et éco-conçus. 
         </p>
-        <Title5
-          title='Quantitatif'
-        />
-        <p
-          className='pb-8'
-        >
+        <Title5 title='Quantitatif' />
+        <p className='pb-8'>
           Mon audit Lighthouse affiche régulièrement 
-          <span 
-            className='
-              mx-2 
-              font-extrabold
-              text-violet-400'
-          >
-            100/100 au SEO 
-          </span>
+          <SpanViolet text='100/100 au SEO' />
           et à l’
-          <span 
-            className='
-              font-extrabold 
-              text-green-400'
-          >
-            accessibilité.
-          </span>
+          <SpanGreen text='accessibilité.' />
         </p>
-        <Title5
-          title='Précepte'
-        />
+        <Title5 title='Précepte' />
         <p>
           Grâce aux projets OpenClassrooms concrets et au mentorat j'ai développé ma capacité à 
           <span
@@ -207,19 +139,10 @@ export default function Home() {
         </p>
         <p>
           J’aiderai ainsi une organisation à renforcer sa présence digitale tout en 
-          <span 
-            className='
-              mx-2 
-              font-extrabold 
-              text-green-400'
-          >
-            limitant ses coûts de maintenance
-          </span>
+          <SpanGreen  text='limitant ses coûts de maintenance' />
           par ma progression continue en rendu statique performant côté client puis serveur, extraction de données via API ReST, "design", "fullstack", devOps, cloud et architecture.
         </p>
-        <p
-          className='
-            pt-4'>
+        <p className='pt-4'>
           J'adhère à « 
           <span 
             className='
@@ -244,8 +167,7 @@ export default function Home() {
           >
             clés
         </h4>
-        <p
-          className='text-xl'>
+        <p className='text-xl'>
           Vous avez besoin d'un site "web" à votre image?
         </p>
         <p
@@ -264,8 +186,7 @@ export default function Home() {
           title='projets'
           id='projets'
         />
-        <Portfolio 
-          projectsPath={projectsPath}
+        <Portfolio projectsPath={ projectsPath }
         />
       </Section>
       <Section>
@@ -316,13 +237,10 @@ export default function Home() {
           />
           <LinkClickWarning />
         </div>
-        <h6
-          className='pt-6'>
+        <h6 className='pt-6'>
           22 avril 2024 à aujourd'hui
         </h6>
-        <Title4 
-          title='sachez-en plus sur ce que nous avons co-construit avant'
-        />
+        <Title4 title='sachez-en plus sur ce que nous avons co-construit avant' />
         <div 
           className='
             group
@@ -376,14 +294,7 @@ export default function Home() {
             text-2xl'
         >
           Contribuons 
-          <span
-            className='
-              mx-2
-              font-extrabold
-              text-green-400'
-          >
-            doucement 
-          </span>
+          <SpanGreen text='doucement' />
           à votre 
           <span
             className='
@@ -394,14 +305,7 @@ export default function Home() {
             projet
           </span> 
           "web" avec 
-          <span
-            className='
-              mx-2
-              font-extrabold
-              text-green-400'
-          >
-            impact.
-          </span>
+          <SpanGreen text='impact.' />
         </p>
         <LazyLoadWrapper>
           <div 

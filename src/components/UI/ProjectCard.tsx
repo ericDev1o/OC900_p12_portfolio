@@ -33,8 +33,7 @@ export default function ProjectCard
     return <article 
         className='
             m-8 
-            bg-gray-900 
-            w-full 
+            bg-gray-900  
             max-w-lg   
             rounded-4xl 
             shadow-xs'

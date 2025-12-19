@@ -1,5 +1,4 @@
 import HeadFootLogos from '../containers/HeadFootLogos';
-import LinkClickWarning from './LinkClickWarning';
 
 export default function Header() {
     return <header className='
@@ -24,10 +23,7 @@ export default function Header() {
                 md:flex-row 
                 justify-between
             '>
-                <li className='
-                    group 
-                    relative '
-                >   
+                <li>   
                     <a 
                         href='#moi&vous=nous' 
                         className='
@@ -45,13 +41,9 @@ export default function Header() {
                     >
                         nous
                     </a>
-                    <LinkClickWarning />
                 </li>
-                <li className='
-                    group
-                    relative'
-                >   
-                    <a 
+                <li>
+                     <a 
                         href='#competences'
                         className='
                             block 
@@ -66,12 +58,8 @@ export default function Header() {
                     >
                         compétences
                     </a>
-                   <LinkClickWarning />
                 </li>
-                <li className='
-                    group
-                    relative'
-                >   
+                <li>   
                     <a 
                         href='#projets'
                         className='
@@ -87,12 +75,8 @@ export default function Header() {
                     >
                         projets
                     </a>
-                    <LinkClickWarning />
                 </li>
-                <li className='
-                    group
-                    relative'
-                >   
+                <li>   
                     <a 
                         href='#parcours'
                         className='
@@ -108,12 +92,8 @@ export default function Header() {
                     >
                         parcours
                     </a>
-                   <LinkClickWarning />
                 </li>
-                <li className='
-                    group
-                    relative'
-                >   
+                <li>   
                     <a 
                         href='#contact'
                         className='
@@ -129,7 +109,6 @@ export default function Header() {
                     >
                         contact
                     </a>
-                   <LinkClickWarning />
                 </li>
             </ul>
         </nav>

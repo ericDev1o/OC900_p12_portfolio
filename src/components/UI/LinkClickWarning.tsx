@@ -3,8 +3,8 @@ export default function LinkClickWarning() {
         absolute 
         bottom-full 
         mb-2 
-        left-1/2 
-        -translate-x-1/2 
+        inset-x-0 
+        mx-auto 
         z-40 
         bg-white 
         text-gray-900 

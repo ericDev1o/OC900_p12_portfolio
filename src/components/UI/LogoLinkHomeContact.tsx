@@ -1,6 +1,6 @@
 import LinkClickWarning from "./LinkClickWarning"
 
-export default function LogoLink(
+export default function LogoLinkHomeContact(
     {
         href,
         src,

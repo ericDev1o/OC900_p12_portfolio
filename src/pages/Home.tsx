@@ -8,9 +8,9 @@ import Title4 from '../components/UI/Title4';
 import Title5 from '../components/UI/Title5';
 import Section from '../components/UI/Section';
 import Link from '../components/UI/Link';
-import LogoLink from '@/components/UI/LogoLinkHomeContact';
-import SpanGreen from '@/components/UI/SpanGreen';
-import SpanViolet from '@/components/UI/SpanViolet';
+import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
+import SpanGreen from '../components/UI/SpanGreen';
+import SpanViolet from '../components/UI/SpanViolet';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -315,12 +315,12 @@ export default function Home() {
               justify-center
               items-center'
           >
-            <LogoLink
+            <LogoLinkHomeContact
                 href='https://github.com/ericDev1o' 
                 src={ githubLogo } 
                 altText='GitHub logo'
             />
-            <LogoLink
+            <LogoLinkHomeContact
               href='https://linkedin.com/in/ericfaraut' 
               src={linkedinLogo} 
               altText='LinkedIn logo' 

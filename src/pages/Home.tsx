@@ -540,52 +540,38 @@ export default function Home() {
               justify-center
               items-center'
           >
-            <div
-              className='
-                group
-                relative'
+            <a 
+              href='https://github.com/ericDev1o' 
+              target='_blank'
             >
-              <a 
-                href='https://github.com/ericDev1o' 
-                target='_blank'
-              >
-                <img 
-                  src={githubLogo} 
-                  className='
-                    p-6 
-                    h-25 
-                    will-change-filter 
-                    filter 
-                    duration-300
-                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                  alt='GitHub logo'
-                  loading='lazy' />
-              </a>
-              <LinkClickWarning />
-            </div>
-            <div 
-              className='
-                group
-                relative'
+              <img 
+                src={githubLogo} 
+                className='
+                  p-6 
+                  h-25 
+                  will-change-filter 
+                  filter 
+                  duration-300
+                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='GitHub logo'
+                loading='lazy' />
+            </a>
+            <a 
+              href='https://linkedin.com/in/ericfaraut' 
+              target='_blank'
             >
-              <a 
-                href='https://linkedin.com/in/ericfaraut' 
-                target='_blank'
-              >
-                <img 
-                  src={linkedinLogo} 
-                  className='
-                    p-6 
-                    h-25 
-                    will-change-filter 
-                    filter 
-                    duration-300
-                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                  alt='LinkedIn logo' 
-                  loading='lazy'/>
-              </a>
-              <LinkClickWarning />
-            </div>
+              <img 
+                src={linkedinLogo} 
+                className='
+                  p-6 
+                  h-25 
+                  will-change-filter 
+                  filter 
+                  duration-300
+                  hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='LinkedIn logo' 
+                loading='lazy'/>
+            </a>
             <div
               className='
                 group

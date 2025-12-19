@@ -51,7 +51,7 @@ export default function Home() {
             text-4xl
             leading-loose'
           >
-            votre intégrateur web react en Île-de-France
+            votre intégrateur "web" react en Île-de-France
           </h2>
         </section>
       <section 
@@ -100,7 +100,7 @@ export default function Home() {
           >
             performances.
           </span> 
-          Passionné par les sites web, les interfaces 
+          Passionné par les interfaces "web" 
           <span 
             className='
               mx-2 
@@ -109,7 +109,7 @@ export default function Home() {
           >
             durables
           </span>
-          que j'intègre simplifient l'utilisation par tou·te·s. 
+          j'en simplifie l'utilisation par tou·te·s. 
         </p>
         <h4
           className='
@@ -121,7 +121,7 @@ export default function Home() {
           Qui suis-je? 
         </h4>
         <p>
-          Intégrateur web React passionné par l’accessibilité des sites web, je veille à atteindre un 
+          D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution "backend". Intégrateur "web" react passionné par l’accessibilité, je veille à atteindre un 
           <span 
             className='
               mx-2 
@@ -130,7 +130,7 @@ export default function Home() {
           >
             audit Google Lighthouse supérieur à 90/100 
           </span>
-            pour garantir un référencement efficace et une expérience utilisat·rice·eur fluide.
+            pour un bon référencement et une expérience utilisat·rice·eur fluide.
         </p>
         <h4
           className='
@@ -151,14 +151,14 @@ export default function Home() {
           Le fruit de mes expériences passées
         </h5>
         <p>
-          Fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
+          Naturellement rigoureux, fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
           <span 
             className='
               mx-2 
               font-extrabold 
               text-green-400'
           >
-            clarification fonctionnelle, documentation, tests unitaires et évolution de code back-end. 
+            clarification fonctionnelle, documentation, tests unitaires et évolution de code "backend". 
           </span>
         </p>
         <h5
@@ -171,7 +171,7 @@ export default function Home() {
           Notre objectif aujourd'hui
         </h5>
         <p>
-          Je suis prêt pour être votre intégrateur web dans une agence, une ESN ou une organisation engagée en Île-de-France. 
+          Je suis prêt pour être votre intégrateur "web" dans une agence, ESN ou organisation engagée en Île-de-France. 
         </p>
         <h5
           className='
@@ -203,7 +203,7 @@ export default function Home() {
         >
           Qualitatif
         </h5>
-        Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
+        Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
         <span 
           className='
             mx-2 
@@ -234,7 +234,6 @@ export default function Home() {
         et à l’
         <span 
           className='
-            mx-2 
             font-extrabold 
             text-green-400'
         >
@@ -249,15 +248,28 @@ export default function Home() {
         >
           Précepte
         </h5>
-        J’aide ainsi les organisations à renforcer leur présence digitale tout en 
-        <span 
-          className='
-            mx-2 
-            font-extrabold 
-            text-green-400'
-        >
-          limitant les coûts de maintenance.
-        </span> 
+        <p>
+          Grâce aux projets OpenClassrooms concrets et au mentorat j'ai développé ma capacité à 
+          <span
+            className='
+              mx-2 
+              font-extrabold'
+          >
+            résoudre les problèmes et mon autonomie.
+          </span>
+        </p>
+        <p>
+          J’aiderai ainsi une organisation à renforcer sa présence digitale tout en 
+          <span 
+            className='
+              mx-2 
+              font-extrabold 
+              text-green-400'
+          >
+            limitant ses coûts de maintenance
+          </span>
+          par ma progression continue en rendu statique performant côté client puis serveur, extraction de données via API ReST, "design", "fullstack", devOps, cloud et architecture.
+        </p>
         <p
           className='
             pt-4'>
@@ -299,7 +311,7 @@ export default function Home() {
         </h4>
         <p
           className='text-xl'>
-          Vous avez besoin d'un site web à votre image?
+          Vous avez besoin d'un site "web" à votre image?
         </p>
         <p
            className='
@@ -354,7 +366,7 @@ export default function Home() {
             text-2xl
             leading-loose'
         >
-          intégrateur web
+          intégrateur "web"
         </h4>
         <h5 
           className='
@@ -375,7 +387,7 @@ export default function Home() {
                 px-4 
                 py-2 
                 pb-4 
-                text-blue-500 
+                text-blue-300 
                 hover:text-blue-600 
                 hover:scale-110 
                 transition 
@@ -406,7 +418,7 @@ export default function Home() {
               block 
               px-4 
               py-2 
-              text-blue-500 
+              text-blue-300 
               hover:text-blue-600 
               hover:scale-110 
               transition
@@ -443,7 +455,7 @@ export default function Home() {
             className='
               inline-flex 
               items-center 
-              text-blue-500  
+              text-blue-300  
               no-underline
               transition 
               transform 
@@ -462,7 +474,7 @@ export default function Home() {
             </svg>
             <span
               className='
-                text-blue-500
+                text-blue-300
                 hover:text-blue-600'>
                 Téléchargez mon CV
             </span>
@@ -510,7 +522,7 @@ export default function Home() {
           >
             projet
           </span> 
-          web avec 
+          "web" avec 
           <span
             className='
               mx-2
@@ -524,7 +536,9 @@ export default function Home() {
           <div 
             className='
               flex
-              justify-center'
+              flex-wrap
+              justify-center
+              items-center'
           >
             <div
               className='
@@ -572,6 +586,28 @@ export default function Home() {
               </a>
               <LinkClickWarning />
             </div>
+            <div
+              className='
+                group
+                relative'
+              >
+                <a 
+                  href='https://calendly.com/d/cxcb-3st-m8k/15-minutes'
+                  target='_blank'
+                  className='
+                    px-4 
+                    py-2 
+                    text-blue-300 
+                    hover:text-blue-600 
+                    hover:scale-110 
+                    transition
+                    duration-600 
+                    motion-reduce:duration-3000 
+                    ease-in-out'
+                >https://calendly.com/d/cxcb-3st-m8k/15-minutes
+              </a>
+              <LinkClickWarning />
+            </div>
           </div>
         </LazyLoadWrapper>
         <div
@@ -602,7 +638,7 @@ export default function Home() {
                   focus:ring-blue-300 
                   rounded-lg'
               >
-                Parlons de votre projet de site web
+                Prévoyons de parler de votre projet de site "web"
               </button>
             </a>
             <LinkClickWarning />

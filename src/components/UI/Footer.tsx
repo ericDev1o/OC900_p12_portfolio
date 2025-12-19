@@ -14,7 +14,7 @@ export default function Footer() {
 
     return <footer 
         className='
-            px-20 
+            px-4 
             pb-15
             flex
             justify-between'

@@ -1,0 +1,77 @@
+import{r as o,a as W,g as G,b as K,j as r,R as X,c as Y,u as B,L as J,d as Q}from"./index-Dl_UdOx4.js";const V=(e,t,n,a)=>{const l=[n,{code:t,...a||{}}];if(e?.services?.logger?.forward)return e.services.logger.forward(l,"warn","react-i18next::",!0);C(l[0])&&(l[0]=`react-i18next:: ${l[0]}`),e?.services?.logger?.warn?e.services.logger.warn(...l):console?.warn&&console.warn(...l)},D={},q=(e,t,n,a)=>{C(n)&&D[n]||(C(n)&&(D[n]=new Date),V(e,t,n,a))},$=(e,t)=>()=>{if(e.isInitialized)t();else{const n=()=>{setTimeout(()=>{e.off("initialized",n)},0),t()};e.on("initialized",n)}},P=(e,t,n)=>{e.loadNamespaces(t,$(e,n))},U=(e,t,n,a)=>{if(C(n)&&(n=[n]),e.options.preload&&e.options.preload.indexOf(t)>-1)return P(e,n,a);n.forEach(l=>{e.options.ns.indexOf(l)<0&&e.options.ns.push(l)}),e.loadLanguages(t,$(e,a))},Z=(e,t,n={})=>!t.languages||!t.languages.length?(q(t,"NO_LANGUAGES","i18n.languages were undefined or empty",{languages:t.languages}),!0):t.hasLoadedNamespace(e,{lng:n.lng,precheck:(a,l)=>{if(n.bindI18n&&n.bindI18n.indexOf("languageChanging")>-1&&a.services.backendConnector.backend&&a.isLanguageChangingTo&&!l(a.isLanguageChangingTo,e))return!1}}),C=e=>typeof e=="string",ee=e=>typeof e=="object"&&e!==null,ne=o.createContext();class te{constructor(){this.usedNamespaces={}}addUsedNamespaces(t){t.forEach(n=>{this.usedNamespaces[n]||(this.usedNamespaces[n]=!0)})}getUsedNamespaces(){return Object.keys(this.usedNamespaces)}}var T={exports:{}},O={};var M;function se(){if(M)return O;M=1;var e=W();function t(i,g){return i===g&&(i!==0||1/i===1/g)||i!==i&&g!==g}var n=typeof Object.is=="function"?Object.is:t,a=e.useState,l=e.useEffect,s=e.useLayoutEffect,p=e.useDebugValue;function u(i,g){var b=g(),w=a({inst:{value:b,getSnapshot:g}}),y=w[0].inst,N=w[1];return s(function(){y.value=b,y.getSnapshot=g,S(y)&&N({inst:y})},[i,b,g]),l(function(){return S(y)&&N({inst:y}),i(function(){S(y)&&N({inst:y})})},[i]),p(b),b}function S(i){var g=i.getSnapshot;i=i.value;try{var b=g();return!n(i,b)}catch{return!0}}function m(i,g){return g()}var j=typeof window>"u"||typeof window.document>"u"||typeof window.document.createElement>"u"?m:u;return O.useSyncExternalStore=e.useSyncExternalStore!==void 0?e.useSyncExternalStore:j,O}var A;function re(){return A||(A=1,T.exports=se()),T.exports}var ae=re();const oe=(e,t)=>C(t)?t:ee(t)&&C(t.defaultValue)?t.defaultValue:Array.isArray(e)?e[e.length-1]:e,ie={t:oe,ready:!1},ce=()=>()=>{},le=(e,t={})=>{const{i18n:n}=t,{i18n:a,defaultNS:l}=o.useContext(ne)||{},s=n||a||G();s&&!s.reportNamespaces&&(s.reportNamespaces=new te),s||q(s,"NO_I18NEXT_INSTANCE","useTranslation: You will need to pass in an i18next instance by using initReactI18next");const p=o.useMemo(()=>({...K(),...s?.options?.react,...t}),[s,t]),{useSuspense:u,keyPrefix:S}=p,m=l||s?.options?.defaultNS,j=C(m)?[m]:m||["translation"],i=o.useMemo(()=>j,j);s?.reportNamespaces?.addUsedNamespaces?.(i);const g=o.useRef(0),b=o.useCallback(f=>{if(!s)return ce;const{bindI18n:d,bindI18nStore:h}=p,x=()=>{g.current+=1,f()};return d&&s.on(d,x),h&&s.store.on(h,x),()=>{d&&d.split(" ").forEach(_=>s.off(_,x)),h&&h.split(" ").forEach(_=>s.store.off(_,x))}},[s,p]),w=o.useRef(),y=o.useCallback(()=>{if(!s)return ie;const f=!!(s.isInitialized||s.initializedStoreOnce)&&i.every(H=>Z(H,s,p)),d=t.lng||s.language,h=g.current,x=w.current;if(x&&x.ready===f&&x.lng===d&&x.keyPrefix===S&&x.revision===h)return x;const z={t:s.getFixedT(d,p.nsMode==="fallback"?i:i[0],S),ready:f,lng:d,keyPrefix:S,revision:h};return w.current=z,z},[s,i,S,p,t.lng]),[N,L]=o.useState(0),{t:R,ready:c}=ae.useSyncExternalStore(b,y,y);o.useEffect(()=>{if(s&&!c&&!u){const f=()=>L(d=>d+1);t.lng?U(s,t.lng,i,f):P(s,i,f)}},[s,t.lng,i,c,u,N]);const v=s||{},E=o.useRef(null),k=o.useRef(),I=f=>{const d=Object.getOwnPropertyDescriptors(f);d.__original&&delete d.__original;const h=Object.create(Object.getPrototypeOf(f),d);if(!Object.prototype.hasOwnProperty.call(h,"__original"))try{Object.defineProperty(h,"__original",{value:f,writable:!1,enumerable:!1,configurable:!1})}catch{}return h},F=o.useMemo(()=>{const f=v,d=f?.language;let h=f;f&&(E.current&&E.current.__original===f?k.current!==d?(h=I(f),E.current=h,k.current=d):h=E.current:(h=I(f),E.current=h,k.current=d));const x=[R,h,c];return x.t=R,x.i18n=h,x.ready=c,x},[R,v,c,v.resolvedLanguage,v.language,v.languages]);if(s&&u&&!c)throw new Promise(f=>{const d=()=>f();t.lng?U(s,t.lng,i,d):P(s,i,d)});return F};function ue({logoPath:e,repo:t}){const n=e.split("/"),l=n[n.length-1].split(".")[0];return r.jsx("section",{children:r.jsx("a",{href:t,target:"_blank","aria-label":t,children:r.jsx("img",{src:e,alt:l,loading:"lazy",className:"m-2"})})})}function de({paths:e,repo:t}){let n=new Set;return e.forEach(a=>{n.add(r.jsx(ue,{logoPath:a,repo:t},a))}),n.size>1?r.jsx("div",{className:`
+                flex 
+                flex-wrap 
+                shrink-0 
+                justify-between 
+                items-center`,children:n}):n.size===1?n:r.jsx(r.Fragment,{})}function fe({summary:e,children:t}){const n=o.useRef(null),[a,l]=o.useState(!1),[s,p]=o.useState("0px"),[u,S]=o.useState(!1),[m,j]=o.useState(!1),[i,g]=o.useState(""),b=X.useId(),w=()=>l(c=>!c),y=c=>{m!==c&&j(c)},N=c=>{s!==c&&p(c)},L=c=>{u!==c&&S(c)},{t:R}=le();return o.useEffect(()=>{y(!0),a?L(!0):n.current&&N("0px")},[a]),o.useEffect(()=>{if(u&&a&&n.current){const v=`${n.current.scrollHeight}px`;N(v)}},[u,a]),o.useEffect(()=>{const c=n.current;if(!c)return;const v=k=>{k.propertyName==="max-height"&&!a&&(L(!1),y(!1),N("0px")),k.propertyName==="max-height"&&a&&y(!1)},E="ontransitionend"in window||"onwebkittransitionend"in window;if(E)return c.addEventListener("transitionend",v),()=>{c.removeEventListener("transitionend",v)};if(!E){const I=setTimeout(()=>{v({propertyName:"max-height"})},600);return()=>clearTimeout(I)}},[a]),o.useEffect(()=>{g(R(a?"section.opened":"section.closed"))},[a,R]),o.useEffect(()=>{a&&u&&n.current&&n.current.focus()},[a,u]),r.jsxs("div",{className:`
+      w-full 
+      overflow-hidden 
+      rounded 
+      shadow `,children:[r.jsxs("div",{role:"button",tabIndex:0,"aria-expanded":a,"aria-controls":b,onClick:w,onKeyDown:c=>{(c.key==="Enter"||c.key===" ")&&(c.preventDefault(),w())},className:`
+        cursor-pointer 
+        flex 
+        justify-between 
+        items-center 
+        px-4 
+        py-3 
+        font-semibold 
+        text-blue-500 
+        hover:bg-gray-700 
+        select-none`,children:[e,r.jsx("span",{"aria-hidden":"true",className:`
+            inline-block 
+            transition-transform 
+            duration-600 
+            motion-reduce:duration-3000
+            ease-in-out 
+            transform ${a?"rotate-180":""}`,children:"▼"})]}),r.jsx("div",{id:b,ref:n,tabIndex:-1,style:{maxHeight:s},className:`
+          relative
+          overflow-hidden
+          transition-[max-height]
+          duration-600
+          motion-reduce:duration-3000
+          ease-in-out`,children:u&&r.jsx("div",{className:"px-4 py-3",children:t})}),r.jsx("div",{"aria-live":"polite",className:"sr-only","aria-atomic":"true",children:i})]})}function he({project:e,projectsPath:t}){const n=e.title.split(",")[0],a=Y+t+e.fileName,l=new Set,{getLogoURI:s}=B();return e.logos.forEach(p=>{const u=s(p);l.add(u)}),r.jsxs("article",{className:`
+            m-8 
+            bg-gray-900 
+            w-full 
+            max-w-lg   
+            rounded-4xl 
+            shadow-xs`,children:[r.jsxs("div",{className:`
+                    p-6 
+                    text-center`,children:[r.jsxs("span",{className:`
+                        group 
+                        relative 
+                        inline-flex 
+                        items-center 
+                        bg-brand-softer 
+                        text-fg-brand-strong 
+                        text-xs 
+                        font-medium 
+                        px-1.5 
+                        py-0.5 
+                        rounded-sm`,children:[r.jsx("a",{href:e.URL,target:"_blank","aria-label":e.title,className:`
+                            hover:scale-110 
+                            transition 
+                            duration-600 
+                            motion-reduce:duration-3000 
+                            ease-in-out`,children:r.jsx("img",{src:a,className:`
+                                lazy 
+                                w-full 
+                                h-max 
+                                will-change-filter 
+                                filter 
+                                duration-300
+                                hover:drop-shadow-[0_0_2em_#646cffaa]`,alt:n,loading:"lazy"})}),r.jsx(J,{})]}),r.jsx("h4",{className:`
+                        m-6 
+                        text-2xl 
+                        leading-loose 
+                        text-orange-500 
+                        font-semibold 
+                        tracking-tight 
+                        text-heading`,children:e.title}),r.jsx(de,{paths:l,repo:e.repository})]}),r.jsx("div",{className:"space-y-4",children:r.jsxs(fe,{summary:"Découvrez ce projet",children:[r.jsx("h6",{className:"font-extrabold mt-2",children:"contexte"}),r.jsx("p",{children:e.contexte}),r.jsx("h6",{className:"font-extrabold mt-2",children:"objectifs"}),r.jsx("p",{children:e.objectifs}),r.jsx("h6",{className:"font-extrabold mt-2",children:"stack technique"}),r.jsx("p",{children:e.stackTechnique}),r.jsx("h6",{className:"font-extrabold mt-2",children:"compétences développées"}),r.jsx("p",{children:e.competencesDeveloppees}),r.jsx("h6",{className:"font-extrabold mt-2",children:"résultats et impact"}),r.jsx("p",{children:e.resultatsEtImpact}),r.jsx("h6",{className:"font-extrabold mt-2",children:"perspectives d'amélioration"}),r.jsx("p",{children:e.perspectivesAmelioration})]})})]})}function me({projectsPath:e}){const[t,n]=o.useState([]),[a,l]=o.useState(!0),[s]=o.useState(null),p=o.useRef(null);return o.useEffect(()=>{let u=!0;return(async()=>{try{const m=await fetch("./data/projects.json");if(!m.ok)throw new Error(`HTTP error: ${m.status}`);const j=await m.json();u&&(n(j),l(!1))}catch(m){u&&(m instanceof SyntaxError||m instanceof ReferenceError||m instanceof TypeError||m instanceof Error)&&console.log("error: "+m.message)}})(),()=>{u=!1}},[]),a?r.jsx("p",{children:"chargement des projets"}):s?r.jsxs("p",{children:["erreur: ",s]}):r.jsx("div",{ref:p,className:`
+                flex
+                flex-wrap
+                justify-center
+                items-start 
+                h-screen 
+                overflow-y-auto
+                relative`,children:t.map((u,S)=>r.jsx(Q,{options:{root:p.current,rootMargin:"0px",threshold:0},children:r.jsx(he,{project:u,projectsPath:e})},u.number))})}export{me as default};

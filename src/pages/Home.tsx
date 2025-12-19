@@ -7,6 +7,7 @@ import Title3 from '../components/UI/Title3';
 import Title4 from '../components/UI/Title4';
 import Title5 from '../components/UI/Title5';
 import Section from '../components/UI/Section';
+import Link from '../components/UI/Link';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -290,25 +291,10 @@ export default function Home() {
               group
               relative'
           >
-            <a 
+            <Link
               href='https://www.francecompetences.fr/recherche/rncp/38145/'
-              target='_blank'
-              className='
-                block 
-                pt-4 
-                px-4 
-                py-2 
-                pb-4 
-                text-blue-300 
-                hover:text-blue-600 
-                hover:scale-110 
-                transition 
-                duration-600 
-                motion-reduce:duration-3000 
-                ease-in-out'
-            >
-              RNCP 38145
-            </a>
+              text='RNCP 38145'
+            />
             <LinkClickWarning />
           </div>
         </h5>
@@ -323,23 +309,10 @@ export default function Home() {
             group
             relative'
         >
-          <a 
+          <Link
             href='https://openclassrooms.com/fr/paths/900-integrateur-web#projects'
-            target='_blank'
-            className='
-              block 
-              px-4 
-              py-2 
-              text-blue-300 
-              hover:text-blue-600 
-              hover:scale-110 
-              transition
-              duration-600 
-              motion-reduce:duration-3000 
-              ease-in-out'
-          >
-            Suivez le parcours.
-          </a>
+            text='Suivez le parcours.'
+          />
           <LinkClickWarning />
         </div>
         <h6
@@ -359,16 +332,17 @@ export default function Home() {
             target='_blank'
             rel='noopener noreferrer'
             className='
-              pt-8
+              pt-8 
               inline-flex 
               items-center 
               text-blue-300  
               no-underline
               transition 
-              transform 
+              transform
               hover:scale-110 
               hover:brightness-110 
-              hover:shadow-lg'
+              hover:shadow-lg
+              ease-in-out'
           >
             <svg 
               xmlns='http://www.w3.org/2000/svg' 
@@ -444,6 +418,7 @@ export default function Home() {
               <a 
                 href='https://github.com/ericDev1o' 
                 target='_blank'
+                rel='noopener noreferrer'
               >
                 <img 
                   src={githubLogo} 
@@ -467,6 +442,7 @@ export default function Home() {
               <a 
                 href='https://linkedin.com/in/ericfaraut' 
                 target='_blank'
+                rel='noopener noreferrer'
               >
                 <img 
                   src={linkedinLogo} 
@@ -487,21 +463,10 @@ export default function Home() {
                 group
                 relative'
               >
-                <a 
+                <Link
                   href='https://calendly.com/d/cxcb-3st-m8k/15-minutes'
-                  target='_blank'
-                  className='
-                    px-4 
-                    py-2 
-                    text-blue-300 
-                    hover:text-blue-600 
-                    hover:scale-110 
-                    transition
-                    duration-600 
-                    motion-reduce:duration-3000 
-                    ease-in-out'
-                >https://calendly.com/d/cxcb-3st-m8k/15-minutes
-              </a>
+                  text='https://calendly.com/d/cxcb-3st-m8k/15-minutes'
+                />
               <LinkClickWarning />
             </div>
           </div>
@@ -513,6 +478,7 @@ export default function Home() {
           <a 
             href='https://framaforms.org/contact-eric-faraut-1762791991'
             target='_blank'
+            rel='noopener noreferrer'
           >
             <button 
                 className='

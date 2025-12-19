@@ -1,5 +1,6 @@
 import HeadFootLogos from '../containers/HeadFootLogos';
 import LinkClickWarning from './LinkClickWarning';
+import LinkNav from './LinkNav';
 
 export default function Header() {
     return <header className='
@@ -28,108 +29,46 @@ export default function Header() {
                     group 
                     relative '
                 >   
-                    <a 
+                    <LinkNav
                         href='#moi&vous=nous' 
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300 
-                            hover:text-blue-600 
-                            hover:scale-110 
-                            transition 
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            '
-                    >
-                        nous
-                    </a>
-                    <LinkClickWarning />
+                        text='nous'
+                    />
                 </li>
                 <li className='
                     group
                     relative'
                 >   
-                    <a 
+                    <LinkNav
                         href='#competences'
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300
-                            hover:text-blue-600
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            hover:scale-110'
-                    >
-                        compétences
-                    </a>
-                   <LinkClickWarning />
+                        text='compétences'
+                    />
                 </li>
                 <li className='
                     group
                     relative'
                 >   
-                    <a 
+                    <LinkNav 
                         href='#projets'
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300
-                            hover:text-blue-600
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            hover:scale-110'
-                    >
-                        projets
-                    </a>
-                    <LinkClickWarning />
+                        text='projets'
+                    />
                 </li>
                 <li className='
                     group
                     relative'
                 >   
-                    <a 
+                    <LinkNav
                         href='#parcours'
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300
-                            hover:text-blue-600
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            hover:scale-110'
-                    >
-                        parcours
-                    </a>
-                   <LinkClickWarning />
+                        text='parcours'
+                    />
                 </li>
                 <li className='
                     group
                     relative'
                 >   
-                    <a 
+                    <LinkNav
                         href='#contact'
-                        className='
-                            block 
-                            px-4 
-                            py-2 
-                            text-blue-300
-                            hover:text-blue-600
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out 
-                            hover:scale-110'
-                    >
-                        contact
-                    </a>
-                   <LinkClickWarning />
+                        text='contact'
+                    />
                 </li>
             </ul>
         </nav>

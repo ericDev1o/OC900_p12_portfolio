@@ -1,5 +1,4 @@
 import { useSkillsLogo } from '@/contexts/SkillsLogoContext';
-import LinkClickWarning from '../UI/LinkClickWarning';
 
 export default function HeadFootLogos() {
     const { getLogoURI } = useSkillsLogo();
@@ -15,59 +14,51 @@ export default function HeadFootLogos() {
             items-center 
             sm:flex-row
             gap-8'
-        >
-            <li>
+    >
+        <li>
+            <img 
+                src={myLogo} 
+                className=' 
+                    cursor-not-allowed
+                    will-change-filter 
+                    filter 
+                    duration-300
+                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                alt='Eric logo'
+                width={15}
+                height={24}
+            />
+        </li>
+        <li>   
+            <a 
+                href='https://github.com/ericDev1o' 
+                target='_blank'
+            >
                 <img 
-                    src={myLogo} 
-                    className=' 
-                        cursor-not-allowed
+                    src={githubLogo} 
+                    alt='GitHub logo'
+                    width={25}
+                    height={24} 
+                />
+            </a>
+        </li>
+        <li>   
+            <a 
+                href='https://linkedin.com/in/ericfaraut' 
+                target='_blank'
+            >
+                <img 
+                    src={linkedinLogo} 
+                    className='
                         will-change-filter 
                         filter 
                         duration-300
                         hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                    alt='Eric logo'
-                    width={15}
+                    alt='LinkedIn logo' 
+                    width={29}
                     height={24}
                 />
-            </li>
-            <li className='
-                group
-                relative'
-            >   
-                <a 
-                    href='https://github.com/ericDev1o' 
-                    target='_blank'
-                >
-                    <img 
-                        src={githubLogo} 
-                        alt='GitHub logo'
-                        width={25}
-                        height={24} 
-                    />
-                </a>
-                <LinkClickWarning />
-            </li>
-            <li className='
-                group
-                relative'
-            >   
-                <a 
-                    href='https://linkedin.com/in/ericfaraut' 
-                    target='_blank'
-                >
-                    <img 
-                        src={linkedinLogo} 
-                        className='
-                            will-change-filter 
-                            filter 
-                            duration-300
-                            hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                        alt='LinkedIn logo' 
-                        width={29}
-                        height={24}
-                    />
-                </a>
-                <LinkClickWarning />
-            </li>
+            </a>
+        </li>
     </ul>
 }

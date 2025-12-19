@@ -1,4 +1,4 @@
-import{r as o,j as e,H as t,L as a,M as r}from"./index-D5BPvyeu.js";function l(){const[n,s]=o.useState(!1);return o.useEffect(()=>(document.body.style.overflow=n?"hidden":"",()=>{document.body.style.overflow=""}),[n]),e.jsxs("footer",{className:`
+import{r as o,j as e,H as t,L as a,M as r}from"./index-CyrarAL2.js";function l(){const[n,s]=o.useState(!1);return o.useEffect(()=>(document.body.style.overflow=n?"hidden":"",()=>{document.body.style.overflow=""}),[n]),e.jsxs("footer",{className:`
             px-4 
             pb-15
             flex

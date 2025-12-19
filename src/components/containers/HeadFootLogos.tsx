@@ -1,4 +1,4 @@
-import { useSkillsLogo } from '@/contexts/SkillsLogoContext';
+import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 
 export default function HeadFootLogos() {
     const { getLogoURI } = useSkillsLogo();

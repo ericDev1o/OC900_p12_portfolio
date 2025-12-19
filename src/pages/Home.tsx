@@ -3,6 +3,7 @@ import { lazy } from 'react';
 import LinkClickWarning from '../components/UI/LinkClickWarning';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
+import Title3 from '../components/UI/Title3';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -58,19 +59,14 @@ export default function Home() {
         className='
           odd:bg-gray-950 
           even:bg-gray-800
-          pt-6 
           pb-24
           px-20
           '
         >
-        <h3
+        <Title3
+          title='À propos de moi'
           id='moi&vous=nous'
-          className='
-          pt-14
-          pb-4 
-          text-3xl
-          leading-loose'
-        >À propos de moi</h3>
+        />
         <p
           className='
             pt-4'
@@ -291,18 +287,12 @@ export default function Home() {
           pb-25
           px-20'
       >
-        <h3
+        <Title3
+          title='compétences'
           id='competences'
-          className='
-          pt-22 
-          text-3xl
-          leading-loose'
-        >
-          compétences
-        </h3>
+        />
         <h4
             className='
-              pt-10
               pb-8 
               text-2xl
               leading-loose'
@@ -331,15 +321,10 @@ export default function Home() {
           px-20
           min-h-280'
       >
-        <h3
+        <Title3
+          title='projets'
           id='projets'
-          className='
-            pt-16
-            text-3xl
-            leading-loose'
-        >
-          projets
-        </h3>
+        />
         <Portfolio 
           projectsPath={projectsPath}
         />
@@ -351,14 +336,10 @@ export default function Home() {
           pb-22
           px-20'
       >
-        <h3
+        <Title3 
+          title='parcours'
           id='parcours'
-          className='
-            pt-22 
-            pb-6 
-            text-3xl
-            leading-loose'
-        >parcours</h3>
+        />
         <h4
           className='
             pt-2
@@ -488,16 +469,10 @@ export default function Home() {
           even:bg-gray-800
           px-20'
       >
-        <h3
+        <Title3
+          title='contact'
           id='contact'
-          className='
-            pt-22 
-            pb-6 
-            text-3xl
-            leading-loose'
-        >
-          contact
-        </h3>
+        />
         <p
           className='
             pt-8 

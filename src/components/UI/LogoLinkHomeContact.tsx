@@ -1,5 +1,3 @@
-import LinkClickWarning from "./LinkClickWarning"
-
 export default function LogoLinkHomeContact(
     {
         href,
@@ -12,16 +10,11 @@ export default function LogoLinkHomeContact(
         altText: string
     }
 ){
-    return  <div
-        className='
-        group
-        relative'
-    >
-        <a 
+    return <a 
         href={ href }
         target='_blank'
         rel='noopener noreferrer'
-        >
+    >
         <img 
             src={ src }
             className='
@@ -32,8 +25,7 @@ export default function LogoLinkHomeContact(
             duration-300
             hover:drop-shadow-[0_0_2em_#646cffaa]' 
             alt={ altText }
-            loading='lazy' />
-        </a>
-        <LinkClickWarning />
-    </div>
+            loading='lazy' 
+        />
+    </a>
 }

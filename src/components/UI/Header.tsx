@@ -24,46 +24,31 @@ export default function Header() {
                 md:flex-row 
                 justify-between
             '>
-                <li className='
-                    group 
-                    relative '
-                >   
+                <li>   
                     <LinkNav
                         href='#moi&vous=nous' 
                         text='nous'
                     />
                 </li>
-                <li className='
-                    group
-                    relative'
-                >   
+                <li>   
                     <LinkNav
                         href='#competences'
                         text='compétences'
                     />
                 </li>
-                <li className='
-                    group
-                    relative'
-                >   
+                <li>   
                     <LinkNav 
                         href='#projets'
                         text='projets'
                     />
                 </li>
-                <li className='
-                    group
-                    relative'
-                >   
+                <li>   
                     <LinkNav
                         href='#parcours'
                         text='parcours'
                     />
                 </li>
-                <li className='
-                    group
-                    relative'
-                >   
+                <li>   
                     <LinkNav
                         href='#contact'
                         text='contact'

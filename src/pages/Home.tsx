@@ -4,6 +4,7 @@ import LinkClickWarning from '../components/UI/LinkClickWarning';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
 import Title3 from '../components/UI/Title3';
+import Title4 from '../components/UI/Title4';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -107,15 +108,9 @@ export default function Home() {
           </span>
           j'en simplifie l'utilisation par tou·te·s. 
         </p>
-        <h4
-          className='
-            pt-12
-            pb-4 
-            text-2xl
-            leading-loose'
-        >
-          Qui suis-je? 
-        </h4>
+        <Title4
+          title='Qui suis-je?'
+        />
         <p>
           D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution "backend". Intégrateur "web" react passionné par l’accessibilité, je veille à atteindre un 
           <span 
@@ -128,18 +123,11 @@ export default function Home() {
           </span>
             pour un bon référencement et une expérience utilisat·rice·eur fluide.
         </p>
-        <h4
-          className='
-            pt-12 
-            pb-2 
-            text-2xl
-            leading-loose'
-        >
-          Pour quoi faire? 
-        </h4>
+        <Title4
+          title='Pour quoi faire?'
+        />
         <h5
           className='
-            pt-4 
             pb-4 
             text-xl
             leading-loose'
@@ -181,18 +169,11 @@ export default function Home() {
         <p>
           De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
         </p>
-        <h4
-          className='
-            pt-12 
-            pb-2 
-            text-2xl
-            leading-loose'
-        >
-          Quel est mon apport? 
-        </h4>
+        <Title4
+          title='Quel est mon apport?'
+        />
         <h5
         className='
-          pt-4
           pb-4 
           text-xl
           leading-loose'
@@ -415,15 +396,9 @@ export default function Home() {
           className='pt-6'>
           22 avril 2024 à aujourd'hui
         </h6>
-        <h4 
-          className='
-            pt-10
-            pb-12 
-            text-2xl
-            leading-loose'
-        >
-          sachez-en plus sur ce que nous avons co-construit avant
-        </h4>
+        <Title4 
+          title='sachez-en plus sur ce que nous avons co-construit avant'
+        />
         <div 
           className='
             group
@@ -434,6 +409,7 @@ export default function Home() {
             target='_blank'
             rel='noopener noreferrer'
             className='
+              pt-8
               inline-flex 
               items-center 
               text-blue-300  

@@ -8,6 +8,7 @@ import Title4 from '../components/UI/Title4';
 import Title5 from '../components/UI/Title5';
 import Section from '../components/UI/Section';
 import Link from '../components/UI/Link';
+import LogoLink from '@/components/UI/LogoLinkHomeContact';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -410,54 +411,16 @@ export default function Home() {
               justify-center
               items-center'
           >
-            <div
-              className='
-                group
-                relative'
-            >
-              <a 
+            <LogoLink
                 href='https://github.com/ericDev1o' 
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <img 
-                  src={githubLogo} 
-                  className='
-                    p-6 
-                    h-25 
-                    will-change-filter 
-                    filter 
-                    duration-300
-                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                  alt='GitHub logo'
-                  loading='lazy' />
-              </a>
-              <LinkClickWarning />
-            </div>
-            <div 
-              className='
-                group
-                relative'
-            >
-              <a 
-                href='https://linkedin.com/in/ericfaraut' 
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <img 
-                  src={linkedinLogo} 
-                  className='
-                    p-6 
-                    h-25 
-                    will-change-filter 
-                    filter 
-                    duration-300
-                    hover:drop-shadow-[0_0_2em_#646cffaa]' 
-                  alt='LinkedIn logo' 
-                  loading='lazy'/>
-              </a>
-              <LinkClickWarning />
-            </div>
+                src={ githubLogo } 
+                altText='GitHub logo'
+            />
+            <LogoLink
+              href='https://linkedin.com/in/ericfaraut' 
+              src={linkedinLogo} 
+              altText='LinkedIn logo' 
+            />
             <div
               className='
                 group

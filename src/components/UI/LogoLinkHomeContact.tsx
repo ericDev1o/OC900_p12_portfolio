@@ -1,0 +1,39 @@
+import LinkClickWarning from "./LinkClickWarning"
+
+export default function LogoLink(
+    {
+        href,
+        src,
+        altText
+    }:
+    {
+        href: string,
+        src: string | undefined,
+        altText: string
+    }
+){
+    return  <div
+        className='
+        group
+        relative'
+    >
+        <a 
+        href={ href }
+        target='_blank'
+        rel='noopener noreferrer'
+        >
+        <img 
+            src={ src }
+            className='
+            p-6 
+            h-25 
+            will-change-filter 
+            filter 
+            duration-300
+            hover:drop-shadow-[0_0_2em_#646cffaa]' 
+            alt={ altText }
+            loading='lazy' />
+        </a>
+        <LinkClickWarning />
+    </div>
+}

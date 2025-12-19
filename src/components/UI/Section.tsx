@@ -13,7 +13,7 @@ export default function Section(
             odd:bg-gray-950 
             even:bg-gray-800  
             pb-22 
-            px-20'
+            px-4'
     >
         { children }
     </section>

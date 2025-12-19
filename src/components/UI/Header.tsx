@@ -3,7 +3,7 @@ import LinkNav from './LinkNav';
 
 export default function Header() {
     return <header className='
-        px-20 
+        px-4 
         flex 
         justify-between
         items-center'

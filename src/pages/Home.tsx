@@ -6,6 +6,7 @@ import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
 import Title3 from '../components/UI/Title3';
 import Title4 from '../components/UI/Title4';
 import Title5 from '../components/UI/Title5';
+import Section from '../components/UI/Section';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 const Skills = lazy(() => import('../components/containers/Skills'));
@@ -23,15 +24,10 @@ export default function Home() {
 
   return <main>
       <article>
-        <section 
-          className='
-            odd:bg-gray-950 
-            even:bg-gray-800 
-            pt-20 
-            pb-22 
-            px-20'>
+        <Section>
           <h1
             className='
+              pt-20 
               text-5xl 
               leading-loose'
           >
@@ -56,15 +52,8 @@ export default function Home() {
           >
             votre intégrateur "web" react en Île-de-France
           </h2>
-        </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800
-          pb-24
-          px-20
-          '
-        >
+        </Section>
+      <Section>
         <Title3
           title='À propos de moi'
           id='moi&vous=nous'
@@ -239,14 +228,8 @@ export default function Home() {
           </span>
           » – Matt Cutts ancien responsable webspam de Google
         </p>
-      </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800 
-          pb-25
-          px-20'
-      >
+      </Section>
+      <Section>
         <Title3
           title='compétences'
           id='competences'
@@ -273,14 +256,8 @@ export default function Home() {
         <LazyLoadWrapper>
           <Skills />
         </LazyLoadWrapper>
-      </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800
-          px-20
-          min-h-280'
-      >
+      </Section>
+      <Section>
         <Title3
           title='projets'
           id='projets'
@@ -288,14 +265,8 @@ export default function Home() {
         <Portfolio 
           projectsPath={projectsPath}
         />
-      </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800 
-          pb-22
-          px-20'
-      >
+      </Section>
+      <Section>
         <Title3 
           title='parcours'
           id='parcours'
@@ -417,13 +388,8 @@ export default function Home() {
           </a>
           <LinkClickWarning />
         </div>
-      </section>
-      <section 
-        className='
-          odd:bg-gray-950 
-          even:bg-gray-800
-          px-20'
-      >
+      </Section>
+      <Section>
         <Title3
           title='contact'
           id='contact'
@@ -551,7 +517,6 @@ export default function Home() {
             <button 
                 className='
                   mt-18 
-                  mb-10 
                   w-full 
                   sm:w-auto 
                   px-5 
@@ -573,7 +538,7 @@ export default function Home() {
             </a>
             <LinkClickWarning />
           </div>
-      </section>
+      </Section>
   </article>
   <hr 
       className='

@@ -79,9 +79,9 @@ export default function Portfolio(
             ref = {scrollContainerRef}
             className='
                 flex
-                flex-wrap
+                flex-col
                 justify-center
-                items-start 
+                items-center 
                 h-screen 
                 overflow-y-auto
                 relative'

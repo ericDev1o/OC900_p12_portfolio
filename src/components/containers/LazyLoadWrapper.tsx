@@ -5,11 +5,12 @@ import {
 } from "react";
 
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
+
 import { defaultOptions } from "../../config/intersectionObserverConfig";
 
 /**
  * This component is a wrapper for heavy media elements beneath the Hero section.
- * They're displayed only on-demand when user's scroll reahces them, after FirstContentFulPaint.
+ * They're displayed only on-demand when user's scroll reaches them, after FirstContentFulPaint.
  * It is used to reduce 
  *     1) Speed Index: time to display content. The user sees hydrated content.
  *     2) TotalBlockingTime: Time ToInteractive. The user can interact sooner with the page.
@@ -17,7 +18,7 @@ import { defaultOptions } from "../../config/intersectionObserverConfig";
  * @param {ReactNode} children are images to lazy load only when viewport focus reaches them.
  * @param {IntersectionObserverInit} options configure Intersection Observation:
  *     root: is the whole page viewport or a specific component
- *         for example in the Portfolio each ProjctCard is lazyloaded due to significant height.
+ *         for example in the Portfolio each ProjectCard is lazy-loaded due to significant height.
  *         In this case root must be the ProjectCard.
  *     roootMargin: specifying a positive margin anticipates the loading before focus reaches it.
  *         It is smoother for the user.
@@ -43,23 +44,23 @@ export default function LazyLoadWrapper({
     const isVisible: boolean = useIntersectionObserver(ref, memoizedOptions);
 
     return <div
-            ref={ref}
-            className='
-                relative'
-            tabIndex={0}>
-                <div
-                    className={`
-                        transition-opacity 
-                        duration-500 
-                        ease-in-out
-                        ${isVisible 
-                            ? 
-                            "opacity-100 pointer-events-auto" 
-                            : 
-                            "opacity-0 pointer-events-none"}
-                    `}
-                >
-                    {children}
-                </div>
-        </div>
+        ref={ref}
+        className='
+            relative'
+        tabIndex={0}>
+            <div
+                className={`
+                    transition-opacity 
+                    duration-500 
+                    ease-in-out
+                    ${isVisible 
+                        ? 
+                        "opacity-100 pointer-events-auto" 
+                        : 
+                        "opacity-0 pointer-events-none"}
+                `}
+            >
+                {children}
+            </div>
+    </div>
 }

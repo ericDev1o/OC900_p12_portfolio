@@ -6,6 +6,18 @@ import flowbiteReact from "flowbite-react/plugin/vite";
 import path from 'path';
 
 export default defineConfig({
+  esbuild: {
+    loader: 'tsx',
+    include: /\.tsx?$/
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+        '.ts': 'tsx'
+      }
+    }
+  },
   plugins: [
     react(), 
     tsconfigPaths(), 

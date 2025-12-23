@@ -19,11 +19,13 @@
     "resolveJsonModule": true,                 
     "isolatedModules": true,                  
     "jsx": "react-jsx",
-    "types": ["vitest/globals", "vitest/importMeta"]                       
+    "types": [
+      "vitest",
+      "vitest/globals", 
+      "vitest/importMeta"]                       
   },
   "include": [
     "src",
     "vitest-setup.ts",
-    "vitest.d.ts"
-  ]
+    "vitest.d.ts"]
 }

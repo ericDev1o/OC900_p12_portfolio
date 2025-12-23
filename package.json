@@ -1,12 +1,13 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
     "lint": "eslint .",
+    "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "preview": "vite preview",
     "predeploy": "yarn build",

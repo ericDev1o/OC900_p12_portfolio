@@ -238,7 +238,7 @@ export default function Home() {
           <LinkClickWarning />
         </div>
         <h6 className='pt-6'>
-          22 avril 2024 à aujourd'hui
+          22 avril 2024 au 21 décembre 2025
         </h6>
         <Title4 title='sachez-en plus sur ce que nous avons co-construit avant' />
         <div 

@@ -60,12 +60,12 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof r.getDerivedStat
         max-w-[90vw]
         overflow-hidden
         text-ellipsis`,children:"🔒 Vérifiez toujours l'URL avant de cliquer!"})}const $S="./",PS="logos/",ze=$S+PS,eE={HTML:ze+"HTML5.webp",CSS:ze+"CSS3.webp",SCSS:ze+"SCSS.webp",tailwindCSS:ze+"tailwindCSS.webp",flowbiteReact:ze+"flowbite-react.webp",vite:ze+"vite.webp",JS:ze+"JS.webp",TS:ze+"TS.webp",jest:ze+"jest.webp",react:ze+"react.webp",reactRouter:ze+"react-router.webp",redux:ze+"redux.webp",lighthouse:ze+"lighthouse.webp",GTmetrix:ze+"GTmetrix.webp",WAvE:ze+"WAvE.webp",axeDevTool:ze+"axeDevTool.webp",greenITanalysis:ze+"greenITanalysis.webp",htmlValidate:ze+"html-validate.webp",stylelint:ze+"stylelint.webp",pa11y:ze+"pa11y.webp",vitestAxe:ze+"vitest-axe.webp",linkedIn:ze+"linkedIn.webp",gitHub:ze+"gitHub.webp",E:ze+"logo.webp",feedly:ze+"feedly.webp",notion:ze+"notion.webp",excalidraw:ze+"excalidraw.webp"},ay=Ht.createContext(void 0);function tE({children:r}){const i=l=>{const s=eE[l];return s?`${s}`:void 0};return R.jsx(ay.Provider,{value:{getLogoURI:i},children:r})}function ly(){const r=Ht.useContext(ay);if(!r)throw new Error("useSkillsLogo must be used within a SkillsLogoProvider");return r}function nE(r,i){let l=null;const s=(...o)=>{l&&clearTimeout(l),l=setTimeout(()=>r(...o),i)};return s.cancel=()=>{l&&clearTimeout(l),l=null},s}function iE(r,i){const[l,s]=Ht.useState(!1),o=Ht.useRef(null);return Ht.useEffect(()=>{if(!r?.current)return;o.current=nE(s,150);const f=new IntersectionObserver(([p])=>{o.current&&o.current(p.isIntersecting)},i);return f.observe(r.current),()=>{f.disconnect(),o.current&&o.current.cancel()}},[r,i]),l}const aE={root:null,rootMargin:"0px",threshold:0};function im({children:r,options:i}){const l=Ht.useRef(null),s=Ht.useMemo(()=>i??aE,[i]),o=iE(l,s);return R.jsx("div",{ref:l,className:`
-                relative`,tabIndex:0,children:R.jsx("div",{className:`
-                        transition-opacity 
-                        duration-500 
-                        ease-in-out
-                        ${o?"opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}
-                    `,children:r})})}function Bl({title:r,id:i}){return R.jsx("h3",{id:i,className:`
+            relative`,tabIndex:0,children:R.jsx("div",{className:`
+                    transition-opacity 
+                    duration-500 
+                    ease-in-out
+                    ${o?"opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}
+                `,children:r})})}function Bl({title:r,id:i}){return R.jsx("h3",{id:i,className:`
         pt-22 
         pb-6 
         text-3xl
@@ -102,7 +102,7 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof r.getDerivedStat
             text-green-400`,children:r})}function Ic({text:r}){return R.jsx("span",{className:`
             mx-2 
             font-extrabold 
-            text-violet-400`,children:r})}const lE=Ht.lazy(()=>Bf(()=>import("./Portfolio-GCSmHZ7g.js"),[],import.meta.url)),rE=Ht.lazy(()=>Bf(()=>import("./Skills-YppZiGeI.js"),[],import.meta.url));function sE(){const l="./"+"CV/photoCV_w100px.webp",s="projects/",{getLogoURI:o}=ly(),f=o("linkedIn"),p=o("gitHub");return R.jsxs("main",{children:[R.jsxs("article",{children:[R.jsxs(xa,{children:[R.jsx("h1",{className:`
+            text-violet-400`,children:r})}const lE=Ht.lazy(()=>Bf(()=>import("./Portfolio-C65ydi9l.js"),[],import.meta.url)),rE=Ht.lazy(()=>Bf(()=>import("./Skills-CO6Iizq0.js"),[],import.meta.url));function sE(){const l="./"+"CV/photoCV_w100px.webp",s="projects/",{getLogoURI:o}=ly(),f=o("linkedIn"),p=o("gitHub");return R.jsxs("main",{children:[R.jsxs("article",{children:[R.jsxs(xa,{children:[R.jsx("h1",{className:`
               pt-20 
               text-5xl 
               leading-loose`,children:"Bonjour, je suis Eric"}),R.jsx("div",{className:`
@@ -138,7 +138,7 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof r.getDerivedStat
             pt-4
             pb-4`,children:"à votre  service"}),R.jsxs("div",{className:`
             group
-            relative`,children:[R.jsx(Fc,{href:"https://openclassrooms.com/fr/paths/900-integrateur-web#projects",text:"Suivez le parcours."}),R.jsx(Ul,{})]}),R.jsx("h6",{className:"pt-6",children:"22 avril 2024 à aujourd'hui"}),R.jsx(ks,{title:"sachez-en plus sur ce que nous avons co-construit avant"}),R.jsxs("div",{className:`
+            relative`,children:[R.jsx(Fc,{href:"https://openclassrooms.com/fr/paths/900-integrateur-web#projects",text:"Suivez le parcours."}),R.jsx(Ul,{})]}),R.jsx("h6",{className:"pt-6",children:"22 avril 2024 au 21 décembre 2025"}),R.jsx(ks,{title:"sachez-en plus sur ce que nous avons co-construit avant"}),R.jsxs("div",{className:`
             group
             relative`,children:[R.jsxs("a",{href:"/CV/CV+integrateur+web+react+Eric+F.pdf",target:"_blank",rel:"noopener noreferrer",className:`
               pt-8 
@@ -229,4 +229,4 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof r.getDerivedStat
                 flex-col
                 md:flex-row 
                 justify-between
-            `,children:[R.jsx("li",{children:R.jsx(ql,{href:"#moi&vous=nous",text:"nous"})}),R.jsx("li",{children:R.jsx(ql,{href:"#competences",text:"compétences"})}),R.jsx("li",{children:R.jsx(ql,{href:"#projets",text:"projets"})}),R.jsx("li",{children:R.jsx(ql,{href:"#parcours",text:"parcours"})}),R.jsx("li",{children:R.jsx(ql,{href:"#contact",text:"contact"})})]})})]})}const cE=Ht.lazy(()=>Bf(()=>import("./Footer-C7hE1faR.js"),[],import.meta.url)),fE=({children:r})=>R.jsxs(R.Fragment,{children:[R.jsx(oE,{}),r,R.jsx(cE,{})]}),lm=document.getElementById("root");lm&&(FS.setAppElement("#root"),O_.createRoot(lm).render(R.jsx(Ht.StrictMode,{children:R.jsx(tE,{children:R.jsx(fE,{children:R.jsx(sE,{})})})})));export{uE as H,Ul as L,FS as M,dE as R,er as a,hE as b,$S as c,im as d,pE as g,R as j,Ht as r,ly as u};
+            `,children:[R.jsx("li",{children:R.jsx(ql,{href:"#moi&vous=nous",text:"nous"})}),R.jsx("li",{children:R.jsx(ql,{href:"#competences",text:"compétences"})}),R.jsx("li",{children:R.jsx(ql,{href:"#projets",text:"projets"})}),R.jsx("li",{children:R.jsx(ql,{href:"#parcours",text:"parcours"})}),R.jsx("li",{children:R.jsx(ql,{href:"#contact",text:"contact"})})]})})]})}const cE=Ht.lazy(()=>Bf(()=>import("./Footer-Dcv92umF.js"),[],import.meta.url)),fE=({children:r})=>R.jsxs(R.Fragment,{children:[R.jsx(oE,{}),r,R.jsx(cE,{})]}),lm=document.getElementById("root");lm&&(FS.setAppElement("#root"),O_.createRoot(lm).render(R.jsx(Ht.StrictMode,{children:R.jsx(tE,{children:R.jsx(fE,{children:R.jsx(sE,{})})})})));export{uE as H,Ul as L,FS as M,dE as R,er as a,hE as b,$S as c,im as d,pE as g,R as j,Ht as r,ly as u};

@@ -1,5 +1,5 @@
 import { logos } from '../config/logoPathsConfig';
-import { LogoKey } from '../types/LogoKey';
+import type { LogoKey } from '../types/LogoKey';
 import { createContext, ReactNode, useContext } from 'react';
 
 interface SkillsLogoContextType {

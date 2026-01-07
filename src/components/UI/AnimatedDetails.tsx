@@ -14,7 +14,7 @@ import { useTranslation } from 'react-i18next';
  * @returns {ReactNode} label of hidden content, arrow to open/close and content.
  */
 export default function AnimatedDetails(
-  { summary, children }: { summary: string; children: React.ReactNode }
+  { summary, children }: { summary: string; children: ReactNode }
 ) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);

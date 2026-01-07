@@ -1,5 +1,5 @@
 import { logos } from '../config/logoPathsConfig';
-import { LogoKey } from '../types/LogoKey';
+import type { LogoKey } from '../types/LogoKey';
 import { createContext, ReactNode, useContext } from 'react';
 
 interface SkillsLogoContextType {
@@ -17,7 +17,7 @@ const SkillsLogoContext = createContext<SkillsLogoContextType | undefined>(undef
  * @returns {SkillsLogoContextType} an object which getLogoURI function that
  * returns for a given key its corresponding logo image file URI.
  */
-export function SkillsLogoProvider({children}: {children: React.ReactNode}) {
+export function SkillsLogoProvider({children}: {children: ReactNode}) {
     const getLogoURI = (key: LogoKey) => {
         const fileFullPath = logos[key];
         return fileFullPath ? `${fileFullPath}` : undefined;

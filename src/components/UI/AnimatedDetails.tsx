@@ -24,41 +24,27 @@ export default function AnimatedDetails(
 
   const contentId = React.useId();
 
-  const toggle = () => setIsOpen(open => !open);
+  const toggle = () => {
+    setIsTransitioning(true);
 
-  const setIsTransitioningCheck = (on: boolean) => {
-    if(isTransitioning !== on)
-      setIsTransitioning(on);
-  };
-
-  const setMaxHeightCheck = (height: string) => {
-    if(maxHeight !== height)
-      setMaxHeight(height);
-  };
-
-  const setShouldRenderCheck = (on: boolean) => {
-    if(shouldRender !== on)
-      setShouldRender(on);
+    if(! isOpen){
+      setShouldRender(true);
+      setIsOpen(true);
+    }
+    else {
+      setMaxHeight('0px');
+      setIsOpen(false);
+    }
   };
 
   const { t } = useTranslation();
 
   useEffect(() => {
-    setIsTransitioningCheck(true);
-    if (isOpen) {
-      setShouldRenderCheck(true);
-    } else {
-      if (contentRef.current) {
-        setMaxHeightCheck('0px');
-      }
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
     if (shouldRender && isOpen && contentRef.current) {
-      const height = contentRef.current.scrollHeight;
-      const heightPxStr = `${height}px`;
-      setMaxHeightCheck(heightPxStr);
+      requestAnimationFrame(() => {
+        const height = contentRef.current?.scrollHeight;
+        setMaxHeight(`${height}px`);
+      });
     }
   }, [shouldRender, isOpen]);
 
@@ -67,13 +53,12 @@ export default function AnimatedDetails(
     if (!content) return;
 
     const onTransitionEnd = (event: TransitionEvent) => {
-      if (event.propertyName === 'max-height' && !isOpen) {
-        setShouldRenderCheck(false);
-        setIsTransitioningCheck(false);
-        setMaxHeightCheck('0px');
-      }
-      if (event.propertyName === 'max-height' && isOpen) {
-        setIsTransitioningCheck(false);
+      if (event.propertyName === 'max-height') {
+        setIsTransitioning(false);
+        if(! isOpen) {
+          setShouldRender(false);
+          setMaxHeight('0px');
+        }
       }
     };
 

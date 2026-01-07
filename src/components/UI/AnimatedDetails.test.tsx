@@ -2,7 +2,6 @@ import { render } from '@testing-library/react';
 import { axe } from 'vitest-axe';
 
 import AnimatedDetails from './AnimatedDetails';
-import { toHaveNoViolations } from 'vitest-axe/matchers';
 
 describe('AnimatedDetails custom accordion component', () => {
     it('should have no axe accessibility violations', async () => {

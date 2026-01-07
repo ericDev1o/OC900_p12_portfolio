@@ -10,7 +10,7 @@
  * @returns {((...args: Parameters<T>) => void) & { cancel: () => void}}
  * debounce timer function with cancel function
  */
-export default function debounce<T extends (...args: any[]) => void>(fn: T, delay: number):
+export default function debounce<T extends (...args: Parameters<T>[]) => void>(fn: T, delay: number):
  ((...args: Parameters<T>) => void) & { cancel: () => void}
  {
     let timer: ReturnType<typeof setTimeout> | null = null;

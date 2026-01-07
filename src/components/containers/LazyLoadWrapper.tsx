@@ -2,11 +2,11 @@ import {
     ReactNode, 
     useMemo, 
     useRef
-} from "react";
+} from 'react';
 
-import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
-import { defaultOptions } from "../../config/intersectionObserverConfig";
+import { defaultOptions } from '../../config/intersectionObserverConfig';
 
 /**
  * This component is a wrapper for heavy media elements beneath the Hero section.
@@ -55,9 +55,9 @@ export default function LazyLoadWrapper({
                     ease-in-out
                     ${isVisible 
                         ? 
-                        "opacity-100 pointer-events-auto" 
+                        'opacity-100 pointer-events-auto' 
                         : 
-                        "opacity-0 pointer-events-none"}
+                        'opacity-0 pointer-events-none'}
                 `}
             >
                 {children}

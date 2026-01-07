@@ -1,4 +1,4 @@
-import '../../types/Project';
+import type { Project } from '../../types/Project';
 
 import { basePath } from '../../config/logoPathsConfig';
 

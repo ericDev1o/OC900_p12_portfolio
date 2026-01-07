@@ -1,7 +1,7 @@
 /**
  * This is a type for data in /data/projects.json
  */
-type Project = {
+export type Project = {
     index: number, 
     "URL": string,
     "repository": string,

@@ -3,9 +3,9 @@ import flowbitePlugin from 'flowbite/plugin';
 
 export default {
   content: [
-    "./src/**/*.{ts,tsx}",
-    "./node_modules/flowbite-react/**/*.js",
-    "./node_modules/flowbite/**/*.js"
+    './src/**/*.{ts,tsx}',
+    './node_modules/flowbite-react/**/*.js',
+    './node_modules/flowbite/**/*.js'
   ],
   plugins: [
     flowbitePlugin

@@ -86,7 +86,7 @@ export default function Portfolio(
                 overflow-y-auto
                 relative'
         >
-            {projects.map((project, index) => (
+            {projects.map((project) => (
                 <LazyLoadWrapper
                         key={project.number}
                         options={{ 

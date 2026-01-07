@@ -1,7 +1,7 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
 
-import { TestProviders } from "./TestProviders";
+import { TestProviders } from './TestProviders';
 
 const customRender = (
     ui: ReactElement,

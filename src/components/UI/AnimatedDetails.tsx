@@ -21,7 +21,7 @@ export default function AnimatedDetails(
   const [maxHeight, setMaxHeight] = useState('0px');
   const [shouldRender, setShouldRender] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [ariaMessage, setAriaMessage] = useState('');
+
   const contentId = React.useId();
 
   const toggle = () => setIsOpen(open => !open);
@@ -136,10 +136,6 @@ export default function AnimatedDetails(
   }, [isOpen]);
 
   useEffect(() => {
-    setAriaMessage(isOpen ? t('section.opened') : t('section.closed'));
-  }, [isOpen, t]);
-
-  useEffect(() => {
     if (isOpen && shouldRender && contentRef.current) {
       contentRef.current.focus();
     }
@@ -208,7 +204,7 @@ export default function AnimatedDetails(
         {shouldRender && <div className='px-4 py-3'>{children}</div>}
       </div>
       <div aria-live='polite' className='sr-only' aria-atomic='true'>
-        {ariaMessage}
+        {isOpen ? t('section.opened') : t('section.closed')}
       </div>
     </div>
   );

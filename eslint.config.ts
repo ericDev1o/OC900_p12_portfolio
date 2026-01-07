@@ -11,15 +11,15 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export default defineConfig([
   globalIgnores(['dist']),
   {
-    files: ['**/*.{ts, tsx}'],
+    files: ['**/*.{ts,tsx}'],
     plugins: {
-      '@typescript-eslint': tseslint/*,
-      'prettier': prettierPlugin*/
+      '@typescript-eslint': tseslint
+      // 'prettier': prettierPlugin*/
     },
     extends: [
-      reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite/*,
-      'prettier'*/
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite
+      // 'prettier'
     ],
     languageOptions: {
       parser: esparser,
@@ -34,8 +34,8 @@ export default defineConfig([
     rules: {
       ...tseslint.configs.recommended.rules,
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
-      'quotes': ['error', 'single', {'avoidEscape': true}]/*,
-      'prettier/prettier': 'error'*/
+      'quotes': ['error', 'single', {'avoidEscape': true}]
+      // 'prettier/prettier': 'error'
     },
-  } satisfies Linter.Config,
+  } satisfies Linter.Config[],
 ])

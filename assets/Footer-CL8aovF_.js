@@ -1,8 +1,8 @@
-import{r as o,j as e,H as t,L as a,M as r}from"./index-BXJIRFDn.js";function l(){const[n,s]=o.useState(!1);return o.useEffect(()=>(document.body.style.overflow=n?"hidden":"",()=>{document.body.style.overflow=""}),[n]),e.jsxs("footer",{className:`
+import{r as o,j as e,H as t,L as r,M as a}from"./index-ABNPatss.js";function l(){const[n,s]=o.useState(!1);return o.useEffect(()=>(document.body.style.overflow=n?"hidden":"",()=>{document.body.style.overflow=""}),[n]),e.jsxs("footer",{className:`
             px-4 
             pb-15
             flex
-            justify-between`,children:[e.jsx(t,{}),e.jsx("button",{className:`
+            justify-between`,children:[e.jsx(t,{}),e.jsx("p",{className:"mx-4",children:"© 2026 Mon Portfolio. Tous droits réservés. Code source disponible sous licence ISC sur GitHub."}),e.jsx("button",{className:`
                 cursor-pointer 
                 font-medium 
                 text-fg-brand  
@@ -12,7 +12,7 @@ import{r as o,j as e,H as t,L as a,M as r}from"./index-BXJIRFDn.js";function l()
                 duration-600 
                 motion-reduce:duration-3000 
                 ease-in-out 
-                hover:scale-110`,onClick:()=>s(!0),children:"mentions légales"}),e.jsx(a,{}),e.jsxs(r,{isOpen:n,onRequestClose:()=>s(!1),contentLabel:"mentions légales",overlayClassName:`
+                hover:scale-110`,onClick:()=>s(!0),children:"mentions légales"}),e.jsx(r,{}),e.jsxs(a,{isOpen:n,onRequestClose:()=>s(!1),contentLabel:"mentions légales",overlayClassName:`
                 fixed 
                 inset-0 
                 bg-black 

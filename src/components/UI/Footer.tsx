@@ -20,6 +20,10 @@ export default function Footer() {
             justify-between'
     >
         <HeadFootLogos />
+        <p className='mx-4'>
+            &copy; 2026 Mon Portfolio. Tous droits réservés.  
+            Code source disponible sous licence ISC sur GitHub.
+        </p>
         <button 
             className='
                 cursor-pointer 

@@ -3,7 +3,7 @@ import { act, renderHook } from '@testing-library/react';
 import { Procedure } from '@vitest/spy';
 import { Mock } from 'vitest';
 
-import useIntersectionObserver from './useIntersectionObserver';
+import useIntersectionObserver from '../../src/components/hooks/useIntersectionObserver';
 
 vi.useFakeTimers();
 

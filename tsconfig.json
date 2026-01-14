@@ -11,7 +11,7 @@
     "allowJs": false,                         
     "skipLibCheck": true,                     
     "esModuleInterop": true,                  
-    "allowSyntheticDefaultImports": true,    
+    "allowSyntheticDefaultImports": true,
     "strict": true,                          
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",                      
@@ -26,6 +26,8 @@
   },
   "include": [
     "src",
+    "test",
     "vitest-setup.ts",
-    "vitest.d.ts"]
+    "vitest.d.ts"
+  ]
 }

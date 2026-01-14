@@ -4,7 +4,7 @@ import {
     useRef } 
 from 'react';
 
-import type { Project } from '@/types/Project';
+import type { Project } from '@/custom/types/Project';
 
 import ProjectCard from '../UI/ProjectCard';
 import LazyLoadWrapper from './LazyLoadWrapper';

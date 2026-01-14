@@ -4,7 +4,8 @@ import {
     useRef, 
     useState 
 } from 'react';
-import debounce from '../../helpers/debounce';
+
+import debounce from '../../custom/helpers/debounce';
 
 type DebouncedFunction = ((visible: boolean) => void) & { cancel: () => void};
 

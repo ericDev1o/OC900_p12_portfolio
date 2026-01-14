@@ -1,4 +1,4 @@
-import type { LogoKey } from '@/types/LogoKey';
+import type { LogoKey } from '@/custom/types/LogoKey';
 
 export const basePath = import.meta.env.BASE_URL || '/';
 export const logosPaths = 'logos/';

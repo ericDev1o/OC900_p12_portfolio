@@ -1,5 +1,5 @@
 /**
- * This is a type for data in /data/projects.json
+ * This is a type for data in /public/data/projects.json
  */
 export type Project = {
     index: number, 

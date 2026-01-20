@@ -27,7 +27,7 @@
   "include": [
     "src",
     "test",
-    "vitest-setup.ts",
-    "vitest.d.ts"
+    "vitest-jsdom-setup.ts",
+    "vitest-browser-setup.ts"
   ]
 }

@@ -24,22 +24,21 @@ export default function useIntersectionObserver(
     const debouncedSetIntersecting = useRef<DebouncedFunction>(null);
 
     useEffect(() => {
-        if( ! ref?.current) return;
+        const target = ref.current;
+        if( ! target || typeof IntersectionObserver === 'undefined') return;
 
-        debouncedSetIntersecting.current = debounce(setIsIntersecting, 150);
+        const debounced = debounce(setIsIntersecting, 150);
+        debouncedSetIntersecting.current = debounced;
 
         const observer = new IntersectionObserver(
-            ([entry]) => {
-                debouncedSetIntersecting.current && 
-                debouncedSetIntersecting.current(entry.isIntersecting);
-            }, options);
+            ([entry]) => debounced(entry.isIntersecting)
+            , options);
 
-        observer.observe(ref.current);
+        observer.observe(target);
 
         return () => {
             observer.disconnect();
-            debouncedSetIntersecting.current && 
-            debouncedSetIntersecting.current.cancel();
+            debounced.cancel();
         };
     }, [ref, options]);
 

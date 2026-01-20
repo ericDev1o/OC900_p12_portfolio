@@ -20,7 +20,7 @@ yarn.lock
 # vite
 dist
 
-# vitest until 0.1.0
+# vitest
 coverage
 
 # flowbite-react

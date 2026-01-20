@@ -1,5 +1,7 @@
-import { render } from '../test-utils';
+import { describe, it, expect } from 'vitest';
 import { axe } from 'vitest-axe';
+
+import { render } from '../test-utils';
 
 import Home from '../../src/pages/Home';
 

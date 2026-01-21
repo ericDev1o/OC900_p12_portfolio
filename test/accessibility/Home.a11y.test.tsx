@@ -1,7 +1,9 @@
-import { render } from '../../test/test-utils';
+import { describe, it, expect } from 'vitest';
 import { axe } from 'vitest-axe';
 
-import Home from './Home';
+import { render } from '../test-utils';
+
+import Home from '../../src/pages/Home';
 
 describe('Home page', () => {
     it('should have no axe accessibility violations', async () => {

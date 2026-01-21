@@ -1,21 +1,17 @@
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  esbuild: {
-    loader: 'tsx',
-    include: /\.tsx?$/
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      loader: {
-        '.js': 'jsx',
-        '.ts': 'tsx'
-      }
-    }
-  },
   test: {
     globals: true,
-    environment: 'jsdom',
-    setupFiles: './vitest-setup.ts',   
-  }
-});   
+    include:[
+      'test/accessibility/**/*.pa11y.test.ts'   
+    ],
+    exclude:[
+        'test/accessibility/**/*.a11y.test.tsx',
+        'test/integration/**/*.integration.test.ts',
+        'test/accessibility/unit/**/*.a11y.test.tsx'
+    ],
+    /* implicit default */
+    environment: 'node'
+    }
+});

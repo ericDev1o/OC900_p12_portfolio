@@ -20,13 +20,10 @@ export default function AnimatedDetails(
   const [isOpen, setIsOpen] = useState(false);
   const [maxHeight, setMaxHeight] = useState('0px');
   const [shouldRender, setShouldRender] = useState(false);
-  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const contentId = React.useId();
 
   const toggle = () => {
-    setIsTransitioning(true);
-
     if(! isOpen){
       setShouldRender(true);
       setIsOpen(true);
@@ -53,71 +50,35 @@ export default function AnimatedDetails(
     if (!content) return;
 
     const onTransitionEnd = (event: TransitionEvent) => {
-      if (event.propertyName === 'max-height') {
-        setIsTransitioning(false);
-        if(! isOpen) {
-          setShouldRender(false);
-          setMaxHeight('0px');
-        }
+      if (event.propertyName !== 'max-height') return;
+        
+      if(! isOpen) 
+      {
+        setShouldRender(false);
+        setMaxHeight('0px');
       }
     };
 
-    const isTransitionEndSupported = 
+    const supportsTransitionEnd = 
       'ontransitionend' in window 
       ||
       'onwebkittransitionend' in window; // old Safari and Chrome browsers
-    if(isTransitionEndSupported) {
+      
+    if(supportsTransitionEnd) {
       content.addEventListener('transitionend', onTransitionEnd);
+
       return () => {
         content.removeEventListener('transitionend', onTransitionEnd);
       };
     }
-    else {
-      const transitionDuration = 600;
 
-      if(! isTransitionEndSupported) {
-        const timeoutId = setTimeout(() => {
-          onTransitionEnd({
-            propertyName: 'max-height',
-            elapsedTime: 0,
-            pseudoElement: '',
-            bubbles: false,
-            cancelBubble: false,
-            cancelable: false,
-            composed: false,
-            currentTarget: null,
-            defaultPrevented: false,
-            eventPhase: 0,
-            isTrusted: false,
-            returnValue: false,
-            srcElement: null,
-            target: null,
-            timeStamp: 0,
-            type: '',
-            composedPath: function (): EventTarget[] {
-              throw new Error('Function not implemented.');
-            },
-            initEvent: function (type: string, bubbles?: boolean, cancelable?: boolean): void {
-              throw new Error('Function not implemented.');
-            },
-            preventDefault: function (): void {
-              throw new Error('Function not implemented.');
-            },
-            stopImmediatePropagation: function (): void {
-              throw new Error('Function not implemented.');
-            },
-            stopPropagation: function (): void {
-              throw new Error('Function not implemented.');
-            },
-            NONE: 0,
-            CAPTURING_PHASE: 1,
-            AT_TARGET: 2,
-            BUBBLING_PHASE: 3
-          });
-        }, transitionDuration);
-        return () => clearTimeout(timeoutId);
-      }
-    }
+    const TRANSITION_DURATION_MS = 600;
+
+    const timeoutId = setTimeout(() => {
+      onTransitionEnd({ propertyName: 'max-height' } as TransitionEvent);
+        }, TRANSITION_DURATION_MS);
+
+    return () => clearTimeout(timeoutId);
   }, [isOpen]);
 
   useEffect(() => {

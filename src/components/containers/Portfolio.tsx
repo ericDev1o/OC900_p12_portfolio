@@ -4,6 +4,8 @@ import {
     useRef } 
 from 'react';
 
+import type { Project } from '@/custom/types/Project';
+
 import ProjectCard from '../UI/ProjectCard';
 import LazyLoadWrapper from './LazyLoadWrapper';
 
@@ -37,7 +39,7 @@ export default function Portfolio(
         output: 
         - verbose heavy state management,
         - memory leak and cleanup overhead
-        It's a workaround before <Suspense>, SWR and <ErrorBoundary> is used.
+        It's a workaround before Astro or else <Suspense> and SWR is used.
     */
     useEffect(() => 
         { 

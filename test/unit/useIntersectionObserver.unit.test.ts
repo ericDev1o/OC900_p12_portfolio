@@ -106,6 +106,7 @@ describe('useIntersectionObserver', () => {
      *     -> hook re-render
      */
     it('must set isIntersecting to true and rerender once on intersection', async () => {
+        // Arrange
         const element = document.createElement('div')
         const ref = { current: element };
 
@@ -114,7 +115,7 @@ describe('useIntersectionObserver', () => {
         );
 
         expect(result.current).toBe(false);
-
+        // Act
         act(() => {
             ioMock.trigger([
                 {
@@ -126,7 +127,7 @@ describe('useIntersectionObserver', () => {
 
             vi.advanceTimersByTime(150);
         })
-        
+        // Assert
         expect(result.current).toBe(true);
     });
 
@@ -137,12 +138,13 @@ describe('useIntersectionObserver', () => {
      *     -> DOM API good practices
      */
     it('must disconnect observer on unmount to avoid memory leak', () => {
+        // Arrange
         const ref = { current: document.createElement('div') };
 
         const { unmount } = renderHook(() => useIntersectionObserver(ref, {}));
-        
+        // Act
         unmount();
-
+        // Assert
         expect(disconnectMock).toHaveBeenCalled();
     });
 
@@ -159,14 +161,15 @@ describe('useIntersectionObserver', () => {
      *     c) depends on mock implementation
      */
     it('should not do state update after unmount', () => {
+        // Arrange
         const ref = { current: document.createElement('div') };
 
         const { unmount } = renderHook(() =>
             useIntersectionObserver(ref, {})
         );
-
+        // Act
         unmount();
-
+        // Assert
         expect(() => {
             ioMock.trigger([{ isIntersecting: true, target: ref.current! }]);
         }).not.toThrow();

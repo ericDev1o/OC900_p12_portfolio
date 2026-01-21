@@ -1,28 +1,34 @@
-# clone & install using yarn, be welcome
+# Readme
+[![License: ISC](https://img.shields.io/badge/license-ISC-lightgrey.svg)](license.md)
+[![Accessibility tests](https://img.shields.io/badge/tests-manual-yellow.svg)](#test-please)
+
+## clone & install using yarn, be welcome
 git clone https://github.com/ericDev1o/OC900_p12_portfolio.git
 yarn install
-## detail: default branch is gh-pages
-## you should, as often as possible, to meet portfolio's peer requirements, run
+### detail: default branch is gh-pages
+### you should, as often as possible, to meet portfolio's peer requirements, run
 yarn upgrade-interactive
 
-# dev taking advantage of HotModuleReload HMR
+## dev taking advantage of HotModuleReload HMR
 yarn dev
 
-# validate please
-## you should keep the following in mind for a future script
-### HyperTextMarkupLanguage HTML
-#### WorldWideWebConsortium W3C 
-##### check online; please kindly signal if I oversaw the offline same 
+## validate please
+### you should keep the following in mind for a future script
+#### HyperTextMarkupLanguage HTML
+##### WorldWideWebConsortium W3C 
+###### check online; please kindly signal if I oversaw the offline same 
 [text](https://validator.w3.org/nu/)
-#### html-validate
-##### prefer offline; first check ./.html-validate.json & then run in your CommandLineInterface CLI 
+##### html-validate
+###### prefer offline; first check ./.html-validate.json & then run in your CommandLineInterface CLI
+yarn html-val
+#### details
 ./node_modules/html-validate/bin/html-validate.mjs ./index.html
-### CascadingStyleSheets CSS
-#### W3C
+#### CascadingStyleSheets CSS
+##### W3C
 [text](https://jigsaw.w3.org/css-validator/)
-#### stylelint pre-validate by linting
+##### stylelint pre-validate by linting
 yarn add -D stylelint stylelint-config-standard stylelint-config-tailwindcss
-##### stylelint.config.mjs
+###### stylelint.config.mjs
 /** @type {import('stylelint').Config} */
 export default {
     extends: [
@@ -30,41 +36,51 @@ export default {
         'stylelint-config-tailwindcss'    
     ]
 }
-### accessibility a11y
-#### Tailwind motion-reduce
-##### chromium browser manual test
+#### accessibility a11y
+##### Tailwind motion-reduce
+###### chromium browser manual test
 F12 dev tools -> 3 vertical ... -> More tools > -> Rendering -> Emulate CSS media feature prefers-reduced-motion -> prefers-reduced-motion: reduce -> you open your project details in 3s. instead of 0.6s
 
-# preview package.json script build & then preview
+## test please
+### pa11y
+yarn test:node
+#### details
+vitest run --config vitest.config.ts
+### axe a11y & Intersection Observer useEffect
+yarn test:jsdom
+#### details
+vitest run --config vitest.jsdom.config.ts
+
+## preview package.json script build & then preview
 yarn build
 yarn preview
-## details
+### details
 vite build --base=./
 vite preview
-## detail: package.json script is from now on written PJS
+### detail: package.json script is from now on written PJS
 
-# deploy
-## run PJS predeploy & then deploy script
+## deploy
+### run PJS predeploy & then deploy script
 yarn predeploy
 yarn deploy
-## details
+#### details
 yarn build
 gh-pages -d dist
 
 
 
 
-# do you need help for markdown reading or preferred yarn install only?
-## reading markdown
-### titles as 2nd color for all non CLI is preferred for multi-line platform & mobile inclusion rather than
+## do you need help for markdown reading or preferred yarn install only?
+### reading markdown
+#### titles as 2nd color for all non CLI is preferred for multi-line platform & mobile inclusion rather than
 [text](https://github.com/orgs/community/discussions/31570)
-### please kindly signal if I oversaw the current
+#### please kindly signal if I oversaw the current
 [text](https://code.visualstudio.com/docs/languages/markdown)
 
-## yarn install
-### upgrade yarn
-#### minor version
-##### the following answer finally given by brave's leo AI might do it for you; it once did for last peer node version by eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p12_portfolio$ 
+### yarn install
+#### upgrade yarn
+##### minor version
+###### the following answer finally given by brave's leo AI might do it for you; it once did for last peer node version by eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p12_portfolio$ 
 which yarn
 ###### /home/eric/.nvs/node/24.10.0/x64/bin/yarn
 corepack yarn -v
@@ -95,11 +111,11 @@ yarn -v
 ###### 4.12.0
 
 
-### after you're done, do you still need help?
-#### try follow https://yarnpkg.com/getting-started/install or
-#### fallback on https://classic.yarnpkg.com/en/docs/install#debian-stable and 
-#### https://yarnpkg.com/migration/guide
-##### one or many following (abbreviated to complete ...) commands might help
+#### after you're done, do you still need help?
+##### try follow https://yarnpkg.com/getting-started/install or
+##### fallback on https://classic.yarnpkg.com/en/docs/install#debian-stable and 
+##### https://yarnpkg.com/migration/guide
+###### one or many following (abbreviated to complete ...) commands might help
 which yarn
 ###### ...nvs...node/25.../bin/x64
 ###### /usr/local/bin...
@@ -124,9 +140,9 @@ yarn set version stable
 yarn install
 yarn -v
 
-## preinstall a font
+### preinstall a font
 https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&subset=latin&display=swap
-### keep only latin 
+#### keep only latin 
 /* latin */ 
 @font-face 
 { 

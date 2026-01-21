@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "vite build --base=./",
     "lint": "eslint --fix .",
+    "html-val": "./node_modules/html-validate/bin/html-validate.mjs ./index.html",
     "test:node": "vitest run --config vitest.config.ts",
     "test:jsdom": "vitest run --config vitest.jsdom.config.ts",
     "preview": "vite preview",

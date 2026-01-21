@@ -7,6 +7,7 @@ import { describe, it } from 'vitest';
 
 describe('accessibility test', () => {
     it('should generate pa11y report', async () => {
+        // Arrange
         const results = await pa11y('https://ericdev1o.github.io/OC900_p12_portfolio');
         const html = await htmlReporter.results(results);
 
@@ -14,7 +15,7 @@ describe('accessibility test', () => {
         if (!fs.existsSync(reportDir)) {
         fs.mkdirSync(reportDir, { recursive: true });
         }
-
+        // Act
         await writeFile(path.resolve(reportDir, 'pa11y-report.html'), html, 'utf-8');
     }, 30000);
 });

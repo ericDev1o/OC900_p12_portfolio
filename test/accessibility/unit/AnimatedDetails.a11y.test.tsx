@@ -6,6 +6,7 @@ import AnimatedDetails from '../../../src/components/UI/AnimatedDetails';
 
 describe('AnimatedDetails custom accordion component', () => {
     it('should have no axe accessibility violations', async () => {
+        // Arrange
         const { container } = render
         (
             <AnimatedDetails summary='Découvrez ce projet'>
@@ -13,7 +14,9 @@ describe('AnimatedDetails custom accordion component', () => {
                 <p> test paragraph</p>
             </AnimatedDetails>
         );
+        // Act
         const results = await axe(container);
+        // Assert
         expect(results).toHaveNoViolations();
     });
 });

@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.2.6",
+  "version": "0.2.7",
   "type": "module",
   "scripts": {
     "clean": "vite:clean",
@@ -11,6 +11,7 @@
     "html-val": "./node_modules/html-validate/bin/html-validate.mjs ./index.html",
     "test:node": "vitest run --config vitest.config.ts",
     "test:jsdom": "vitest run --config vitest.jsdom.config.ts",
+    "test:browser": "vitest run --config vitest.browser.config.ts",
     "preview": "vite preview",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"

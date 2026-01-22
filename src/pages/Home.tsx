@@ -1,13 +1,15 @@
 import { lazy } from 'react';
 
-import LinkClickWarning from '../components/UI/LinkClickWarning';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
+
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
+
 import Title3 from '../components/UI/Title3';
 import Title4 from '../components/UI/Title4';
 import Title5 from '../components/UI/Title5';
 import Section from '../components/UI/Section';
 import Link from '../components/UI/Link';
+import LinkClickWarning from '../components/UI/LinkClickWarning';
 import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
 import SpanGreen from '../components/UI/SpanGreen';
 import SpanViolet from '../components/UI/SpanViolet';

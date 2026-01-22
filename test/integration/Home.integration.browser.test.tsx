@@ -1,5 +1,6 @@
-import { render } from '../test-utils';
 import { screen } from '@testing-library/react';
+
+import { render } from '../test-utils';
 
 import Home from '../../src/pages/Home';
 

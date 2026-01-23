@@ -15,7 +15,7 @@ export default defineConfig({
     },
     setupFiles: './vitest-browser-setup.ts',
     include:[
-      'test/integration/**/*.browser.integration.test.tsx'
+      'test/integration/**/*.integration.browser.test.tsx'
     ],
     exclude:[
       'test/accessibility/**/*.pa11y.test.ts',

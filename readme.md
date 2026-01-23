@@ -18,11 +18,6 @@ yarn dev
 ##### WorldWideWebConsortium W3C 
 ###### check online; please kindly signal if I oversaw the offline same 
 [text](https://validator.w3.org/nu/)
-##### html-validate
-###### prefer offline; first check ./.html-validate.json & then run in your CommandLineInterface CLI
-yarn html-val
-#### details
-./node_modules/html-validate/bin/html-validate.mjs ./index.html
 #### CascadingStyleSheets CSS
 ##### W3C
 [text](https://jigsaw.w3.org/css-validator/)

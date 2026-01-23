@@ -22,7 +22,6 @@ export const logos: Record<LogoKey, string> = {
     WAvE: fullPath + 'WAvE.webp',
     axeDevTool: fullPath + 'axeDevTool.webp',
     greenITanalysis: fullPath + 'greenITanalysis.webp',
-    htmlValidate: fullPath + 'html-validate.webp',
     stylelint: fullPath + 'stylelint.webp',
     pa11y: fullPath + 'pa11y.webp',
     vitestAxe: fullPath + 'vitest-axe.webp',

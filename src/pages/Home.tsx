@@ -118,7 +118,7 @@ export default function Home() {
         <Title5 title='Qualitatif' />
         <p className='pb-6'>
           Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
-          <SpanGreen text='outils hors-ligne comme html-validate et stylelint' />
+          <SpanGreen text='outils hors-ligne comme stylelint' />
           font de vos projets des sites accessibles et éco-conçus. 
         </p>
         <Title5 title='Quantitatif' />

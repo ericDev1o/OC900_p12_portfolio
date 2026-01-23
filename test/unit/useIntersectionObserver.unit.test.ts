@@ -1,6 +1,16 @@
-import { act, renderHook } from '@testing-library/react';
+import { 
+    act, 
+    renderHook 
+} from '@testing-library/react';
 
-import { vi, beforeEach, afterEach, describe, it, expect } from 'vitest';
+import { 
+    vi, 
+    beforeEach, 
+    afterEach, 
+    describe, 
+    it, 
+    expect 
+} from 'vitest';
 
 import useIntersectionObserver from '../../src/components/hooks/useIntersectionObserver';
 

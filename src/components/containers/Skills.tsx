@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 
 import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
+
 import Skill from '../UI/Skill';
 
 /**
@@ -28,7 +29,6 @@ export default function Skills() {
     const WAvELogo = getLogoURI('WAvE');
     const axeDevToolLogo = getLogoURI('axeDevTool');
     const greenITanalysisLogo = getLogoURI('greenITanalysis');
-    const htmlValidateLogo = getLogoURI('htmlValidate');
     const stylelintLogo = getLogoURI('stylelint');
     const pa11yLogo = getLogoURI('pa11y');
     const vitestAxeLogo = getLogoURI('vitestAxe');
@@ -63,7 +63,6 @@ export default function Skills() {
         <Skill logoURI={WAvELogo} altText='WAvE' />
         <Skill logoURI={axeDevToolLogo} altText='Axe DevTool' />
         <Skill logoURI={greenITanalysisLogo} altText='GreenIT-Analysis' />  
-        <Skill logoURI={htmlValidateLogo} altText='html-validate' />
         <Skill logoURI={stylelintLogo} altText='Stylelint' />
         <Skill logoURI={pa11yLogo} altText='pa11y' />
         <Skill logoURI={vitestAxeLogo} altText='Vitest-Axe' />

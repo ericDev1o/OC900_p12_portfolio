@@ -1,13 +1,15 @@
 import { lazy } from 'react';
 
-import LinkClickWarning from '../components/UI/LinkClickWarning';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
+
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
+
 import Title3 from '../components/UI/Title3';
 import Title4 from '../components/UI/Title4';
 import Title5 from '../components/UI/Title5';
 import Section from '../components/UI/Section';
 import Link from '../components/UI/Link';
+import LinkClickWarning from '../components/UI/LinkClickWarning';
 import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
 import SpanGreen from '../components/UI/SpanGreen';
 import SpanViolet from '../components/UI/SpanViolet';
@@ -116,7 +118,7 @@ export default function Home() {
         <Title5 title='Qualitatif' />
         <p className='pb-6'>
           Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
-          <SpanGreen text='outils hors-ligne comme html-validate et stylelint' />
+          <SpanGreen text='outils hors-ligne comme stylelint' />
           font de vos projets des sites accessibles et éco-conçus. 
         </p>
         <Title5 title='Quantitatif' />

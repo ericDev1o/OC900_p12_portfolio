@@ -1,7 +1,12 @@
-import { useState, useEffect } from 'react';
+import { 
+    useState, 
+    useEffect 
+} 
+from 'react';
 import Modal from 'react-modal';
 
 import HeadFootLogos from '../containers/HeadFootLogos';
+
 import LinkClickWarning from './LinkClickWarning';
 
 export default function Footer() {

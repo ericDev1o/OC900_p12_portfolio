@@ -1,4 +1,10 @@
-import React, { useRef, useState, useEffect, ReactNode } from 'react';
+import { 
+  useRef, 
+  useState, 
+  useEffect, 
+  ReactNode, 
+  useId } 
+  from 'react';
 import { useTranslation } from 'react-i18next';
 
 /**
@@ -21,7 +27,7 @@ export default function AnimatedDetails(
   const [maxHeight, setMaxHeight] = useState('0px');
   const [shouldRender, setShouldRender] = useState(false);
 
-  const contentId = React.useId();
+  const contentId = useId();
 
   const toggle = () => {
     if(! isOpen){

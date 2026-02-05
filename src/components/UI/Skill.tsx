@@ -8,7 +8,6 @@ export default function Skill({
     return <img 
         src={logoURI} 
         className='
-            lazy 
             p-6 
             h-25
             will-change-filter 

@@ -74,7 +74,6 @@ export default function ProjectCard
                         <img 
                             src={imgSrc}
                             className='
-                                lazy 
                                 w-full 
                                 h-max 
                                 will-change-filter 

@@ -1,4 +1,5 @@
-import{r as o,j as e,H as t,L as r,M as a}from"./index-BSzBZph0.js";function l(){const[n,s]=o.useState(!1);return o.useEffect(()=>(document.body.style.overflow=n?"hidden":"",()=>{document.body.style.overflow=""}),[n]),e.jsxs("footer",{className:`
+import{r as o,j as e,H as t,L as r,M as a}from"./index-DNAcB025.js";function l(){const[n,s]=o.useState(!1);return o.useEffect(()=>(document.body.style.overflow=n?"hidden":"",()=>{document.body.style.overflow=""}),[n]),e.jsxs("footer",{className:`
+            group 
             px-4 
             pb-15
             flex
@@ -6,13 +7,12 @@ import{r as o,j as e,H as t,L as r,M as a}from"./index-BSzBZph0.js";function l()
                 cursor-pointer 
                 font-medium 
                 text-fg-brand  
-                text-blue-300
-                hover:text-blue-600
-                hover:underline
+                text-blue-300 
+                underline 
+                transition-colors 
                 duration-600 
-                motion-reduce:duration-3000 
                 ease-in-out 
-                hover:scale-110`,onClick:()=>s(!0),children:"mentions légales"}),e.jsx(r,{}),e.jsxs(a,{isOpen:n,onRequestClose:()=>s(!1),contentLabel:"mentions légales",overlayClassName:`
+                hover:text-blue-600`,onClick:()=>s(!0),children:"mentions légales"}),e.jsx(r,{}),e.jsxs(a,{isOpen:n,onRequestClose:()=>s(!1),contentLabel:"mentions légales",overlayClassName:`
                 fixed 
                 inset-0 
                 bg-black 

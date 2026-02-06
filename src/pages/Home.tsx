@@ -276,7 +276,11 @@ export default function Home() {
             </svg>
             <span
               className='
-                text-blue-300
+                underline 
+                text-blue-300 
+                transition-colors 
+                duration-600 
+                ease-in-out 
                 hover:text-blue-600'>
                 Téléchargez mon CV
             </span>

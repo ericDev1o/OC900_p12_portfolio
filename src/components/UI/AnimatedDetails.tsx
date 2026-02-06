@@ -106,6 +106,7 @@ export default function AnimatedDetails(
         aria-controls={contentId}
         onClick={toggle}
         className='
+          w-full  
           cursor-pointer 
           flex 
           justify-between 

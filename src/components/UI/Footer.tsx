@@ -19,6 +19,7 @@ export default function Footer() {
 
     return <footer 
         className='
+            group 
             px-4 
             pb-15
             flex
@@ -34,13 +35,12 @@ export default function Footer() {
                 cursor-pointer 
                 font-medium 
                 text-fg-brand  
-                text-blue-300
-                hover:text-blue-600
-                hover:underline
+                text-blue-300 
+                underline 
+                transition-colors 
                 duration-600 
-                motion-reduce:duration-3000 
                 ease-in-out 
-                hover:scale-110'
+                hover:text-blue-600'
             onClick={() => setModalIsOpen(true)}>mentions légales
         </button>
         <LinkClickWarning />

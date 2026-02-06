@@ -65,21 +65,22 @@ export default function ProjectCard
                         target='_blank' 
                         aria-label={project.title}
                         className='
-                            hover:scale-110 
-                            transition 
-                            duration-600 
-                            motion-reduce:duration-3000 
-                            ease-in-out'
+                            motion-safe:transition-transform 
+                            motion-safe:duration-600 
+                            motion-safe:ease-in-out 
+                            motion-safe:hover:scale-110  
+                            focus-visible:outline-2 
+                            focus-visible:outline-blue-500'
                     >
                         <img 
                             src={imgSrc}
                             className='
                                 w-full 
                                 h-max 
-                                will-change-filter 
-                                filter 
-                                duration-300
-                                hover:drop-shadow-[0_0_2em_#646cffaa]' 
+                                transition-shadow 
+                                duration-600 
+                                ease-in-out 
+                                hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]' 
                             alt={alt}
                             loading='lazy'
                         />

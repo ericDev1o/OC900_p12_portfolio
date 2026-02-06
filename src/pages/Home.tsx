@@ -258,12 +258,12 @@ export default function Home() {
               items-center 
               text-blue-300  
               no-underline
-              transition 
-              transform
-              hover:scale-110 
+              motion-safe:transition-transform 
+              motion-safe:duration-600 
+              motion-safe:ease-in-out 
+              motion-safe:hover:scale-110 
               hover:brightness-110 
-              hover:shadow-lg
-              ease-in-out'
+              hover:shadow-lg'
           >
             <svg 
               xmlns='http://www.w3.org/2000/svg' 

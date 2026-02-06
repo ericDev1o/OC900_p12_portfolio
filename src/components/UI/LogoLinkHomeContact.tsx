@@ -14,16 +14,20 @@ export default function LogoLinkHomeContact(
         href={ href }
         target='_blank'
         rel='noopener noreferrer'
+        className='
+            focus-visible:outline-2 
+            focus-visible:outline-blue-500 
+            hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)] 
+            focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]'
     >
         <img 
             src={ src }
             className='
-            p-6 
-            h-25 
-            transition-shadow  
-            duration-600 
-            ease-in-out 
-            hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]' 
+                p-6 
+                h-25 
+                transition-shadow  
+                duration-600 
+                ease-in-out' 
             alt={ altText }
             loading='lazy' 
         />

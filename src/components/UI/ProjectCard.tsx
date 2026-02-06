@@ -70,7 +70,9 @@ export default function ProjectCard
                             motion-safe:ease-in-out 
                             motion-safe:hover:scale-110  
                             focus-visible:outline-2 
-                            focus-visible:outline-blue-500'
+                            focus-visible:outline-blue-500 
+                            hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)] 
+                            focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]'
                     >
                         <img 
                             src={imgSrc}
@@ -79,8 +81,7 @@ export default function ProjectCard
                                 h-max 
                                 transition-shadow 
                                 duration-600 
-                                ease-in-out 
-                                hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]' 
+                                ease-in-out' 
                             alt={alt}
                             loading='lazy'
                         />

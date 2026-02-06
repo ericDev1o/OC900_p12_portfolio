@@ -31,14 +31,19 @@ export default function HeadFootLogos() {
                 href='https://github.com/ericDev1o' 
                 target='_blank'
                 rel='noopener noreferrer'
+                className='
+                    inline-flex 
+                    focus-visible:outline-2 
+                    focus-visible:outline-blue-500 
+                    hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)] 
+                    focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]'
             >
                 <img 
                     src={githubLogo} 
                     className='
                         transition-shadow 
                         duration-600 
-                        ease-in-out 
-                        hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]'
+                        ease-in-out'
                     alt='GitHub logo'
                     width={25}
                     height={24} 
@@ -52,14 +57,18 @@ export default function HeadFootLogos() {
                 rel='
                     noopener 
                     noreferrer'
+                className='
+                    focus-visible:outline-2 
+                    focus-visible:outline-blue-500 
+                    hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)] 
+                    focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]'
             >
                 <img 
                     src={linkedinLogo} 
                     className='
                         transition-shadow 
                         duration-600 
-                        ease-in-out 
-                        hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]' 
+                        ease-in-out ' 
                     alt='LinkedIn logo' 
                     width={29}
                     height={24}

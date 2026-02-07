@@ -16,13 +16,11 @@ export default function Link(
         px-4 
         py-2 
         text-blue-300 
-        hover:text-blue-600 
-        hover:scale-110 
-        transition
-        transform 
+        underline 
+        transition-colors 
         duration-600 
-        motion-reduce:duration-3000 
-        ease-in-out'
+        ease-in-out 
+        hover:text-blue-600'
     >
        { text }
     </a>

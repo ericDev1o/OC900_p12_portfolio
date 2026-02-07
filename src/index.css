@@ -1,7 +1,5 @@
 @config "../tailwind.config.ts";
 @import "tailwindcss";
-@import "flowbite-react/plugin/tailwindcss";
-@source "../.flowbite-react/class-list.json";
 
 @font-face {
   font-family: "JetBrains Mono";

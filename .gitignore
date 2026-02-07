@@ -1,6 +1,5 @@
 # git
 .gitattributes
-.flowbite-react/.gitignore
 
 # npm
 package-lock.json
@@ -22,9 +21,6 @@ dist
 
 # vitest
 coverage
-
-# flowbite-react
-.flowbite-react/class-list.json
 
 # editor directories and files
 .vscode

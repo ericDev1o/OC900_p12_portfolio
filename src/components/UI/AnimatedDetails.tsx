@@ -98,48 +98,44 @@ export default function AnimatedDetails(
       w-full 
       overflow-hidden 
       rounded 
-      shadow '
+      shadow'
     >
-      <div
-        role='button'
-        tabIndex={0}
+      <button
+        type='button'
         aria-expanded={isOpen}
         aria-controls={contentId}
         onClick={toggle}
-        onKeyDown={e => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            toggle();
-          }
-        }}
         className='
-        cursor-pointer 
-        flex 
-        justify-between 
-        items-center 
-        px-4 
-        py-3 
-        font-semibold 
-        text-blue-500 
-        hover:bg-gray-700 
-        select-none'
+          w-full  
+          cursor-pointer 
+          flex 
+          justify-between 
+          items-center 
+          px-4 
+          py-3 
+          font-semibold 
+          text-blue-500 
+          hover:bg-gray-700 
+          focus-visible:bg-gray-700 
+          focus-visible:outline-2 
+          focus-visible:outline-blue-500
+          select-none'
       >
         {summary}
         <span
           aria-hidden='true'
-          className={`
+          data-open={isOpen} 
+          className='
             inline-block 
-            transition-transform 
-            duration-600 
-            motion-reduce:duration-3000
-            ease-in-out 
-            transform ${
-            isOpen ? 'rotate-180' : ''
-          }`}
+            motion-safe:transition-transform 
+            motion-safe:duration-600 
+            motion-safe:ease-in-out 
+            motion-safe:rotate-180
+            data-[open=false]:rotate-0'
         >
           ▼
         </span>
-      </div>
+      </button>
       <div
         id={contentId}
         ref={contentRef}
@@ -148,12 +144,18 @@ export default function AnimatedDetails(
         className='
           relative
           overflow-hidden
-          transition-[max-height]
-          duration-600
-          motion-reduce:duration-3000
-          ease-in-out'
+          motion-safe:transition-[max-height]
+          motion-safe:duration-600
+          motion-safe:ease-in-out'
       >
-        {shouldRender && <div className='px-4 py-3'>{children}</div>}
+        {shouldRender && 
+          <div 
+            className='
+              px-4 
+              py-3'
+          >
+            {children}
+          </div>}
       </div>
       <div aria-live='polite' className='sr-only' aria-atomic='true'>
         {isOpen ? t('section.opened') : t('section.closed')}

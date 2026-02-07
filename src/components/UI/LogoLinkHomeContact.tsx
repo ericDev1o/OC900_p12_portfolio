@@ -1,3 +1,5 @@
+import { IconLink } from './IconLink';
+
 export default function LogoLinkHomeContact(
     {
         href,
@@ -10,22 +12,13 @@ export default function LogoLinkHomeContact(
         altText: string
     }
 ){
-    return <a 
+    return <IconLink
         href={ href }
-        target='_blank'
-        rel='noopener noreferrer'
-    >
-        <img 
-            src={ src }
-            className='
-            p-6 
-            h-25 
-            will-change-filter 
-            filter 
-            duration-300
-            hover:drop-shadow-[0_0_2em_#646cffaa]' 
-            alt={ altText }
-            loading='lazy' 
-        />
-    </a>
+        src={ src }
+        alt={ altText }
+        width={25}
+        height={24}
+        p={6}
+        h={25}
+    />
 }

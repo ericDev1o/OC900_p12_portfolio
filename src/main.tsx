@@ -1,5 +1,3 @@
-import './config/i18next';
-
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 

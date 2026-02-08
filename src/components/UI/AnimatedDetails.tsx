@@ -5,8 +5,7 @@ import {
   ReactNode, 
   useId } 
   from 'react';
-import { useTranslation } from 'react-i18next';
-
+  
 /**
  * This is a custom HTML accordion.
  * It was done due to realization difficulties 
@@ -39,8 +38,6 @@ export default function AnimatedDetails(
       setIsOpen(false);
     }
   };
-
-  const { t } = useTranslation();
 
   useEffect(() => {
     if (shouldRender && isOpen && contentRef.current) {
@@ -86,12 +83,6 @@ export default function AnimatedDetails(
 
     return () => clearTimeout(timeoutId);
   }, [isOpen]);
-
-  useEffect(() => {
-    if (isOpen && shouldRender && contentRef.current) {
-      contentRef.current.focus();
-    }
-  }, [isOpen, shouldRender]);
 
   return (
     <div className='
@@ -139,8 +130,8 @@ export default function AnimatedDetails(
       <div
         id={contentId}
         ref={contentRef}
-        tabIndex={-1}
         style={{ maxHeight }}
+        aria-hidden={ ! isOpen }
         className='
           relative
           overflow-hidden
@@ -156,9 +147,6 @@ export default function AnimatedDetails(
           >
             {children}
           </div>}
-      </div>
-      <div aria-live='polite' className='sr-only' aria-atomic='true'>
-        {isOpen ? t('section.opened') : t('section.closed')}
       </div>
     </div>
   );

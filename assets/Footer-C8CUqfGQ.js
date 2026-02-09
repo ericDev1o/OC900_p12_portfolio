@@ -1,4 +1,4 @@
-import{r as o,j as e,H as t,L as r,M as a}from"./index-DNAcB025.js";function l(){const[n,s]=o.useState(!1);return o.useEffect(()=>(document.body.style.overflow=n?"hidden":"",()=>{document.body.style.overflow=""}),[n]),e.jsxs("footer",{className:`
+import{r as o,j as e,H as t,L as r,M as a}from"./index-B9X-MsX4.js";function l(){const[n,s]=o.useState(!1);return o.useEffect(()=>(document.body.style.overflow=n?"hidden":"",()=>{document.body.style.overflow=""}),[n]),e.jsxs("footer",{className:`
             group 
             px-4 
             pb-15

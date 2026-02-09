@@ -15,7 +15,6 @@ import SpanGreen from '../components/UI/SpanGreen';
 import SpanViolet from '../components/UI/SpanViolet';
 
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
-const Skills = lazy(() => import('../components/containers/Skills'));
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -179,9 +178,7 @@ export default function Home() {
             text-xl'>
           Je transforme un "brief" en écrans propres, "responsives" et frugaux.
         </p>
-        <LazyLoadWrapper>
-          <Skills />
-        </LazyLoadWrapper>
+        <div id='skills-root'></div>
       </Section>
       <Section>
         <Title3

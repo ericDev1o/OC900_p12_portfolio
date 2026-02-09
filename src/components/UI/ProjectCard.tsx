@@ -7,7 +7,7 @@ import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 
 import SkillLogos from '../containers/ProjectCardSkillLogos';
 
-import AnimatedDetails from './AnimatedDetails';
+import AnimatedDetails from './Accordion';
 import LinkClickWarning from './LinkClickWarning';
 
 export default function ProjectCard

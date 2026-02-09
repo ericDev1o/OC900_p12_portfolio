@@ -1,5 +1,3 @@
-import './config/i18next';
-
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
@@ -8,6 +6,8 @@ import Modal from 'react-modal';
 import { SkillsLogoProvider } from './contexts/SkillsLogoContext';
 
 import './index.css';
+
+import './components/containers/skills.mount';
 
 import Home from './pages/Home';
 import Layout from './components/containers/Layout';

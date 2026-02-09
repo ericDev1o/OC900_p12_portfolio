@@ -13,7 +13,6 @@ export default defineConfig({
         { browser: 'firefox' }
       ]
     },
-    setupFiles: './vitest-browser-setup.ts',
     include:[
       'test/integration/**/*.integration.browser.test.tsx'
     ],

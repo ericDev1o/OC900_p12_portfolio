@@ -104,16 +104,17 @@ export default function ProjectCard
             </div>
         <div className='space-y-4'>
             <AnimatedDetails summary='Découvrez ce projet'>
-                <h6 className='font-extrabold mt-2'>contexte</h6>
+               <h5 className='font-extrabold mt-2'>contexte</h5>
                 <p>{project.contexte}</p>
-                <h6 className='font-extrabold mt-2'>objectifs</h6>
+               <h5 className='font-extrabold mt-2'>objectifs</h5>
                 <p>{project.objectifs}</p>
-                <h6 className='font-extrabold mt-2'>stack technique</h6>
-                <p>{project.stackTechnique}</p><h6 className='font-extrabold mt-2'>compétences développées</h6>
+               <h5 className='font-extrabold mt-2'>stack technique</h5>
+                <p>{project.stackTechnique}</p>
+               <h5 className='font-extrabold mt-2'>compétences développées</h5>
                 <p>{project.competencesDeveloppees}</p>
-                <h6 className='font-extrabold mt-2'>résultats et impact</h6>
+               <h5 className='font-extrabold mt-2'>résultats et impact</h5>
                 <p>{project.resultatsEtImpact}</p>
-                <h6 className='font-extrabold mt-2'>perspectives d'amélioration</h6>
+               <h5 className='font-extrabold mt-2'>perspectives d'amélioration</h5>
                 <p>{project.perspectivesAmelioration}</p>
             </AnimatedDetails>
         </div>

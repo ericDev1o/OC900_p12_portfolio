@@ -20,8 +20,7 @@
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.2.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-modal": "^3.16.3"
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.11.1",
@@ -36,7 +35,6 @@
     "@types/pa11y": "^5.3.7",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
-    "@types/react-modal": "^3.16.3",
     "@typescript-eslint/eslint-plugin": "^8.55.0",
     "@typescript-eslint/parser": "^8.55.0",
     "@vitejs/plugin-react": "^5.1.4",

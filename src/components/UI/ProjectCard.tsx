@@ -7,7 +7,7 @@ import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 
 import SkillLogos from '../containers/ProjectCardSkillLogos';
 
-import AnimatedDetails from './Accordion';
+import Accordion from './Accordion';
 import LinkClickWarning from './LinkClickWarning';
 
 export default function ProjectCard
@@ -103,7 +103,7 @@ export default function ProjectCard
                 <SkillLogos paths={logoURIs} repo={project.repository} />
             </div>
         <div className='space-y-4'>
-            <AnimatedDetails summary='Découvrez ce projet'>
+            <Accordion summary='Découvrez ce projet'>
                <h5 className='font-extrabold mt-2'>contexte</h5>
                 <p>{project.contexte}</p>
                <h5 className='font-extrabold mt-2'>objectifs</h5>
@@ -116,7 +116,7 @@ export default function ProjectCard
                 <p>{project.resultatsEtImpact}</p>
                <h5 className='font-extrabold mt-2'>perspectives d'amélioration</h5>
                 <p>{project.perspectivesAmelioration}</p>
-            </AnimatedDetails>
+            </Accordion>
         </div>
     </article>
 }

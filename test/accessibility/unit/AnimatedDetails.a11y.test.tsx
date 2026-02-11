@@ -3,17 +3,17 @@ import { render } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { axe } from 'vitest-axe';
 
-import AnimatedDetails from '../../../src/components/UI/Accordion';
+import Accordion from '../../../src/components/UI/Accordion';
 
-describe('AnimatedDetails custom accordion component', () => {
+describe('Custom accordion component', () => {
     it('should have no axe accessibility violations', async () => {
         // Arrange
         const { container } = render
         (
-            <AnimatedDetails summary='Découvrez ce projet'>
+            <Accordion summary='Découvrez ce projet'>
                 <h6>test title</h6>
                 <p> test paragraph</p>
-            </AnimatedDetails>
+            </Accordion>
         );
         // Act
         const results = await axe(container);

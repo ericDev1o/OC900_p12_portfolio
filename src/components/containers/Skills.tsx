@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
-
 import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 
 import Skill from '../UI/Skill';
@@ -21,6 +18,7 @@ export default function Skills() {
     const jsLogo = getLogoURI('JS');
     const tsLogo = getLogoURI('TS');
     const jestLogo = getLogoURI('jest');
+    const reactLogo = getLogoURI('react');
     const reactRouterLogo = getLogoURI('reactRouter');
     const reduxLogo = getLogoURI('redux');
     const lighthouseLogo = getLogoURI('lighthouse');
@@ -50,10 +48,7 @@ export default function Skills() {
         <Skill logoURI={jsLogo} altText='JavaScript' />
         <Skill logoURI={tsLogo} altText='TypeScript' />
         <Skill logoURI={jestLogo} altText='Jest' />
-        <FontAwesomeIcon 
-            icon={faReact}
-            className='text-[50px]' 
-        />
+        <Skill logoURI={reactLogo} altText='React' />
         <Skill logoURI={reactRouterLogo} altText='React Router' />
         <Skill logoURI={reduxLogo} altText='Redux' />
         <Skill logoURI={lighthouseLogo} altText='Lighthouse' />

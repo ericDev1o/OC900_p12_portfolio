@@ -22,12 +22,8 @@ export default defineConfig({
       'test/accessibility/unit/**/*.a11y.test.tsx',
       'test/unit/**/*.unit.test.ts'
     ],
-    /* implicit default */
+    /* default */
     environment: 'node',
   },
-  /* broken dependency of "import { page } from '@vitest/browser';"*/
-  optimizeDeps: {
-    exclude: ['lightningcss']
-  },
-  logLevel: 'info'
+  logLevel: 'warn'
 });   

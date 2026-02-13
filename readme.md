@@ -45,6 +45,63 @@ vitest run --config vitest.config.ts
 yarn test:jsdom
 #### details
 vitest run --config vitest.jsdom.config.ts
+### complete example of 0.3.3 manual workflow
+#### $ yarn eslint
+#### $ yarn test:pa11y_node
+ RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
+
+ ✓ test/accessibility/Home.pa11y.test.ts (1 test) 7604ms
+   ✓ accessibility test (1)
+     ✓ should generate pa11y report  7601ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  02:46:01
+   Duration  8.51s (transform 72ms, setup 0ms, import 701ms, tests 7.60s, environment 0ms)
+
+#### $ yarn test:a11y_jsdom
+ RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
+
+ ✓ test/unit/useIntersectionObserver.unit.test.ts (3 tests) 48ms
+ ✓ test/accessibility/Accordion.a11y.test.tsx (1 test) 360ms
+     ✓ should have no axe accessibility violations  358ms
+ ✓ test/accessibility/Home.a11y.test.tsx (1 test) 218ms
+
+ Test Files  3 passed (3)
+      Tests  5 passed (5)
+   Start at  02:46:22
+   Duration  6.33s (transform 524ms, setup 343ms, import 7.40s, tests 625ms, environment 8.31s)
+
+#### $ yarn test:content_browser
+ RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
+
+02:46:53 [vite] (client) Re-optimizing dependencies because lockfile has changed
+ ✓  chromium  test/integration/Home.integration.browser.test.tsx (1 test) 244ms
+ ✓  firefox  test/integration/Home.integration.browser.test.tsx (1 test) 709ms
+     ✓ must render most important content  698ms
+
+ Test Files  2 passed (2)
+      Tests  2 passed (2)
+   Start at  02:46:53
+   Duration  17.46s (transform 0ms, setup 0ms, import 824ms, tests 953ms, environment 0ms)
+
+#### $ yarn build
+vite v7.3.1 building client environment for production...
+✓ 59 modules transformed.
+[plugin vite:reporter] 
+(!) /home/eric/source/repos/OC/OC900_p12_portfolio/node_modules/react-dom/client.js?commonjs-es-import is dynamically imported by /home/eric/source/repos/OC/OC900_p12_portfolio/src/components/containers/skills.mount.tsx but also statically imported by /home/eric/source/repos/OC/OC900_p12_portfolio/src/main.tsx, dynamic import will not move module into another chunk.
+
+dist/index.html                      2.12 kB │ gzip:  0.75 kB
+dist/assets/index-kqr0qylZ.css      22.19 kB │ gzip:  5.03 kB
+dist/assets/Skills-qrKfPNRs.js       1.72 kB │ gzip:  0.69 kB
+dist/assets/Portfolio-BCzzeAnf.js    5.86 kB │ gzip:  1.90 kB
+dist/assets/Footer-DTwHvolY.js       6.42 kB │ gzip:  2.36 kB
+dist/assets/index-DqB8yXNz.js      211.50 kB │ gzip: 66.85 kB
+✓ built in 2.00s
+#### $ yarn preview
+  ➜  Local:   http://localhost:4173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
 
 ## preview package.json script build & then preview
 yarn build

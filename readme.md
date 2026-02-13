@@ -62,18 +62,52 @@ yarn deploy
 yarn build
 gh-pages -d dist
 
+## preinstall a font
+https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&subset=latin&display=swap
+### keep only latin 
+/* latin */ 
+@font-face 
+{ 
+    font-family: 'JetBrains Mono'; 
+    font-style: normal; 
+    font-weight: 400 800; 
+    font-display: swap; 
+    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2'); 
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; 
+}
+
+https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2
+
+Download only 1 file less than 32 kb and  locally fetch it using 1 DRY 
+@font-face 
+{ 
+    font-family: "JetBrains Mono"; 
+    src: url("/fonts/jetbrains-mono-400..800.woff2") format("woff2"); 
+    font-weight: 400 800; 
+    font-style: normal; 
+    font-display: swap; 
+}
 
 
-
-## do you need help for markdown reading or preferred yarn install only?
-### reading markdown
+## do you need help?
+### for reading markdown?
 #### titles as 2nd color for all non CLI is preferred for multi-line platform & mobile inclusion rather than
 [https://github.com/orgs/community/discussions/31570](https://github.com/orgs/community/discussions/31570)
 #### please kindly signal if I oversaw the current
 [https://code.visualstudio.com/docs/languages/markdown](https://code.visualstudio.com/docs/languages/markdown)
 
-### yarn install
-#### upgrade yarn
+### do you need help to upgrade node?
+#### $ nvs add latest
+...
+##### $ nvs use 25.6
+PATH += ~/.nvs/node/25.6.1/x64/bin
+###### no yarn nor yarnpkg in this directory?
+###### npm install -g yarn
+~/.nvs/node/25.6.1/x64/bin/yarn and ...yarnpkg are installed along npm
+###### yarn -v
+4.12.0
+
+#### do you need help to upgrade yarn?
 ##### minor version
 ###### the following answer finally given by brave's leo AI might do it for you; it once did for last peer node version by eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p12_portfolio$ 
 which yarn
@@ -82,8 +116,6 @@ corepack yarn -v
 ###### 4.11.0
 corepack prepare yarn@4.12.0 --activate
 ###### Preparing yarn@4.12.0 for immediate activation...
-corepack yarn -v
-###### 4.11.0
 yarn set version stable
 ###### ➤ YN0000: Downloading https://repo.yarnpkg.com/4.12.0/packages/yarnpkg-cli/bin/yarn.js
 ###### ➤ YN0000: Saving the new release in .yarn/releases/yarn-4.12.0.cjs
@@ -105,8 +137,6 @@ yarn install
 yarn -v
 ###### 4.12.0
 
-
-#### after you're done, do you still need help?
 ##### try follow https://yarnpkg.com/getting-started/install or
 ##### fallback on https://classic.yarnpkg.com/en/docs/install#debian-stable and 
 ##### https://yarnpkg.com/migration/guide
@@ -134,29 +164,3 @@ corepack yarn -v
 yarn set version stable
 yarn install
 yarn -v
-
-### preinstall a font
-https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&subset=latin&display=swap
-#### keep only latin 
-/* latin */ 
-@font-face 
-{ 
-    font-family: 'JetBrains Mono'; 
-    font-style: normal; 
-    font-weight: 400 800; 
-    font-display: swap; 
-    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2'); 
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; 
-}
-
-https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2
-
-Download only 1 file less than 32 kb and  locally fetch it using 1 DRY 
-@font-face 
-{ 
-    font-family: "JetBrains Mono"; 
-    src: url("/fonts/jetbrains-mono-400..800.woff2") format("woff2"); 
-    font-weight: 400 800; 
-    font-style: normal; 
-    font-display: swap; 
-}

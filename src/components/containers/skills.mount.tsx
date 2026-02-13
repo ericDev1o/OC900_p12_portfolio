@@ -23,16 +23,12 @@ const waitForTarget = () =>
  * It's possibly to simplify later on.
  *  */  
 (async () => {
-  console.log('[skills.mount] waiting for skills-root');
-
   const target = await waitForTarget();
-  console.log('[skills.mount] skills-root found');
 
   const observer = new IntersectionObserver(async ([entry]) => {
     if (!entry.isIntersecting) return;
 
     observer.disconnect();
-    console.log('[skills.mount] intersecting → loading React');
 
     const { createRoot } = await import('react-dom/client');
     const { default: Skills } = await import('./Skills');

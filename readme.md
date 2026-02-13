@@ -45,6 +45,63 @@ vitest run --config vitest.config.ts
 yarn test:jsdom
 #### details
 vitest run --config vitest.jsdom.config.ts
+### complete example of 0.3.3 manual workflow
+#### $ yarn eslint
+#### $ yarn test:pa11y_node
+ RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
+
+ ✓ test/accessibility/Home.pa11y.test.ts (1 test) 7604ms
+   ✓ accessibility test (1)
+     ✓ should generate pa11y report  7601ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  02:46:01
+   Duration  8.51s (transform 72ms, setup 0ms, import 701ms, tests 7.60s, environment 0ms)
+
+#### $ yarn test:a11y_jsdom
+ RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
+
+ ✓ test/unit/useIntersectionObserver.unit.test.ts (3 tests) 48ms
+ ✓ test/accessibility/Accordion.a11y.test.tsx (1 test) 360ms
+     ✓ should have no axe accessibility violations  358ms
+ ✓ test/accessibility/Home.a11y.test.tsx (1 test) 218ms
+
+ Test Files  3 passed (3)
+      Tests  5 passed (5)
+   Start at  02:46:22
+   Duration  6.33s (transform 524ms, setup 343ms, import 7.40s, tests 625ms, environment 8.31s)
+
+#### $ yarn test:content_browser
+ RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
+
+02:46:53 [vite] (client) Re-optimizing dependencies because lockfile has changed
+ ✓  chromium  test/integration/Home.integration.browser.test.tsx (1 test) 244ms
+ ✓  firefox  test/integration/Home.integration.browser.test.tsx (1 test) 709ms
+     ✓ must render most important content  698ms
+
+ Test Files  2 passed (2)
+      Tests  2 passed (2)
+   Start at  02:46:53
+   Duration  17.46s (transform 0ms, setup 0ms, import 824ms, tests 953ms, environment 0ms)
+
+#### $ yarn build
+vite v7.3.1 building client environment for production...
+✓ 59 modules transformed.
+[plugin vite:reporter] 
+(!) /home/eric/source/repos/OC/OC900_p12_portfolio/node_modules/react-dom/client.js?commonjs-es-import is dynamically imported by /home/eric/source/repos/OC/OC900_p12_portfolio/src/components/containers/skills.mount.tsx but also statically imported by /home/eric/source/repos/OC/OC900_p12_portfolio/src/main.tsx, dynamic import will not move module into another chunk.
+
+dist/index.html                      2.12 kB │ gzip:  0.75 kB
+dist/assets/index-kqr0qylZ.css      22.19 kB │ gzip:  5.03 kB
+dist/assets/Skills-qrKfPNRs.js       1.72 kB │ gzip:  0.69 kB
+dist/assets/Portfolio-BCzzeAnf.js    5.86 kB │ gzip:  1.90 kB
+dist/assets/Footer-DTwHvolY.js       6.42 kB │ gzip:  2.36 kB
+dist/assets/index-DqB8yXNz.js      211.50 kB │ gzip: 66.85 kB
+✓ built in 2.00s
+#### $ yarn preview
+  ➜  Local:   http://localhost:4173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
 
 ## preview package.json script build & then preview
 yarn build
@@ -62,18 +119,52 @@ yarn deploy
 yarn build
 gh-pages -d dist
 
+## preinstall a font
+https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&subset=latin&display=swap
+### keep only latin 
+/* latin */ 
+@font-face 
+{ 
+    font-family: 'JetBrains Mono'; 
+    font-style: normal; 
+    font-weight: 400 800; 
+    font-display: swap; 
+    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2'); 
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; 
+}
+
+https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2
+
+Download only 1 file less than 32 kb and  locally fetch it using 1 DRY 
+@font-face 
+{ 
+    font-family: "JetBrains Mono"; 
+    src: url("/fonts/jetbrains-mono-400..800.woff2") format("woff2"); 
+    font-weight: 400 800; 
+    font-style: normal; 
+    font-display: swap; 
+}
 
 
-
-## do you need help for markdown reading or preferred yarn install only?
-### reading markdown
+## do you need help?
+### for reading markdown?
 #### titles as 2nd color for all non CLI is preferred for multi-line platform & mobile inclusion rather than
 [https://github.com/orgs/community/discussions/31570](https://github.com/orgs/community/discussions/31570)
 #### please kindly signal if I oversaw the current
 [https://code.visualstudio.com/docs/languages/markdown](https://code.visualstudio.com/docs/languages/markdown)
 
-### yarn install
-#### upgrade yarn
+### do you need help to upgrade node?
+#### $ nvs add latest
+...
+##### $ nvs use 25.6
+PATH += ~/.nvs/node/25.6.1/x64/bin
+###### no yarn nor yarnpkg in this directory?
+###### npm install -g yarn
+~/.nvs/node/25.6.1/x64/bin/yarn and ...yarnpkg are installed along npm
+###### yarn -v
+4.12.0
+
+#### do you need help to upgrade yarn?
 ##### minor version
 ###### the following answer finally given by brave's leo AI might do it for you; it once did for last peer node version by eric@eric-Aspire-TC-603:~/source/repos/OC/OC900_p12_portfolio$ 
 which yarn
@@ -82,8 +173,6 @@ corepack yarn -v
 ###### 4.11.0
 corepack prepare yarn@4.12.0 --activate
 ###### Preparing yarn@4.12.0 for immediate activation...
-corepack yarn -v
-###### 4.11.0
 yarn set version stable
 ###### ➤ YN0000: Downloading https://repo.yarnpkg.com/4.12.0/packages/yarnpkg-cli/bin/yarn.js
 ###### ➤ YN0000: Saving the new release in .yarn/releases/yarn-4.12.0.cjs
@@ -105,8 +194,6 @@ yarn install
 yarn -v
 ###### 4.12.0
 
-
-#### after you're done, do you still need help?
 ##### try follow https://yarnpkg.com/getting-started/install or
 ##### fallback on https://classic.yarnpkg.com/en/docs/install#debian-stable and 
 ##### https://yarnpkg.com/migration/guide
@@ -134,29 +221,3 @@ corepack yarn -v
 yarn set version stable
 yarn install
 yarn -v
-
-### preinstall a font
-https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&subset=latin&display=swap
-#### keep only latin 
-/* latin */ 
-@font-face 
-{ 
-    font-family: 'JetBrains Mono'; 
-    font-style: normal; 
-    font-weight: 400 800; 
-    font-display: swap; 
-    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2'); 
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; 
-}
-
-https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2
-
-Download only 1 file less than 32 kb and  locally fetch it using 1 DRY 
-@font-face 
-{ 
-    font-family: "JetBrains Mono"; 
-    src: url("/fonts/jetbrains-mono-400..800.woff2") format("woff2"); 
-    font-weight: 400 800; 
-    font-style: normal; 
-    font-display: swap; 
-}

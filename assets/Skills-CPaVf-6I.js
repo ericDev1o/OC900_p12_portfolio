@@ -1,4 +1,4 @@
-import{j as t,u as p}from"./index-DMjpXtQ9.js";function e({logoURI:o,altText:s}){return t.jsx("img",{src:o,className:`
+import{j as t,u as p}from"./index-1lqeQ3Ap.js";function e({logoURI:o,altText:s}){return t.jsx("img",{src:o,className:`
             p-6 
             h-25 
             transition-shadow 

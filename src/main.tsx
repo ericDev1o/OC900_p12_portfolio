@@ -5,8 +5,6 @@ import { SkillsLogoProvider } from './contexts/SkillsLogoContext';
 
 import './index.css';
 
-import './components/containers/skills.mount';
-
 import Home from './pages/Home';
 import Layout from './components/containers/Layout';
 

@@ -88,16 +88,13 @@ vitest run --config vitest.jsdom.config.ts
 #### $ yarn build
 vite v7.3.1 building client environment for production...
 ✓ 59 modules transformed.
-[plugin vite:reporter] 
-(!) /home/eric/source/repos/OC/OC900_p12_portfolio/node_modules/react-dom/client.js?commonjs-es-import is dynamically imported by /home/eric/source/repos/OC/OC900_p12_portfolio/src/components/containers/skills.mount.tsx but also statically imported by /home/eric/source/repos/OC/OC900_p12_portfolio/src/main.tsx, dynamic import will not move module into another chunk.
-
 dist/index.html                      2.12 kB │ gzip:  0.75 kB
 dist/assets/index-kqr0qylZ.css      22.19 kB │ gzip:  5.03 kB
-dist/assets/Skills-qrKfPNRs.js       1.72 kB │ gzip:  0.69 kB
-dist/assets/Portfolio-BCzzeAnf.js    5.86 kB │ gzip:  1.90 kB
-dist/assets/Footer-DTwHvolY.js       6.42 kB │ gzip:  2.36 kB
-dist/assets/index-DqB8yXNz.js      211.50 kB │ gzip: 66.85 kB
-✓ built in 2.00s
+dist/assets/Skills-BGhVAWqQ.js       1.72 kB │ gzip:  0.69 kB
+dist/assets/Portfolio-CehQlzir.js    5.86 kB │ gzip:  1.90 kB
+dist/assets/Footer-Bx4PtVl7.js       6.42 kB │ gzip:  2.36 kB
+dist/assets/index-BKS_W1Da.js      210.44 kB │ gzip: 66.49 kB
+✓ built in 2.07s
 #### $ yarn preview
   ➜  Local:   http://localhost:4173/
   ➜  Network: use --host to expose

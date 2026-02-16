@@ -1,14 +1,14 @@
-import type { ReactNode } from 'react'
+import { 
+    forwardRef, 
+    type  ReactNode 
+} from 'react'
 
-export default function Section(
-    {
-        children
-    }:
-    {
+const Section = forwardRef<HTMLElement,{
         children: ReactNode
-    }
-){
+    }>(
+        ({children}, ref) => {
     return <section
+        ref={ref} 
         className='
             odd:bg-gray-950 
             even:bg-gray-800  
@@ -17,4 +17,9 @@ export default function Section(
     >
         { children }
     </section>
-}
+    }
+);
+
+Section.displayName = 'Section';
+
+export default Section;

@@ -3,6 +3,7 @@ import { lazy } from 'react';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
+import LazySkills from '@/components/containers/LazySkills';
 
 import Title3 from '../components/UI/Title3';
 import Title4 from '../components/UI/Title4';
@@ -178,7 +179,7 @@ export default function Home() {
             text-xl'>
           Je transforme un "brief" en écrans propres, "responsives" et frugaux.
         </p>
-        <div id='skills-root'></div>
+        <LazySkills />
       </Section>
       <Section>
         <Title3

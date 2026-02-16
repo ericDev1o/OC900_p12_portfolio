@@ -3,7 +3,7 @@ import { lazy } from 'react';
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
-import LazySkills from '@/components/containers/LazySkills';
+import LazySkills from '../components/containers/LazySkills';
 
 import Title3 from '../components/UI/Title3';
 import Title4 from '../components/UI/Title4';

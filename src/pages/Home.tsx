@@ -1,9 +1,16 @@
-import { lazy } from 'react';
+import { 
+  lazy,
+  Suspense,
+  useRef
+} from 'react';
 
 import { useSkillsLogo } from '../contexts/SkillsLogoContext';
 
+import useIntersectionObserver from '../components/hooks/useIntersectionObserver';
+
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
 import LazySkills from '../components/containers/LazySkills';
+const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 
 import Title3 from '../components/UI/Title3';
 import Title4 from '../components/UI/Title4';
@@ -15,8 +22,6 @@ import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
 import SpanGreen from '../components/UI/SpanGreen';
 import SpanViolet from '../components/UI/SpanViolet';
 
-const Portfolio = lazy(() => import('../components/containers/Portfolio'));
-
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
   const CVPath = basePath + 'CV/CV_integrateur_web_react_Eric_F.pdf'
@@ -27,6 +32,9 @@ export default function Home() {
 
   const linkedinLogo = getLogoURI('linkedIn');
   const githubLogo = getLogoURI('gitHub');
+
+  const refPortfolio = useRef<HTMLDivElement>(null);
+  const isVisible = useIntersectionObserver(refPortfolio);
 
   return <main>
       <article>
@@ -181,13 +189,16 @@ export default function Home() {
         </p>
         <LazySkills />
       </Section>
-      <Section>
+      <Section ref={refPortfolio}>
         <Title3
           title='projets'
           id='projets'
         />
-        <Portfolio projectsPath={ projectsPath }
-        />
+        {isVisible && (
+          <Suspense fallback={null}>
+            <Portfolio projectsPath={ projectsPath } />
+          </Suspense>
+        )}
       </Section>
       <Section>
         <Title3 

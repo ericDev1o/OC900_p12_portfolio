@@ -346,8 +346,8 @@ export default function Home() {
                 relative'
               >
                 <Link
-                  href='https://calendly.com/d/cxcb-3st-m8k/15-minutes'
-                  text='https://calendly.com/d/cxcb-3st-m8k/15-minutes'
+                  href='https://calendly.com/d/ctmm-ynb-x6f/15-minutes'
+                  text='https://calendly.com/d/ctmm-ynb-x6f/15-minutes'
                 />
               <LinkClickWarning />
             </div>

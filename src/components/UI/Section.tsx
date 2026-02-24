@@ -1,24 +1,23 @@
-import { 
-    forwardRef, 
-    type  ReactNode 
-} from 'react'
+import { type  ComponentPropsWithRef } from 'react';
 
-const Section = forwardRef<HTMLElement,{
-        children: ReactNode
-    }>(
-        ({children}, ref) => {
+type SectionProps = ComponentPropsWithRef<'section'>;
+
+const Section = ({
+        children, ...props
+    }: SectionProps) => {
     return <section
-        ref={ref} 
-        className='
+        {...props}  
+        className={`
             odd:bg-gray-950 
             even:bg-gray-800  
             pb-22 
-            px-4'
+            px-4 
+            ${props.className || ''}
+            `}
     >
         { children }
     </section>
-    }
-);
+};
 
 Section.displayName = 'Section';
 

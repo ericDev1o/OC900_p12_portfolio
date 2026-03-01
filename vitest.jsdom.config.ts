@@ -12,12 +12,11 @@ export default defineConfig({
     setupFiles: './vitest-jsdom-setup.ts',
     include:[
       'test/unit/**/*.unit.test.ts',
-      'test/accessibility/unit/**/*.a11y.test.tsx',
       'test/accessibility/**/*.a11y.test.tsx'
     ],
     exclude:[
         'test/accessibility/**/*.pa11y.test.ts',
-        'test/integration/**/*.browser.integration.test.ts'
+        'test/integration/**/*.integration.browser.test.tsx'
     ]
   }
 });

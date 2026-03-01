@@ -28,7 +28,7 @@ describe('Home page', () => {
         (
             'heading',
             {
-                name: 'votre intégrateur "web" react en Île-de-France',
+                name: 'votre intégrateur web react en Île-de-France',
                 level: 2
             }
         );

@@ -64,7 +64,7 @@ export default function Home() {
             text-4xl
             leading-loose'
           >
-            votre intégrateur "web" react en Île-de-France
+            votre intégrateur web react en Île-de-France
           </h2>
         </Section>
       <Section>
@@ -96,13 +96,13 @@ export default function Home() {
           <SpanViolet
             text='performances.'
           /> 
-          Passionné par les interfaces "web" 
+          Passionné par les interfaces web 
           <SpanGreen text='durables' />
           j'en simplifie l'utilisation par tou·te·s. 
         </p>
         <Title4 title='Qui suis-je?' />
         <p>
-          D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution "backend". Intégrateur "web" react passionné par l’accessibilité, je veille à atteindre un 
+          D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution backend. Intégrateur web react passionné par l’accessibilité, je veille à atteindre un 
           <SpanViolet text='audit Google Lighthouse supérieur à 90/100' />
             pour un bon référencement et une expérience utilisat·rice·eur fluide.
         </p>
@@ -111,11 +111,11 @@ export default function Home() {
         <p
         className='pb-10'>
           Naturellement rigoureux, fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
-          <SpanGreen text='clarification fonctionnelle, documentation, tests unitaires et évolution de code "backend".' />
+          <SpanGreen text='clarification fonctionnelle, documentation, tests unitaires et évolution de code backend.' />
         </p>
         <Title5 title="Notre objectif aujourd'hui" />
         <p className='pb-10'>
-          Je suis prêt pour être votre intégrateur "web" dans une agence, ESN ou organisation engagée en Île-de-France. 
+          Je suis prêt pour être votre intégrateur web dans une agence, ESN ou organisation engagée en Île-de-France. 
         </p>
         <Title5 title='Pour un projet numérique plus inclusif et éco-responsable demain' />
         <p>
@@ -125,7 +125,7 @@ export default function Home() {
         <p className='pb-3'></p>
         <Title5 title='Qualitatif' />
         <p className='pb-6'>
-          Mon écoute, ma connaissance des standards "web", ma veille technologique et mon respect de la confidentialité via des 
+          Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
           <SpanGreen text='outils hors-ligne comme stylelint' />
           font de vos projets des sites accessibles et éco-conçus. 
         </p>
@@ -150,7 +150,7 @@ export default function Home() {
         <p>
           J’aiderai ainsi une organisation à renforcer sa présence digitale tout en 
           <SpanGreen  text='limitant ses coûts de maintenance' />
-          par ma progression continue en rendu statique performant côté client puis serveur, extraction de données via API ReST, "design", "fullstack", devOps, cloud et architecture.
+          par ma progression continue en rendu statique performant côté client puis serveur, extraction de données via API ReST, design, fullstack, devOps, cloud et architecture.
         </p>
         <p className='pt-4'>
           J'adhère à « 
@@ -178,14 +178,14 @@ export default function Home() {
             clés
         </h4>
         <p className='text-xl'>
-          Vous avez besoin d'un site "web" à votre image?
+          Vous avez besoin d'un site web à votre image?
         </p>
         <p
            className='
             pt-10 
             pb-10 
             text-xl'>
-          Je transforme un "brief" en écrans propres, "responsives" et frugaux.
+          Je transforme un brief en écrans propres, responsives et frugaux.
         </p>
         <LazySkills />
       </Section>
@@ -212,7 +212,7 @@ export default function Home() {
             text-2xl
             leading-loose'
         >
-          intégrateur "web"
+          intégrateur web
         </h4>
         <h5 
           className='
@@ -319,7 +319,7 @@ export default function Home() {
           >
             projet
           </span> 
-          "web" avec 
+          web avec 
           <SpanGreen text='impact.' />
         </p>
         <LazyLoadWrapper>
@@ -381,7 +381,7 @@ export default function Home() {
                   focus:ring-blue-300 
                   rounded-lg'
               >
-                Prévoyons de parler de votre projet de site "web"
+                Prévoyons de parler de votre projet de site web
               </button>
             </a>
             <LinkClickWarning />

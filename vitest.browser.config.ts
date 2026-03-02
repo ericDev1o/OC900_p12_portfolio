@@ -19,7 +19,6 @@ export default defineConfig({
     exclude:[
       'test/accessibility/**/*.pa11y.test.ts',
       'test/accessibility/**/*.a11y.test.tsx',
-      'test/accessibility/unit/**/*.a11y.test.tsx',
       'test/unit/**/*.unit.test.ts'
     ],
     /* default */

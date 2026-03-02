@@ -12,7 +12,7 @@ Error generating stack: `+u.message+`
                     duration-500 
                     ease-in-out
                     ${R?"opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}
-                `,children:E})})}const jy=Ll.lazy(()=>Ef(()=>import("./Skills-Ca8XXgqX.js"),[],import.meta.url));function Uy(){const E=Ll.useRef(null),H=Af(E);return g.jsx("div",{ref:E,children:H&&g.jsx(Ll.Suspense,{fallback:null,children:g.jsx(jy,{})})})}function _e({title:E,id:H}){return g.jsx("h3",{id:H,className:`
+                `,children:E})})}const jy=Ll.lazy(()=>Ef(()=>import("./Skills-CfTebzj1.js"),[],import.meta.url));function Uy(){const E=Ll.useRef(null),H=Af(E);return g.jsx("div",{ref:E,children:H&&g.jsx(Ll.Suspense,{fallback:null,children:g.jsx(jy,{})})})}function _e({title:E,id:H}){return g.jsx("h3",{id:H,className:`
         pt-22 
         pb-6 
         text-3xl
@@ -60,24 +60,24 @@ Error generating stack: `+u.message+`
         duration-600 
         ease-in-out 
         group-hover:opacity-100
-        group-focus-within:opacity-100`,children:"🔒 Vérifiez toujours l'URL avant de cliquer!"})}function pf({href:E,src:H,alt:C,width:m,height:R,p:X,h:V}){return g.jsx("a",{href:E,target:"_blank",rel:"noopener noreferrer",className:`
+        group-focus-within:opacity-100`,children:"🔒 Vérifiez toujours l'URL avant de cliquer!"})}function pf({href:E,src:H,alt:C,width:m,height:R,classNameA:X="",classNameImg:V=""}){return g.jsx("a",{href:E,target:"_blank",rel:"noopener noreferrer",className:`
         focus-visible:outline-2
         focus-visible:outline-blue-500
         hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]
         focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]
+        ${X}
       `,children:g.jsx("img",{src:H,alt:C,width:m,height:R,className:`
-          p-${X}
-          h-${V}
           transition-shadow
           duration-600
-          ease-in-out
-        `,loading:"lazy"})})}function Yd({href:E,src:H,altText:C}){return g.jsx(pf,{href:E,src:H,alt:C,width:25,height:24,p:6,h:25})}function Xa({text:E}){return g.jsx("span",{className:`
+          ease-in-out 
+          ${V}
+        `,loading:"lazy"})})}function Yd({href:E,src:H,altText:C}){return g.jsx(pf,{href:E,src:H,alt:C,width:25,height:24,classNameA:"p-6",classNameImg:"h-[25px]"})}function Xa({text:E}){return g.jsx("span",{className:`
             mx-2 
             font-extrabold 
             text-green-400`,children:E})}function zf({text:E}){return g.jsx("span",{className:`
             mx-2 
             font-extrabold 
-            text-violet-400`,children:E})}const Ny=Ll.lazy(()=>Ef(()=>import("./Portfolio-BKMlgQ81.js"),[],import.meta.url));function Hy(){const H="./CV/CV_integrateur_web_react_Eric_F.pdf",C="./CV/photoCV_w100px.webp",m="projects/",{getLogoURI:R}=Qd(),X=R("linkedIn"),V=R("gitHub"),ll=Ll.useRef(null),j=Af(ll);return g.jsxs("main",{children:[g.jsxs("article",{children:[g.jsxs(Za,{children:[g.jsx("h1",{className:`
+            text-violet-400`,children:E})}const Ny=Ll.lazy(()=>Ef(()=>import("./Portfolio-D4O-4Xaw.js"),[],import.meta.url));function Hy(){const H="./CV/CV_integrateur_web_react_Eric_F.pdf",C="./CV/photoCV_w100px.webp",m="projects/",{getLogoURI:R}=Qd(),X=R("linkedIn"),V=R("gitHub"),ll=Ll.useRef(null),j=Af(ll);return g.jsxs("main",{children:[g.jsxs("article",{children:[g.jsxs(Za,{children:[g.jsx("h1",{className:`
               pt-20 
               text-5xl 
               leading-loose`,children:"Bonjour, je suis Eric"}),g.jsx("div",{className:`
@@ -198,4 +198,4 @@ Error generating stack: `+u.message+`
                 flex-col
                 md:flex-row 
                 justify-between
-            `,children:[g.jsx("li",{children:g.jsx(xe,{href:"#moi&vous=nous",text:"nous"})}),g.jsx("li",{children:g.jsx(xe,{href:"#competences",text:"compétences"})}),g.jsx("li",{children:g.jsx(xe,{href:"#projets",text:"projets"})}),g.jsx("li",{children:g.jsx(xe,{href:"#parcours",text:"parcours"})}),g.jsx("li",{children:g.jsx(xe,{href:"#contact",text:"contact"})})]})})]})}const qy=Ll.lazy(()=>Ef(()=>import("./Footer-B_nWP8oG.js"),[],import.meta.url)),By=({children:E})=>g.jsxs(g.Fragment,{children:[g.jsx(Ry,{}),E,g.jsx(qy,{})]}),Gd=document.getElementById("root");Gd&&zy.createRoot(Gd).render(g.jsx(Ll.StrictMode,{children:g.jsx(Ay,{children:g.jsx(By,{children:g.jsx(Hy,{})})})}));export{Cy as H,Oe as L,Dy as a,py as b,g as j,Ll as r,Qd as u};
+            `,children:[g.jsx("li",{children:g.jsx(xe,{href:"#moi&vous=nous",text:"nous"})}),g.jsx("li",{children:g.jsx(xe,{href:"#competences",text:"compétences"})}),g.jsx("li",{children:g.jsx(xe,{href:"#projets",text:"projets"})}),g.jsx("li",{children:g.jsx(xe,{href:"#parcours",text:"parcours"})}),g.jsx("li",{children:g.jsx(xe,{href:"#contact",text:"contact"})})]})})]})}const qy=Ll.lazy(()=>Ef(()=>import("./Footer-CuPHUGYH.js"),[],import.meta.url)),By=({children:E})=>g.jsxs(g.Fragment,{children:[g.jsx(Ry,{}),E,g.jsx(qy,{})]}),Gd=document.getElementById("root");Gd&&zy.createRoot(Gd).render(g.jsx(Ll.StrictMode,{children:g.jsx(Ay,{children:g.jsx(By,{children:g.jsx(Hy,{})})})}));export{Cy as H,Oe as L,Dy as a,py as b,g as j,Ll as r,Qd as u};

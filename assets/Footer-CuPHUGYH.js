@@ -1,4 +1,4 @@
-import{r as a,j as e,H as i,L as l}from"./index-BHOXEYhw.js";function d(){const n=a.useRef(null),o=()=>{n.current&&!n.current.open&&(n.current.showModal(),n.current.focus())},t=()=>{n.current&&n.current.open&&n.current.close()},r=s=>{s.target===s.currentTarget&&n.current?.close()};return e.jsxs("footer",{className:`
+import{r as a,j as e,H as i,L as l}from"./index-CKiYOgk2.js";function d(){const n=a.useRef(null),o=()=>{n.current&&!n.current.open&&(n.current.showModal(),n.current.focus())},t=()=>{n.current&&n.current.open&&n.current.close()},r=s=>{s.target===s.currentTarget&&n.current?.close()};return e.jsxs("footer",{className:`
             group 
             px-4 
             pb-15

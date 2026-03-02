@@ -8,10 +8,10 @@ export default defineConfig({
     ],
     exclude:[
         'test/accessibility/**/*.a11y.test.tsx',
-        'test/integration/**/*.integration.test.ts',
-        'test/accessibility/unit/**/*.a11y.test.tsx'
+        'test/integration/**/*.integration.browser.test.tsx',
+        'test/unit/**/*.unit.test.ts'
     ],
-    /* implicit default */
+    /* default */
     environment: 'node'
     }
 });

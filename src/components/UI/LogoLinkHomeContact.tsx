@@ -18,7 +18,7 @@ export default function LogoLinkHomeContact(
         alt={ altText }
         width={25}
         height={24}
-        p={6}
-        h={25}
+        classNameA='p-6'
+        classNameImg='h-[25px]'
     />
 }

@@ -4,8 +4,8 @@ type IconLinkProps = {
   alt: string
   width: number
   height: number
-  p?: number
-  h?: number
+  classNameA?: string
+  classNameImg?: string
 }
 
 export function IconLink({
@@ -14,20 +14,21 @@ export function IconLink({
   alt,
   width,
   height,
-  p,
-  h
+  classNameA='',
+  classNameImg=''
 }: IconLinkProps) {
   return (
     <a
       href={href}
       target='_blank'
       rel='noopener noreferrer'
-      className='
+      className={`
         focus-visible:outline-2
         focus-visible:outline-blue-500
         hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]
         focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]
-      '
+        ${classNameA}
+      `}
     >
       <img
         src={src}
@@ -35,11 +36,10 @@ export function IconLink({
         width={width}
         height={height}
         className={`
-          p-${p}
-          h-${h}
           transition-shadow
           duration-600
-          ease-in-out
+          ease-in-out 
+          ${classNameImg}
         `}
         loading='lazy'
       />

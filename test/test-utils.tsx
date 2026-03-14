@@ -6,7 +6,7 @@ import { TestProviders } from './TestProviders';
 
 /**
  * Provider wrapping render
- * @param ui React component to render
+ * @param {ReactElement} ui React component to render
  * @returns render that wraps with hook providers.
  * For example it wraps <LogoProvider> around ui 
  * to avoid useLogo must be used within a LogoProvider error.

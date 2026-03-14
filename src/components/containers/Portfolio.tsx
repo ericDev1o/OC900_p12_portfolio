@@ -1,7 +1,8 @@
 import { 
     useState, 
     useEffect, 
-    useRef 
+    useRef, 
+    JSX
 } from 'react';
 
 import type { Project } from '@/custom/types/Project';
@@ -10,24 +11,27 @@ import ProjectCard from '../UI/ProjectCard';
 import LazyLoadWrapper from './LazyLoadWrapper';
 
 /**
- * This component is a container of ProjectCard.tsx.
+ * Container for ProjectCard components.
+ * 
+ * Fetches project data from /data/projects.json and renders each project
+ * inside a LazyLoadWrapper for viewport-based lazy rendering.
+ * 
  * One-way tree project URI data flow is done for
  *     1) predictable state,
  *     2) readability,
- *     3) maintainability,
- *     4) leightweight bundle without dependency overhead,
- *     5) avoid redux overkill or Zustand or even useContext at least for now.
+ *     3) maintainability.
+ * It avoids overkill state management libraries (redux, Zustand etc).
  * API data URL should be the single source of truth.
  * 
- * @param {string} projectsPath /projects
- * @returns ProjectCards from fetched /data/projects.json
+ * @param {string} projectsPath Base path for project URLs (e.g. /projects).
+ * @returns {JSX.Element} A div containing LazyLoadWrapper ProjectCard components.
  */
 export default function Portfolio(
     {
         projectsPath
     }: {
         projectsPath: string
-}) {
+}): JSX.Element {
     const [projects, setProjects] = useState<Project[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -69,8 +73,8 @@ export default function Portfolio(
         }, []
     ); 
 
-    if(loading) return <p>chargement des projets</p>;
-    if(error) return <p>erreur: {error}</p>;
+    if(loading) return <p>Chargement des projets...</p>;
+    if(error) return <p>Erreur: {error}</p>;
 
     return <div
             ref = {scrollContainerRef}

@@ -1,13 +1,17 @@
+import { JSX } from 'react';
+
+import { LogoKey } from '@/custom/types/LogoKey';
 import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 
 import Skill from '../UI/Skill';
 
 /**
- * This component holds all the Skill.tsx on the Home.tsx page in the dedicated section.
- * It is in this separate component for Home.tsx readability.
- * @returns {ReactNode} skills logos on the Home.tsx page in the skills section.
+ * Holds all Skill.tsx displayed in the Home.tsx page skills section.
+ * It is extracted here for better Home.tsx readability.
+ * 
+ * @returns {JSX.Element} The list of skill logos displayed in the Home page skills section.
  */
-export default function Skills() {
+export default function Skills(): JSX.Element {
     const { getLogoURI } = useSkillsLogo();
 
     const skills = [
@@ -33,7 +37,7 @@ export default function Skills() {
         'feedly',
         'notion',
         'excalidraw'
-    ];
+    ] as const satisfies LogoKey[];
 
     return <div 
         className='

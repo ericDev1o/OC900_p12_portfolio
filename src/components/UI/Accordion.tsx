@@ -1,4 +1,5 @@
 import {
+  JSX,
   type ReactNode, 
   useEffect, 
   useRef, 
@@ -6,13 +7,13 @@ import {
 } from 'react';
   
 /** 
- * This is an accordion that slides down and up in 0.6 second. 
- * <details><summary> isn't used because I found it impossible to animate
- * the accordion closing.
+ * Accordion component that animates open / close in 0.6s. 
  * 
- * @param {string} summary is the label of hidden content
- * @param {ReactNode} children is content inside the accordion
- * @returns label of hidden content, arrow to open/close and content.
+ * Note: <details><summary> isn't used because its closing animation cannot be customized.
+ * 
+ * @param {string} summary is the label of hidden content.
+ * @param {ReactNode} children is the content inside the accordion.
+ * @returns {JSX.Element} A div containing the summary button, arrow and hidden content.
  */
 export default function Accordion(
   { 
@@ -21,8 +22,7 @@ export default function Accordion(
   }: { 
     summary: string; 
     children: ReactNode 
-  }
-) {
+  }): JSX.Element {
   const contentRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
 

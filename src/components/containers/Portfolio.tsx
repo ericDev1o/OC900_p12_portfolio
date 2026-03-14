@@ -1,8 +1,8 @@
 import { 
     useState, 
     useEffect, 
-    useRef } 
-from 'react';
+    useRef 
+} from 'react';
 
 import type { Project } from '@/custom/types/Project';
 
@@ -17,7 +17,7 @@ import LazyLoadWrapper from './LazyLoadWrapper';
  *     3) maintainability,
  *     4) leightweight bundle without dependency overhead,
  *     5) avoid redux overkill or Zustand or even useContext at least for now.
- * API data URL should ultimately be the single source of truth.
+ * API data URL should be the single source of truth.
  * 
  * @param {string} projectsPath /projects
  * @returns ProjectCards from fetched /data/projects.json
@@ -30,7 +30,7 @@ export default function Portfolio(
 }) {
     const [projects, setProjects] = useState<Project[]>([]);
     const [loading, setLoading] = useState(true);
-    const [error] = useState<string | null>(null);
+    const [error, setError] = useState<string | null>(null);
 
     const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -38,34 +38,32 @@ export default function Portfolio(
         { 
             const controller = new AbortController();
             
-            const fetchData = async () => 
+            const fetchProjects = async () => 
             { 
                 try { 
+                    setLoading(true);
+                    setError(null);
+
                     const res = await fetch(
                         `${import.meta.env.BASE_URL}data/projects.json`,
                         { signal: controller.signal }
                     );
 
-                    if (!res.ok) throw new Error(`HTTP error: ${res.status}`); 
+                    if (!res.ok) throw new Error(`HTTP error: ${res.status}`);  
 
-                    const data = await res.json(); 
-
-                    setProjects(data); 
-                    setLoading(false); 
+                    setProjects(await res.json()); 
                 } catch (e: unknown) { 
                     if (e instanceof DOMException && e.name === 'AbortError')
                         return;
                     
-                    if( e instanceof SyntaxError ||
-                        e instanceof ReferenceError || 
-                        e instanceof TypeError || 
-                        e instanceof Error
-                    )
-                        console.log('error: ' + e.message) 
-                } 
+                    console.error('Fetch failed: ',e); 
+                    setError('Impossible de charger les projets');
+                } finally {
+                    setLoading(false);
+                }
             };
 
-            fetchData(); 
+            fetchProjects(); 
             
             return () => controller.abort();
         }, []

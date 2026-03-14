@@ -1,5 +1,4 @@
-import type { ReactNode } from 'react';
-
+import { JSX } from 'react';
 import SkillLogo from '../UI/ProjectCardSkillLogo';
 
 /**
@@ -8,25 +7,32 @@ import SkillLogo from '../UI/ProjectCardSkillLogo';
  * with skill logos on the Home.tsx page in the skills section.
  * 
  * @param {Set<string>} paths to logo files
- * @param {string} repo URL each logo targets
- * @returns 
+ * @param {string} repo URL each logo links to
+ * @returns {JSX.Element} a container element wrapping the SkillLogo components,
+ * or a single SkillLogo, or an empty fragment if none.
  */
-export default function ProjectCardSkillLogos({paths, repo}: {paths: Set<string>, repo: string}) {
-    let nodes: Set<ReactNode> = new Set<ReactNode>;
-    paths.forEach(path => {
-        nodes.add(<SkillLogo logoPath={path} repo={repo} key={path} />);
-        });
-    if(nodes.size > 1)
-        return <div 
-            className='
-                flex 
-                flex-wrap 
-                shrink-0 
-                justify-between 
-                items-center'>
-                    {nodes}
-        </div>;
-    else if (nodes.size === 1)
-        return nodes
-    else return <></>;
+export default function ProjectCardSkillLogos({
+    paths, 
+    repo
+}: {
+    paths: Set<string>, 
+    repo: string}
+): JSX.Element {
+    const nodes = Array.from(paths).map(path => (
+        <SkillLogo logoPath={path} repo={repo} key={path} />
+    ));
+
+    if( ! nodes.length) return <></>;
+
+    return nodes.length === 1 
+    ? nodes[0]
+    : <div 
+        className='
+            flex 
+            flex-wrap 
+            shrink-0 
+            justify-between 
+            items-center'>
+                {nodes}
+    </div>;
 }

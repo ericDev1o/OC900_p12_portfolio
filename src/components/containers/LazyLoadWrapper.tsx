@@ -1,4 +1,5 @@
 import { 
+    JSX,
     ReactNode, 
     useMemo, 
     useRef
@@ -9,23 +10,23 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import { defaultOptions } from '../../config/intersectionObserverConfig';
 
 /**
- * This component is a wrapper for heavy media elements beneath the Hero section.
- * They're displayed only on-demand when user's scroll reaches them, after FirstContentFulPaint.
- * It is used to reduce 
- *     1) Speed Index: time to display content. The user sees hydrated content.
- *     2) TotalBlockingTime: Time ToInteractive. The user can interact sooner with the page.
+ * Wrapper for heavy media elements that should be lazy-loaded when they enter the viewport.
  * 
- * @param {ReactNode} children are images to lazy load only when viewport focus reaches them.
- * @param {IntersectionObserverInit} options configure Intersection Observation:
- *     root: is the whole page viewport or a specific component
+ * It's used to improve performance metrics such as: 
+ *     1) Speed Index: content is displayed faster.
+ *     2) Total Blocking Time: Time To Interactive. The page is interactive sooner.
+ * 
+ * @param {ReactNode} children are images to lazy-load.
+ * @param {IntersectionObserverInit} [options] optional Intersection Observer settings:
+ *     root: viewport or specific parent element for observation
  *         for example in the Portfolio each ProjectCard is lazy-loaded due to significant height.
  *         In this case root must be the ProjectCard.
- *     roootMargin: specifying a positive margin anticipates the loading before focus reaches it.
+ *     rootMargin: positive margin loads content slightly before it enters viewport.
  *         It is smoother for the user.
- *     threshold: the lower it is the fastest it is detected and displayed.
+ *     threshold: fraction of element visibility to trigger load
  *         For example 0.5 means it is detected as soon as 50% of the element is visible.
  *         It can cause large elements to stay hidden. 
- * @returns {ReactNode} child image, visible if viewport has reached it.
+ * @returns {JSX.Element} child image, visible if viewport has reached it.
  */
 export default function LazyLoadWrapper({
     children, 
@@ -33,7 +34,7 @@ export default function LazyLoadWrapper({
     {
         children: ReactNode,
         options?: IntersectionObserverInit
-    }) {
+    }): JSX.Element {
     const ref = useRef<HTMLDivElement>(null);
 
     const memoizedOptions = useMemo(

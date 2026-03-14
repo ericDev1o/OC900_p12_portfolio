@@ -10,7 +10,8 @@ import {
  * <details><summary> isn't used because I found it impossible to animate
  * the accordion closing.
  * 
- * @param summary is the label of hidden content
+ * @param {string} summary is the label of hidden content
+ * @param {ReactNode} children is content inside the accordion
  * @returns label of hidden content, arrow to open/close and content.
  */
 export default function Accordion(

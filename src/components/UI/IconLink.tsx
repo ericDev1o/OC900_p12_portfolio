@@ -2,20 +2,16 @@ type IconLinkProps = {
   href: string
   src: string | undefined
   alt: string
-  width: number
-  height: number
+  classNameImgWidthHeight: string
   classNameA?: string
-  classNameImg?: string
 }
 
 export function IconLink({
   href,
   src,
   alt,
-  width,
-  height,
+  classNameImgWidthHeight='',
   classNameA='',
-  classNameImg=''
 }: IconLinkProps) {
   return (
     <a
@@ -33,13 +29,11 @@ export function IconLink({
       <img
         src={src}
         alt={alt}
-        width={width}
-        height={height}
         className={`
           transition-shadow
           duration-600
           ease-in-out 
-          ${classNameImg}
+          ${classNameImgWidthHeight}
         `}
         loading='lazy'
       />

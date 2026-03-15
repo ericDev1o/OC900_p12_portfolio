@@ -26,6 +26,7 @@ export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
   const CVPath = basePath + 'CV/CV_integrateur_web_react_Eric_F.pdf'
   const photoPath = basePath + 'CV/photoCV_w100px.webp';
+  const photoPathRetina = basePath + 'CV/photoCV_w150px.webp';
 
   const projectsPath = 'projects/';
   const { getLogoURI } = useSkillsLogo();
@@ -55,7 +56,12 @@ export default function Home() {
           >
             <img
               src={photoPath}
+              srcSet={`${photoPath} 1x, ${photoPathRetina} 1.5x`}
+              width='100px'
+              height='134px'
               alt='ma photo'
+              loading='lazy'
+              decoding='async'
             />
           </div>
           <h2

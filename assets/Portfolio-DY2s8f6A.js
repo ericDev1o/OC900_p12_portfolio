@@ -1,4 +1,4 @@
-import{j as e,r as i,b as f,u,L as x,a as h}from"./index-CyGgyEpq.js";function p({logoPath:n,repo:o}){const s=n.split("/"),a=s[s.length-1].split(".")[0];return e.jsx("section",{children:e.jsx("a",{href:o,target:"_blank","aria-label":o,children:e.jsx("img",{src:n,alt:a,loading:"lazy",className:"m-2"})})})}function g({paths:n,repo:o}){const s=Array.from(n).map(t=>e.jsx(p,{logoPath:t,repo:o},t));return s.length?s.length===1?s[0]:e.jsx("div",{className:`
+import{j as e,r as i,b as f,u,L as x,a as h}from"./index-VtzCdIqj.js";function p({logoPath:n,repo:o}){const s=n.split("/"),a=s[s.length-1].split(".")[0];return e.jsx("section",{children:e.jsx("a",{href:o,target:"_blank","aria-label":o,children:e.jsx("img",{src:n,alt:a,loading:"lazy",className:"m-2"})})})}function g({paths:n,repo:o}){const s=Array.from(n).map(t=>e.jsx(p,{logoPath:t,repo:o},t));return s.length?s.length===1?s[0]:e.jsx("div",{className:`
             flex 
             flex-wrap 
             shrink-0 

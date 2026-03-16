@@ -30,9 +30,12 @@ export default function Footer() {
         className='
             group 
             px-4 
-            pb-15
-            flex
-            justify-between'
+            pb-15 
+            flex 
+            flex-wrap 
+            justify-between 
+            items-center 
+            gap-4'
     >
         <HeadFootLogos />
         <p className='mx-4'>

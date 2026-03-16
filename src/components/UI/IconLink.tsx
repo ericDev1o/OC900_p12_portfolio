@@ -4,6 +4,7 @@ type IconLinkProps = {
   alt: string
   classNameImgWidthHeight: string
   classNameA?: string
+  srcSet?: string
 }
 
 export function IconLink({
@@ -12,6 +13,7 @@ export function IconLink({
   alt,
   classNameImgWidthHeight='',
   classNameA='',
+  srcSet=''
 }: IconLinkProps) {
   return (
     <a
@@ -28,6 +30,7 @@ export function IconLink({
     >
       <img
         src={src}
+        srcSet={srcSet}
         alt={alt}
         className={`
           transition-shadow

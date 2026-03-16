@@ -1,4 +1,4 @@
-import{j as e,r as i,b as f,u,L as x,a as h}from"./index-CPsA2zap.js";function p({logoPath:n,repo:o}){const s=n.split("/"),a=s[s.length-1].split(".")[0];return e.jsx("section",{children:e.jsx("a",{href:o,target:"_blank","aria-label":o,children:e.jsx("img",{src:n,alt:a,loading:"lazy",className:"m-2"})})})}function g({paths:n,repo:o}){const s=Array.from(n).map(t=>e.jsx(p,{logoPath:t,repo:o},t));return s.length?s.length===1?s[0]:e.jsx("div",{className:`
+import{j as e,r as i,b as f,u,L as x,a as h}from"./index-B59bCOI3.js";function p({logoPath:n,repo:o}){const s=n.split("/"),a=s[s.length-1].split(".")[0];return e.jsx("section",{children:e.jsx("a",{href:o,target:"_blank","aria-label":o,children:e.jsx("img",{src:n,alt:a,loading:"lazy",decoding:"async",className:"m-2"})})})}function g({paths:n,repo:o}){const s=Array.from(n).map(t=>e.jsx(p,{logoPath:t,repo:o},t));return s.length?s.length===1?s[0]:e.jsx("div",{className:`
             flex 
             flex-wrap 
             shrink-0 
@@ -65,18 +65,18 @@ import{j as e,r as i,b as f,u,L as x,a as h}from"./index-CPsA2zap.js";function p
                                 h-max 
                                 transition-shadow 
                                 duration-600 
-                                ease-in-out`,alt:s,loading:"lazy"})}),e.jsx(x,{})]}),e.jsx("h4",{className:`
+                                ease-in-out`,alt:s,loading:"lazy",decoding:"async"})}),e.jsx(x,{})]}),e.jsx("h4",{className:`
                         m-6 
                         text-2xl 
                         leading-loose 
                         text-orange-500 
                         font-semibold 
                         tracking-tight 
-                        text-heading`,children:n.title}),e.jsx(g,{paths:a,repo:n.repository})]}),e.jsx("div",{className:"space-y-4",children:e.jsxs(j,{summary:"Découvrez ce projet",children:[e.jsx("h5",{className:"font-extrabold mt-2",children:"contexte"}),e.jsx("p",{children:n.contexte}),e.jsx("h5",{className:"font-extrabold mt-2",children:"objectifs"}),e.jsx("p",{children:n.objectifs}),e.jsx("h5",{className:"font-extrabold mt-2",children:"stack technique"}),e.jsx("p",{children:n.stackTechnique}),e.jsx("h5",{className:"font-extrabold mt-2",children:"compétences développées"}),e.jsx("p",{children:n.competencesDeveloppees}),e.jsx("h5",{className:"font-extrabold mt-2",children:"résultats et impact"}),e.jsx("p",{children:n.resultatsEtImpact}),e.jsx("h5",{className:"font-extrabold mt-2",children:"perspectives d'amélioration"}),e.jsx("p",{children:n.perspectivesAmelioration})]})})]})}function y({projectsPath:n}){const[o,s]=i.useState([]),[t,a]=i.useState(!0),[r,d]=i.useState(null),m=i.useRef(null);return i.useEffect(()=>{const c=new AbortController;return(async()=>{try{a(!0),d(null);const l=await fetch("./data/projects.json",{signal:c.signal});if(!l.ok)throw new Error(`HTTP error: ${l.status}`);s(await l.json())}catch(l){if(l instanceof DOMException&&l.name==="AbortError")return;console.error("Fetch failed: ",l),d("Impossible de charger les projets")}finally{a(!1)}})(),()=>c.abort()},[]),t?e.jsx("p",{children:"Chargement des projets..."}):r?e.jsxs("p",{children:["Erreur: ",r]}):e.jsx("div",{ref:m,className:`
+                        text-heading`,children:n.title}),e.jsx(g,{paths:a,repo:n.repository})]}),e.jsx("div",{className:"space-y-4",children:e.jsxs(j,{summary:"Découvrez ce projet",children:[e.jsx("h5",{className:"font-extrabold mt-2",children:"contexte"}),e.jsx("p",{children:n.contexte}),e.jsx("h5",{className:"font-extrabold mt-2",children:"objectifs"}),e.jsx("p",{children:n.objectifs}),e.jsx("h5",{className:"font-extrabold mt-2",children:"stack technique"}),e.jsx("p",{children:n.stackTechnique}),e.jsx("h5",{className:"font-extrabold mt-2",children:"compétences développées"}),e.jsx("p",{children:n.competencesDeveloppees}),e.jsx("h5",{className:"font-extrabold mt-2",children:"résultats et impact"}),e.jsx("p",{children:n.resultatsEtImpact}),e.jsx("h5",{className:"font-extrabold mt-2",children:"perspectives d'amélioration"}),e.jsx("p",{children:n.perspectivesAmelioration})]})})]})}function N({projectsPath:n}){const[o,s]=i.useState([]),[t,a]=i.useState(!0),[r,d]=i.useState(null),m=i.useRef(null);return i.useEffect(()=>{const c=new AbortController;return(async()=>{try{a(!0),d(null);const l=await fetch("./data/projects.json",{signal:c.signal});if(!l.ok)throw new Error(`HTTP error: ${l.status}`);s(await l.json())}catch(l){if(l instanceof DOMException&&l.name==="AbortError")return;console.error("Fetch failed: ",l),d("Impossible de charger les projets")}finally{a(!1)}})(),()=>c.abort()},[]),t?e.jsx("p",{children:"Chargement des projets..."}):r?e.jsxs("p",{children:["Erreur: ",r]}):e.jsx("div",{ref:m,className:`
                 flex
                 flex-col
                 justify-center
                 items-center 
                 h-screen 
                 overflow-y-auto
-                relative`,children:o.map(c=>e.jsx(h,{options:{root:m.current,rootMargin:"0px",threshold:0},children:e.jsx(b,{project:c,projectsPath:n})},c.number))})}export{y as default};
+                relative`,children:o.map(c=>e.jsx(h,{options:{root:m.current,rootMargin:"0px",threshold:0},children:e.jsx(b,{project:c,projectsPath:n})},c.number))})}export{N as default};

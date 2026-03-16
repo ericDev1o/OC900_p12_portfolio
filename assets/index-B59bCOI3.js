@@ -12,7 +12,7 @@ Error generating stack: `+e.message+`
                     duration-500 
                     ease-in-out
                     ${R?"opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}
-                `,children:A})})}const jy=Ul.lazy(()=>Ef(()=>import("./Skills-DCMJ1Ed9.js"),[],import.meta.url));function Uy(){const A=Ul.useRef(null),N=Af(A);return g.jsx("div",{ref:A,children:N&&g.jsx(Ul.Suspense,{fallback:null,children:g.jsx(jy,{})})})}function _u({title:A,id:N}){return g.jsx("h3",{id:N,className:`
+                `,children:A})})}const jy=Ul.lazy(()=>Ef(()=>import("./Skills-Blm4HS_M.js"),[],import.meta.url));function Uy(){const A=Ul.useRef(null),N=Af(A);return g.jsx("div",{ref:A,children:N&&g.jsx(Ul.Suspense,{fallback:null,children:g.jsx(jy,{})})})}function _u({title:A,id:N}){return g.jsx("h3",{id:N,className:`
         pt-22 
         pb-6 
         text-3xl
@@ -71,13 +71,13 @@ Error generating stack: `+e.message+`
           duration-600
           ease-in-out 
           ${m}
-        `,loading:"lazy"})})}function Yd({href:A,src:N,altText:H,classNameImageWidthHeight:m}){return g.jsx(pf,{href:A,src:N,alt:H,classNameA:"p-6",classNameImgWidthHeight:m})}function Xa({text:A}){return g.jsx("span",{className:`
+        `,loading:"lazy",decoding:"async"})})}function Yd({href:A,src:N,altText:H,classNameImageWidthHeight:m}){return g.jsx(pf,{href:A,src:N,alt:H,classNameA:"p-6",classNameImgWidthHeight:m})}function Xa({text:A}){return g.jsx("span",{className:`
             mx-2 
             font-extrabold 
             text-green-400`,children:A})}function zf({text:A}){return g.jsx("span",{className:`
             mx-2 
             font-extrabold 
-            text-violet-400`,children:A})}const Ny=Ul.lazy(()=>Ef(()=>import("./Portfolio-DzQWqVey.js"),[],import.meta.url));function Hy(){const N="./CV/CV_integrateur_web_react_Eric_F.pdf",H="./CV/photoCV_w100px.webp",m="./CV/photoCV_w150px.webp",R="projects/",{getLogoURI:Y}=Qd(),w=Y("linkedIn"),tl=Y("gitHub"),O=Ul.useRef(null),E=Af(O);return g.jsxs("main",{children:[g.jsxs("article",{children:[g.jsxs(Za,{children:[g.jsx("h1",{className:`
+            text-violet-400`,children:A})}const Ny=Ul.lazy(()=>Ef(()=>import("./Portfolio-C7k3KCsY.js"),[],import.meta.url));function Hy(){const N="./CV/CV_integrateur_web_react_Eric_F.pdf",H="./CV/photoCV_w100px.webp",m="./CV/photoCV_w150px.webp",R="projects/",{getLogoURI:Y}=Qd(),w=Y("linkedIn"),tl=Y("gitHub"),O=Ul.useRef(null),E=Af(O);return g.jsxs("main",{children:[g.jsxs("article",{children:[g.jsxs(Za,{children:[g.jsx("h1",{className:`
               pt-20 
               text-5xl 
               leading-loose`,children:"Bonjour, je suis Eric"}),g.jsx("div",{className:`
@@ -198,4 +198,4 @@ Error generating stack: `+e.message+`
                 flex-col
                 md:flex-row 
                 justify-between
-            `,children:[g.jsx("li",{children:g.jsx(Ou,{href:"#moi&vous=nous",text:"nous"})}),g.jsx("li",{children:g.jsx(Ou,{href:"#competences",text:"compétences"})}),g.jsx("li",{children:g.jsx(Ou,{href:"#projets",text:"projets"})}),g.jsx("li",{children:g.jsx(Ou,{href:"#parcours",text:"parcours"})}),g.jsx("li",{children:g.jsx(Ou,{href:"#contact",text:"contact"})})]})})]})}const qy=Ul.lazy(()=>Ef(()=>import("./Footer-CoXRUVNH.js"),[],import.meta.url)),By=({children:A})=>g.jsxs(g.Fragment,{children:[g.jsx(Ry,{}),A,g.jsx(qy,{})]}),Gd=document.getElementById("root");Gd&&zy.createRoot(Gd).render(g.jsx(Ul.StrictMode,{children:g.jsx(Ay,{children:g.jsx(By,{children:g.jsx(Hy,{})})})}));export{Cy as H,xu as L,Dy as a,py as b,g as j,Ul as r,Qd as u};
+            `,children:[g.jsx("li",{children:g.jsx(Ou,{href:"#moi&vous=nous",text:"nous"})}),g.jsx("li",{children:g.jsx(Ou,{href:"#competences",text:"compétences"})}),g.jsx("li",{children:g.jsx(Ou,{href:"#projets",text:"projets"})}),g.jsx("li",{children:g.jsx(Ou,{href:"#parcours",text:"parcours"})}),g.jsx("li",{children:g.jsx(Ou,{href:"#contact",text:"contact"})})]})})]})}const qy=Ul.lazy(()=>Ef(()=>import("./Footer-DXmdw3JT.js"),[],import.meta.url)),By=({children:A})=>g.jsxs(g.Fragment,{children:[g.jsx(Ry,{}),A,g.jsx(qy,{})]}),Gd=document.getElementById("root");Gd&&zy.createRoot(Gd).render(g.jsx(Ul.StrictMode,{children:g.jsx(Ay,{children:g.jsx(By,{children:g.jsx(Hy,{})})})}));export{Cy as H,xu as L,Dy as a,py as b,g as j,Ul as r,Qd as u};

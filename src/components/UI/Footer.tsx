@@ -30,12 +30,16 @@ export default function Footer() {
         className='
             group 
             px-4 
-            pb-15
-            flex
-            justify-between'
+            pb-15 
+            flex 
+            justify-between 
+            items-center 
+            gap-6'
     >
-        <HeadFootLogos />
-        <p className='mx-4'>
+        <div className='shrink-0'>
+            <HeadFootLogos/>
+        </div>
+        <p className='mx-auto text-center'>
             &copy; 2026 Mon Portfolio. Tous droits réservés.  
             Code source disponible sous licence ISC sur GitHub.
         </p>

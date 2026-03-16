@@ -27,8 +27,11 @@ export type LogoKey =
     'pa11y' |
     'vitestAxe' |
     'linkedIn' |
+    'linkedInRetina' |
     'gitHub' |
+    'gitHubRetina' |
     'E' |
+    'Eretina' |
     'feedly' |
     'notion' |
     'excalidraw'

@@ -16,5 +16,6 @@ export default function Skill({
             hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]' 
         alt={altText}
         loading='lazy'
+        decoding='async'
     />
 }

@@ -39,6 +39,7 @@ export function IconLink({
           ${classNameImgWidthHeight}
         `}
         loading='lazy'
+        decoding='async'
       />
     </a>
   )

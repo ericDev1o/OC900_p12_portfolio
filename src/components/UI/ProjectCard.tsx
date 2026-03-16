@@ -84,6 +84,7 @@ export default function ProjectCard
                                 ease-in-out' 
                             alt={alt}
                             loading='lazy'
+                            decoding='async'
                         />
                     </a>
                     <LinkClickWarning />

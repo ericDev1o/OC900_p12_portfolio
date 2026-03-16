@@ -13,7 +13,9 @@ export default function ProjectCardSkillLogo({ logoPath, repo}: {logoPath: strin
                 src={logoPath} 
                 alt={altName}
                 loading='lazy'
-                className='m-2'></img>
+                decoding='async'
+                className='m-2'
+            />
         </a>
     </section>
 }

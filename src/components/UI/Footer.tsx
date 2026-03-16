@@ -32,13 +32,14 @@ export default function Footer() {
             px-4 
             pb-15 
             flex 
-            flex-wrap 
             justify-between 
             items-center 
-            gap-4'
+            gap-6'
     >
-        <HeadFootLogos />
-        <p className='mx-4'>
+        <div className='shrink-0'>
+            <HeadFootLogos/>
+        </div>
+        <p className='mx-auto text-center'>
             &copy; 2026 Mon Portfolio. Tous droits réservés.  
             Code source disponible sous licence ISC sur GitHub.
         </p>

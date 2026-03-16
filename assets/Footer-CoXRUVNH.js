@@ -1,9 +1,11 @@
-import{r as a,j as e,H as i,L as l}from"./index-BRMZZFef.js";function d(){const n=a.useRef(null),o=()=>{n.current&&!n.current.open&&(n.current.showModal(),n.current.focus())},t=()=>{n.current&&n.current.open&&n.current.close()},r=s=>{s.target===s.currentTarget&&n.current?.close()};return e.jsxs("footer",{className:`
+import{r as a,j as e,H as i,L as l}from"./index-CPsA2zap.js";function d(){const n=a.useRef(null),o=()=>{n.current&&!n.current.open&&(n.current.showModal(),n.current.focus())},t=()=>{n.current&&n.current.open&&n.current.close()},r=s=>{s.target===s.currentTarget&&n.current?.close()};return e.jsxs("footer",{className:`
             group 
             px-4 
-            pb-15
-            flex
-            justify-between`,children:[e.jsx(i,{}),e.jsx("p",{className:"mx-4",children:"© 2026 Mon Portfolio. Tous droits réservés. Code source disponible sous licence ISC sur GitHub."}),e.jsxs("div",{className:`
+            pb-15 
+            flex 
+            justify-between 
+            items-center 
+            gap-6`,children:[e.jsx("div",{className:"shrink-0",children:e.jsx(i,{})}),e.jsx("p",{className:"mx-auto text-center",children:"© 2026 Mon Portfolio. Tous droits réservés. Code source disponible sous licence ISC sur GitHub."}),e.jsxs("div",{className:`
                 relative 
                 group`,children:[e.jsx("button",{id:"legal",type:"button",onClick:o,className:`
                     cursor-pointer 

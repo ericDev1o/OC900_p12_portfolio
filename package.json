@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.4.6",
+  "version": "0.4.7",
   "type": "module",
   "scripts": {
     "clean": "vite:clean",
@@ -55,7 +55,6 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "vite": "^8.0.0",
-    "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.0",
     "vitest-axe": "^0.1.0"
   },

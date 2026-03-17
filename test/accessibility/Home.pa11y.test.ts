@@ -2,7 +2,7 @@ import pa11y from 'pa11y';
 import htmlReporter from 'pa11y-reporter-html';
 import fs from 'fs';
 import { writeFile } from 'fs/promises';
-import path from 'path';
+import { fileURLToPath } from 'node:url';
 import { 
     describe, 
     it 
@@ -13,12 +13,17 @@ describe('accessibility test', () => {
         // Arrange
         const results = await pa11y('https://ericdev1o.github.io/OC900_p12_portfolio');
         const html = await htmlReporter.results(results);
+        const reportsURL = new URL('../../reports', import.meta.url);
 
-        const reportDir = path.resolve(__dirname, '../../reports');
+        const reportDir = fileURLToPath(reportsURL);
         if (!fs.existsSync(reportDir)) {
         fs.mkdirSync(reportDir, { recursive: true });
         }
         // Act
-        await writeFile(path.resolve(reportDir, 'pa11y-report.html'), html, 'utf-8');
+        await writeFile(
+            new URL('pa11y-report.html', reportsURL), 
+            html, 
+            'utf-8'
+        );
     }, 30000);
 });

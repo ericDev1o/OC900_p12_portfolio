@@ -14,7 +14,7 @@ export default defineConfig({
       ]
     },
     include:[
-      'test/integration/**/*.integration.browser.test.tsx'
+      'test/integration/**/*.integration.test.tsx'
     ],
     exclude:[
       'test/unit/**/*.unit.test.ts',

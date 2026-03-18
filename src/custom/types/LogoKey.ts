@@ -24,8 +24,7 @@ export type LogoKey =
     'axeDevTool' |
     'greenITanalysis' |
     'stylelint' |
-    'pa11y' |
-    'vitestAxe' |
+    'playwright' |
     'linkedIn' |
     'linkedInRetina' |
     'gitHub' |

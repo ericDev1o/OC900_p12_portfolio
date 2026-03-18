@@ -1,16 +1,16 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.4.7",
+  "version": "0.4.8",
   "type": "module",
   "scripts": {
     "clean": "vite:clean",
     "dev": "vite",
     "build": "vite build --base=./",
     "eslint": "eslint --fix .",
-    "test:pa11y_node": "vitest run --config vitest.config.ts",
-    "test:a11y_jsdom": "vitest run --config vitest.jsdom.config.ts",
-    "test:content_browser": "vitest run --config vitest.browser.config.ts",
+    "test:unit": "vitest run --config vitest.jsdom.config.ts",
+    "test:integration":  "vitest run --config vitest.browser.config.ts",
+    "test:e2e": "playwright test test/accessibility",
     "preview": "vite preview",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
@@ -55,8 +55,7 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "vite": "^8.0.0",
-    "vitest": "^4.1.0",
-    "vitest-axe": "^0.1.0"
+    "vitest": "^4.1.0"
   },
   "packageManager": "yarn@4.12.0+sha512.f45ab632439a67f8bc759bf32ead036a1f413287b9042726b7cc4818b7b49e14e9423ba49b18f9e06ea4941c1ad062385b1d8760a8d5091a1a31e5f6219afca8",
   "homepage": "https://ericdev1o.github.io/OC900_p12_portfolio"

@@ -17,7 +17,6 @@ export default defineConfig({
       'test/integration/**/*.integration.browser.test.tsx'
     ],
     exclude:[
-      'test/accessibility/**/*.pa11y.test.ts',
       'test/unit/**/*.unit.test.ts',
       'test/accessibility/**/*.a11y.test.tsx'
     ],

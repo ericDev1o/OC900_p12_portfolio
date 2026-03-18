@@ -1,9 +1,11 @@
 import { defineConfig } from 'vitest/config';
 import { playwright } from '@vitest/browser-playwright';
 
+import { commonVitestConfig } from './vitest.common.config';
+
 export default defineConfig({
   test: {
-    globals: true,
+    ...commonVitestConfig,
     pool: 'browser',
     browser: {
       enabled: true, 

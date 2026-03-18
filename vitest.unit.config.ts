@@ -1,8 +1,10 @@
 import { defineConfig } from 'vitest/config';
 
+import { commonVitestConfig } from './vitest.common.config';
+
 export default defineConfig({
   test: {
-    globals: true,
+    ...commonVitestConfig,
     environment: 'jsdom',
     include:[
       'test/unit/**/*.unit.test.ts'

@@ -42,7 +42,7 @@ test.describe('Home page accessibility', () => {
                 status: resultsAxeAandAA.violations.length === 0 ? 'passed' : 'failed',
                 details: resultsAxeAandAA.violations
             }
-            console.log(JSON.stringify(report));
+            console.error(JSON.stringify(report));
         }
 
          // Act 
@@ -60,7 +60,7 @@ test.describe('Home page accessibility', () => {
                 status: resultsAxeAAA.violations.length === 0 ? 'passed' : 'failed',
                 details: resultsAxeAAA.violations
             }
-            console.log(JSON.stringify(report));
+            console.error(JSON.stringify(report));
         }
         
         // Assert

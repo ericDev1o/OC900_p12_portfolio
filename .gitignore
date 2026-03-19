@@ -22,6 +22,8 @@ dist
 # vitest
 coverage
 
+tmp
+
 # editor directories and files
 .vscode
 .editorconfig

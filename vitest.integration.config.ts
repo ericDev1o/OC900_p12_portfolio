@@ -3,6 +3,15 @@ import { playwright } from '@vitest/browser-playwright';
 
 import { commonVitestConfig } from './vitest.common.config';
 
+/**
+ * browser is for webkit via docker script test:webkit
+ */
+const allowedBrowsers = ['chromium', 'firefox', 'webkit'] as const;
+type Browser = typeof allowedBrowsers[number];
+const browser : Browser | undefined =  allowedBrowsers.includes(process.env.BROWSER as Browser)
+? (process.env.BROWSER as Browser)
+: undefined;
+
 export default defineConfig({
   test: {
     ...commonVitestConfig,
@@ -10,7 +19,9 @@ export default defineConfig({
     browser: {
       enabled: true, 
       provider: playwright(),
-      instances: [
+      instances: browser 
+      ? [{ browser }] 
+      : [
         { browser: 'chromium' },
         { browser: 'firefox' }
       ]

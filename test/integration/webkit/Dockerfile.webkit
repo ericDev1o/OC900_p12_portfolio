@@ -1,0 +1,22 @@
+FROM mcr.microsoft.com/playwright:v1.58.2
+
+RUN apt-get update && apt-get install -y xvfb \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/* /usr/share/man /usr/share/doc /usr/share/info
+
+WORKDIR /app
+
+RUN corepack enable \
+  && corepack prepare yarn@stable --activate
+
+COPY . .
+
+RUN yarn install --immutable \
+  && npx playwright install webkit \
+  && yarn cache clean
+
+COPY test/integration/webkit/run-tests.sh /app/run-tests.sh
+
+RUN chmod +x /app/run-tests.sh
+
+CMD ["/app/run-tests.sh"]

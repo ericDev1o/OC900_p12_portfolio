@@ -15,6 +15,10 @@ export default defineConfig({
     environment: 'jsdom',
     experimental: {
       viteModuleRunner: false
-    }
-  }
+    },
+    cache: {
+      dir: '/test/tmp/vitest'
+    },
+  },
+  cacheDir: process.env.VITE_CACHE_DIR || '/tmp/vite'
 });

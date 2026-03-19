@@ -32,8 +32,7 @@ export default function Skills(): JSX.Element {
         'axeDevTool',
         'greenITanalysis',
         'stylelint',
-        'pa11y',
-        'vitestAxe',
+        'playwright',
         'feedly',
         'notion',
         'excalidraw'

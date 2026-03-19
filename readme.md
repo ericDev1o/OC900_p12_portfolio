@@ -6,10 +6,10 @@
 git clone https://github.com/ericDev1o/OC900_p12_portfolio.git
 yarn install
 ### detail: default branch is gh-pages
-### you should, as often as possible, to meet portfolio's peer requirements, run
+### you should, as often as possible, run
 yarn upgrade-interactive
 
-## dev taking advantage of HotModuleReload HMR
+## dev taking advantage of Hot Module Reload
 yarn dev
 
 ## validate please
@@ -37,79 +37,44 @@ export default {
 F12 dev tools -> 3 vertical ... -> More tools > -> Rendering -> Emulate CSS media feature prefers-reduced-motion -> prefers-reduced-motion: reduce -> you open your project details in 3s. instead of 0.6s
 
 ## test please
-### pa11y
-yarn test:node
-#### details
-vitest run --config vitest.config.ts
-### axe a11y & Intersection Observer useEffect
-yarn test:jsdom
-#### details
-vitest run --config vitest.jsdom.config.ts
-### complete example of 0.3.3 manual workflow
+### Intersection Observer useEffect for memory leaks
+yarn test:unit
+### complete example of manual workflow
 #### $ yarn eslint
-#### $ yarn test:pa11y_node
- RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
 
- ✓ test/accessibility/Home.pa11y.test.ts (1 test) 7604ms
-   ✓ accessibility test (1)
-     ✓ should generate pa11y report  7601ms
+#### $ yarn test:unit
+#### $ yarn test:integration
+#### $ yarn test:webkit:ci
+Test Webkit less. 
+It's not a native Safari end-to-end user accessibility test.
+Besides, it's not distroless yet. 
+1. The Docker image size is excessive. It's too expensive.
+2. There are intrinsic vulnerabilities: packages are outdated. There are high and critical CVEs to patch.
+3. Non-root user isn't implemented yet due to file permissions issues.
+4. There's a shell and other tools increasing attacking surface.
 
- Test Files  1 passed (1)
-      Tests  1 passed (1)
-   Start at  02:46:01
-   Duration  8.51s (transform 72ms, setup 0ms, import 701ms, tests 7.60s, environment 0ms)
+##### CVE test using trivy
+There is a docker fallback but you better install it locally once. It's greener.
+###### linux host install
+sudo apt-get update
+sudo apt-get install -y wget gnupg lsb-release
 
-#### $ yarn test:a11y_jsdom
- RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
+wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key \
+  | gpg --dearmor \
+  | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
 
- ✓ test/unit/useIntersectionObserver.unit.test.ts (3 tests) 48ms
- ✓ test/accessibility/Accordion.a11y.test.tsx (1 test) 360ms
-     ✓ should have no axe accessibility violations  358ms
- ✓ test/accessibility/Home.a11y.test.tsx (1 test) 218ms
+echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb jammy main" \
+  | sudo tee /etc/apt/sources.list.d/trivy.list
 
- Test Files  3 passed (3)
-      Tests  5 passed (5)
-   Start at  02:46:22
-   Duration  6.33s (transform 524ms, setup 343ms, import 7.40s, tests 625ms, environment 8.31s)
-
-#### $ yarn test:content_browser
- RUN  v4.0.18 /home/eric/source/repos/OC/OC900_p12_portfolio
-
-02:46:53 [vite] (client) Re-optimizing dependencies because lockfile has changed
- ✓  chromium  test/integration/Home.integration.browser.test.tsx (1 test) 244ms
- ✓  firefox  test/integration/Home.integration.browser.test.tsx (1 test) 709ms
-     ✓ must render most important content  698ms
-
- Test Files  2 passed (2)
-      Tests  2 passed (2)
-   Start at  02:46:53
-   Duration  17.46s (transform 0ms, setup 0ms, import 824ms, tests 953ms, environment 0ms)
+sudo apt-get update
+sudo apt-get install -y trivy
+#### $ yarn test:e2e
 
 #### $ yarn build
-vite v7.3.1 building client environment for production...
-✓ 59 modules transformed.
-dist/index.html                      2.12 kB │ gzip:  0.75 kB
-dist/assets/index-kqr0qylZ.css      22.19 kB │ gzip:  5.03 kB
-dist/assets/Skills-BGhVAWqQ.js       1.72 kB │ gzip:  0.69 kB
-dist/assets/Portfolio-CehQlzir.js    5.86 kB │ gzip:  1.90 kB
-dist/assets/Footer-Bx4PtVl7.js       6.42 kB │ gzip:  2.36 kB
-dist/assets/index-BKS_W1Da.js      210.44 kB │ gzip: 66.49 kB
-✓ built in 2.07s
 #### $ yarn preview
-  ➜  Local:   http://localhost:4173/
-  ➜  Network: use --host to expose
-  ➜  press h + enter to show help
-
-## preview package.json script build & then preview
-yarn build
-yarn preview
-### details
-vite build --base=./
-vite preview
-### detail: package.json script is from now on written PJS
 
 ## deploy
-### run PJS predeploy & then deploy script
+### run package.json script predeploy & then deploy script
 yarn predeploy
 yarn deploy
 #### details

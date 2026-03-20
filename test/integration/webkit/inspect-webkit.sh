@@ -3,12 +3,12 @@ set -euo pipefail
 
 IMAGE_NAME="oc-webkit"
 IMAGE_TAG="latest"
-MAX_SIZE_MB=3200
+MAX_SIZE_MB=1000
 BASE_IMAGE="mcr.microsoft.com/playwright:v1.58.2"
 MAX_USER_LAYERS=7
-BASELINE_LAYERS_COUNT_FILE="./playwright-layers-count.txt"
+EXPECTED_PREVIOUS_BASE_LAYERS_COUNT=4
 BASE_IMAGE_LAYERS_DRIFT_TOLERANCE=5
-BASELINE_SIZE_FILE="./playwright-size.txt"
+EXPECTED_PREVIOUS_BASE_SIZE_MB=2279
 BASE_IMAGE_SIZE_MB_DRIFT_TOLERANCE=500
 
 if ! docker image inspect "$BASE_IMAGE" > /dev/null 2>&1; then
@@ -31,13 +31,6 @@ SIZE_MB=$((SIZE_BYTES / 1024 / 1024))
 
 echo "🔍 1.1 size"
 echo "🔍 1.1.1 checking base playwright docker image size drift..."
-
-if [ ! -f "$BASELINE_SIZE_FILE" ]; then
-  echo "$BASE_IMAGE_SIZE_MB" > "$BASELINE_SIZE_FILE"
-  echo "ℹ️ Baseline initialized with $BASE_IMAGE_SIZE_MB MB"
-fi
-
-EXPECTED_PREVIOUS_BASE_SIZE_MB=$(cat "$BASELINE_SIZE_FILE")
 
 echo "# Playwright image (base) size: $BASE_IMAGE_SIZE_MB MB"
 echo "# Expected previous base size: $EXPECTED_PREVIOUS_BASE_SIZE_MB MB"
@@ -67,13 +60,6 @@ echo "Max size: ${MAX_SIZE_MB} MB"
 
 echo "✅ Size is acceptable for a scarcely ever used Minimum Viable Webkit user a11y test."
 echo "🔍 1.2 layers"
-
-if [ ! -f "$BASELINE_LAYERS_COUNT_FILE" ]; then
-  echo "$BASE_LAYERS_COUNT" > "$BASELINE_LAYERS_COUNT_FILE"
-  echo "ℹ️ Baseline initialized with $BASE_LAYERS_COUNT layers"
-fi
-
-EXPECTED_PREVIOUS_BASE_LAYERS_COUNT=$(cat "$BASELINE_LAYERS_COUNT_FILE")
 
 echo "🔍 1.2.1 checking base image layers count drift..."
 

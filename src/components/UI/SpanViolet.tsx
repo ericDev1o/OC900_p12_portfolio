@@ -2,9 +2,9 @@ export default function SpanViolet({ text }: { text: string })
 {
     return <span 
         className='
-            mx-2 
+            mx-4 
             font-extrabold 
-            text-violet-400'
+            text-violet-500'
     >
         { text }
     </span>

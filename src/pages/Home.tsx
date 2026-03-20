@@ -21,6 +21,7 @@ import LinkClickWarning from '../components/UI/LinkClickWarning';
 import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
 import SpanGreen from '../components/UI/SpanGreen';
 import SpanViolet from '../components/UI/SpanViolet';
+import SpanOrange from '../components/UI/SpanOrange';
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -70,7 +71,9 @@ export default function Home() {
             text-4xl
             leading-loose'
           >
-            votre intégrateur web react en Île-de-France
+            votre intégrateur 
+            <SpanViolet text='web' />
+            react en Île-de-France
           </h2>
         </Section>
       <Section>
@@ -99,7 +102,7 @@ export default function Home() {
             chiffres 
           </span>
           clés de 
-          <SpanViolet
+          <SpanOrange
             text='performances.'
           /> 
           Passionné par les interfaces web 
@@ -109,7 +112,7 @@ export default function Home() {
         <Title4 title='Qui suis-je?' />
         <p>
           D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution backend. Intégrateur web react passionné par l’accessibilité, je veille à atteindre un 
-          <SpanViolet text='audit Google Lighthouse supérieur à 90/100' />
+          <SpanOrange text='audit Google Lighthouse supérieur à 90/100' />
             pour un bon référencement et une expérience utilisat·rice·eur fluide.
         </p>
         <Title4 title='Pour quoi faire?' />
@@ -138,7 +141,7 @@ export default function Home() {
         <Title5 title='Quantitatif' />
         <p className='pb-8'>
           Mon audit Lighthouse affiche régulièrement 
-          <SpanViolet text='100/100 au SEO' />
+          <SpanOrange text='100/100 au SEO' />
           et à l’
           <SpanGreen text='accessibilité.' />
         </p>
@@ -218,7 +221,8 @@ export default function Home() {
             text-2xl
             leading-loose'
         >
-          intégrateur web
+          intégrateur
+          <SpanViolet text='web' />
         </h4>
         <h5 
           className='
@@ -239,9 +243,11 @@ export default function Home() {
         </h5>
         <p 
           className='
-            pt-4
-            pb-4'>
-          à votre  service
+            pt-4 
+            pb-4 
+            text-2xl'>
+          à votre
+          <SpanViolet text='service' />
         </p>
         <div 
           className='
@@ -317,15 +323,8 @@ export default function Home() {
           Contribuons 
           <SpanGreen text='doucement' />
           à votre 
-          <span
-            className='
-              mx-2
-              font-extrabold
-              text-gray-500'
-          >
-            projet
-          </span> 
-          web avec 
+          <SpanOrange text='projet web' />
+          avec 
           <SpanGreen text='impact.' />
         </p>
         <LazyLoadWrapper>

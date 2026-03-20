@@ -1,4 +1,4 @@
-import{i as e,r as t}from"./SkillsLogoContext-DJRXFJOP.js";import{n,t as r}from"./index-NsW6MAWp.js";var i=e(),a=t();function o(){let e=(0,i.useRef)(null),t=()=>{e.current&&!e.current.open&&(e.current.showModal(),e.current.focus())},o=()=>{e.current&&e.current.open&&e.current.close()},s=t=>{t.target===t.currentTarget&&e.current?.close()};return(0,a.jsxs)(`footer`,{className:`
+import{i as e,r as t}from"./SkillsLogoContext-DJRXFJOP.js";import{n,t as r}from"./index-D9Vo87TY.js";var i=e(),a=t();function o(){let e=(0,i.useRef)(null),t=()=>{e.current&&!e.current.open&&(e.current.showModal(),e.current.focus())},o=()=>{e.current&&e.current.open&&e.current.close()},s=t=>{t.target===t.currentTarget&&e.current?.close()};return(0,a.jsxs)(`footer`,{className:`
             group 
             px-4 
             pb-15 
@@ -31,7 +31,7 @@ import{i as e,r as t}from"./SkillsLogoContext-DJRXFJOP.js";import{n,t as r}from"
                     max-h-[calc(80vh-5rem)]`,children:[(0,a.jsx)(`div`,{className:`
                         text-sm 
                         text-gray-500 
-                        mb-4`,children:`Faites défiler pour tout lire s'il vous plaît`}),(0,a.jsx)(`h2`,{className:`
+                        mb-4`,children:`Faites défiler pour tout lire s'il vous plaît`}),(0,a.jsx)(`h2`,{id:`legal-title`,className:`
                         pt-8 
                         text-2xl
                         leading-loose`,children:`mentions légales`}),(0,a.jsx)(`h3`,{className:`
@@ -69,6 +69,6 @@ import{i as e,r as t}from"./SkillsLogoContext-DJRXFJOP.js";import{n,t as r}from"
                     px-4 
                     py-2 
                     rounded-lg  
-                    bg-blue-600 
+                    bg-blue-700 
                     text-gray-200 
-                    hover:bg-blue-700`,children:`Fermer la fenêtre`})})]})]})}export{o as default};
+                    hover:bg-blue-800`,children:`Fermer la fenêtre`})})]})]})}export{o as default};

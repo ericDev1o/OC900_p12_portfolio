@@ -60,9 +60,7 @@ export default function Home() {
               srcSet={`${photoPath} 1x, ${photoPathRetina} 1.5x`}
               width='100px'
               height='134px'
-              alt='ma photo'
-              loading='lazy'
-              decoding='async'
+              alt="Photo d'Eric Faraut"
             />
           </div>
           <h2
@@ -85,7 +83,7 @@ export default function Home() {
           className='
             pt-4'
         >
-          Développons votre activité en évitant les 
+          Développons votre activité sans 
           <span 
             className='
             mx-2 
@@ -94,72 +92,79 @@ export default function Home() {
             frictions.
           </span> 
           Améliorons vos 
-          <span
-            className='
-              mx-2 
-              font-extrabold'
-          >
-            chiffres 
-          </span>
-          clés de 
-          <SpanOrange
-            text='performances.'
-          /> 
+          <SpanOrange text='performances.' /> 
           Passionné par les interfaces web 
-          <SpanGreen text='durables' />
-          j'en simplifie l'utilisation par tou·te·s. 
+          <SpanGreen text='durables,' />
+          je les simplifie pour tou·te·s. 
         </p>
         <Title4 title='Qui suis-je?' />
         <p>
-          D'abord je fus intéressé par les indicateurs de prise de décision, l'extraction de leurs données et une solution backend. Intégrateur web react passionné par l’accessibilité, je veille à atteindre un 
-          <SpanOrange text='audit Google Lighthouse supérieur à 90/100' />
-            pour un bon référencement et une expérience utilisat·rice·eur fluide.
+          D'abord intéressé par les indicateurs décisionnels et l'extraction de leurs données, 
+          j'ai fait évoluer 1 solution back-end. 
+          Passionné par l’accessibilité, ma solution front-end offre 1 
+          <span 
+            className='
+            mx-2 
+            font-extrabold'
+          >
+            expérience utilisat·rice·eur 
+          </span>
+          fluide.
         </p>
         <Title4 title='Pour quoi faire?' />
         <Title5 title='Le fruit de mes expériences passées' />
         <p
         className='pb-10'>
-          Naturellement rigoureux, fort d’expériences solides chez Bosch ThermoTechnology et Bolloré Transport & Logistics, j’ai développé des compétences en 
-          <SpanGreen text='clarification fonctionnelle, documentation, tests unitaires et évolution de code backend.' />
+          Fort d’expériences pour elm leblanc Bosch ThermoTech et Bolloré Transport & Logistics, 
+          j’ai développé des compétences en 
+          <SpanGreen text='compréhension du besoin, documentation, tests, évolution back-end et communication.' />
         </p>
         <Title5 title="Notre objectif aujourd'hui" />
         <p className='pb-10'>
-          Je suis prêt pour être votre intégrateur web dans une agence, ESN ou organisation engagée en Île-de-France. 
+          Je suis prêt à être votre intégrateur web en agence, ESN ou organisation à impact en Île-de-France. 
         </p>
-        <Title5 title='Pour un projet numérique plus inclusif et éco-responsable demain' />
+        <Title5 title='Pour 1 projet numérique plus inclusif et éco-responsable demain' />
         <p>
-          De la startup du recyclage à une administration en passant par le grand groupe ou une association de l'Economie Sociale et Solidaire c'est le projet qui est mon moteur.
+          De la startup du recyclage à 1 administration en passant par le grand groupe ou 1 association, c'est le projet qui est mon moteur.
         </p>
         <Title4 title='Quel est mon apport?' />
         <p className='pb-3'></p>
         <Title5 title='Qualitatif' />
         <p className='pb-6'>
-          Mon écoute, ma connaissance des standards web, ma veille technologique et mon respect de la confidentialité via des 
-          <SpanGreen text='outils hors-ligne comme stylelint' />
-          font de vos projets des sites accessibles et éco-conçus. 
+          Écoute, connaissance des standards web et veille technologique feront de votre projet 1 site accessible et
+          <SpanGreen text='éco-conçu.' />
         </p>
         <Title5 title='Quantitatif' />
         <p className='pb-8'>
-          Mon audit Lighthouse affiche régulièrement 
-          <SpanOrange text='100/100 au SEO' />
-          et à l’
-          <SpanGreen text='accessibilité.' />
+          L'audit Google Lighthouse de ma solution front-end, dans 1 fenêtre de navigation privée, est 
+          <SpanOrange text='100/100' />
         </p>
         <Title5 title='Précepte' />
         <p>
-          Grâce aux projets OpenClassrooms concrets et au mentorat j'ai développé ma capacité à 
+          Grâce aux 
           <span
             className='
               mx-2 
               font-extrabold'
           >
-            résoudre les problèmes et mon autonomie.
+            projets OpenClassrooms concrets et au mentorat
+          </span> 
+          j'ai amélioré ma 
+          <span
+            className='
+              mx-2 
+              font-extrabold'
+          >
+            résolution de problèmes et mon autonomie.
           </span>
         </p>
         <p>
-          J’aiderai ainsi une organisation à renforcer sa présence digitale tout en 
-          <SpanGreen  text='limitant ses coûts de maintenance' />
-          par ma progression continue en rendu statique performant côté client puis serveur, extraction de données via API ReST, design, fullstack, devOps, cloud et architecture.
+          Je vous aiderai à rendre votre présence digitale
+          <SpanOrange text='efficiente' />
+          tout en 
+          <SpanGreen  text='limitant ses coûts de maintenance.' />
+          Vous respecterez mieux les standards web. 
+          La réalisation des potentialités de vos données grâce aux API ReST et bonnes pratiques devSecOps est parmi nos enjeux.
         </p>
         <p className='pt-4'>
           J'adhère à « 
@@ -178,23 +183,15 @@ export default function Home() {
           title='compétences'
           id='competences'
         />
-        <h4
-            className='
-              pb-8 
-              text-2xl
-              leading-loose'
-          >
-            clés
-        </h4>
         <p className='text-xl'>
-          Vous avez besoin d'un site web à votre image?
+          Avez-vous besoin d'1 site web à votre image?
         </p>
         <p
            className='
             pt-10 
             pb-10 
             text-xl'>
-          Je transforme un brief en écrans propres, responsives et frugaux.
+          Je transforme 1 brief en écrans propres, responsives et frugaux.
         </p>
         <LazySkills />
       </Section>
@@ -203,11 +200,13 @@ export default function Home() {
           title='projets'
           id='projets'
         />
-        {isVisible && (
-          <Suspense fallback={null}>
-            <Portfolio projectsPath={ projectsPath } />
-          </Suspense>
-        )}
+        <div aria-live='polite'>
+          {isVisible && (
+            <Suspense fallback={null}>
+              <Portfolio projectsPath={ projectsPath } />
+            </Suspense>
+          )}
+        </div>
       </Section>
       <Section>
         <Title3 
@@ -227,19 +226,15 @@ export default function Home() {
         <h5 
           className='
             text-2xl
-            mx-2'
-        >
-          <div 
-            className='
-              group
-              relative'
+            mx-2
+            group
+            relative'
           >
             <Link
               href='https://www.francecompetences.fr/recherche/rncp/38145/'
               text='RNCP 38145'
             />
             <LinkClickWarning />
-          </div>
         </h5>
         <p 
           className='
@@ -320,11 +315,9 @@ export default function Home() {
             pb-16 
             text-2xl'
         >
-          Contribuons 
-          <SpanGreen text='doucement' />
-          à votre 
+          Contribuons à votre 
           <SpanOrange text='projet web' />
-          avec 
+          à 
           <SpanGreen text='impact.' />
         </p>
         <LazyLoadWrapper>
@@ -354,7 +347,7 @@ export default function Home() {
               >
                 <Link
                   href='https://calendly.com/d/cvk6-chh-pqq'
-                  text='https://calendly.com/d/cvk6-chh-pqq'
+                  text='Prendre rendez-vous (Calendly)'
                 />
               <LinkClickWarning />
             </div>
@@ -364,33 +357,29 @@ export default function Home() {
           className='
             group
             relative'>
-          <a 
+          <a
             href='https://framaforms.org/contact-eric-faraut-1762791991'
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Parlons-en'
+            className='
+              mt-18
+              inline-flex items-center justify-center
+              w-full sm:w-auto
+              px-5 py-2.5
+              text-2xl
+              font-medium
+              text-center
+              text-gray-200
+              bg-blue-700
+              hover:bg-blue-800
+              rounded-lg
+              focus-visible:ring-4
+              focus-visible:ring-blue-300
+              focus-visible:ring-offset-2'
           >
-            <button 
-                className='
-                  mt-18 
-                  w-full 
-                  sm:w-auto 
-                  px-5 
-                  py-2.5 
-                  text-2xl 
-                  cursor-pointer 
-                  font-medium 
-                  text-center 
-                  text-gray-200  
-                  bg-blue-700 
-                  hover:bg-blue-800 
-                  focus:ring-4 
-                  focus:outline-none 
-                  focus:ring-blue-300 
-                  rounded-lg'
-              >
-                Prévoyons de parler de votre projet de site web
-              </button>
-            </a>
+            Parlons-en
+          </a>
             <LinkClickWarning />
           </div>
       </Section>

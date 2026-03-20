@@ -27,7 +27,7 @@ export default function Header() {
             '>
                 <li>   
                     <LinkNav
-                        href='#moi&vous=nous' 
+                        href='#vous&moi=nous' 
                         text='nous'
                     />
                 </li>

@@ -15,10 +15,6 @@ describe('Home page', () => {
                 level: 1
             },
             {
-                name: 'votre intégrateur web react en Île-de-France',
-                level: 2
-            },
-            {
                 name: 'À propos de moi',
                 level: 3
             },

@@ -98,6 +98,7 @@ export default function Footer() {
                     Faites défiler pour tout lire s'il vous plaît 
                 </div>
                 <h2
+                    id='legal-title' 
                     className='
                         pt-8 
                         text-2xl
@@ -224,9 +225,9 @@ export default function Footer() {
                     px-4 
                     py-2 
                     rounded-lg  
-                    bg-blue-600 
+                    bg-blue-700 
                     text-gray-200 
-                    hover:bg-blue-700'
+                    hover:bg-blue-800'
                 >
                     Fermer la fenêtre
                 </button>

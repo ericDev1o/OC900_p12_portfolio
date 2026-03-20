@@ -98,6 +98,7 @@ export default function Footer() {
                     Faites défiler pour tout lire s'il vous plaît 
                 </div>
                 <h2
+                    id='legal-title' 
                     className='
                         pt-8 
                         text-2xl

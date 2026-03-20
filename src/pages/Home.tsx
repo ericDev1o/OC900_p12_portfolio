@@ -382,8 +382,8 @@ export default function Home() {
                   font-medium 
                   text-center 
                   text-gray-200  
-                  bg-blue-600 
-                  hover:bg-blue-700 
+                  bg-blue-700 
+                  hover:bg-blue-800 
                   focus:ring-4 
                   focus:outline-none 
                   focus:ring-blue-300 

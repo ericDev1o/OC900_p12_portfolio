@@ -50,12 +50,11 @@ test.describe('Home page accessibility', () => {
          // AAA
         const resultsAxeAAA = await new AxeBuilder({page})
         .withTags(['wcag2aaa'])
-        .disableRules(['color-contrast-enhanced'])
         .analyze();
 
         if(resultsAxeAAA.violations.length > 0) {
             const report = {
-                type: 'axe 2.0 to 2.2 A & AA',
+                type: 'axe 2.0 to 2.2 AAA',
                 url: PORTFOLIO_URL,
                 status: resultsAxeAAA.violations.length === 0 ? 'passed' : 'failed',
                 details: resultsAxeAAA.violations

@@ -19,9 +19,7 @@ import Section from '../components/UI/Section';
 import Link from '../components/UI/Link';
 import LinkClickWarning from '../components/UI/LinkClickWarning';
 import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
-import SpanGreen from '../components/UI/SpanGreen';
-import SpanViolet from '../components/UI/SpanViolet';
-import SpanOrange from '../components/UI/SpanOrange';
+import Span from '../components/UI/Span';
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -70,7 +68,9 @@ export default function Home() {
             leading-loose'
           >
             votre intégrateur 
-            <SpanViolet text='web' />
+            <Span color='violet'>
+              web
+            </Span>
             react en Île-de-France
           </h2>
         </Section>
@@ -92,9 +92,13 @@ export default function Home() {
             frictions.
           </span> 
           Améliorons vos 
-          <SpanOrange text='performances.' /> 
+          <Span color='orange'>
+            performances.
+          </Span> 
           Passionné par les interfaces web 
-          <SpanGreen text='durables,' />
+          <Span color='green'>
+            durables,
+          </Span>
           je les simplifie pour tou·te·s. 
         </p>
         <Title4 title='Qui suis-je?' />
@@ -117,7 +121,9 @@ export default function Home() {
         className='pb-10'>
           Fort d’expériences pour elm leblanc Bosch ThermoTech et Bolloré Transport & Logistics, 
           j’ai développé des compétences en 
-          <SpanGreen text='compréhension du besoin, documentation, tests, évolution back-end et communication.' />
+          <Span color='green'>
+            compréhension du besoin, documentation, tests, évolution back-end et communication.
+          </Span>
         </p>
         <Title5 title="Notre objectif aujourd'hui" />
         <p className='pb-10'>
@@ -132,12 +138,16 @@ export default function Home() {
         <Title5 title='Qualitatif' />
         <p className='pb-6'>
           Écoute, connaissance des standards web et veille technologique feront de votre projet 1 site accessible et
-          <SpanGreen text='éco-conçu.' />
+          <Span color='green'>
+            éco-conçu.
+          </Span>
         </p>
         <Title5 title='Quantitatif' />
         <p className='pb-8'>
           L'audit Google Lighthouse de ma solution front-end, dans 1 fenêtre de navigation privée, est 
-          <SpanOrange text='100/100' />
+          <Span color='orange'>
+            100/100 
+          </Span>
         </p>
         <Title5 title='Précepte' />
         <p>
@@ -160,9 +170,13 @@ export default function Home() {
         </p>
         <p>
           Je vous aiderai à rendre votre présence digitale
-          <SpanOrange text='efficiente' />
+          <Span color='orange'>
+            efficiente
+          </Span>
           tout en 
-          <SpanGreen  text='limitant ses coûts de maintenance.' />
+          <Span color='green'>
+            limitant ses coûts de maintenance.
+          </Span>
           Vous respecterez mieux les standards web. 
           La réalisation des potentialités de vos données grâce aux API ReST et bonnes pratiques devSecOps est parmi nos enjeux.
         </p>
@@ -221,7 +235,9 @@ export default function Home() {
             leading-loose'
         >
           intégrateur
-          <SpanViolet text='web' />
+          <Span color='violet'>
+            web
+          </Span>
         </h4>
         <h5 
           className='
@@ -242,7 +258,9 @@ export default function Home() {
             pb-4 
             text-2xl'>
           à votre
-          <SpanViolet text='service' />
+          <Span color='violet'>
+            service
+          </Span>
         </p>
         <div 
           className='
@@ -316,9 +334,13 @@ export default function Home() {
             text-2xl'
         >
           Contribuons à votre 
-          <SpanOrange text='projet web' />
+          <Span color='orange'>
+            projet web
+          </Span>
           à 
-          <SpanGreen text='impact.' />
+          <Span color='green'>
+            impact.
+          </Span>
         </p>
         <LazyLoadWrapper>
           <div 

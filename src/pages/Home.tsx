@@ -12,16 +12,12 @@ import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
 import LazySkills from '../components/containers/LazySkills';
 const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 
-import Title3 from '../components/UI/Title3';
-import Title4 from '../components/UI/Title4';
-import Title5 from '../components/UI/Title5';
+import Title from '../components/UI/Title';
 import Section from '../components/UI/Section';
 import Link from '../components/UI/Link';
 import LinkClickWarning from '../components/UI/LinkClickWarning';
 import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
-import SpanGreen from '../components/UI/SpanGreen';
-import SpanViolet from '../components/UI/SpanViolet';
-import SpanOrange from '../components/UI/SpanOrange';
+import Span from '../components/UI/Span';
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';
@@ -70,15 +66,19 @@ export default function Home() {
             leading-loose'
           >
             votre intégrateur 
-            <SpanViolet text='web' />
+            <Span color='violet'>
+              web
+            </Span>
             react en Île-de-France
           </h2>
         </Section>
       <Section>
-        <Title3
-          title='À propos de moi'
+        <Title
+          level={3}
           id='vous&moi=nous'
-        />
+        >
+          À propos de moi
+        </Title>
         <p
           className='
             pt-4'
@@ -92,12 +92,18 @@ export default function Home() {
             frictions.
           </span> 
           Améliorons vos 
-          <SpanOrange text='performances.' /> 
+          <Span color='orange'>
+            performances.
+          </Span> 
           Passionné par les interfaces web 
-          <SpanGreen text='durables,' />
+          <Span color='green'>
+            durables,
+          </Span>
           je les simplifie pour tou·te·s. 
         </p>
-        <Title4 title='Qui suis-je?' />
+        <Title level={4}>
+          Qui suis-je?
+        </Title>
         <p>
           D'abord intéressé par les indicateurs décisionnels et l'extraction de leurs données, 
           j'ai fait évoluer 1 solution back-end. 
@@ -111,35 +117,57 @@ export default function Home() {
           </span>
           fluide.
         </p>
-        <Title4 title='Pour quoi faire?' />
-        <Title5 title='Le fruit de mes expériences passées' />
+        <Title level={4}>
+          Pour quoi faire?
+        </Title>
+        <Title level={5}>
+          Le fruit de mes expériences passées
+        </Title>
         <p
         className='pb-10'>
           Fort d’expériences pour elm leblanc Bosch ThermoTech et Bolloré Transport & Logistics, 
           j’ai développé des compétences en 
-          <SpanGreen text='compréhension du besoin, documentation, tests, évolution back-end et communication.' />
+          <Span color='green'>
+            compréhension du besoin, documentation, tests, évolution back-end et communication.
+          </Span>
         </p>
-        <Title5 title="Notre objectif aujourd'hui" />
+        <Title level={5}>
+          Notre objectif aujourd'hui
+        </Title>
         <p className='pb-10'>
           Je suis prêt à être votre intégrateur web en agence, ESN ou organisation à impact en Île-de-France. 
         </p>
-        <Title5 title='Pour 1 projet numérique plus inclusif et éco-responsable demain' />
+        <Title level={5}>
+          Pour 1 projet numérique plus inclusif et éco-responsable demain'
+        </Title>
         <p>
           De la startup du recyclage à 1 administration en passant par le grand groupe ou 1 association, c'est le projet qui est mon moteur.
         </p>
-        <Title4 title='Quel est mon apport?' />
+        <Title level={4}>
+          Quel est mon apport?
+        </Title>
         <p className='pb-3'></p>
-        <Title5 title='Qualitatif' />
+        <Title level={5}>
+          Qualitatif
+        </Title>
         <p className='pb-6'>
           Écoute, connaissance des standards web et veille technologique feront de votre projet 1 site accessible et
-          <SpanGreen text='éco-conçu.' />
+          <Span color='green'>
+            éco-conçu.
+          </Span>
         </p>
-        <Title5 title='Quantitatif' />
+        <Title level={5}>
+          Quantitatif
+        </Title>
         <p className='pb-8'>
           L'audit Google Lighthouse de ma solution front-end, dans 1 fenêtre de navigation privée, est 
-          <SpanOrange text='100/100' />
+          <Span color='orange'>
+            100/100 
+          </Span>
         </p>
-        <Title5 title='Précepte' />
+        <Title level={5}>
+          Précepte
+        </Title>
         <p>
           Grâce aux 
           <span
@@ -160,9 +188,13 @@ export default function Home() {
         </p>
         <p>
           Je vous aiderai à rendre votre présence digitale
-          <SpanOrange text='efficiente' />
+          <Span color='orange'>
+            efficiente
+          </Span>
           tout en 
-          <SpanGreen  text='limitant ses coûts de maintenance.' />
+          <Span color='green'>
+            limitant ses coûts de maintenance.
+          </Span>
           Vous respecterez mieux les standards web. 
           La réalisation des potentialités de vos données grâce aux API ReST et bonnes pratiques devSecOps est parmi nos enjeux.
         </p>
@@ -179,10 +211,12 @@ export default function Home() {
         </p>
       </Section>
       <Section>
-        <Title3
-          title='compétences'
+        <Title
+          level={3}
           id='competences'
-        />
+        >
+          compétences
+        </Title>
         <p className='text-xl'>
           Avez-vous besoin d'1 site web à votre image?
         </p>
@@ -196,10 +230,12 @@ export default function Home() {
         <LazySkills />
       </Section>
       <Section ref={refPortfolio}>
-        <Title3
-          title='projets'
+        <Title
+          level={3}
           id='projets'
-        />
+        >
+          projets
+        </Title>
         <div aria-live='polite'>
           {isVisible && (
             <Suspense fallback={null}>
@@ -209,10 +245,12 @@ export default function Home() {
         </div>
       </Section>
       <Section>
-        <Title3 
-          title='parcours'
+        <Title
+          level={3}
           id='parcours'
-        />
+        >
+          parcours
+        </Title>
         <h4
           className='
             pt-2
@@ -221,7 +259,9 @@ export default function Home() {
             leading-loose'
         >
           intégrateur
-          <SpanViolet text='web' />
+          <Span color='violet'>
+            web
+          </Span>
         </h4>
         <h5 
           className='
@@ -242,7 +282,9 @@ export default function Home() {
             pb-4 
             text-2xl'>
           à votre
-          <SpanViolet text='service' />
+          <Span color='violet'>
+            service
+          </Span>
         </p>
         <div 
           className='
@@ -258,7 +300,9 @@ export default function Home() {
         <h6 className='pt-6'>
           22 avril 2024 au 21 décembre 2025
         </h6>
-        <Title4 title='sachez-en plus sur ce que nous avons co-construit avant' />
+        <Title level={4}>
+          sachez-en plus sur ce que nous avons co-construit avant
+        </Title>
         <div 
           className='
             group
@@ -305,10 +349,12 @@ export default function Home() {
         </div>
       </Section>
       <Section>
-        <Title3
-          title='contact'
+        <Title
+          level={3}
           id='contact'
-        />
+        >
+          contact
+        </Title>
         <p
           className='
             pt-8 
@@ -316,9 +362,13 @@ export default function Home() {
             text-2xl'
         >
           Contribuons à votre 
-          <SpanOrange text='projet web' />
+          <Span color='orange'>
+            projet web
+          </Span>
           à 
-          <SpanGreen text='impact.' />
+          <Span color='green'>
+            impact.
+          </Span>
         </p>
         <LazyLoadWrapper>
           <div 

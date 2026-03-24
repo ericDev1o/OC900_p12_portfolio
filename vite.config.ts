@@ -2,13 +2,21 @@ import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
+import { fileURLToPath } from 'node:url';
+
+const resolvePath = (p: string) => 
+  fileURLToPath(new URL(p, import.meta.url));
+
 export default defineConfig({
   plugins: [
     react(), 
     tailwindcss()
   ],
   resolve: {
-    tsconfigPaths: true
+    alias: {
+      '@': resolvePath('./src'),
+      '@test': resolvePath('./test')
+    }
   },
   test: {
     globals: true,

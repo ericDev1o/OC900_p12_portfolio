@@ -1,6 +1,9 @@
-import { ReactElement } from 'react';
+import type { ReactElement } from 'react';
 
-import { render, type RenderResult } from '@testing-library/react';
+import { 
+    render, 
+    type RenderResult 
+} from '@testing-library/react';
 
 import { TestProviders } from './TestProviders';
 

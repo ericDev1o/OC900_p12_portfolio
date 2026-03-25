@@ -323,7 +323,10 @@ export default function Home() {
               motion-safe:ease-in-out 
               motion-safe:hover:scale-110 
               hover:brightness-110 
-              hover:shadow-lg'
+              hover:shadow-lg
+              focus-visible:ring-4 
+              focus-visible:ring-blue-300 
+              focus-visible:ring-offset-2'
           >
             <svg 
               xmlns='http://www.w3.org/2000/svg' 

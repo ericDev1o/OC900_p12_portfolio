@@ -18,7 +18,8 @@
     "types": [
       "vitest",
       "vitest/globals", 
-      "vitest/importMeta"]                       
+      "vitest/importMeta",
+      "@testing-library/jest-dom"]                       
   },
   "include": [
     "src",

@@ -72,7 +72,10 @@ export default function ProjectCard
                             focus-visible:outline-2 
                             focus-visible:outline-blue-500 
                             hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)] 
-                            focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]'
+                            focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]
+                            focus-visible:ring-4 
+                            focus-visible:ring-blue-300 
+                            focus-visible:ring-offset-2'
                     >
                         <img 
                             src={imgSrc}

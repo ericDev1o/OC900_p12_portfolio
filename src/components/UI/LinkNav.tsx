@@ -19,7 +19,10 @@ export default function LinkNav(
             transition-colors 
             duration-600 
             ease-in-out 
-            hover:text-blue-600'
+            hover:text-blue-600
+            focus-visible:ring-4 
+            focus-visible:ring-blue-300 
+            focus-visible:ring-offset-2'
     >
         { text }
     </a>

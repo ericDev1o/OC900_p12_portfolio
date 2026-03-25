@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import type { JSX } from 'react';
 
 import type { LogoKey } from '@/custom/types/LogoKey';
 import { useSkillsLogo } from '../../contexts/SkillsLogoContext';

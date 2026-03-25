@@ -1,5 +1,5 @@
 import {
-  JSX,
+  type JSX,
   lazy,
   Suspense,
   useRef

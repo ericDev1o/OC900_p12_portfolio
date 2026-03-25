@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import type { JSX } from 'react';
 import SkillLogo from '../UI/ProjectCardSkillLogo';
 
 /**

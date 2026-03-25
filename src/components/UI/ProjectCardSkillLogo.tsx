@@ -8,6 +8,10 @@ export default function ProjectCardSkillLogo({ logoPath, repo}: {logoPath: strin
             href={repo} 
             target='_blank' 
             aria-label={repo}
+            className='
+                focus-visible:ring-4 
+                focus-visible:ring-blue-300 
+                focus-visible:ring-offset-2'
         >
             <img 
                 src={logoPath} 

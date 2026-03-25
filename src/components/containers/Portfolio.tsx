@@ -2,7 +2,7 @@ import {
     useState, 
     useEffect, 
     useRef, 
-    JSX
+    type JSX
 } from 'react';
 
 import type { Project } from '@/custom/types/Project';

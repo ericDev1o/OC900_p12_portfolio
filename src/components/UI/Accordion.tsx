@@ -1,5 +1,5 @@
 import {
-  JSX,
+  type JSX,
   type ReactNode, 
   useEffect, 
   useRef, 

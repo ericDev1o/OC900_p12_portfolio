@@ -1,7 +1,7 @@
 import { 
     createContext, 
-    JSX, 
-    ReactNode, 
+    type JSX, 
+    type ReactNode, 
     useContext } 
 from 'react';
 

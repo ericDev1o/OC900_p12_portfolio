@@ -1,6 +1,6 @@
 import { 
-    JSX,
-    ReactNode, 
+    type JSX,
+    type ReactNode, 
     useMemo, 
     useRef
 } from 'react';

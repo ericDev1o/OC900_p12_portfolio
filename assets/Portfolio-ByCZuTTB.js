@@ -1,4 +1,7 @@
-import{i as e,n as t,r as n}from"./SkillsLogoContext-DJRXFJOP.js";import{n as r,r as i}from"./index-Dc5WB9ng.js";var a=e(),o=n();function s({logoPath:e,repo:t}){let n=e.split(`/`),r=n[n.length-1].split(`.`)[0];return(0,o.jsx)(`section`,{children:(0,o.jsx)(`a`,{href:t,target:`_blank`,"aria-label":t,children:(0,o.jsx)(`img`,{src:e,alt:r,loading:`lazy`,decoding:`async`,className:`m-2`})})})}function c({paths:e,repo:t}){let n=Array.from(e).map(e=>(0,o.jsx)(s,{logoPath:e,repo:t},e));return n.length?n.length===1?n[0]:(0,o.jsx)(`div`,{className:`
+import{i as e,n as t,r as n}from"./SkillsLogoContext-DJRXFJOP.js";import{n as r,r as i}from"./index-DREgWRpv.js";var a=e(),o=n();function s({logoPath:e,repo:t}){let n=e.split(`/`),r=n[n.length-1].split(`.`)[0];return(0,o.jsx)(`section`,{children:(0,o.jsx)(`a`,{href:t,target:`_blank`,"aria-label":t,className:`
+                focus-visible:ring-4 
+                focus-visible:ring-blue-300 
+                focus-visible:ring-offset-2`,children:(0,o.jsx)(`img`,{src:e,alt:r,loading:`lazy`,decoding:`async`,className:`m-2`})})})}function c({paths:e,repo:t}){let n=Array.from(e).map(e=>(0,o.jsx)(s,{logoPath:e,repo:t},e));return n.length?n.length===1?n[0]:(0,o.jsx)(`div`,{className:`
             flex 
             flex-wrap 
             shrink-0 
@@ -18,10 +21,10 @@ import{i as e,n as t,r as n}from"./SkillsLogoContext-DJRXFJOP.js";import{n as r,
           font-semibold 
           text-blue-500 
           hover:bg-gray-700 
-          focus-visible:bg-gray-700 
-          focus-visible:outline-2 
-          focus-visible:outline-blue-500
-          select-none`,children:[e,(0,o.jsx)(`span`,{className:`sr-only`,children:`(isOpen ? 'section ouverte' : 'section fermée' )`}),(0,o.jsx)(`span`,{"aria-hidden":`true`,className:`
+          select-none
+          focus-visible:ring-4 
+          focus-visible:ring-blue-300 
+          focus-visible:ring-offset-2`,children:[e,(0,o.jsx)(`span`,{className:`sr-only`,children:`(isOpen ? 'section ouverte' : 'section fermée' )`}),(0,o.jsx)(`span`,{"aria-hidden":`true`,className:`
             inline-block 
             motion-safe:transition-transform 
             motion-safe:duration-600 
@@ -60,7 +63,10 @@ import{i as e,n as t,r as n}from"./SkillsLogoContext-DJRXFJOP.js";import{n as r,
                             focus-visible:outline-2 
                             focus-visible:outline-blue-500 
                             hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)] 
-                            focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]`,children:(0,o.jsx)(`img`,{src:a,className:`
+                            focus-visible:drop-shadow-[0_0_2em_rgba(100,108,255,0.6)]
+                            focus-visible:ring-4 
+                            focus-visible:ring-blue-300 
+                            focus-visible:ring-offset-2`,children:(0,o.jsx)(`img`,{src:a,className:`
                                 w-full 
                                 h-max 
                                 transition-shadow 

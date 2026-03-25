@@ -1,4 +1,4 @@
-import{i as e,r as t}from"./SkillsLogoContext-DJRXFJOP.js";import{n,t as r}from"./index-Dc5WB9ng.js";var i=e(),a=t();function o(){let e=(0,i.useRef)(null),t=()=>{e.current&&!e.current.open&&(e.current.showModal(),e.current.focus())},o=()=>{e.current&&e.current.open&&e.current.close()},s=t=>{t.target===t.currentTarget&&e.current?.close()};return(0,a.jsxs)(`footer`,{className:`
+import{i as e,r as t}from"./SkillsLogoContext-DJRXFJOP.js";import{n,t as r}from"./index-DREgWRpv.js";var i=e(),a=t();function o(){let e=(0,i.useRef)(null),t=()=>{e.current&&!e.current.open&&(e.current.showModal(),e.current.focus())},o=()=>{e.current&&e.current.open&&e.current.close()},s=t=>{t.target===t.currentTarget&&e.current?.close()};return(0,a.jsxs)(`footer`,{className:`
             group 
             px-4 
             pb-15 
@@ -16,7 +16,10 @@ import{i as e,r as t}from"./SkillsLogoContext-DJRXFJOP.js";import{n,t as r}from"
                     transition-colors 
                     duration-600 
                     ease-in-out 
-                    hover:text-blue-600`,children:`mentions légales`}),(0,a.jsx)(n,{})]}),(0,a.jsxs)(`dialog`,{ref:e,"aria-labelledby":`legal-title`,"aria-modal":`true`,onClick:s,className:`
+                    hover:text-blue-600
+                    focus-visible:ring-4 
+                    focus-visible:ring-blue-300 
+                    focus-visible:ring-offset-2`,children:`mentions légales`}),(0,a.jsx)(n,{})]}),(0,a.jsxs)(`dialog`,{ref:e,"aria-labelledby":`legal-title`,"aria-modal":`true`,onClick:s,className:`
                 p-10 
                 max-w-[80vw] 
                 m-auto
@@ -71,4 +74,7 @@ import{i as e,r as t}from"./SkillsLogoContext-DJRXFJOP.js";import{n,t as r}from"
                     rounded-lg  
                     bg-blue-700 
                     text-gray-200 
-                    hover:bg-blue-800`,children:`Fermer la fenêtre`})})]})]})}export{o as default};
+                    hover:bg-blue-800
+                    focus-visible:ring-4 
+                    focus-visible:ring-violet-900 
+                    focus-visible:ring-offset-2`,children:`Fermer la fenêtre`})})]})]})}export{o as default};

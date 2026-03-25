@@ -59,10 +59,10 @@ export default function Accordion(
           font-semibold 
           text-blue-500 
           hover:bg-gray-700 
-          focus-visible:bg-gray-700 
-          focus-visible:outline-2 
-          focus-visible:outline-blue-500
-          select-none'
+          select-none
+          focus-visible:ring-4 
+          focus-visible:ring-blue-300 
+          focus-visible:ring-offset-2'
       >
         {summary}
         <span className='sr-only'>

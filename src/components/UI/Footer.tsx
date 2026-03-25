@@ -61,7 +61,10 @@ export default function Footer() {
                     transition-colors 
                     duration-600 
                     ease-in-out 
-                    hover:text-blue-600'
+                    hover:text-blue-600
+                    focus-visible:ring-4 
+                    focus-visible:ring-blue-300 
+                    focus-visible:ring-offset-2'
             >
                 mentions légales
             </button>
@@ -227,7 +230,10 @@ export default function Footer() {
                     rounded-lg  
                     bg-blue-700 
                     text-gray-200 
-                    hover:bg-blue-800'
+                    hover:bg-blue-800
+                    focus-visible:ring-4 
+                    focus-visible:ring-violet-900 
+                    focus-visible:ring-offset-2'
                 >
                     Fermer la fenêtre
                 </button>

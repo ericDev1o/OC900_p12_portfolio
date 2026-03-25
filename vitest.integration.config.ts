@@ -15,6 +15,7 @@ const browser : Browser | undefined =  allowedBrowsers.includes(process.env.BROW
 export default defineConfig({
   test: {
     ...commonVitestConfig,
+    setupFiles: './vitest.integration.setup.ts',
     pool: 'browser',
     browser: {
       enabled: true, 

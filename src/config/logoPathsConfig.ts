@@ -14,7 +14,7 @@ export const logos: Record<LogoKey, string> = {
     TS: fullPath + 'TS.webp',
     jest: fullPath + 'jest.webp',
     react: fullPath + 'react.webp',
-    reactRouter: fullPath + 'react-router.webp',
+    reactRouter: fullPath + 'reactRouter.webp',
     redux: fullPath + 'redux.webp',
     lighthouse: fullPath + 'lighthouse.webp',
     GTmetrix: fullPath + 'GTmetrix.webp',

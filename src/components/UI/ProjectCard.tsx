@@ -81,7 +81,7 @@ export default function ProjectCard
                             src={imgSrc}
                             className='
                                 w-full 
-                                h-max 
+                                h-auto 
                                 transition-shadow 
                                 duration-600 
                                 ease-in-out' 

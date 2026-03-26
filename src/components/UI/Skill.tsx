@@ -1,15 +1,23 @@
 export default function Skill({
     logoURI, 
-    altText
+    altText,
+    width,
+    height
 }: {
     logoURI: string | undefined, 
-    altText: string
+    altText: string,
+    width: string,
+    height: string
 }) {
     return <img 
         src={logoURI} 
+        width={width} 
+        height={height} 
         className='
             p-6 
             h-25 
+            w-auto 
+            object-contain 
             transition-shadow 
             duration-600 
             ease-in-out 

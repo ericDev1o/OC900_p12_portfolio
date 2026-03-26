@@ -1,7 +1,24 @@
-export default function ProjectCardSkillLogo({ logoPath, repo}: {logoPath: string, repo: string}) {
-    const pathSplit = logoPath.split('/');
-    const fileName = pathSplit[pathSplit.length - 1];
-    const altName = fileName.split('.')[0];
+import { useSkillsLogo } from "../../contexts/SkillsLogoContext";
+
+import type { LogoKey } from "../../custom/types/LogoKey";
+
+import { getSkillData } from "../../utils/skillsMap";
+
+export default function ProjectCardSkillLogo(
+    { 
+        logoKey, 
+        repo
+    }: 
+    {
+        logoKey: LogoKey, 
+        repo: string
+    }) {
+    const { getLogoURI } = useSkillsLogo();
+
+    const skill = getSkillData(logoKey);
+    if( ! skill) return null;
+
+    const logoPath = getLogoURI(logoKey);
     
     return <section>
         <a 
@@ -15,10 +32,14 @@ export default function ProjectCardSkillLogo({ logoPath, repo}: {logoPath: strin
         >
             <img 
                 src={logoPath} 
-                alt={altName}
+                alt={logoKey}
+                width={skill.width} 
+                height={skill.height} 
                 loading='lazy'
                 decoding='async'
-                className='m-2'
+                className='
+                    m-2
+                    object-contain'
             />
         </a>
     </section>

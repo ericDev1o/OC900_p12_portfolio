@@ -18,7 +18,9 @@ export default function LogoLinkHomeContact(
         href={ href }
         src={ src }
         alt={ altText }
-        classNameA='p-6'
+        classNameA='
+            p-6
+            object-contain'
         classNameImgWidthHeight={ classNameImageWidthHeight }
     />
 }

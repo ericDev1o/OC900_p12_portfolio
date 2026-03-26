@@ -9,6 +9,7 @@ import type { Project } from '@/custom/types/Project';
 
 import ProjectCard from '../UI/ProjectCard';
 import LazyLoadWrapper from './LazyLoadWrapper';
+import { fetchData } from '../../utils/fetchData';
 
 /**
  * Container for ProjectCard components.
@@ -48,14 +49,12 @@ export default function Portfolio(
                     setLoading(true);
                     setError(null);
 
-                    const res = await fetch(
-                        `${import.meta.env.BASE_URL}data/projects.json`,
-                        { signal: controller.signal }
+                    const data = await fetchData<Project[]>(
+                        'data/projects.json',
+                        controller.signal
                     );
 
-                    if (!res.ok) throw new Error(`HTTP error: ${res.status}`);  
-
-                    setProjects(await res.json()); 
+                    setProjects(data); 
                 } catch (e: unknown) { 
                     if (e instanceof DOMException && e.name === 'AbortError')
                         return;

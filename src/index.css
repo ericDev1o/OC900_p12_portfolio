@@ -18,3 +18,8 @@
     text-rendering: optimizeLegibility;
   }
 }
+
+body {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size-adjust: 0.5;
+}

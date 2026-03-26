@@ -7,7 +7,7 @@ import {
     useState 
 } from 'react';
 
-import debounceOneArg from '../../custom/helpers/debounce';
+import debounceOneArg from '../../utils/debounce';
 
 type DebouncedFunction = ((visible: boolean) => void) & { cancel: () => void};
 

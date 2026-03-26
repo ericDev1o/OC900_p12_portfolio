@@ -1,25 +1,28 @@
 import type { JSX } from 'react';
+
 import SkillLogo from '../UI/ProjectCardSkillLogo';
+
+import type { LogoKey } from '../../custom/types/LogoKey';
 
 /**
  * This component is the container of ProjectCardSkillLogo.tsx.
  * ProjectCard prefix is specified to avoid confusion 
  * with skill logos on the Home.tsx page in the skills section.
  * 
- * @param {Set<string>} paths to logo files
+ * @param {Set<LogoKey>} keys are logo names
  * @param {string} repo URL each logo links to
  * @returns {JSX.Element} a container element wrapping the SkillLogo components,
  * or a single SkillLogo, or an empty fragment if none.
  */
 export default function ProjectCardSkillLogos({
-    paths, 
+    keys, 
     repo
 }: {
-    paths: Set<string>, 
+    keys: Set<LogoKey>, 
     repo: string}
 ): JSX.Element {
-    const nodes = Array.from(paths).map(path => (
-        <SkillLogo logoPath={path} repo={repo} key={path} />
+    const nodes = Array.from(keys).map(key => (
+        <SkillLogo logoKey={key} repo={repo} />
     ));
 
     if( ! nodes.length) return <></>;

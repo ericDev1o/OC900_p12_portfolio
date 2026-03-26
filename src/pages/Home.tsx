@@ -385,13 +385,17 @@ export default function Home() {
                 href='https://github.com/ericDev1o' 
                 src={ githubLogo } 
                 altText='GitHub logo'
-                classNameImageWidthHeight='w-[25px] h-[24px]'
+                classNameImageWidthHeight='
+                  w-[25px] 
+                  h-[24px]'
             />
             <LogoLinkHomeContact
               href='https://linkedin.com/in/ericfaraut' 
               src={ linkedinLogo } 
               altText='LinkedIn logo' 
-              classNameImageWidthHeight='w-[29px] h-[24px]'
+              classNameImageWidthHeight='
+                w-[29px] 
+                h-[24px]'
             />
             <div
               className='

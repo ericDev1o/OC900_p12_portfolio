@@ -1,6 +1,13 @@
-import type { JSX } from 'react';
+import { 
+    useEffect, 
+    useState, 
+    type JSX 
+} from 'react';
 
-import type { LogoKey } from '@/custom/types/LogoKey';
+import type { SkillData } from '../../custom/types/SkillData';
+
+import { fetchData } from '../../utils/fetchData';
+
 import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 
 import Skill from '../UI/Skill';
@@ -14,29 +21,21 @@ import Skill from '../UI/Skill';
 export default function Skills(): JSX.Element {
     const { getLogoURI } = useSkillsLogo();
 
-    const skills = [
-        'HTML',
-        'CSS',
-        'SCSS',
-        'tailwindCSS',
-        'vite',
-        'JS',
-        'TS',
-        'jest',
-        'react',
-        'reactRouter',
-        'redux',
-        'lighthouse',
-        'GTmetrix',
-        'WAvE',
-        'axeDevTool',
-        'greenITanalysis',
-        'stylelint',
-        'playwright',
-        'feedly',
-        'notion',
-        'excalidraw'
-    ] as const satisfies LogoKey[];
+    const [skills, setSkills] = useState<SkillData[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const controller = new AbortController();
+
+        fetchData<SkillData[]>('data/skills.json', controller.signal)
+        .then(setSkills)
+        .catch(console.error)
+        .finally(() => setLoading(false));
+
+        return () => controller.abort();
+    }, []);
+
+    if (loading) return <p>Chargement des compétences...</p>;
 
     return <div 
         className='
@@ -47,9 +46,11 @@ export default function Skills(): JSX.Element {
     >
         {skills.map(skill => (
             <Skill 
-                key={skill}
-                logoURI={getLogoURI(skill)} 
-                altText={skill}
+                key={skill.key}
+                logoURI={getLogoURI(skill.key)} 
+                altText={skill.key}
+                width={skill.width} 
+                height={skill.height}
             />
         ))}
     </div>

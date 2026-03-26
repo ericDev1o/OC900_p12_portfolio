@@ -36,6 +36,7 @@ export function IconLink({
         srcSet={srcSet}
         alt={alt}
         className={`
+          object-contain 
           transition-shadow
           duration-600
           ease-in-out 

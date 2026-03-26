@@ -1,0 +1,1 @@
+async function e(e,t){let n=await fetch(`./${e}`,{signal:t});if(!n.ok)throw Error(`HTTP error: ${n.status}`);return n.json()}export{e as t};

@@ -79,6 +79,8 @@ export default function ProjectCard
                     >
                         <img 
                             src={imgSrc}
+                            width={project.width} 
+                            height={project.height} 
                             className='
                                 w-full 
                                 h-auto 

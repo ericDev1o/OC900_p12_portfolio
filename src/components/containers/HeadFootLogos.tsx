@@ -25,7 +25,8 @@ export default function HeadFootLogos() {
                 srcSet={`${myLogo} 1x, ${myLogoRetina} 1.5x`}
                 className=' 
                     cursor-not-allowed 
-                    opacity-50' 
+                    opacity-50
+                    object-contain' 
                 alt='Eric logo'
                 width={15}
                 height={24}

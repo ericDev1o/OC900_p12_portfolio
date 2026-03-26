@@ -17,6 +17,7 @@ export default function Skill({
             p-6 
             h-25 
             w-auto 
+            object-contain 
             transition-shadow 
             duration-600 
             ease-in-out 

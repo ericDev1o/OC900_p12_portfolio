@@ -3,8 +3,6 @@ import type { LogoKey } from '../../custom/types/LogoKey';
 
 import { basePath } from '../../config/logoPathsConfig';
 
-import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
-
 import SkillLogos from '../containers/ProjectCardSkillLogos';
 
 import Accordion from './Accordion';
@@ -25,11 +23,10 @@ export default function ProjectCard
 
     const imgSrc = basePath + projectsPath + project.fileName;
 
-    const logoURIs = new Set<string>();
-    const { getLogoURI } = useSkillsLogo();
+    const logoKeys = new Set<LogoKey>();
+
     project.logos.forEach(logoName => {
-        const logoPath = getLogoURI(logoName as LogoKey);
-        logoURIs.add(logoPath as string);
+        logoKeys.add(logoName as LogoKey);
     });
 
     return <article 
@@ -84,6 +81,7 @@ export default function ProjectCard
                             className='
                                 w-full 
                                 h-auto 
+                                object-contain 
                                 transition-shadow 
                                 duration-600 
                                 ease-in-out' 
@@ -106,7 +104,7 @@ export default function ProjectCard
                 > 
                     {project.title}
                 </h4>
-                <SkillLogos paths={logoURIs} repo={project.repository} />
+                <SkillLogos keys={logoKeys} repo={project.repository} />
             </div>
         <div className='space-y-4'>
             <Accordion summary='Découvrez ce projet'>

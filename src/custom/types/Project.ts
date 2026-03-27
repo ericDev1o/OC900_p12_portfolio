@@ -15,6 +15,6 @@ export type Project = {
     resultatsEtImpact: string,
     perspectivesAmelioration: string,
     logos: string[],
-    width: string,
-    height: string
+    width: number,
+    height: number
 }

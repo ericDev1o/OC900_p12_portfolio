@@ -61,9 +61,9 @@ export default function Home() {
           </div>
           <h2
             className='
-            pt-12
-            text-4xl
-            leading-loose'
+              pt-12
+              text-4xl
+              leading-loose'
           >
             votre intégrateur 
             <Span color='violet'>
@@ -81,13 +81,15 @@ export default function Home() {
         </Title>
         <p
           className='
-            pt-4'
+            pt-4
+            max-w-[65ch] 
+            mx-auto'
         >
           Développons votre activité sans 
           <span 
             className='
-            mx-2 
-            font-extrabold'
+              mx-2 
+              font-extrabold'
           >
             frictions.
           </span> 
@@ -104,14 +106,18 @@ export default function Home() {
         <Title level={4}>
           Qui suis-je?
         </Title>
-        <p>
+        <p 
+          className='
+            max-w-[65ch] 
+            mx-auto'
+        >
           D'abord intéressé par les indicateurs décisionnels et l'extraction de leurs données, 
           j'ai fait évoluer 1 solution back-end. 
           Passionné par l’accessibilité, ma solution front-end offre 1 
           <span 
             className='
-            mx-2 
-            font-extrabold'
+              mx-2 
+              font-extrabold'
           >
             expérience utilisat·rice·eur 
           </span>
@@ -124,7 +130,11 @@ export default function Home() {
           Le fruit de mes expériences passées
         </Title>
         <p
-        className='pb-10'>
+          className='
+            pb-10 
+            max-w-[65ch] 
+            mx-auto'
+        >
           Fort d’expériences pour elm leblanc Bosch ThermoTech et Bolloré Transport & Logistics, 
           j’ai développé des compétences en 
           <Span color='green'>
@@ -134,13 +144,22 @@ export default function Home() {
         <Title level={5}>
           Notre objectif aujourd'hui
         </Title>
-        <p className='pb-10'>
+        <p 
+          className='
+            pb-10 
+            max-w-[65ch] 
+            mx-auto'
+        >
           Je suis prêt à être votre intégrateur web en agence, ESN ou organisation à impact en Île-de-France. 
         </p>
         <Title level={5}>
           Pour 1 projet numérique plus inclusif et éco-responsable demain'
         </Title>
-        <p>
+        <p 
+          className='
+            max-w-[65ch] 
+            mx-auto'
+        >
           De la startup du recyclage à 1 administration en passant par le grand groupe ou 1 association, c'est le projet qui est mon moteur.
         </p>
         <Title level={4}>
@@ -150,7 +169,12 @@ export default function Home() {
         <Title level={5}>
           Qualitatif
         </Title>
-        <p className='pb-6'>
+        <p 
+          className='
+            pb-6 
+            max-w-[65ch] 
+            mx-auto'
+        >
           Écoute, connaissance des standards web et veille technologique feront de votre projet 1 site accessible et
           <Span color='green'>
             éco-conçu.
@@ -159,7 +183,12 @@ export default function Home() {
         <Title level={5}>
           Quantitatif
         </Title>
-        <p className='pb-8'>
+        <p 
+          className='
+            pb-8 
+            max-w-[65ch] 
+            mx-auto'
+        >
           L'audit Google Lighthouse de ma solution front-end, dans 1 fenêtre de navigation privée, est 
           <Span color='orange'>
             100/100 
@@ -186,7 +215,11 @@ export default function Home() {
             résolution de problèmes et mon autonomie.
           </span>
         </p>
-        <p>
+        <p 
+          className='
+            max-w-[65ch] 
+            mx-auto'
+        >
           Je vous aiderai à rendre votre présence digitale
           <Span color='orange'>
             efficiente
@@ -198,7 +231,12 @@ export default function Home() {
           Vous respecterez mieux les standards web. 
           La réalisation des potentialités de vos données grâce aux API ReST et bonnes pratiques devSecOps est parmi nos enjeux.
         </p>
-        <p className='pt-4'>
+        <p 
+          className='
+            pt-4 
+            max-w-[65ch] 
+            mx-auto'
+        >
           J'adhère à « 
           <span 
             className='
@@ -215,7 +253,7 @@ export default function Home() {
           level={3}
           id='competences'
         >
-          compétences
+          Compétences
         </Title>
         <p className='text-xl'>
           Avez-vous besoin d'1 site web à votre image?
@@ -234,7 +272,7 @@ export default function Home() {
           level={3}
           id='projets'
         >
-          projets
+          Projets
         </Title>
         <div aria-live='polite'>
           {isVisible && (
@@ -249,7 +287,7 @@ export default function Home() {
           level={3}
           id='parcours'
         >
-          parcours
+          Parcours
         </Title>
         <h4
           className='
@@ -301,7 +339,7 @@ export default function Home() {
           22 avril 2024 au 21 décembre 2025
         </h6>
         <Title level={4}>
-          sachez-en plus sur ce que nous avons co-construit avant
+          Sachez-en plus sur ce que nous avons co-construit avant
         </Title>
         <div 
           className='
@@ -356,7 +394,7 @@ export default function Home() {
           level={3}
           id='contact'
         >
-          contact
+          Contact
         </Title>
         <p
           className='

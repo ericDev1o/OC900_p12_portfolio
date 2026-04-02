@@ -15,7 +15,6 @@ export default function Skill({
         height={height} 
         className='
             p-6 
-            h-25 
             w-auto 
             object-contain 
             transition-shadow 

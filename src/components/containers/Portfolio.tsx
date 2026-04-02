@@ -82,9 +82,7 @@ export default function Portfolio(
                 flex-col
                 justify-center
                 items-center 
-                h-screen 
-                overflow-y-auto
-                relative'
+                gap-8'
         >
             {projects.map((project) => (
                 <LazyLoadWrapper

@@ -12,7 +12,11 @@ type TitleProps = {
     className?: string
 }
 
-const baseClass = 'leading-loose';
+const baseClass = `
+    max-w-[40ch] 
+    leading-loose 
+    text-center 
+    mx-auto`;
 
 const styles: Record<Level, string> = {
     3: `pt-22 

@@ -1,6 +1,5 @@
 import{i as e,n as t,r as n}from"./SkillsLogoContext-nXhMdITl.js";import{t as r}from"./fetchData-D57YVBhk.js";var i=e(),a=n();function o({logoURI:e,altText:t,width:n,height:r}){return(0,a.jsx)(`img`,{src:e,width:n,height:r,className:`
             p-6 
-            h-25 
             w-auto 
             object-contain 
             transition-shadow 

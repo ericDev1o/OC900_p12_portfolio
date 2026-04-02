@@ -16,6 +16,7 @@
     "isolatedModules": true,                  
     "jsx": "react-jsx",
     "types": [
+      "node",
       "vitest",
       "vitest/globals", 
       "vitest/importMeta",
@@ -23,8 +24,8 @@
   },
   "include": [
     "src",
+    "vitest.integration.setup.ts",
+    "playwright.perf.config.ts",
     "test",
-    "vitest-jsdom-setup.ts",
-    "vitest-browser-setup.ts"
   ]
 }

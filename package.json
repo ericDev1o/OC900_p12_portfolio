@@ -15,6 +15,7 @@
     "test:webkit:docker:run": "docker run --rm --shm-size=1g -e BROWSER=webkit --tmpfs /tmp oc-webkit",
     "test:webkit:ci": "yarn test:webkit:docker:build && yarn test:webkit:docker:inspect && test:webkit:docker:run",
     "test:e2e": "playwright test test/accessibility",
+    "test:perf": "playwright test test/performance --config=playwright.perf.config.ts",
     "preview": "vite preview",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"

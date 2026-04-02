@@ -215,7 +215,7 @@ export default function Home() {
           level={3}
           id='competences'
         >
-          compétences
+          Compétences
         </Title>
         <p className='text-xl'>
           Avez-vous besoin d'1 site web à votre image?
@@ -234,7 +234,7 @@ export default function Home() {
           level={3}
           id='projets'
         >
-          projets
+          Projets
         </Title>
         <div aria-live='polite'>
           {isVisible && (
@@ -249,7 +249,7 @@ export default function Home() {
           level={3}
           id='parcours'
         >
-          parcours
+          Parcours
         </Title>
         <h4
           className='
@@ -301,7 +301,7 @@ export default function Home() {
           22 avril 2024 au 21 décembre 2025
         </h6>
         <Title level={4}>
-          sachez-en plus sur ce que nous avons co-construit avant
+          Sachez-en plus sur ce que nous avons co-construit avant
         </Title>
         <div 
           className='
@@ -356,7 +356,7 @@ export default function Home() {
           level={3}
           id='contact'
         >
-          contact
+          Contact
         </Title>
         <p
           className='

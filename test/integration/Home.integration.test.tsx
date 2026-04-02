@@ -19,19 +19,19 @@ describe('Home page', () => {
                 level: 3
             },
              {
-                name: 'compétences',
+                name: 'Compétences',
                 level: 3
             },
             {
-                name: 'projets',
+                name: 'Projets',
                 level: 3
             },
             {
-                name: 'parcours',
+                name: 'Parcours',
                 level: 3
             },
             {
-                name: 'contact',
+                name: 'Contact',
                 level: 3
             }
         ];

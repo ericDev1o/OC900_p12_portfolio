@@ -1,16 +1,16 @@
 import { 
+    type JSX,
     useState, 
     useEffect, 
-    useRef, 
-    type JSX
+    useRef
 } from 'react';
 
 import type { Project } from '@/custom/types/Project';
 
-import ProjectCard from '../UI/ProjectCard';
-import LazyLoadWrapper from './LazyLoadWrapper';
 import { fetchData } from '../../utils/fetchData';
 
+import LazyLoadWrapper from './LazyLoadWrapper';
+import ProjectCard from '../UI/ProjectCard';
 /**
  * Container for ProjectCard components.
  * 

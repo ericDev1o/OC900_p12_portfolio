@@ -1,7 +1,7 @@
+import { basePath } from '../../config/logoPathsConfig';
+
 import type { Project } from '../../custom/types/Project';
 import type { LogoKey } from '../../custom/types/LogoKey';
-
-import { basePath } from '../../config/logoPathsConfig';
 
 import SkillLogos from '../containers/ProjectCardSkillLogos';
 

@@ -1,5 +1,5 @@
 import type { LogoKey } from '@/custom/types/LogoKey';
-import type { SkillData } from '../custom/types/SkillData';
+import type { SkillData } from '@/custom/types/SkillData';
 
 import skillsData from '/public/data/skills.json';
 

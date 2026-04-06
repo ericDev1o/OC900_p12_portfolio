@@ -1,9 +1,8 @@
 import type { JSX } from 'react';
 
-import SkillLogo from '../UI/ProjectCardSkillLogo';
-
 import type { LogoKey } from '../../custom/types/LogoKey';
 
+import SkillLogo from '../UI/ProjectCardSkillLogo';
 /**
  * This component is the container of ProjectCardSkillLogo.tsx.
  * ProjectCard prefix is specified to avoid confusion 

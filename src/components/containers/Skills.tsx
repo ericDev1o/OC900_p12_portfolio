@@ -1,14 +1,14 @@
 import { 
+    type JSX, 
     useEffect, 
-    useState, 
-    type JSX 
+    useState
 } from 'react';
 
-import type { SkillData } from '../../custom/types/SkillData';
+import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
 
 import { fetchData } from '../../utils/fetchData';
 
-import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
+import type { SkillData } from '../../custom/types/SkillData';
 
 import Skill from '../UI/Skill';
 

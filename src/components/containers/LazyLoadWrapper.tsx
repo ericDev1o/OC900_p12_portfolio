@@ -5,9 +5,9 @@ import {
     useRef
 } from 'react';
 
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
-
 import { defaultOptions } from '../../config/intersectionObserverConfig';
+
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 /**
  * Wrapper for heavy media elements that should be lazy-loaded when they enter the viewport.

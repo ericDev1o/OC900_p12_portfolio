@@ -10,7 +10,6 @@ import useIntersectionObserver from '../components/hooks/useIntersectionObserver
 
 import LazyLoadWrapper from '../components/containers/LazyLoadWrapper';
 import LazySkills from '../components/containers/LazySkills';
-const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 
 import Title from '../components/UI/Title';
 import Section from '../components/UI/Section';
@@ -18,6 +17,8 @@ import Link from '../components/UI/Link';
 import LinkClickWarning from '../components/UI/LinkClickWarning';
 import LogoLinkHomeContact from '../components/UI/LogoLinkHomeContact';
 import Span from '../components/UI/Span';
+
+const Portfolio = lazy(() => import('../components/containers/Portfolio'));
 
 export default function Home() {
   const basePath = import.meta.env.BASE_URL || '/';

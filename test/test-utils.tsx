@@ -1,8 +1,8 @@
 import type { ReactElement } from 'react';
 
 import { 
-    render, 
-    type RenderResult 
+     type RenderResult, 
+    render
 } from '@testing-library/react';
 
 import { TestProviders } from './TestProviders';

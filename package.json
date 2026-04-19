@@ -6,6 +6,8 @@
   "scripts": {
     "clean": "vite:clean",
     "dev": "vite",
+    "weigh:js": "gzip -c dist/assets/*.js | wc -c",
+    "weigh:css": "gzip -c dist/assets/*.css | wc -c",
     "build": "vite build --base=./",
     "lint": "eslint --fix .",
     "test:unit": "vitest run --config vitest.unit.config.ts",

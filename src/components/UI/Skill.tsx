@@ -6,8 +6,8 @@ export default function Skill({
 }: {
     logoURI: string | undefined, 
     altText: string,
-    width: string,
-    height: string
+    width: number,
+    height: number
 }) {
     return <img 
         src={logoURI} 

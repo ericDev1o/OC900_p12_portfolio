@@ -1,8 +1,6 @@
 import {
   type JSX,
   type ReactNode, 
-  useEffect, 
-  useRef, 
   useState 
 } from 'react';
   
@@ -23,18 +21,8 @@ export default function Accordion(
     summary: string; 
     children: ReactNode 
   }): JSX.Element {
-  const contentRef = useRef<HTMLDivElement>(null);
+
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const content = contentRef.current;
-    if( ! content) return;   
-
-    content.style.maxHeight = isOpen 
-    ? `${content.scrollHeight}px`
-    : '0px';
-    }, [isOpen]
-  );
 
   return (
     <div 
@@ -88,16 +76,17 @@ export default function Accordion(
         </span>
       </button>
       <div
-        ref={contentRef} 
-        style={{ maxHeight: '0px' }}
-        className='
-          overflow-hidden 
-          motion-safe:transition-[max-height] 
+        className={`
+          grid 
+          motion-safe:transition-[grid-template-rows] 
           motion-safe:duration-600 
-          motion-safe:ease-in-out'
+          motion-safe:ease-in-out 
+          ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}
+        `}
       >
         <div 
           className='
+            overflow-hidden 
             px-4 
             py-3'
         >

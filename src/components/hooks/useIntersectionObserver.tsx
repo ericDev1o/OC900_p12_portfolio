@@ -18,7 +18,7 @@ export default function useIntersectionObserver(
 {
     const [isIntersecting, setIsIntersecting] = useState(false);
 
-    useEffect(() => {
+    useEffect(function observeElementVisibility() {
         const target = ref.current;
         if( ! target || typeof IntersectionObserver === 'undefined') return;
 

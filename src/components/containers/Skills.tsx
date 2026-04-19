@@ -1,16 +1,13 @@
-import { 
-    type JSX, 
-    useEffect, 
-    useState
-} from 'react';
+import { type JSX } from 'react';
 
 import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
-
-import { fetchData } from '../../utils/fetchData';
 
 import type { SkillData } from '../../custom/types/SkillData';
 
 import Skill from '../UI/Skill';
+
+import skills from '/public/data/skills.json';
+const typedSkills = skills as SkillData[];
 
 /**
  * Holds all Skill.tsx displayed in the Home.tsx page skills section.
@@ -21,22 +18,6 @@ import Skill from '../UI/Skill';
 export default function Skills(): JSX.Element {
     const { getLogoURI } = useSkillsLogo();
 
-    const [skills, setSkills] = useState<SkillData[]>([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const controller = new AbortController();
-
-        fetchData<SkillData[]>('data/skills.json', controller.signal)
-        .then(setSkills)
-        .catch(console.error)
-        .finally(() => setLoading(false));
-
-        return () => controller.abort();
-    }, []);
-
-    if (loading) return <p>Chargement des compétences...</p>;
-
     return <div 
         className='
             flex
@@ -44,7 +25,7 @@ export default function Skills(): JSX.Element {
             flex-wrap
             items-center'
     >
-        {skills.map(skill => (
+        {typedSkills.map((skill) => (
             <Skill 
                 key={skill.key}
                 logoURI={getLogoURI(skill.key)} 

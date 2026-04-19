@@ -1,16 +1,14 @@
 import { 
     type JSX,
-    useState, 
-    useEffect, 
     useRef
 } from 'react';
 
 import type { Project } from '@/custom/types/Project';
 
-import { fetchData } from '../../utils/fetchData';
-
 import LazyLoadWrapper from './LazyLoadWrapper';
 import ProjectCard from '../UI/ProjectCard';
+
+import projects from '/public/data/projects.json';
 /**
  * Container for ProjectCard components.
  * 
@@ -22,6 +20,7 @@ import ProjectCard from '../UI/ProjectCard';
  *     2) readability,
  *     3) maintainability.
  * It avoids overkill state management libraries (redux, Zustand etc).
+ * No need for @tanstack/react-query in this simple case of API-less static data.
  * API data URL should be the single source of truth.
  * 
  * @param {string} projectsPath Base path for project URLs (e.g. /projects).
@@ -33,47 +32,7 @@ export default function Portfolio(
     }: {
         projectsPath: string
 }): JSX.Element {
-    const [projects, setProjects] = useState<Project[]>([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
-
     const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => 
-        { 
-            const controller = new AbortController();
-            
-            const fetchProjects = async () => 
-            { 
-                try { 
-                    setLoading(true);
-                    setError(null);
-
-                    const data = await fetchData<Project[]>(
-                        'data/projects.json',
-                        controller.signal
-                    );
-
-                    setProjects(data); 
-                } catch (e: unknown) { 
-                    if (e instanceof DOMException && e.name === 'AbortError')
-                        return;
-                    
-                    console.error('Fetch failed: ',e); 
-                    setError('Impossible de charger les projets');
-                } finally {
-                    setLoading(false);
-                }
-            };
-
-            fetchProjects(); 
-            
-            return () => controller.abort();
-        }, []
-    ); 
-
-    if(loading) return <p>Chargement des projets...</p>;
-    if(error) return <p>Erreur: {error}</p>;
 
     return <div
             ref = {scrollContainerRef}
@@ -84,14 +43,14 @@ export default function Portfolio(
                 items-center 
                 gap-8'
         >
-            {projects.map((project) => (
+            {projects.map((project: Project) => (
                 <LazyLoadWrapper
                         key={project.number}
                         options={{ 
-                        root: scrollContainerRef.current, 
-                        rootMargin: '0px',
-                        threshold: 0
-                    }}
+                            root: scrollContainerRef.current ?? undefined, 
+                            rootMargin: '0px',
+                            threshold: 0
+                        }}
                 >
                     <ProjectCard 
                         project={project}

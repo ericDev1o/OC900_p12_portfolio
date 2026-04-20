@@ -81,6 +81,13 @@ yarn deploy
 yarn build
 gh-pages -d dist
 
+## mitigate dependency vulnerability risk please
+### .yarnrc.yml
+#### add this line
+npmMinimalAgeGate: "7d"
+#### to prevent following example attack
+https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan
+
 ## preinstall a font
 https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&subset=latin&display=swap
 ### keep only latin 

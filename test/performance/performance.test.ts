@@ -8,7 +8,7 @@ import {
   type EnvMode 
 } from './configEnv';
 
-(['local', 'prod'] as EnvMode[]).forEach((envMode) => {
+for (const envMode of ['local', 'prod'] as EnvMode[]) {
   test(`Web Vitals performance - ${envMode}`, async ({ page }) => {
     test.setTimeout(60000);
     
@@ -43,4 +43,4 @@ import {
 
     assertVitals(vitals);
   });
-});
+};

@@ -28,6 +28,11 @@ import {
       throw new Error(`Incomplete vitals: ${JSON.stringify(vitals)}`);
     }
 
+    test.info().attach(`Vitals-${envMode}.json`, {
+      body: JSON.stringify(vitals, null, 2),
+      contentType: 'application/json'
+    });
+
     console.log(`
       [${envMode}] Vitals:
       FCP = ${vitals.FCP} ms,

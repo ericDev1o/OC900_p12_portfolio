@@ -35,7 +35,10 @@ export default defineConfig({
       'test/accessibility/**/*.a11y.test.tsx'
     ],
     /* default */
-    environment: 'node'
+    environment: 'node',
+    env: {
+      VITEST_DISABLE_TELEMETRY: 'true'
+    }
   },
   logLevel: 'warn'
 });   

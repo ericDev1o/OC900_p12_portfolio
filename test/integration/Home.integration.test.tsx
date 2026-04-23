@@ -4,12 +4,17 @@ import { render } from '../test-utils';
 
 import Home from '../../src/pages/Home';
 
+type HeadingSpec = {
+    name: string,
+    level: number
+};
+
 describe('Home page', () => {
     it('must render most important content', async () => {
         // Arrange
         render(<Home />);
         
-        const headings = [
+        const headings: HeadingSpec[] = [
             {
                 name: 'Bonjour, je suis Eric',
                 level: 1
@@ -36,10 +41,13 @@ describe('Home page', () => {
             }
         ];
         // Act Assert
-        for(const { name, level } of headings) {
-            const heading = await screen.findByRole('heading', { name, level });
-
-            expect(heading).toBeInTheDocument();
+        for(const { 
+            name, 
+            level 
+        } of headings) {
+            expect(
+                screen.getByRole('heading', { name, level })
+            ).toBeVisible();
         }
     });
 });

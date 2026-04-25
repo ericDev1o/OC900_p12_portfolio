@@ -44,6 +44,8 @@ yarn test:unit
 
 #### $ yarn test:unit
 #### $ yarn test:integration
+##### $ yarn playwright install
+##### $ yarn playwright install-deps
 #### $ yarn test:webkit:ci
 Test Webkit less. 
 It's not a native Safari end-to-end user accessibility test.

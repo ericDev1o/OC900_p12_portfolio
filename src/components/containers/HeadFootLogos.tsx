@@ -1,4 +1,4 @@
-import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
+import { useSkillsLogo } from '../hooks/useSkillsLogo';
 
 import { IconLink } from '../UI/IconLink';
 

@@ -4,7 +4,7 @@ import {
   useRef
 } from 'react';
 
-import { useSkillsLogo } from '../contexts/SkillsLogoContext';
+import { useSkillsLogo } from '../components/hooks/useSkillsLogo';
 
 import useIntersectionObserver from '../components/hooks/useIntersectionObserver';
 
@@ -57,7 +57,7 @@ export default function Home() {
               srcSet={`${photoPath} 1x, ${photoPathRetina} 1.5x`}
               width='100px'
               height='134px'
-              alt="Photo d'Eric Faraut"
+              alt="Eric Faraut"
             />
           </div>
           <h2

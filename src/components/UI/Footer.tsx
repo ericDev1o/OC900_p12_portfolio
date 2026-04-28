@@ -12,19 +12,24 @@ export default function Footer() {
             modalDialogRef.current.showModal(); 
             modalDialogRef.current.focus();
         }
-    }
+    };
 
     const closeModal = () => { 
         if(modalDialogRef.current && modalDialogRef.current.open)
             modalDialogRef.current.close(); 
-    }
+    };
 
     const onBackDropClick = (
-        e: React.MouseEvent<HTMLDialogElement>
+        e: React.MouseEvent<HTMLElement>
     ) => {
         if(e.target === e.currentTarget)
             modalDialogRef.current?.close();
-    }
+    };
+
+    const onCancel = (e: React.SyntheticEvent<HTMLDialogElement>) => {
+        e.preventDefault();
+        closeModal();
+    };
 
     return <footer 
         className='
@@ -74,7 +79,7 @@ export default function Footer() {
             ref={modalDialogRef}
             aria-labelledby='legal-title' 
             aria-modal='true' 
-            onClick={onBackDropClick} 
+            onCancel={onCancel}
             className='
                 p-10 
                 max-w-[80vw] 
@@ -86,7 +91,9 @@ export default function Footer() {
                 backdrop:bg-black/40
                 backdrop:backdrop-blur-sm'
         >
-            <div
+            <section
+                role='presentation' 
+                onClick={onBackDropClick} 
                 className='
                     p-10 
                     overflow-y-auto 
@@ -209,7 +216,7 @@ export default function Footer() {
                 Ce site https://ericdev1o.github.io/OC900_p12_portfolio/ n'utilise aucun cookie de suivi ni outil de traçage.
 
                 Aucune donnée de navigation n'est collectée sauf les informations que vous renseignez volontairement dans le formulaire.
-            </div>
+            </section>
             <div
                 className='
                     sticky

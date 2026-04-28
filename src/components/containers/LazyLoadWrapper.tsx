@@ -47,8 +47,7 @@ export default function LazyLoadWrapper({
     return <div
         ref={ref}
         className='
-            relative'
-        tabIndex={0}>
+            relative'>
             <div
                 className={`
                     transition-opacity 

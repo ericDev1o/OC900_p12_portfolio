@@ -1,6 +1,6 @@
 import { type JSX } from 'react';
 
-import { useSkillsLogo } from '../../contexts/SkillsLogoContext';
+import { useSkillsLogo } from '../hooks/useSkillsLogo';
 
 import type { SkillData } from '../../custom/types/SkillData';
 

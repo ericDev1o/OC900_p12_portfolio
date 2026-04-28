@@ -1,4 +1,4 @@
-import type { LogoKey } from "./LogoKey";
+import type { LogoKey } from './LogoKey';
 
 export type SkillData = {
   key: LogoKey;

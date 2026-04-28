@@ -1,6 +1,6 @@
 import { 
     type JSX,
-    useRef
+    useState
 } from 'react';
 
 import type { Project } from '@/custom/types/Project';
@@ -32,10 +32,10 @@ export default function Portfolio(
     }: {
         projectsPath: string
 }): JSX.Element {
-    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const [root, setRoot] = useState<HTMLDivElement | null>(null);
 
     return <div
-            ref = {scrollContainerRef}
+            ref = {setRoot}
             className='
                 flex
                 flex-col
@@ -47,7 +47,7 @@ export default function Portfolio(
                 <LazyLoadWrapper
                         key={project.number}
                         options={{ 
-                            root: scrollContainerRef.current ?? undefined, 
+                            root: root ?? undefined, 
                             rootMargin: '0px',
                             threshold: 0
                         }}

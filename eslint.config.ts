@@ -4,6 +4,7 @@ import esparser from '@typescript-eslint/parser';
 import globals from 'globals';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import prettier from 'eslint-config-prettier';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
@@ -26,9 +27,12 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 export default defineConfig([
   globalIgnores(['dist']),
   {
+    ...jsxA11y.flatConfigs.strict,
+
     files: ['**/*.{ts,tsx}'],
 
     plugins: {
+      ...jsxA11y.flatConfigs.strict.plugins,
       '@typescript-eslint': tseslint,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh
@@ -38,17 +42,17 @@ export default defineConfig([
       parser: esparser,
       ecmaVersion: 'latest',
       sourceType: 'module',
-      globals: globals.browser,
-      parserOptions: {
-        ecmaFeatures: { tsx: true }
-      },
+      globals: globals.browser
     },
 
     rules: {
+      ...jsxA11y.flatConfigs.strict.rules,
+
       ...tseslint.configs.recommended.rules,
 
-      'react-hooks/rules-of-hooks': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
+      ...reactHooks.configs.recommended.rules,
+
+      'react-refresh/only-export-components': 'warn',
 
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
@@ -63,6 +67,14 @@ export default defineConfig([
       'quotes': ['error', 'single', {'avoidEscape': true}]
     }
   },
+
+  {
+    files: ['**/*.test.tsx', '**/test-utils.tsx'],
+    rules: {
+      'react-refresh/only-export-components': 'off'
+    }
+  },
+
   prettier
  ] satisfies Linter.Config[]
 );

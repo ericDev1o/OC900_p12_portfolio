@@ -1,8 +1,8 @@
-import { useSkillsLogo } from "../../contexts/SkillsLogoContext";
+import { useSkillsLogo } from '../hooks/useSkillsLogo';
 
-import type { LogoKey } from "../../custom/types/LogoKey";
+import type { LogoKey } from '../../custom/types/LogoKey';
 
-import { getSkillData } from "../../utils/skillsMap";
+import { getSkillData } from '../../utils/skillsMap';
 
 export default function ProjectCardSkillLogo(
     { 

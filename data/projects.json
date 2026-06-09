@@ -139,8 +139,8 @@
         "objectifs": "Créer un site simple mais attractif avec des animations douces et un appel au contact efficace. Assurer une accessibilité optimale et de bonnes performances, tout en validant la qualité via des outils de test automatisés et manuels.",
         "stackTechnique": "HTML, CSS, TypeScript, React, TailwindCSS, rendu côté client poussé grâce aux outils d’analyse tels que Lighthouse, axe Dev Tools, ainsi que Notion Kanban pour la gestion agile.",
         "competencesDeveloppees": "Découpage frontend en composants react, accessibilité solide et performances en progrès. Début opérationnel d'automatisation des tests avec playwright et stylelint.",
-        "resultatsEtImpact": "Livraison d’une version 0.1.2 fonctionnelle respectant les standards, avec une amélioration notable de l’accessibilité et des performances mesurées par Lighthouse.",
-        "perspectivesAmelioration": "1) Faire adhérer le bas de page au défilement, 2) supprimer les marges blanches au défilement de 320 à 1440 px, 3) proposer un carrousel de projets, 4) différencier l'affichage selon mobile / tablette ou desktop, 5) filtrer les projets par technologie, 6) publier une vidéo a) de la présentation à propos voire b) des projets passés sont soumises au sondage entre pairs pour décision / priorisation.",
+        "resultatsEtImpact": "Livraison d’une version 0.1.2 soutenable, fonctionnelle, respectant les standards, avec une amélioration notable de l’accessibilité et des performances mesurées par Lighthouse.",
+        "perspectivesAmelioration": "Ce projet a mis en évidence l’intérêt de l’éco-conception web. Une réécriture en Astro permettrait de conserver les fonctionnalités tout en réduisant significativement le JavaScript embarqué (> 60 kB). Les évolutions UX (navigation et filtrage des projets, enrichissement du contenu) seraient priorisées selon les retours utilisat·rice·eur·s",
         "logos": ["HTML", "CSS", "TS", "tailwindCSS", "react", "lighthouse", "WAvE", "axeDevTool", "greenITanalysis", "feedly", "stylelint", "playwright", "notion", "gitHub"]
     }
 ]

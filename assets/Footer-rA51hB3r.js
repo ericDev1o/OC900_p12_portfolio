@@ -1,4 +1,4 @@
-import{i as e,r as t}from"./SkillsLogoContext-hhCoefVG.js";import{t as n}from"./HeadFootLogos-DIGVQGjb.js";import{t as r}from"./LinkClickWarning-B3bGyAUU.js";var i=e(),a=t();function o(){let e=(0,i.useRef)(null);return(0,a.jsxs)(`footer`,{className:`
+import{i as e,n as t}from"./useSkillsLogo-DjyRNht_.js";import{r as n,t as r}from"./index-CVuq8Dtd.js";var i=e(),a=t();function o(){let e=(0,i.useRef)(null),t=()=>{e.current&&!e.current.open&&(e.current.showModal(),e.current.focus())},o=()=>{e.current&&e.current.open&&e.current.close()};return(0,a.jsxs)(`footer`,{className:`
             group 
             px-4 
             pb-15 
@@ -7,7 +7,7 @@ import{i as e,r as t}from"./SkillsLogoContext-hhCoefVG.js";import{t as n}from"./
             items-center 
             gap-6`,children:[(0,a.jsx)(`div`,{className:`shrink-0`,children:(0,a.jsx)(n,{})}),(0,a.jsx)(`p`,{className:`mx-auto text-center`,children:`© 2026 Mon Portfolio. Tous droits réservés. Code source disponible sous licence ISC sur GitHub.`}),(0,a.jsxs)(`div`,{className:`
                 relative 
-                group`,children:[(0,a.jsx)(`button`,{id:`legal`,type:`button`,onClick:()=>{e.current&&!e.current.open&&(e.current.showModal(),e.current.focus())},className:`
+                group`,children:[(0,a.jsx)(`button`,{id:`legal`,type:`button`,onClick:t,className:`
                     cursor-pointer 
                     font-medium 
                     text-fg-brand  
@@ -19,7 +19,7 @@ import{i as e,r as t}from"./SkillsLogoContext-hhCoefVG.js";import{t as n}from"./
                     hover:text-blue-600
                     focus-visible:ring-4 
                     focus-visible:ring-blue-300 
-                    focus-visible:ring-offset-2`,children:`mentions légales`}),(0,a.jsx)(r,{})]}),(0,a.jsxs)(`dialog`,{ref:e,"aria-labelledby":`legal-title`,"aria-modal":`true`,onClick:t=>{t.target===t.currentTarget&&e.current?.close()},className:`
+                    focus-visible:ring-offset-2`,children:`mentions légales`}),(0,a.jsx)(r,{})]}),(0,a.jsxs)(`dialog`,{ref:e,"aria-labelledby":`legal-title`,"aria-modal":`true`,onCancel:e=>{e.preventDefault(),o()},className:`
                 p-10 
                 max-w-[80vw] 
                 m-auto
@@ -28,7 +28,7 @@ import{i as e,r as t}from"./SkillsLogoContext-hhCoefVG.js";import{t as n}from"./
                 bg-gray-200
                 text-center
                 backdrop:bg-black/40
-                backdrop:backdrop-blur-sm`,children:[(0,a.jsxs)(`div`,{className:`
+                backdrop:backdrop-blur-sm`,children:[(0,a.jsxs)(`section`,{role:`presentation`,onClick:t=>{t.target===t.currentTarget&&e.current?.close()},className:`
                     p-10 
                     overflow-y-auto 
                     max-h-[calc(80vh-5rem)]`,children:[(0,a.jsx)(`div`,{className:`
@@ -67,7 +67,7 @@ import{i as e,r as t}from"./SkillsLogoContext-hhCoefVG.js";import{t as n}from"./
                     border-t 
                     border-gray-300 
                     p-4 
-                    text-center`,children:(0,a.jsx)(`button`,{type:`button`,onClick:()=>{e.current&&e.current.open&&e.current.close()},className:`
+                    text-center`,children:(0,a.jsx)(`button`,{type:`button`,onClick:o,className:`
                     mt-6 
                     px-4 
                     py-2 

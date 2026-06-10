@@ -1,4 +1,4 @@
-import{i as e,n as t}from"./useSkillsLogo-DjyRNht_.js";import{r as n,t as r}from"./index-CVuq8Dtd.js";var i=e(),a=t();function o(){let e=(0,i.useRef)(null),t=()=>{e.current&&!e.current.open&&(e.current.showModal(),e.current.focus())},o=()=>{e.current&&e.current.open&&e.current.close()};return(0,a.jsxs)(`footer`,{className:`
+import{a as e,o as t,r as n,t as r}from"./index-Baw5RJZ6.js";var i=t(),a=e();function o(){let e=(0,i.useRef)(null),t=()=>{e.current&&!e.current.open&&(e.current.showModal(),e.current.focus())},o=()=>{e.current&&e.current.open&&e.current.close()};return(0,a.jsxs)(`footer`,{className:`
             group 
             px-4 
             pb-15 

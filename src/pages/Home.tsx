@@ -442,42 +442,13 @@ export default function Home() {
                 relative'
               >
                 <Link
-                  href='https://calendly.com/d/cvk6-chh-pqq'
+                  href='https://calendly.com/eric-faraut/30min'
                   text='Prendre rendez-vous (Calendly)'
                 />
               <LinkClickWarning />
             </div>
           </div>
         </LazyLoadWrapper>
-        <div
-          className='
-            group
-            relative'>
-          <a
-            href='https://framaforms.org/contact-eric-faraut-1762791991'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='Parlons-en'
-            className='
-              mt-18
-              inline-flex items-center justify-center
-              w-full sm:w-auto
-              px-5 py-2.5
-              text-2xl
-              font-medium
-              text-center
-              text-gray-200
-              bg-blue-700
-              hover:bg-blue-800
-              rounded-lg
-              focus-visible:ring-4
-              focus-visible:ring-blue-300
-              focus-visible:ring-offset-2'
-          >
-            Parlons-en
-          </a>
-            <LinkClickWarning />
-          </div>
       </Section>
   </article>
   <hr 
